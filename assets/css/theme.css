@@ -611,16 +611,6 @@ progress {
   height: auto;
 }
 
-.carousel-inner.custom {
-  height: 100%;
-  width: auto;
-}
-
-.carousel-item.custom {
-  height: 100%;
-  width: auto;
-}
-
 .img-thumbnail {
   padding: 0.5rem;
   background-color: var(--si-body-bg);
