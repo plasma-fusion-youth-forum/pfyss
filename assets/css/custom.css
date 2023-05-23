@@ -1,0 +1,20 @@
+/* Custom css for PFYSS HP */
+
+.teacher-card-img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.venue-card-img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 51/34;
+}
+
+/* rounded rounded-circle set aspect ratio 1/1 */
+.rounded-circle {
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  aspect-ratio: 1/1 !important;
+}
