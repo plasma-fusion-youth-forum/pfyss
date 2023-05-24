@@ -102,3 +102,8 @@ index.html をブラウザで開くと、ローカルで確認できます。
 
 本ホームページは、[Silicon Bootstrap Theme](https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/)をベースに作成しています。
 UI に関するドキュメントは、[こちら](https://silicon.createx.studio/components/typography.html)を参照してください。
+
+### Bootstrap5 について
+
+本ホームページのテンプレートは、Bootstrap5 をベースに作成されています。
+Bootstrap5 入門者は、[とほほの Bootstrap5 入門](https://www.tohoho-web.com/bootstrap5/index.html)を参考にしてください。
