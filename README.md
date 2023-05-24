@@ -95,3 +95,10 @@ index.html をブラウザで開くと、ローカルで確認できます。
 ## プラズマ・核融合若手夏の学校の HP について
 
 プラズマ・核融合若手夏の学校の HP は、[プラズマ・核融合 若手フォーラム](https://www.jspf.or.jp/wakate/)が運営しています。
+
+## 開発者向け情報
+
+### UI ドキュメント
+
+本ホームページは、[Silicon Bootstrap Theme](https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/)をベースに作成しています。
+UI に関するドキュメントは、[こちら](https://silicon.createx.studio/components/typography.html)を参照してください。
