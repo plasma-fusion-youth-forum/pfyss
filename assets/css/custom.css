@@ -18,3 +18,14 @@
   object-fit: cover !important;
   aspect-ratio: 1/1 !important;
 }
+
+/* custom breakpoint for ticket margin right */
+.offset-e-xl-1 {
+  margin-right: 0%;
+}
+
+@media (min-width: 1200px) {
+  .offset-e-xl-1 {
+    margin-right: 8.33333333%;
+  }
+}
