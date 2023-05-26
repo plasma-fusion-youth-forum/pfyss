@@ -266,7 +266,7 @@
                             <a href="#application" class="dropdown-item py-1">募集概要</a>
                           </li>
                           <li>
-                            <a href="application.html" class="dropdown-item py-1">募集フォーム</a>
+                            <a href="/application.html" class="dropdown-item py-1">申込みフォーム</a>
                           </li>
                         </ul>
                         <h6 class="px-3 mb-2">連絡</h6>
@@ -1415,7 +1415,7 @@
                     </div>
                     <div class="col-sm-8">
                       <h5>閉校式</h5>
-                      <p class="mb-0">ポスター賞授与</p>
+                      <p class="mb-0">ポスター賞授与<br />名護市バスターミナルまで送迎後、解散</p>
                     </div>
                   </div>
                 </div>
@@ -1518,13 +1518,16 @@
         </div>
         <div class="row pt-xl-2 pb-md-3">
           <div class="col-lg-5 mb-4 mb-lg-0 position-relative offset-e-xl-1">
-            <h3 class="h4">応募資格</h3>
-            <ul>
+            <h3 class="h4">参加資格</h3>
+            <ul data-aos="fade-up">
               <li>プラズマ・核融合に関心のある・研究を行っている日本の大学4年生 &ndash; 大学院生</li>
               <li>ポスター発表が可能な方 (複数人での発表可)</li>
             </ul>
             <ul class="list-group">
-              <li class="list-group-item d-flex flex-column flex-sm-row align-items-center justify-content-between p-4">
+              <li
+                class="list-group-item d-flex flex-column flex-sm-row align-items-center justify-content-between p-4"
+                data-aos="fade-up"
+              >
                 <div class="d-flex align-items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path
@@ -1537,7 +1540,11 @@
                 <h5 class="text-primary my-2 my-sm-0">￥18,000</h5>
                 <div class="fs-sm">旅費支援は要相談</div>
               </li>
-              <li class="list-group-item d-flex flex-column flex-sm-row align-items-center justify-content-between p-4">
+              <li
+                class="list-group-item d-flex flex-column flex-sm-row align-items-center justify-content-between p-4"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <div class="d-flex align-items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path
@@ -1558,9 +1565,10 @@
 
             <!-- Arrow -->
             <div
+              id="application-arrow"
               class="position-absolute bottom-0 end-0 text-primary d-none d-lg-block me-xl-n5"
-              data-aos="zoom-in-up"
-              data-aos-delay="100"
+              data-aos="flip-left"
+              data-aos-delay="500"
               data-aos-duraion="1000"
             >
               <div class="me-xl-n4">
@@ -1586,6 +1594,8 @@
               <div
                 class="position-relative overflow-hidden bg-gradient-primary rounded-3 zindex-5 py-5 px-4 p-sm-5"
                 data-aos="fade-up"
+                data-aos-delay="1000"
+                data-aos-anchor="#application-arrow"
               >
                 <span class="position-absolute top-50 start-0 translate-middle bg-light rounded-circle p-4"></span>
                 <span
@@ -1600,12 +1610,21 @@
                       <h3 class="h3 text-light mb-0">プラズマ・核融合</h3>
                       <h3 class="h1 text-light">若手夏の学校</h3>
                     </div>
+                    <!-- 申込みフォームにアクセスさせない場合は class に visually-hidden を加える -->
                     <div class="d-table bg-white rounded-3 p-3 flex-shrink-0 mx-auto mx-sm-0">
                       <img src="/assets/img/qr_application.svg" width="102" alt="QR Code" />
                     </div>
                   </div>
                   <div class="d-flex flex-column flex-sm-row align-items-center pt-4 mt-2">
-                    <a href="application.html" class="btn btn-light btn-lg mb-3 mb-sm-0 me-sm-3">応募はこちらから</a>
+                    <!-- 申込みフォームにアクセスさせない場合は class に disalbed を加える -->
+                    <a
+                      href="/application.html"
+                      class="btn btn-light btn-lg mb-3 mb-sm-0 me-sm-3 disabled"
+                      tabindex="-1"
+                      aria-disabled="true"
+                      role="button"
+                      >申込はこちらから</a
+                    >
                     <div class="d-flex align-items-center">
                       <span class="h4 text-light mb-0">6月30日</span>
                       <span class="fs-lg text-light ms-2">〆切</span>
