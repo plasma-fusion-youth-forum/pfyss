@@ -252,10 +252,10 @@
                         <h6 class="px-3 mb-2">場所</h6>
                         <ul class="list-unstyled mb-3">
                           <li>
-                            <a href="#Venue" class="dropdown-item py-1">会場</a>
+                            <a href="#venue" class="dropdown-item py-1">会場</a>
                           </li>
                           <li>
-                            <a href="#Venue" class="dropdown-item py-1">エクスカージョン</a>
+                            <a href="#venue" class="dropdown-item py-1">エクスカージョン</a>
                           </li>
                         </ul>
                       </div>
@@ -272,7 +272,7 @@
                         <h6 class="px-3 mb-2">連絡</h6>
                         <ul class="list-unstyled mb-3">
                           <li>
-                            <a href="/contacts.html" class="dropdown-item py-1"> お問い合わせ</a>
+                            <a href="/contact.html" class="dropdown-item py-1"> お問い合わせ</a>
                           </li>
                         </ul>
                       </div>
@@ -507,7 +507,7 @@
       </section>
 
       <!-- Teachers -->
-      <section id="teacher" class="container py-5 my-2 my-md-4 my-lg-5">
+      <section id="teachers" class="container py-5 my-2 my-md-4 my-lg-5">
         <div class="d-md-flex align-items-center justify-content-between text-center text-md-start pt-md-1 pt-lg-3">
           <h2 class="h1 mb-4 mb-md-0 me-md-3">Teachers</h2>
           <!-- <a href="#" class="btn btn-primary btn-lg">
@@ -1426,7 +1426,7 @@
       </section>
 
       <!-- Venue & Excursions -->
-      <section id="Venue" class="bg-secondary py-5">
+      <section id="venue" class="bg-secondary py-5">
         <div class="container py-2 py-md-4 py-lg-5">
           <h2 class="h1 mb-4 mb-md-0 me-md-3">Venue &amp; Excursions</h2>
         </div>
@@ -1590,13 +1590,13 @@
 
           <div class="col-xl-6 col-lg-7 position-relative">
             <!-- Ticket card -->
-            <div class="position-relative">
-              <div
-                class="position-relative overflow-hidden bg-gradient-primary rounded-3 zindex-5 py-5 px-4 p-sm-5"
-                data-aos="fade-up"
-                data-aos-delay="1000"
-                data-aos-anchor="#application-arrow"
-              >
+            <div
+              class="position-relative"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+              data-aos-anchor="#application-arrow"
+            >
+              <div class="position-relative overflow-hidden bg-gradient-primary rounded-3 zindex-5 py-5 px-4 p-sm-5">
                 <span class="position-absolute top-50 start-0 translate-middle bg-light rounded-circle p-4"></span>
                 <span
                   class="position-absolute top-0 start-0 w-100 h-100 bg-repeat-0 bg-position-center-end bg-size-cover"
@@ -1662,17 +1662,13 @@
                 data-aos-delay="400"
               />
             </div>
-            <div class="col-md-5">
-              <p class="fs-lg mb-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="col-md-5" data-aos="fade-up" data-aos-delay="500">
+              <p class="fs-lg mb-4">
                 Discordは、ゲーマー向けによく用いられているコミュニケーションツールですが、
                 夏の学校では、参加者同士の交流の場としても利用します。 また、講義の資料・動画などの配布も行います。
                 夏の学校参加者ではなくても、Discordに参加して交流を深めましょう!
               </p>
-              <a
-                href="https://discord.gg/BTaVFm7F3k"
-                class="btn btn-primary shadow-primary btn-lg me-sm-4 mb-3"
-                data-aos="fade-up"
-                data-aos-delay="600"
+              <a href="https://discord.gg/BTaVFm7F3k" class="btn btn-primary shadow-primary btn-lg me-sm-4 mb-3"
                 >Join Discord</a
               >
             </div>
@@ -1691,12 +1687,11 @@
         <ul class="nav justify-content-center pt-3 pb-4 pb-lg-5">
           <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
           <li class="nav-item">
-            <a href="#teacher" class="nav-link">Teacher</a>
+            <a href="#teachers" class="nav-link">Teachers</a>
           </li>
           <li class="nav-item">
             <a href="#schedule" class="nav-link">Schedule</a>
           </li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
           <li class="nav-item">
             <a href="#sponsors" class="nav-link">Sponsors</a>
           </li>
@@ -1727,10 +1722,11 @@
         </div>
         <p class="nav d-block fs-sm text-center pt-5 mt-lg-4 mb-0">
           <span class="text-light opacity-50"
-            >&copy; All rights reserved. Made by プラズマ・核融合 若手フォーラム
+            >Contents &copy; プラズマ・核融合 若手フォーラム | Powered by
+            <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener"
+              >Createx Studio</a
+            >
           </span>
-          <!-- <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank"
-                    rel="noopener">Createx Studio</a> -->
         </p>
       </div>
     </footer>
