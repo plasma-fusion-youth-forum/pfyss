@@ -107,3 +107,8 @@ UI に関するドキュメントは、[こちら](https://silicon.createx.studi
 
 本ホームページのテンプレートは、Bootstrap5 をベースに作成されています。
 Bootstrap5 入門者は、[とほほの Bootstrap5 入門](https://www.tohoho-web.com/bootstrap5/index.html)を参考にしてください。
+
+### フォームの設定について
+
+本ホームページのフォームは、Google フォームを利用しています。
+HTML でデザインしたフォームと Google フォームの紐付けは、[こちら](https://zenn.dev/yurukei20/articles/9741118bfb5ee0)を参考にしてください。
