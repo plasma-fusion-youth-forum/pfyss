@@ -1,5 +1,19 @@
 /* Custom css for PFYSS HP */
 
+/* control images in carousel depending on a breakpoint */
+.carousel-imag {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/2;
+}
+
+@media (min-width: 992px) {
+  .carousel-imag {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 .teacher-card-img {
   width: 100%;
   object-fit: cover;
