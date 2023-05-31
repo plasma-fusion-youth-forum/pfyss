@@ -37,7 +37,7 @@ index.html をブラウザで開くと、ローカルで確認できます。
 │   ├── img
 │   └── js
 ├── forepast
-├── img
+├── teachers.json
 ├── index.html
 └── README.md
 ```
@@ -54,6 +54,7 @@ index.html をブラウザで開くと、ローカルで確認できます。
 
 サイトの基本となる画像ファイルを格納するディレクトリです。
 年に共通して使用する画像ファイルはここに格納します。
+なるべく容量の小さいものを使用してください。
 
 ### `assets/js`
 
@@ -65,10 +66,41 @@ index.html をブラウザで開くと、ローカルで確認できます。
 `2022`, `2023`といったディレクトリを作成し、その中に過去のトップページ`/index.html`, 画像ディレクトリ`/img`
 を格納します。
 
-### `img`
+### `teachers.json`
 
-現在のプラズマ・核融合若手夏の学校の HP に掲載する画像ファイルを格納するディレクトリです。
-年によって変わる画像ファイルはここに格納します。
+講師情報を格納する JSON ファイルです。
+データ構造は以下の通りです。
+
+```json
+[
+  {
+    "id": 1,  # 講師の ID 時間割のIDと紐付けるために使用します。
+    "name": "夏学 太郎",  # 講師の名前
+    "position": "准教授",  # 講師の役職
+    "affiliation": "夏学大",  # 講師の所属
+    "image": "http://photo.png",  # 講師の画像リンク先 (google driveに保存してある画像はのURL生成は以下を参照)
+    "links": [  #  講師のリンク情報
+      {
+        "type": "twitter",  # リンクの種類 (一般的なSNS名称が使えます)
+        "url": "https://twitter.com/natsugaku"  # リンク先
+      },
+      {
+        "type": "general",  # 研究室など
+        "url": "http://研究室/index.html"
+      },
+      {
+        "type": "personal",  # 個人サイトなど
+        "url": "https://個人サイト/"
+      }
+    ],
+    "title": "核融合の歴史について",  # 講演タイトル
+    "abstract": "核融合とはかくかくしかじか..."  # 講演概要
+  },
+  {...}
+]
+```
+
+対応した一般的な SNS 名称は[こちら](https://themes.getbootstrap.com/preview/?theme_id=104975)に記載されています。
 
 ### `index.html`
 
@@ -112,3 +144,9 @@ Bootstrap5 入門者は、[とほほの Bootstrap5 入門](https://www.tohoho-we
 
 本ホームページのフォームは、Google フォームを利用しています。
 HTML でデザインしたフォームと Google フォームの紐付けは、[こちら](https://zenn.dev/yurukei20/articles/9741118bfb5ee0)や[こちら](https://monomonotech.jp/kurage/memo/m220202_googleform_html.html)を参考にしてください。
+
+### 画像等のデータについて
+
+容量が大きい画像など Git で管理するのは難しいものは、フォーラムアカウントの Google Drive 内に保存し、リンクを貼ることで参照しています。
+リンクは、Google Drive 内のファイルを右クリックし、リンクを取得から取得できます。
+リンク生成法は、[こちら](https://qiita.com/TechnoKuRo/items/622c3dcc2ff3f7e09474#IMGタグで読ませる記事はあまたある)を参考にしてください。

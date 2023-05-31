@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "name": "片山 一成",
+    "position": "准教授",
+    "affiliation": "九大",
+    "image": "http://eche.kyushu-u.ac.jp/member/sf/AP_Katayama.png",
+    "links": [
+      {
+        "type": "general",
+        "url": "http://eche.kyushu-u.ac.jp/index.html"
+      },
+      {
+        "type": "instagram",
+        "url": "https://www.instagram.com/katayama_laboratory/"
+      }
+    ],
+    "title": "",
+    "abstract": ""
+  },
+  {
+    "id": 2,
+    "name": "唐橋 一浩",
+    "position": "特任教授",
+    "affiliation": "阪大",
+    "image": "http://www.camt.eng.osaka-u.ac.jp/hamaguchi/Members/images/karahashi.jpg",
+    "links": [
+      {
+        "type": "general",
+        "url": "http://www.camt.eng.osaka-u.ac.jp/hamaguchi/index.html"
+      },
+      {
+        "type": "personal",
+        "url": "https://rd.iai.osaka-u.ac.jp/ja/9bda2d6f2049f758.html"
+      }
+    ],
+    "title": "",
+    "abstract": ""
+  },
+  {
+    "id": 3,
+    "name": "小林 達也",
+    "position": "助教",
+    "affiliation": "NIFS",
+    "image": "https://drive.google.com/uc?id=1XfKnYCP4w3kxttdk1q3WdKA4F_cNzrNO",
+    "links": [
+      {
+        "type": "general",
+        "url": "https://soken.nifs.ac.jp/archives/faculty/t_kobayashi"
+      },
+      {
+        "type": "personal",
+        "url": "https://www-app.nifs.ac.jp/cgi-bin/people/member.cgi?id=kobayashi_tatsuya"
+      }
+    ],
+    "title": "",
+    "abstract": ""
+  },
+  {
+    "id": 4,
+    "name": "小菅 祐輔",
+    "position": "准教授",
+    "affiliation": "九大",
+    "image": "https://drive.google.com/uc?id=1ZWK8JgRZVqlR-cvEvyRkUyEO8WvB2szw",
+    "links": [
+      {
+        "type": "general",
+        "url": "https://sites.google.com/site/kosugagroup/"
+      }
+    ],
+    "title": "",
+    "abstract": ""
+  },
+  {
+    "id": 5,
+    "name": "辻井 直人",
+    "position": "講師",
+    "affiliation": "東大",
+    "image": "https://drive.google.com/uc?id=1okXTPkCf5u_Ba8slRO_n5QEDjbgiyJQC",
+    "links": [
+      {
+        "type": "general",
+        "url": "http://fusion.k.u-tokyo.ac.jp"
+      },
+      {
+        "type": "personal",
+        "url": "https://www.k.u-tokyo.ac.jp/gsfs/faculty/naoto_tsujii/"
+      }
+    ],
+    "title": "核融合プラズマの高周波加熱・電流駆動",
+    "abstract": "波動物理の基礎(誘電率と分散関係、波動の吸収、モード変換)から波動・粒子相互作用(準線形理論、軌道平均運動論)までを、主に核融合プラズマの加熱・電流駆動を具体例としながら解説する。"
+  },
+  {
+    "id": 6,
+    "name": "原 聡",
+    "position": "准教授",
+    "affiliation": "阪大",
+    "image": "https://drive.google.com/uc?id=1tujWxy5sWm6qrQAhl-1_ZiCzDTvMfaE1",
+    "links": [
+      {
+        "type": "general",
+        "url": "http://www.ar.sanken.osaka-u.ac.jp"
+      },
+      {
+        "type": "personal",
+        "url": "https://sites.google.com/site/sato9hara/home?pli=1"
+      }
+    ],
+    "title": "",
+    "abstract": "本講義では機械学習、特に教師ありの基本を学びます。具体的には教師あり学習の概要、代表的なモデル、モデルの訓練と評価を扱います。また、統計的学習理論の基本にも簡単に触れる予定です。"
+  },
+  {
+    "id": 7,
+    "name": "政田 洋平",
+    "position": "准教授",
+    "affiliation": "福岡大",
+    "image": "https://drive.google.com/uc?id=1-1BYJYmYnzyq17qJpyZ-NzoMeTl6rfG4",
+    "links": [
+      {
+        "type": "general",
+        "url": "https://www.cis.fukuoka-u.ac.jp/~y.masada.xz/"
+      },
+      {
+        "type": "personal",
+        "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201001015495452472"
+      }
+    ],
+    "title": "",
+    "abstract": ""
+  },
+  {
+    "id": 8,
+    "name": "村山 真道",
+    "position": "研究員",
+    "affiliation": "QST",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg",
+    "links": [
+      {
+        "type": "personal",
+        "url": "https://researchmap.jp/murayama.masamichi"
+      },
+      {
+        "type": "twitter",
+        "url": "https://twitter.com/mugi_orinal?s=20"
+      }
+    ],
+    "title": "",
+    "abstract": ""
+  },
+  {
+    "id": 9,
+    "name": "森 芳孝",
+    "position": "准教授",
+    "affiliation": "光産業創生大学院大",
+    "image": "https://drive.google.com/uc?id=1Xt7xXoSoFWqMse1HqgC0QCcZuOq2pxsn",
+    "links": [
+      {
+        "type": "general",
+        "url": "https://www.gpi.ac.jp/research/energy/professor-13/"
+      },
+      {
+        "type": "personal",
+        "url": "https://researchmap.jp/read0074936"
+      },
+      {
+        "type": "twitter",
+        "url": "https://twitter.com/moriyn?s=20"
+      }
+    ],
+    "title": "レーザー方式慣性核融合の概要",
+    "abstract": "慣性閉じ込め核融合では、核燃焼の点火条件を達成するために、短時間に非常に大きなパワーを燃料に注入します。パワー注入の有力な候補として、ハイパワーレーザー及びパルスパワー、そしてパルスパワー技術を用いた大電流荷電粒子ビームが挙げられます。本講義では、ローソンの考察に基づく制御核融合成立の条件から出発し、レーザー方式慣性核融合炉の仕組みと研究開発の状況を概説します。"
+  }
+]
