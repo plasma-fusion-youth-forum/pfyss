@@ -9,6 +9,28 @@
 [https://pfyss.org](https://pfyss.org/)
 にて公開しています。
 
+## ライセンス
+
+このリポジトリのソースコードは MIT ライセンスのもとで公開していますが、テンプレートは[この Bootstrap Theme](https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/)の Standard License に従っています。
+
+## 連絡先
+
+何かありましたら、[こちら](https://pfyss.org/contact.html)からご連絡ください。
+
+## プラズマ・核融合若手夏の学校について
+
+プラズマ・核融合 若手夏の学校は、日本の学生・若手研究員が集い、プラズマ・核融合研究の最前線を学ぶことを目的とした学校です。
+2018 年の第 57 回を最後に一度途絶えていましたが、2021 年から新たな体制のもと第 0 回として再スタートしました。
+詳しくは[こちら](https://pfyss.org/about.html)をご覧ください。
+
+## 運営元 について
+
+プラズマ・核融合若手夏の学校の HP は、[プラズマ・核融合 若手フォーラム](https://www.jspf.or.jp/wakate/)が運営しています。
+
+---
+
+# 開発者向け情報
+
 ## ローカルでの確認方法
 
 ### 1. リポジトリをクローンする
@@ -63,12 +85,12 @@ index.html をブラウザで開くと、ローカルで確認できます。
 ### `forepast`
 
 過去のプラズマ・核融合若手夏の学校の HP を格納するディレクトリです。
-`2022`, `2023`といったディレクトリを作成し、その中に過去のトップページ`/index.html`, 画像ディレクトリ`/img`
-を格納します。
+`2022/`, `2023/`といったディレクトリを作成し、その中に過去のトップページ`index.html`, 講師情報 `teachers.json`
+などを格納します。
 
 ### `teachers.json`
 
-講師情報を格納する JSON ファイルです。
+講師情報を格納する JSON ファイルです。このデータを元に動的に HTML を生成しています。
 データ構造は以下の通りです。
 
 ```json
@@ -78,15 +100,15 @@ index.html をブラウザで開くと、ローカルで確認できます。
     "name": "夏学 太郎",  # 講師の名前
     "position": "准教授",  # 講師の役職
     "affiliation": "夏学大",  # 講師の所属
-    "image": "http://photo.png",  # 講師の画像リンク先 (google driveに保存してある画像はのURL生成は以下を参照)
+    "image": "https://photo.png",  # 講師の画像リンク先 (google driveに保存してある画像のURL生成は後述)
     "links": [  #  講師のリンク情報
       {
         "type": "twitter",  # リンクの種類 (一般的なSNS名称が使えます)
         "url": "https://twitter.com/natsugaku"  # リンク先
       },
       {
-        "type": "general",  # 研究室など
-        "url": "http://研究室/index.html"
+        "type": "general",  # 研究室HPなど
+        "url": "https://研究室/index.html"
       },
       {
         "type": "personal",  # 個人サイトなど
@@ -110,42 +132,22 @@ index.html をブラウザで開くと、ローカルで確認できます。
 
 このファイルです。
 
-## ライセンス
-
-このリポジトリのソースコードは MIT ライセンスのもとで公開していますが、テンプレートは[この Bootstrap Theme](https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/)の Standard License に従っています。
-
-## 連絡先
-
-何かありましたら、[こちら](https://pfyss.org/contact/)からご連絡ください。
-
-## プラズマ・核融合若手夏の学校について
-
-プラズマ・核融合 若手夏の学校は、日本の学生・若手研究員が集い、プラズマ・核融合研究の最前線を学ぶことを目的とした学校です。
-2018 年の第 57 回を最後に一度途絶えていましたが、2021 年から新たな体制のもと第 0 回として再スタートしました。
-詳しくは[こちら](https://pfyss.org/forepast/)をご覧ください。
-
-## プラズマ・核融合若手夏の学校の HP について
-
-プラズマ・核融合若手夏の学校の HP は、[プラズマ・核融合 若手フォーラム](https://www.jspf.or.jp/wakate/)が運営しています。
-
-## 開発者向け情報
-
-### UI ドキュメント
+## UI ドキュメント
 
 本ホームページは、[Silicon Bootstrap Theme](https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/)をベースに作成しています。
 UI に関するドキュメントは、[こちら](https://silicon.createx.studio/components/typography.html)を参照してください。
 
-### Bootstrap5 について
+## Bootstrap5 について
 
 本ホームページのテンプレートは、Bootstrap5 をベースに作成されています。
 Bootstrap5 入門者は、[とほほの Bootstrap5 入門](https://www.tohoho-web.com/bootstrap5/index.html)を参考にしてください。
 
-### フォームの設定について
+## フォームの設定について
 
 本ホームページのフォームは、Google フォームを利用しています。
 HTML でデザインしたフォームと Google フォームの紐付けは、[こちら](https://zenn.dev/yurukei20/articles/9741118bfb5ee0)や[こちら](https://monomonotech.jp/kurage/memo/m220202_googleform_html.html)を参考にしてください。
 
-### 画像等のデータについて
+## 画像等のデータについて
 
 容量が大きい画像など Git で管理するのは難しいものは、フォーラムアカウントの Google Drive 内に保存し、リンクを貼ることで参照しています。
 リンクは、Google Drive 内のファイルを右クリックし、リンクを取得から取得できます。
