@@ -1,3 +1,6 @@
+// このファイルでは、teachers.jsonを読み込んで、様々な動的処理を行っています。
+
+// 先生のセクションを生成する関数
 function generateTeacherSection() {
   // link用アイコンのオブジェクト
   const linkIcons = {
@@ -23,7 +26,7 @@ function generateTeacherSection() {
     // 全てのデータを受信・正常に処理された場合
     if (request.readyState == 4 && request.status == 200) {
       // JSONデータを変換
-      let json = JSON.parse(request.responseText);
+      const json = JSON.parse(request.responseText);
 
       // 生成したHTMLを入れておく変数
       let html = "";
@@ -31,7 +34,7 @@ function generateTeacherSection() {
       // 先生の数だけfor分で回す
       for (let i = 0; i < json.length; i++) {
         // 先生を1人取り出す
-        let teacher = json[i];
+        const teacher = json[i];
 
         // 前半html
         html +=
@@ -90,10 +93,72 @@ function generateTeacherSection() {
   };
 }
 
+// 講義の時間割の内容を生成する関数
+function generateLectureSchedule() {
+  // XMLHttpRequestインスタンスを作成
+  let request = new XMLHttpRequest();
+
+  // JSONファイルが置いてあるパスを記述
+  request.open("GET", "teachers.json");
+  request.send();
+
+  // JSON読み込み時の処理
+  request.onreadystatechange = () => {
+    // 全てのデータを受信・正常に処理された場合
+    if (request.readyState == 4 && request.status == 200) {
+      // JSONデータを変換
+      const json = JSON.parse(request.responseText);
+
+      // 先生の数だけfor分で回す
+      for (let i = 0; i < json.length; i++) {
+        // 生成したHTMLを入れておく変数
+        let html = "";
+
+        // 先生を1人取り出す
+        const teacher = json[i];
+
+        // 対応する講義のブロック要素を取り出す
+        let lectureBlock = document.getElementById("lecture" + teacher.id);
+
+        // html生成
+        html +=
+          "<h5>" +
+          teacher.title +
+          "</h5>" +
+          '<p class="mb-4">' +
+          teacher.abstract +
+          "</p>" +
+          '<div class="d-flex align-items-center">' +
+          '<img src="' +
+          teacher.image +
+          '" class="rounded-circle me-3" width="48" alt="' +
+          teacher.name +
+          '"/>' +
+          '<div class="ps-3">' +
+          '<h6 class="fw-semibold mb-1">' +
+          teacher.name +
+          "</h6>" +
+          '<p class="fs-sm text-muted mb-0">' +
+          teacher.position +
+          ", " +
+          teacher.affiliation +
+          "</div>" +
+          "</div>";
+
+        // 講義のブロック要素にHTMLを挿入
+        lectureBlock.innerHTML = html;
+      }
+    }
+  };
+}
+
 // DOMが読み込まれたときに実行する処理
 // loadがトリガーだと画像が読み込まれるのが遅れるため、
 // DOMContentLoadedをトリガーにしている
 window.addEventListener("DOMContentLoaded", function () {
   // 先生のセクションを生成
   generateTeacherSection();
+
+  // 講義の時間割の内容を生成
+  generateLectureSchedule();
 });

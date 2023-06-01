@@ -4,7 +4,7 @@
     "name": "片山 一成",
     "position": "准教授",
     "affiliation": "九大",
-    "image": "http://eche.kyushu-u.ac.jp/member/sf/AP_Katayama.png",
+    "image": "https://drive.google.com/uc?id=1ZEKJNrb-oxngnDHLP6yf32WOY8lF0tFM",
     "links": [
       {
         "type": "general",
@@ -15,8 +15,8 @@
         "url": "https://www.instagram.com/katayama_laboratory/"
       }
     ],
-    "title": "",
-    "abstract": ""
+    "title": "核融合炉トリチウム研究",
+    "abstract": "DT核融合炉は、トリチウムを消費しながら生産し続けるという極めて高度な技術を必要とする巨大なトリチウムプラントです。本講義では、燃料トリチウムに関わる課題について改めて皆さんと一緒に考えてみたいと思います。"
   },
   {
     "id": 2,
@@ -34,7 +34,7 @@
         "url": "https://rd.iai.osaka-u.ac.jp/ja/9bda2d6f2049f758.html"
       }
     ],
-    "title": "",
+    "title": "(仮) 半導体関連",
     "abstract": ""
   },
   {
@@ -53,7 +53,7 @@
         "url": "https://www-app.nifs.ac.jp/cgi-bin/people/member.cgi?id=kobayashi_tatsuya"
       }
     ],
-    "title": "",
+    "title": "(仮) プラズマ計測",
     "abstract": ""
   },
   {
@@ -68,7 +68,7 @@
         "url": "https://sites.google.com/site/kosugagroup/"
       }
     ],
-    "title": "",
+    "title": "(仮) 乱流理論",
     "abstract": ""
   },
   {
@@ -106,7 +106,7 @@
         "url": "https://sites.google.com/site/sato9hara/home?pli=1"
       }
     ],
-    "title": "",
+    "title": "(仮) データ駆動",
     "abstract": "本講義では機械学習、特に教師ありの基本を学びます。具体的には教師あり学習の概要、代表的なモデル、モデルの訓練と評価を扱います。また、統計的学習理論の基本にも簡単に触れる予定です。"
   },
   {
@@ -125,7 +125,7 @@
         "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201001015495452472"
       }
     ],
-    "title": "",
+    "title": "(仮) 宇宙プラズマ・太陽ダイナモ",
     "abstract": ""
   },
   {
@@ -144,7 +144,7 @@
         "url": "https://twitter.com/mugi_orinal?s=20"
       }
     ],
-    "title": "",
+    "title": "(仮) QST・JT-60SAの紹介",
     "abstract": ""
   },
   {
