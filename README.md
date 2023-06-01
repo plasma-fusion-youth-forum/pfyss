@@ -100,7 +100,7 @@ index.html をブラウザで開くと、ローカルで確認できます。
 ]
 ```
 
-対応した一般的な SNS 名称は[こちら](https://themes.getbootstrap.com/preview/?theme_id=104975)に記載されています。
+対応している一般的な SNS 名称は[こちら](https://silicon.createx.studio/components/social-buttons.html)から。
 
 ### `index.html`
 
