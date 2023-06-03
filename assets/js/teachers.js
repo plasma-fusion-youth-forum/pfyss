@@ -120,6 +120,10 @@ function generateLectureSchedule() {
         // 対応する講義のブロック要素を取り出す
         let lectureBlock = document.getElementById("lecture" + teacher.id);
 
+        if (lectureBlock == null) {
+          continue;
+        }
+
         // html生成
         html +=
           "<h5>" +
