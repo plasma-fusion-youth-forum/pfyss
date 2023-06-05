@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+    <title>第1回 プラズマ・核融合 若手夏の学校</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="プラズマ・核融合 若手夏の学校" />
+    <meta
+      name="keywords"
+      content="プラズマ, 核融合, 若手, 夏の学校, 磁場閉じ込め, トカマク, ヘリカル, plasma, nuclear, fusion, summer school, pfyss, tokamak, helical, magnet, laser"
+    />
+    <meta name="author" content="プラズマ・核融合 若手フォーラム" />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#6366f1" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#080032" />
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" media="screen" href="/assets/css/theme.css" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" media="screen" href="/assets/css/custom.css" />
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all 0.4s 0.2s ease-in-out;
+        transition: all 0.4s 0.2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
+        opacity: 0;
+      }
+
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: 0.6;
+      }
+
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: 0.75rem;
+        vertical-align: text-bottom;
+        border: 0.15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner 0.75s linear infinite;
+        animation: spinner 0.75s linear infinite;
+      }
+
+      .dark-mode .page-spinner {
+        border-color: rgba(255, 255, 255, 0.4);
+        border-right-color: transparent;
+      }
+
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem("mode"),
+        root = document.getElementsByTagName("html")[0];
+      if (mode !== null && mode === "dark") {
+        root.classList.add("dark-mode");
+      } else {
+        root.classList.remove("dark-mode");
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector(".page-loading");
+          preloader.classList.remove("active");
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+
+    <!-- intitial events after htmls loaded -->
+    <script>
+      window.addEventListener(
+        "load",
+        function () {
+          let bg_sponser = document.getElementById("bg-sponser"),
+            mode = window.localStorage.getItem("mode");
+          if (mode !== null && mode === "dark") {
+            bg_sponser.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+          } else {
+            bg_sponser.style.backgroundColor = "rgba(255, 255, 255, 0.65)";
+          }
+        },
+        false
+      );
+    </script>
+
+    <!-- ダークモード切り替えイベントで実行されるスクリプト -->
+    <script>
+      window.addEventListener("load", function () {
+        // チェックボックスの取得
+        const btn = document.querySelector("#theme-mode");
+        // sponsorの背景elementを取得
+        let bg_sponser = document.getElementById("bg-sponser");
+        // チェックした時の挙動
+        btn.addEventListener("change", () => {
+          if (btn.checked == true) {
+            // ダークモードの挙動
+            bg_sponser.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+          } else {
+            // ライトモード時の挙動
+            bg_sponser.style.backgroundColor = "rgba(255, 255, 255, 0.65)";
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <!-- Body -->
+
+  <body>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+      <!-- Navbar -->
+      <!-- Remove "fixed-top" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+        <div class="container px-3">
+          <a href="/index.html" class="navbar-brand pe-3">
+            <img src="/assets/img/logo.svg" width="47" alt="" />
+            プラズマ・核融合 若手夏の学校
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                  <div class="dropdown-menu">
+                    <div class="d-lg-flex pt-lg-3">
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">概要</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li>
+                            <a href="/about.html" class="dropdown-item py-1">若手夏の学校とは</a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.jspf.or.jp/wakate/#Committee"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="dropdown-item py-1"
+                              >運営委員紹介
+                              <i class="bx bx-link-external"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        <h6 class="px-3 mb-2">場所</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li>
+                            <a href="#venue" class="dropdown-item py-1">会場</a>
+                          </li>
+                          <li>
+                            <a href="#venue" class="dropdown-item py-1">エクスカージョン</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">参加申込み</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li>
+                            <a href="#application" class="dropdown-item py-1">募集概要</a>
+                          </li>
+                        </ul>
+                        <h6 class="px-3 mb-2">連絡</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li>
+                            <a href="/contact.html" class="dropdown-item py-1"> お問い合わせ</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Archives</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="/picture-book.html" class="dropdown-item">装置・コード図鑑</a>
+                    </li>
+                    <li>
+                      <a href="/videos.html" class="dropdown-item">講演動画</a>
+                    </li>
+                    <li>
+                      <a href="/forepast/index.html" class="dropdown-item">夏学の歴史</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input id="theme-mode" type="checkbox" class="form-check-input" />
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Video (or images) + Title split section -->
+      <section class="container-fluid position-relative px-0 pt-5 mt-3 mt-lg-4">
+        <div class="row g-0">
+          <!-- Carousel column -->
+          <div
+            id="carouselTopFade"
+            class="carousel slide carousel-fade col-xl-7 col-lg-6 pe-lg-5 pt-4 pt-sm-0"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner h-100">
+              <div class="carousel-item h-100 active">
+                <img
+                  src="https://098free.com/img/tradition/south/01IMG_5565_m.jpg"
+                  class="carousel-img"
+                  alt="沖縄写真1"
+                />
+              </div>
+              <div class="carousel-item h-100">
+                <img
+                  src="https://098free.com/img/activity/north/038G8A0442_m.jpg"
+                  class="carousel-img"
+                  alt="沖縄写真2"
+                />
+              </div>
+              <div class="carousel-item h-100">
+                <img src="https://098free.com/img/plant/miyako/038G8A3402_m.jpg" class="carousel-img" alt="沖縄写真3" />
+              </div>
+              <div class="carousel-item h-100">
+                <img src="https://098free.com/img/nature/miyako/03IMG3572_m.jpg" class="carousel-img" alt="沖縄写真4" />
+              </div>
+              <div class="carousel-item h-100">
+                <img src="https://098free.com/img/spot/naha/02DSC04696_m.jpg" class="carousel-img" alt="沖縄写真5" />
+              </div>
+            </div>
+          </div>
+          <!-- Title column -->
+          <div class="col-xl-5 col-lg-6 position-relative py-5">
+            <img
+              src="/assets/img/hero-bg.png"
+              class="position-absolute top-50 translate-middle-y ms-lg-n4"
+              width="866"
+              alt="Background shapes"
+            />
+            <div
+              class="position-relative zindex-5 text-center text-lg-start px-3 px-lg-0 py-xl-4 py-xxl-5 mt-lg-3 mx-auto mx-lg-0"
+              style="max-width: 530px"
+              data-aos="fade-up"
+            >
+              <h2 class="h3 text-primary">Aug. 29 &ndash; Sep. 1, 2023</h2>
+              <h2 class="display-5 pb-lg-0 mb-0">第1回 プラズマ・核融合</h2>
+              <h1 class="display-1 pb-lg-3 mb-3">若手夏の学校</h1>
+              <div class="d-flex justify-content-center justify-content-lg-start text-start mb-2">
+                <i class="bx bx-map fs-4 text-primary me-2"></i>
+                <div class="fs-xl">名護青少年の家,<br />沖縄県</div>
+              </div>
+              <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start py-4 py-lg-5">
+                <a href="#application" class="btn btn-primary shadow-primary btn-lg me-sm-3 me-xl-4 mb-3">
+                  参加申込み
+                </a>
+                <a
+                  href="https://calendar.google.com/calendar/u/0?cid=NjNiMWY1NGRmZjFiNTNhZmE1MWY4N2I1MmZjZGIwZGUxYjkzODA0MmY4MDJjZjk2MWM5ZjRmYzFkMzY0MmQ2YUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline-primary btn-lg mb-3"
+                >
+                  <i class="bx bx-calendar-check fs-xl me-2 ms-n1"></i>
+                  Add to calendar
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sponsors -->
+      <section id="sponsors" class="position-relative bg-dark py-5">
+        <div id="bg-sponser" class="position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="container position-relative zindex-5 pt-1 pt-md-2 pb-lg-2 pt-lg-4">
+          <h2 class="h3 text-center text-lg-start mb-4 mb-lg-5">Sponsored by:</h2>
+          <!-- slidePerView を最大brand数に合わせるときれいに中央に整列される -->
+          <div
+            class="swiper ms-xxl-n5 me-xxl-n4"
+            data-swiper-options='{
+                    "slidesPerView": 1,
+                    "spaceBetween": 24,
+                    "pagination": {
+                        "el": ".swiper-pagination",
+                        "clickable": true
+                    },
+                    "breakpoints": {
+                        "350": {
+                            "slidesPerView": 2
+                        },
+                        "600": {
+                            "slidesPerView": 3
+                        },
+                        "650": {
+                            "slidesPerView": 3
+                        },
+                        "900": {
+                            "slidesPerView": 4
+                        },
+                        "1100": {
+                            "slidesPerView": 4
+                        }
+                    }
+                }'
+          >
+            <div class="swiper-wrapper">
+              <!-- Item -->
+              <div class="swiper-slide">
+                <a href="https://www.ex-fusion.com/ja" target="_blank" rel="noopener noreferrer" class="d-block py-3">
+                  <img
+                    src="/assets/img/brands/EX_fusion.png"
+                    class="d-block mx-auto"
+                    width="250"
+                    alt="Brand"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                  />
+                </a>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <a href="https://www.helicalfusion.com" target="_blank" rel="noopener noreferrer" class="d-block py-3">
+                  <img
+                    src="/assets/img/brands/helical fusion.png"
+                    class="d-block mx-auto"
+                    width="280"
+                    alt="Brand"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  />
+                </a>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <a href="https://kyotofusioneering.com" target="_blank" rel="noopener noreferrer" class="d-block py-3">
+                  <img
+                    src="/assets/img/brands/KF_logo2.svg"
+                    class="d-block mx-auto"
+                    width="170"
+                    alt="Brand"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  />
+                </a>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <a href="https://www.kinzoku.co.jp" target="_blank" rel="noopener noreferrer" class="d-block py-3">
+                  <img
+                    src="/assets/img/brands/MTC(metaltech).png"
+                    class="d-block mx-auto"
+                    width="170"
+                    alt="Brand"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Pagination (bullets) -->
+            <div class="swiper-pagination position-relative pt-2 mt-4"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teachers -->
+      <section id="teachers" class="container py-5 mt-2 mt-md-4 mt-lg-5">
+        <div class="d-md-flex align-items-center justify-content-between text-center text-md-start pt-md-1">
+          <h2 class="h1 mb-4 mb-md-0 me-md-3">Teachers</h2>
+        </div>
+        <div id="teachers-row" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4 mt-2 mt-lg-4">
+          <!-- ========================================================================================= -->
+          <!-- この部分は '/assets/js/teachers.js' によって teachers.json データを読み取り、動的に生成している。 -->
+          <!-- ========================================================================================= -->
+        </div>
+      </section>
+
+      <!-- Schedule -->
+      <section id="schedule" class="container py-5">
+        <div class="row mt-xl-2 mb-xl-3 pb-3 py-md-4 py-lg-5">
+          <div class="col-12">
+            <h2 class="h1 text-center text-sm-start pb-2 pb-lg-0 mb-4 mb-lg-5">Schedule</h2>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <!-- 日付 Nav tabs -->
+            <div class="nav flex-sm-nowrap flex-lg-column nav-tabs" role="tablist" aria-orientation="vertical">
+              <a
+                href="#day-1"
+                class="nav-link d-block w-100 rounded-3 p-4 p-xl-5 me-2 me-sm-3 me-lg-0 mb-3 mb-sm-0 mb-lg-3 active"
+                id="day-1-tab"
+                data-bs-toggle="tab"
+                role="tab"
+                aria-controls="day-1"
+                aria-selected="true"
+                onclick="AOS.refresh();"
+              >
+                <div class="fs-xl">Day 1</div>
+                <div class="fs-3 fw-bold">Aug 29, 2023</div>
+              </a>
+              <a
+                href="#day-2"
+                class="nav-link d-block w-100 rounded-3 p-4 p-xl-5 me-2 me-sm-3 me-lg-0 mb-3 mb-sm-0 mb-lg-3"
+                id="day-2-tab"
+                data-bs-toggle="tab"
+                role="tab"
+                aria-controls="day-2"
+                aria-selected="false"
+                onclick="AOS.refresh();"
+              >
+                <div class="fs-xl">Day 2</div>
+                <div class="fs-3 fw-bold">Aug 30, 2023</div>
+              </a>
+              <a
+                href="#day-3"
+                class="nav-link d-block w-100 rounded-3 p-4 p-xl-5 me-2 me-sm-3 me-lg-0 mb-3 mb-sm-0 mb-lg-3"
+                id="day-3-tab"
+                data-bs-toggle="tab"
+                role="tab"
+                aria-controls="day-3"
+                aria-selected="false"
+                onclick="AOS.refresh();"
+              >
+                <div class="fs-xl">Day 3</div>
+                <div class="fs-3 fw-bold">Aug 31, 2023</div>
+              </a>
+              <a
+                href="#day-4"
+                class="nav-link d-block w-100 rounded-3 p-4 p-xl-5 me-2 me-sm-0"
+                id="day-4-tab"
+                data-bs-toggle="tab"
+                role="tab"
+                aria-controls="day-4"
+                aria-selected="false"
+                onclick="AOS.refresh();"
+              >
+                <div class="fs-xl">Day 4</div>
+                <div class="fs-3 fw-bold">Sep 1, 2023</div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 offset-lg-1">
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <!-- Day 1 schedule -->
+              <div class="tab-pane fade show active" id="day-1" role="tabpanel" aria-labelledby="day-1-tab">
+                <div class="border-bottom pb-4">
+                  <div class="row pb-1 pb-xl-3">
+                    <div class="col-sm-4 mb-0 mb-sm-0">
+                      <div class="h5 mb-1">11:00 am &ndash; 13:00 pm</div>
+                      <p class="text-muted mb-0">August 29th</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5 class="mb-0">参加受付</h5>
+                      <p class="mb-0">那覇空港にて受付</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row pb-1 pb-xl-3">
+                    <div class="col-sm-4 mb-0 mb-sm-0">
+                      <div class="h5 mb-1">13:00 &ndash; 14:30 pm</div>
+                      <p class="text-muted mb-0">August 29th</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5 class="mb-0">会場移動</h5>
+                      <p class="mb-0">那覇空港からバスで会場まで移動</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row pb-1 pb-xl-3">
+                    <div class="col-sm-4 mb-0 mb-sm-0">
+                      <div class="h5 mb-1">14:30 &ndash; 14:45 pm</div>
+                      <p class="text-muted mb-0">August 29th</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5 class="mb-0">開校式・ガイダンス</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">14:45 &ndash; 16:15 pm</div>
+                      <p class="text-muted mb-2 mb-sm-4">August 29th</p>
+                      <span class="badge bg-warning shadow-warning fs-sm">Lecture</span>
+                    </div>
+                    <!-- Lecture 1 のブロック -->
+                    <div id="lecture1" class="col-sm-8">
+                      <h5>講義1</h5>
+                      <p class="mb-4">概要</p>
+                      <div class="d-flex align-items-center">
+                        <img src="/assets/img/unknown_person.jpg" class="rounded-circle" width="48" alt="" />
+                        <div class="ps-3">
+                          <h6 class="fw-semibold mb-1">氏名</h6>
+                          <p class="fs-sm text-muted mb-0">職位, 所属</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">16:30 &ndash; 18:00 pm</div>
+                      <p class="text-muted mb-2 mb-sm-4">August 29th</p>
+                      <span class="badge bg-warning shadow-warning fs-sm">Lecture</span>
+                    </div>
+                    <!-- Lecture 2 のブロック -->
+                    <div id="lecture2" class="col-sm-8">
+                      <h5>講義2</h5>
+                      <p class="mb-4">概要</p>
+                      <div class="row row-cols-1 row-cols-md-2 g-3">
+                        <div class="col">
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/img/unknown_person.jpg" class="rounded-circle" width="48" alt="" />
+                            <div class="ps-3">
+                              <h6 class="fw-semibold mb-1">氏名</h6>
+                              <p class="fs-sm text-muted mb-0">職位, 所属</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">18:15 &ndash; 19:15 pm</div>
+                      <p class="text-muted mb-0">August 29th</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5 class="mb-0">夕食</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">19:15 &ndash; 22:00 pm</div>
+                      <p class="text-muted mb-0 mb-sm-4">August 29th</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5>ナイトセッション</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Day 1 schedule -->
+
+              <!-- Day 2 schedule -->
+              <div class="tab-pane fade" id="day-2" role="tabpanel" aria-labelledby="day-2-tab">
+                <div class="border-bottom pb-4">
+                  <div class="row pb-1 pb-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">7:30 &ndash; 8:30 am</div>
+                      <p class="text-muted mb-0">August 30th</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5 class="mb-0">朝食</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">8:45 &ndash; 10:15 am</div>
+                      <p class="text-muted mb-2 mb-sm-4">August 30th</p>
+                      <span class="badge bg-warning shadow-warning fs-sm">Lecture</span>
+                    </div>
+                    <!-- Lecture 3 のブロック -->
+                    <div id="lecture3" class="col-sm-8">
+                      <h5>講義3</h5>
+                      <p class="mb-4">概要</p>
+                      <div class="row row-cols-1 row-cols-md-2 g-3">
+                        <div class="col">
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/img/unknown_person.jpg" class="rounded-circle" width="48" alt="" />
+                            <div class="ps-3">
+                              <h6 class="fw-semibold mb-1">氏名</h6>
+                              <p class="fs-sm text-muted mb-0">職位, 所属</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">10:30 am &ndash; 12:00 pm</div>
+                      <p class="text-muted mb-2 mb-sm-4">August 30th</p>
+                      <span class="badge bg-warning shadow-warning fs-sm">Lecture</span>
+                    </div>
+                    <!-- Lecture 4 のブロック -->
+                    <div id="lecture4" class="col-sm-8">
+                      <h5>講義4</h5>
+                      <p class="mb-4">概要</p>
+                      <div class="d-flex align-items-center">
+                        <img src="/assets/img/unknown_person.jpg" class="rounded-circle" width="48" alt="" />
+                        <div class="ps-3">
+                          <h6 class="fw-semibold mb-1">氏名</h6>
+                          <p class="fs-sm text-muted mb-0">職位, 所属</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">12:00 &ndash; 13:00 pm</div>
+                      <p class="text-muted mb-0">August 30th</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5 class="mb-0">昼食</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">13:00 &ndash; 14:30 pm</div>
+                      <p class="text-muted mb-2 mb-sm-4">August 30th</p>
+                      <span class="badge bg-warning shadow-warning fs-sm">Lecture</span>
+                    </div>
+                    <!-- Lecture 5 のブロック -->
+                    <div id="lecture5" class="col-sm-8">
+                      <h5>講義5</h5>
+                      <p class="mb-4">概要</p>
+                      <div class="d-flex align-items-center">
+                        <img src="/assets/img/unknown_person.jpg" class="rounded-circle" width="48" alt="" />
+                        <div class="ps-3">
+                          <h6 class="fw-semibold mb-1">氏名</h6>
+                          <p class="fs-sm text-muted mb-0">職位, 所属</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">14:30 &ndash; 16:00 pm</div>
+                      <p class="text-muted mb-2 mb-sm-4">August 30th</p>
+                      <span class="badge bg-warning shadow-warning fs-sm">Lecture</span>
+                    </div>
+                    <!-- Lecture 6 のブロック -->
+                    <div id="lecture6" class="col-sm-8">
+                      <h5>講義6</h5>
+                      <p class="mb-4">概要</p>
+                      <div class="d-flex align-items-center">
+                        <img src="/assets/img/unknown_person.jpg" class="rounded-circle" width="48" alt="" />
+                        <div class="ps-3">
+                          <h6 class="fw-semibold mb-1">氏名</h6>
+                          <p class="fs-sm text-muted mb-0">職位, 所属</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">16:15 &ndash; 17:45 pm</div>
+                      <p class="text-muted mb-2 mb-sm-4">August 30th</p>
+                      <span class="badge bg-info shadow-info fs-sm">Poster</span>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5>ポスターセッション1</h5>
+                      <p class="mb-4">グループ１がポスター発表を行う</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">18:00 &ndash; 19:00 pm</div>
+                      <p class="text-muted mb-0">August 30th</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5 class="mb-0">夕食</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">19:00 &ndash; 20:30 pm</div>
+                      <p class="text-muted mb-2 mb-sm-4">August 30th</p>
+                      <span class="badge bg-info shadow-info fs-sm">Poster</span>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5>ポスターセッション2</h5>
+                      <p class="mb-4">グループ２がポスター発表を行う</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <div class="row pt-1 pt-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">20:30 &ndash; 22:00 pm</div>
+                      <p class="text-muted mb-0">August 30th</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5 class="mb-0">ナイトセッション</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Day 2 schedule -->
+
+              <!-- Day 3 -->
+              <div class="tab-pane fade" id="day-3" role="tabpanel" aria-labelledby="day-3-tab">
+                <div class="border-bottom pb-4">
+                  <div class="row pb-1 pb-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">7:30 &ndash; 8:30 am</div>
+                      <p class="text-muted mb-0">August 31st</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5 class="mb-0">朝食</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">8:45 &ndash; 10:15 am</div>
+                      <p class="text-muted mb-2 mb-sm-4">August 31st</p>
+                      <span class="badge bg-warning shadow-warning fs-sm">Lecture</span>
+                    </div>
+                    <!-- Lecture 7 のブロック -->
+                    <div id="lecture7" class="col-sm-8">
+                      <h5>講義7</h5>
+                      <p class="mb-4">概要</p>
+                      <div class="row row-cols-1 row-cols-md-2 g-3">
+                        <div class="col">
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/img/unknown_person.jpg" class="rounded-circle" width="48" alt="" />
+                            <div class="ps-3">
+                              <h6 class="fw-semibold mb-1">氏名</h6>
+                              <p class="fs-sm text-muted mb-0">職位, 所属</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">10:30 am &ndash; 12:00 pm</div>
+                      <p class="text-muted mb-2 mb-sm-4">August 31st</p>
+                      <span class="badge bg-primary shadow-primary fs-sm">Special Lecture</span>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5>特別講座2: 協賛企業の方々による近年の核融合ベンチャー企業の状況と展望</h5>
+                      <p class="mb-4">概要</p>
+                      <div class="row row-cols-1 row-cols-md-2 g-1">
+                        <div class="col">
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/img/unknown_person.jpg" class="rounded-circle" width="48" alt="" />
+                            <div class="ps-3">
+                              <h6 class="fw-semibold mb-1">氏名</h6>
+                              <p class="fs-sm text-muted mb-0">職位, 所属</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/img/unknown_person.jpg" class="rounded-circle" width="48" alt="" />
+                            <div class="ps-3">
+                              <h6 class="fw-semibold mb-1">氏名</h6>
+                              <p class="fs-sm text-muted mb-0">職位, 所属</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">12:00 &ndash; 12:45 pm</div>
+                      <p class="text-muted mb-0">August 31st</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5 class="mb-0">昼食</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">12:45 &ndash; 19:30 pm</div>
+                      <p class="text-muted mb-2 mb-sm-4">August 31st</p>
+                      <span class="badge bg-success shadow-success fs-sm">Excursion</span>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5>OIST見学</h5>
+                      <p class="mb-4">沖縄科学技術大学院大学(OIST)の施設見学</p>
+                      <h5>BBQ夕食</h5>
+                      <p class="mb-4">BBQ会場にて夕食</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <div class="row pt-1 pt-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">20:00 &ndash; 22:00 pm</div>
+                      <p class="text-muted mb-0">August 31st</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5 class="mb-0">ナイトセッション</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Day 3 schedule -->
+
+              <!-- Day 4 -->
+              <div class="tab-pane fade" id="day-4" role="tabpanel" aria-labelledby="day-4-tab">
+                <div class="border-bottom pb-4">
+                  <div class="row pb-1 pb-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">7:30 &ndash; 8:30 am</div>
+                      <p class="text-muted mb-0">September 1st</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5 class="mb-0">朝食</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">8:45 &ndash; 10:15 am</div>
+                      <p class="text-muted mb-2 mb-sm-4">September 1st</p>
+                      <span class="badge bg-warning shadow-warning fs-sm">Lecture</span>
+                    </div>
+                    <!-- Lecture 8 のブロック -->
+                    <div id="lecture8" class="col-sm-8">
+                      <h5>講義8</h5>
+                      <p class="mb-4">概要</p>
+                      <div class="row row-cols-1 row-cols-md-2 g-3">
+                        <div class="col">
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/img/unknown_person.jpg" class="rounded-circle" width="48" alt="" />
+                            <div class="ps-3">
+                              <h6 class="fw-semibold mb-1">氏名</h6>
+                              <p class="fs-sm text-muted mb-0">職位, 所属</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom py-4">
+                  <div class="row py-1 py-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">10:30 am &ndash; 12:00 pm</div>
+                      <p class="text-muted mb-2 mb-sm-4">September 1st</p>
+                      <span class="badge bg-warning shadow-warning fs-sm">Lecture</span>
+                    </div>
+                    <!-- Lecture 9 のブロック -->
+                    <div id="lecture9" class="col-sm-8">
+                      <h5>講義9</h5>
+                      <p class="mb-4">概要</p>
+                      <div class="row row-cols-1 row-cols-md-2 g-1">
+                        <div class="col">
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/img/unknown_person.jpg" class="rounded-circle" width="48" alt="" />
+                            <div class="ps-3">
+                              <h6 class="fw-semibold mb-1">氏名</h6>
+                              <p class="fs-sm text-muted mb-0">職位, 所属</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <div class="row pt-1 pt-xl-3">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      <div class="h5 mb-1">12:00 &ndash; 12:15 pm</div>
+                      <p class="text-muted mb-0">September 1st</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <h5>閉校式</h5>
+                      <p class="mb-0">ポスター賞授与</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Day 4 schedule -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Venue & Excursions -->
+      <section id="venue" class="bg-secondary py-5">
+        <div class="container py-2 py-md-4 py-lg-5">
+          <h2 class="h1 mb-4 mb-md-0 me-md-3">Venue &amp; Excursions</h2>
+        </div>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="col-sm">
+              <div class="card gallery border-0 bg-transparent mb-4" data-aos="fade-up" data-aos-delay="100">
+                <a
+                  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30240.439060338234!2d127.97643952520158!3d26.587692947129042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e4559502493bc5%3A0x3cc5cae089a4b3bf!2z5ZCN6K236Z2S5bCR5bm044Gu5a62!5e0!3m2!1sja!2sjp!4v1685698667028!5m2!1sja!2sjp"
+                  data-iframe="true"
+                  class="gallery-item rounded-3"
+                  data-sub-html='<h6 class="fs-sm text-light">Google map</h6>'
+                >
+                  <img
+                    src="https://drive.google.com/uc?id=1JYzR0ve-J8XjLrJxNSUhQ1F8fQ9Duos-"
+                    alt="Venue"
+                    class="rounded-3 venue-card-img"
+                  />
+                  <div class="gallery-item-caption fs-sm fw-medium">Google map</div>
+                </a>
+                <div class="card-body p-0">
+                  <div class="my-3">
+                    <span class="badge bg-warning">Venue</span>
+                    <span class="badge bg-primary">Accomodation</span>
+                  </div>
+                  <h3 class="card-title">名護青少年の家</h3>
+                  <p class="card-text fs-sm">
+                    沖縄県立名護青少年の家にて講義、ポスターセッション、ナイトセッションを行う。また、宿泊もここで行う。
+                  </p>
+                  <a
+                    href="https://www.nagoseishounen-obsi.jp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-primary"
+                    >Visit the website
+                    <i class="bx bx-fw bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card gallery border-0 bg-transparent mb-4" data-aos="fade-up" data-aos-delay="200">
+                <a
+                  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57147.74361650041!2d127.75808912167966!3d26.464302700000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5051e1fae0a9f%3A0x10309c17f466cc24!2z5rKW57iE56eR5a2m5oqA6KGT5aSn5a2m6Zmi5aSn5a2m!5e0!3m2!1sja!2sjp!4v1685698827141!5m2!1sja!2sjp"
+                  data-iframe="true"
+                  class="gallery-item rounded-3"
+                  data-sub-html='<h6 class="fs-sm text-light">Google map</h6>'
+                >
+                  <img
+                    src="https://mice.okinawastory.jp/root/wp-content/uploads/2019/12/img01-3.jpg"
+                    alt="Visit"
+                    class="rounded-3 venue-card-img"
+                  />
+                  <div class="gallery-item-caption fs-sm fw-medium">Google map</div>
+                </a>
+                <div class="card-body p-0">
+                  <div class="my-3">
+                    <span class="badge bg-success">Visit</span>
+                  </div>
+                  <h3 class="card-title">OIST見学ツアー</h3>
+                  <p class="card-text fs-sm">
+                    沖縄科学技術大学院大学（OIST）には世界中からトップクラスの博士課程学生、教員及び職員が集まっている。この夏の学校では、OISTの<strong>キャンパスツアー</strong>と<strong>研究室見学</strong>を行うことで、OISTの研究環境を体験することができる。
+                  </p>
+                  <a
+                    href="https://www.oist.jp/ja"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-primary"
+                    >Visit the website
+                    <i class="bx bx-fw bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card gallery border-0 bg-transparent mb-4" data-aos="fade-up" data-aos-delay="300">
+                <a
+                  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64067.43629028195!2d127.87037298737174!3d26.605240763149904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e4fd6bf913bb7f%3A0x298006aeae5a7819!2z576O44KJ5rW3QkJR44KL44GQ44KT44Gh44KF!5e0!3m2!1sja!2sjp!4v1685698353825!5m2!1sja!2sjp"
+                  data-iframe="true"
+                  class="gallery-item rounded-3"
+                  data-sub-html='<h6 class="fs-sm text-light">Google map</h6>'
+                >
+                  <img
+                    src="https://drive.google.com/uc?id=1S17nOAzMZ_wTgZUS3MMZ-BipLkekctL5"
+                    alt="party"
+                    class="rounded-3 venue-card-img"
+                  />
+                  <div class="gallery-item-caption fs-sm fw-medium">Google map</div>
+                </a>
+                <div class="card-body p-0">
+                  <div class="my-3">
+                    <span class="badge bg-success">After Party</span>
+                  </div>
+                  <h3 class="card-title">美ら海BBQるぐんちゅ</h3>
+                  <p class="card-text fs-sm">OIST見学終了後、美ら海BBQるぐんちゅにて懇親会を行う。</p>
+                  <a
+                    href="http://web.rugoos.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-primary"
+                    >Visit the website
+                    <i class="bx bx-fw bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Application guide -->
+      <section id="application" class="container py-5 mb-2 mb-md-4 mb-lg-5 mt-n3 mt-lg-0">
+        <div class="container py-2 py-md-4 py-lg-5">
+          <h2 class="h1 text-center mb-4 mb-md-0 me-md-3">Application Guide</h2>
+        </div>
+        <div class="row pt-xl-2 pb-md-3">
+          <div class="col-lg-5 mb-4 mb-lg-0 position-relative offset-e-xl-1">
+            <h3 class="h4">参加資格</h3>
+            <ul data-aos="fade-up">
+              <li>プラズマ・核融合に関心のある・研究を行っている日本の大学4年生 &ndash; 大学院生・ポスドク</li>
+              <li>ポスター発表が可能な方 (複数人での発表可)</li>
+            </ul>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex flex-column flex-sm-row align-items-center justify-content-between p-4"
+                data-aos="fade-up"
+              >
+                <div class="d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M17.2 3.4 12 10.333 6.8 3.4 5.2 4.6 10 11H7v2h4v2H7v2h4v4h2v-4h4v-2h-4v-2h4v-2h-3l4.8-6.4z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <h4 class="fs-base fw-semibold text-nowrap ps-1 mb-0">参加費</h4>
+                </div>
+                <h5 class="text-primary my-2 my-sm-0">￥23,000</h5>
+                <div class="fs-sm">宿泊・懇親会費込</div>
+              </li>
+              <li
+                class="list-group-item d-flex flex-column flex-sm-row align-items-center justify-content-between p-4"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zm1.5 7H8c-3.309 0-6 2.691-6 6v1h2v-1c0-2.206 1.794-4 4-4h3c2.206 0 4 1.794 4 4v1h2v-1c0-3.309-2.691-6-6-6z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <h4 class="fs-base fw-semibold text-nowrap ps-1 mb-0">募集人数</h4>
+                </div>
+                <h5 class="badge bg-primary fs-5 fw-bold rounded px-3 py-0 my-3 my-sm-0">40人</h5>
+                <div class="fs-sm">先着順</div>
+              </li>
+            </ul>
+
+            <!-- Arrow -->
+            <div
+              id="application-arrow"
+              class="position-absolute bottom-0 end-0 text-primary d-none d-lg-block me-xl-n5"
+              data-aos="flip-left"
+              data-aos-delay="500"
+              data-aos-duraion="1000"
+            >
+              <div class="me-xl-n4">
+                <svg width="100" height="100" viewBox="0 0 1 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g transform="rotate(45)">
+                    <path
+                      d="M78.8361 25.0939C91.1514 40.6379 81.8802 63.3086 61.7212 64.3539C60.7119 64.447 59.5832 64.3477 58.6105 64.2848C58.7669 50.9978 52.4534 36.5276 41.6324 32.847C31.8669 29.5776 26.5235 39.0204 30.5663 47.0383C35.4083 56.5589 43.9198 64.4699 54.2628 67.3808C53.4517 75.7446 49.4008 83.1867 40.4191 85.693C25.2817 89.8859 9.48935 75.832 7.25928 61.4938C7.12064 59.981 4.79 60.0942 4.92864 61.607C5.83171 80.8987 28.9103 96.1621 46.7792 87.3441C53.6867 83.8595 57.3887 76.5003 58.3558 68.173C69.2212 69.5612 79.5859 63.2659 85.1681 54.2081C91.5844 43.7002 88.5763 31.9764 81.257 23.1926C80.1091 21.7727 77.8441 23.7109 78.8361 25.0939ZM39.1221 52.6568C36.2753 49.3596 33.1435 45.1733 32.7276 40.635C32.275 36.2527 38.2211 36.1619 40.7539 36.5897C43.9108 37.163 46.2067 40.0025 47.9151 42.5401C51.7632 47.8805 54.3289 55.8821 54.5172 63.4926C48.5423 61.6026 43.3094 57.2542 39.1221 52.6568Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M75.1096 15.0312C74.0848 19.3973 73.3354 23.9923 73.4392 28.4577C73.5047 30.2821 76.0279 30.0497 76.1186 28.2613C76.2997 24.6849 77.2976 21.1349 78.2588 17.7408C80.2501 18.3708 82.3978 19.0372 84.3528 19.8231C85.8397 20.4997 87.9238 22.1382 89.7035 21.5672C90.5937 21.2818 90.7767 20.5022 90.6474 19.6495C90.3065 17.596 87.0302 16.8302 85.3872 16.1172C82.6885 14.993 80.073 14.2174 77.2645 13.561C76.3289 13.3423 75.3292 14.0956 75.1096 15.0312Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-7 position-relative">
+            <!-- Ticket card -->
+            <div
+              class="position-relative"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+              data-aos-anchor="#application-arrow"
+            >
+              <div class="position-relative overflow-hidden bg-gradient-primary rounded-3 zindex-5 py-5 px-4 p-sm-5">
+                <span class="position-absolute top-50 start-0 translate-middle bg-light rounded-circle p-4"></span>
+                <span
+                  class="position-absolute top-0 start-0 w-100 h-100 bg-repeat-0 bg-position-center-end bg-size-cover"
+                  style="background-image: url(/assets/img/price-card-pattern.png)"
+                ></span>
+                <div class="px-md-3 position-relative zindex-5">
+                  <div class="d-sm-flex align-items-start justify-content-between">
+                    <div class="text-center text-sm-start me-sm-4">
+                      <div class="lead fw-semibold text-light text-uppercase mb-2">8月29日 &ndash; 9月1日</div>
+                      <h3 class="h5 text-light mb-0">第1回</h3>
+                      <h3 class="h3 text-light mb-0">プラズマ・核融合</h3>
+                      <h3 class="h1 text-light">若手夏の学校</h3>
+                    </div>
+                    <!-- 申込みフォームにアクセスさせない場合は class に visually-hidden を加える -->
+                    <div class="d-table bg-white rounded-3 p-3 flex-shrink-0 mx-auto mx-sm-0">
+                      <img src="/assets/img/qr_application.svg" width="102" alt="QR Code" />
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column flex-sm-row align-items-center pt-4 mt-2">
+                    <!-- 申込みフォームにアクセスさせない場合は class に disabled を加える -->
+                    <a
+                      href="/application.html"
+                      class="btn btn-light btn-lg mb-3 mb-sm-0 me-sm-3"
+                      tabindex="-1"
+                      aria-disabled="true"
+                      role="button"
+                      >申込はこちらから</a
+                    >
+                    <div class="d-flex align-items-center">
+                      <span class="h4 text-light mb-0">7月7日</span>
+                      <span class="fs-lg text-light ms-2">〆切</span>
+                    </div>
+                  </div>
+                </div>
+                <span
+                  class="position-absolute top-50 end-0 translate-middle-y bg-light rounded-circle p-4 me-n4"
+                ></span>
+              </div>
+              <span
+                class="position-absolute bg-gradient-primary opacity-60 bottom-0 mb-n2 d-dark-mode-none"
+                style="left: 1.5rem; width: calc(100% - 3rem); height: 5rem; filter: blur(0.625rem)"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Discord -->
+      <section id="Discord" class="position-relative bg-gradient-primary-translucent py-5 mt-n3 mt-lg-0">
+        <div class="container py-2 py-md-4 py-lg-5">
+          <div class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-md-4">
+            <h2 class="h1 text-center me-3">Join our</h2>
+            <img src="/assets/img/discord-logo-blue.svg" width="250" alt="Discord" />
+            <h2 class="h1 text-center ms-3">group!</h2>
+          </div>
+          <!-- 実際のDiscord Windowの画像 -->
+          <div class="row">
+            <div class="col-md-7 mb-3">
+              <img
+                src="/assets/img/PFYSS_Discord.png"
+                alt="PFYSS Discord window"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              />
+            </div>
+            <div class="col-md-5" data-aos="fade-up" data-aos-delay="500">
+              <p class="fs-lg mb-4">
+                Discordは、ゲーマー向けによく用いられているコミュニケーションツールですが、
+                夏の学校では、参加者同士の交流の場としても利用します。 また、講義の資料・動画などの配布も行います。
+                夏の学校参加者ではなくても、Discordに参加して交流を深めましょう!
+              </p>
+              <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
+                <a
+                  href="https://discord.gg/BTaVFm7F3k"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary shadow-primary btn-lg me-sm-4 mb-3"
+                  >Join Discord
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
+      <div class="container text-center pt-lg-3">
+        <div class="navbar-brand justify-content-center text-dark mb-2 mb-lg-4">
+          <img src="/assets/img/logo.svg" class="me-2" width="60" alt="" />
+          <span class="fs-4">プラズマ・核融合 若手夏の学校</span>
+        </div>
+        <ul class="nav justify-content-center pt-3 pb-4 pb-lg-5">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#teachers" class="nav-link">Teachers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#schedule" class="nav-link">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sponsors" class="nav-link">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a href="#application" class="nav-link">Application</a>
+          </li>
+        </ul>
+        <div class="d-flex flex-column flex-sm-row justify-content-center">
+          <a href="/contact.html" class="btn btn-success shadow-success btn-lg me-sm-4 mb-3">お問い合わせ</a>
+          <a
+            href="https://calendar.google.com/calendar/u/0?cid=NjNiMWY1NGRmZjFiNTNhZmE1MWY4N2I1MmZjZGIwZGUxYjkzODA0MmY4MDJjZjk2MWM5ZjRmYzFkMzY0MmQ2YUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-light btn-lg mb-3"
+          >
+            <i class="bx bx-calendar-check fs-xl me-2 ms-n1"></i>
+            Add to calendar
+          </a>
+        </div>
+        <div class="d-flex justify-content-center pt-4 mt-lg-3">
+          <a href="https://discord.gg/BTaVFm7F3k" class="btn btn-icon btn-secondary btn-discord mx-2">
+            <i class="bx bxl-discord-alt"></i>
+          </a>
+          <a href="https://twitter.com/pfyss_org" class="btn btn-icon btn-secondary btn-twitter mx-2">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="https://youtube.com/@pfyss" class="btn btn-icon btn-secondary btn-youtube mx-2">
+            <i class="bx bxl-youtube"></i>
+          </a>
+        </div>
+        <p class="nav d-block fs-sm text-center pt-5 mt-lg-4 mb-0">
+          <span class="text-light opacity-50"
+            >Contents &copy; プラズマ・核融合 若手フォーラム | Powered by
+            <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener"
+              >Createx Studio</a
+            >
+          </span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Vendor Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/video/lg-video.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="/assets/js/theme.min.js"></script>
+
+    <!-- teachers script -->
+    <script src="/assets/js/teachers.js"></script>
+
+    <!-- aos initialization -->
+    <script>
+      AOS.init({
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 500, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
+  </body>
+</html>

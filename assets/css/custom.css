@@ -1,0 +1,83 @@
+/* Custom css for PFYSS HP */
+
+/* control images in carousel depending on a breakpoint */
+.carousel-img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/2;
+}
+
+@media (min-width: 992px) {
+  .carousel-img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.teacher-card-img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 10/11;
+}
+
+.venue-card-img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 51/34;
+}
+
+/* rounded rounded-circle set aspect ratio 1/1 */
+.rounded-circle {
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  aspect-ratio: 1/1 !important;
+}
+
+/* custom breakpoint for ticket margin right */
+.offset-e-xl-1 {
+  margin-right: 0%;
+}
+
+@media (min-width: 1200px) {
+  .offset-e-xl-1 {
+    margin-right: 8.33333333%;
+  }
+}
+
+/* custom floating form style */
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+  position: absolute;
+  inset: 1rem 0.375rem;
+  z-index: -1;
+  height: 1.5em;
+  content: "";
+  color: var(--si-card-color);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: var(--bs-border-radius);
+}
+
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  color: var(--si-card-color);
+}
+
+/* custom social button for teacher links*/
+.btn-general:hover,
+.btn-general:focus,
+.btn-general:active {
+  border-color: #1877f2 !important;
+  background-color: #1877f2 !important;
+  color: #fff !important;
+  box-shadow: 0 0.375rem 1.125rem -0.375rem rgba(24, 119, 242, 0.8) !important;
+}
+
+.btn-personal:hover,
+.btn-personal:focus,
+.btn-personal:active {
+  border-color: #1877f2 !important;
+  background-color: #1877f2 !important;
+  color: #fff !important;
+  box-shadow: 0 0.375rem 1.125rem -0.375rem rgba(24, 119, 242, 0.8) !important;
+}

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+    <title>プラズマ・核融合 若手夏の学校</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="プラズマ・核融合 若手夏の学校" />
+    <meta
+      name="keywords"
+      content="プラズマ, 核融合, 若手, 夏の学校, 磁場閉じ込め, トカマク, ヘリカル, plasma, nuclear, fusion, summer school, pfyss, tokamak, helical, magnet, laser"
+    />
+    <meta name="author" content="プラズマ・核融合 若手フォーラム" />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#6366f1" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#080032" />
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" media="screen" href="/assets/css/theme.css" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" media="screen" href="/assets/css/custom.css" />
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all 0.4s 0.2s ease-in-out;
+        transition: all 0.4s 0.2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
+        opacity: 0;
+      }
+
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: 0.6;
+      }
+
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: 0.75rem;
+        vertical-align: text-bottom;
+        border: 0.15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner 0.75s linear infinite;
+        animation: spinner 0.75s linear infinite;
+      }
+
+      .dark-mode .page-spinner {
+        border-color: rgba(255, 255, 255, 0.4);
+        border-right-color: transparent;
+      }
+
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem("mode"),
+        root = document.getElementsByTagName("html")[0];
+      if (mode !== null && mode === "dark") {
+        root.classList.add("dark-mode");
+      } else {
+        root.classList.remove("dark-mode");
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector(".page-loading");
+          preloader.classList.remove("active");
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+      <!-- Navbar -->
+      <!-- Remove "fixed-top" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+        <div class="container px-3">
+          <a href="/index.html" class="navbar-brand pe-3">
+            <img src="/assets/img/logo.svg" width="47" alt="" />
+            プラズマ・核融合 若手夏の学校
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                  <div class="dropdown-menu">
+                    <div class="d-lg-flex pt-lg-3">
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">概要</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li>
+                            <a href="/about.html" class="dropdown-item py-1">若手夏の学校とは</a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.jspf.or.jp/wakate/#Committee"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="dropdown-item py-1"
+                              >運営委員紹介
+                              <i class="bx bx-link-external"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        <h6 class="px-3 mb-2">場所</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li>
+                            <a href="index.html#venue" class="dropdown-item py-1">会場</a>
+                          </li>
+                          <li>
+                            <a href="index.html#venue" class="dropdown-item py-1">エクスカージョン</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">参加申込み</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li>
+                            <a href="index.html#application" class="dropdown-item py-1">募集概要</a>
+                          </li>
+                        </ul>
+                        <h6 class="px-3 mb-2">連絡</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li>
+                            <a href="/contact.html" class="dropdown-item py-1"> お問い合わせ</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Archives</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="/picture-book.html" class="dropdown-item">装置・コード図鑑</a>
+                    </li>
+                    <li>
+                      <a href="/videos.html" class="dropdown-item">講演動画</a>
+                    </li>
+                    <li>
+                      <a href="/forepast/index.html" class="dropdown-item">夏学の歴史</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input id="theme-mode" type="checkbox" class="form-check-input" />
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Links + Thunks page -->
+      <section class="position-relative pt-5 mt-5 mt-md-0">
+        <div class="container position-relative zindex-2 pt-5 mb-4 mb-lg-5">
+          <!-- Breadcrumb -->
+          <nav class="pt-lg-4 pb-3 mb-2 mb-sm-3" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item">
+                <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">送信が完了しました</li>
+            </ol>
+          </nav>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="text-center mt-5">お問い合わせありがとうございました。</h1>
+                <p class="text-center">お問い合わせ内容を確認の上、回答させていただきます。</p>
+              </div>
+
+              <div class="col-12">
+                <div class="text-center mt-5">
+                  <a href="index.html" class="btn btn-primary btn-lg">
+                    <i class="bx bx-home-alt me-2 ms-n1 lead"></i>
+                    ホームに戻る
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
+      <div class="container text-center pt-lg-3">
+        <div class="navbar-brand justify-content-center text-dark mb-2 mb-lg-4">
+          <img src="/assets/img/logo.svg" class="me-2" width="60" alt="" />
+          <span class="fs-4">プラズマ・核融合 若手夏の学校</span>
+        </div>
+        <ul class="nav justify-content-center pt-3 pb-4 pb-lg-5">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#teachers" class="nav-link">Teachers</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#schedule" class="nav-link">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#sponsors" class="nav-link">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#application" class="nav-link">Application</a>
+          </li>
+        </ul>
+        <div class="d-flex flex-column flex-sm-row justify-content-center">
+          <a href="/contact.html" class="btn btn-success shadow-success btn-lg mb-3">お問い合わせ</a>
+        </div>
+        <div class="d-flex justify-content-center pt-4 mt-lg-3">
+          <a href="https://discord.gg/BTaVFm7F3k" class="btn btn-icon btn-secondary btn-discord mx-2">
+            <i class="bx bxl-discord-alt"></i>
+          </a>
+          <a href="https://twitter.com/pfyss_org" class="btn btn-icon btn-secondary btn-twitter mx-2">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="https://youtube.com/@pfyss" class="btn btn-icon btn-secondary btn-youtube mx-2">
+            <i class="bx bxl-youtube"></i>
+          </a>
+        </div>
+        <p class="nav d-block fs-sm text-center pt-5 mt-lg-4 mb-0">
+          <span class="text-light opacity-50"
+            >Contents &copy; プラズマ・核融合 若手フォーラム | Powered by
+            <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener"
+              >Createx Studio</a
+            >
+          </span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Vendor Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/video/lg-video.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="/assets/js/theme.min.js"></script>
+
+    <!-- aos initialization -->
+    <script>
+      AOS.init({
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 500, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
+
+    <!-- move thanks page after submitting -->
+    <script type="text/javascript">
+      let submitted = false;
+    </script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="if(submitted){window.location='/contact-thanks.html';}"
+    ></iframe>
+  </body>
+</html>
