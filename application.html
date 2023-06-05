@@ -544,7 +544,7 @@
             action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdFDedriiViCc1kuFJbdd638mbiy7DM8PbKNmsgUbNiIhR66Q/formResponse"
             method="POST"
             target="hidden_iframe"
-            onsubmit="submitted=true;"
+            onsubmit="submittingSpinner('submitButton'); submitted=true;"
           >
             <!-- Modal Body -->
             <div class="modal-body">
@@ -641,7 +641,7 @@
 
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">戻る</button>
-              <button type="submit" class="btn btn-primary">送信</button>
+              <button type="submit" class="btn btn-primary" id="submitButton">送信</button>
             </div>
           </form>
         </div>
@@ -721,6 +721,7 @@
     <!-- Main Theme Script -->
     <script src="/assets/js/theme.min.js"></script>
     <script src="/assets/js/application-form.js"></script>
+    <script src="/assets/js/submittingSpinner.js"></script>
 
     <!-- aos initialization -->
     <script>
