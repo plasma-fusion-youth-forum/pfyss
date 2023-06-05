@@ -53,8 +53,8 @@
         "url": "https://www-app.nifs.ac.jp/cgi-bin/people/member.cgi?id=kobayashi_tatsuya"
       }
     ],
-    "title": "(仮) プラズマ計測",
-    "abstract": ""
+    "title": "データユーザー視点からのプラズマ乱流計測レビュー",
+    "abstract": "プラズマ乱流は時空間スケールが微細であり、信号変化量も小さいため、その計測は困難を極める。本講演では、乱流物理研究を行う上で使用する様々な計測器の特性や性能を、データユーザ視点からレビューする。"
   },
   {
     "id": 4,
