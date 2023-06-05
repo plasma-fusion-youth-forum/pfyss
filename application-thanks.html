@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <title>プラズマ・核融合 若手夏の学校</title>
@@ -397,6 +397,13 @@
         delay: 0, // values from 0 to 3000, with step 50ms
         duration: 500, // values from 0 to 3000, with step 50ms
         once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
+
+    <script>
+      history.pushState(null, null, location.href);
+      window.addEventListener("popstate", (e) => {
+        history.go(1);
       });
     </script>
   </body>
