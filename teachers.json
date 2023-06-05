@@ -138,14 +138,10 @@
       {
         "type": "personal",
         "url": "https://researchmap.jp/murayama.masamichi"
-      },
-      {
-        "type": "twitter",
-        "url": "https://twitter.com/mugi_orinal?s=20"
       }
     ],
-    "title": "(仮) QST・JT-60SAの紹介",
-    "abstract": ""
+    "title": "JT-60SA・ITER加熱用中性粒子ビーム入射装置の設計開発",
+    "abstract": "JT-60SA・ITERといった大型のトカマク装置では高温のプラズマを維持するために大規模な中性粒子ビーム入射(NBI)による加熱が用いられています。本講義では、NB加熱開発グループ全体として設計開発に携わる各ビーム入射装置の概要と、私が担当するITER NBI用1MV超高圧電源・真空絶縁やJT-60SA NBI用電源・磁場設計について解説します。"
   },
   {
     "id": 9,
