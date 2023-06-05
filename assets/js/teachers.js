@@ -169,5 +169,5 @@ window.addEventListener("DOMContentLoaded", function () {
   generateTeacherSection();
 
   // 講義の時間割の内容を生成
-  generateLectureSchedule();
+  // generateLectureSchedule();
 });
