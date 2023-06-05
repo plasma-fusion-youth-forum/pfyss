@@ -58,7 +58,12 @@ function generateTeacherSection() {
           let link = teacher.links[j];
 
           // link領域のhtmlを追加
-          html += '<a href="' + link.url + '" class="btn btn-icon btn-secondary btn-sm bg-white btn-' + link.type;
+          html +=
+            '<a href="' +
+            link.url +
+            '" target="_blank" rel="noopener noreferrer" ' +
+            'class="btn btn-icon btn-secondary btn-sm bg-white btn-' +
+            link.type;
 
           // 最後のリンクでない場合は、marginを追加
           if (j < teacher.links.length - 1) {
