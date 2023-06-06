@@ -1,82 +1,180 @@
 [
   {
-    "id": 3,
-    "name": "井手 俊介",
-    "position": "部長",
-    "affiliation": "QST",
-    "image": "https://drive.google.com/uc?id=1PLryMUCyjn5gjTCSNbSlA0WxrI4DyFI9",
-    "links": [
+    "id": "lecture3",
+    "teachers": [
       {
-        "type": "personal",
-        "url": "https://research-er.jp/researchers/view/276091"
+        "name": "井手 俊介",
+        "position": "部長",
+        "affiliation": "QST",
+        "image": "https://drive.google.com/uc?id=1PLryMUCyjn5gjTCSNbSlA0WxrI4DyFI9",
+        "links": [
+          {
+            "type": "personal",
+            "url": "https://research-er.jp/researchers/view/276091"
+          }
+        ]
       }
     ],
     "title": "トカマクにおけるプラズマ研究と国際開発プロジェクト",
     "abstract": "将来の世界のエネルギー需要を支えるためには、核融合は非常に有望なエネルギー源として考えられています。特に最近の国際情勢からその重要性は認識されており、世界的にも核融合開発の加速が進められていて、ベンチャー企業の参入も盛んとなっています。核融合の最も有望な手法がトカマク型装置で、現在国際プロジェクトとしてITER（フランスに建設中）計画やJT-60SA（日本で統合試験中）計画が進められています。トカマク装置中のプラズマはエネルギー源の対象という側面と共に、そこに含まれる様々な物理やそれらが複雑に絡み合って織りなす現象は研究の対象として非常に興味深いものです。今回、研究対象としてのトカマクプラズマと、現在進行形の国際プロジェクトの現状について、お話しさせていただきます。これを機に、より多くの若者がこの世界に踏み込んでくれることを期待しながら。"
   },
   {
-    "id": 4,
-    "name": "桑原 大介",
-    "position": "准教授",
-    "affiliation": "中部大",
-    "image": "https://drive.google.com/uc?id=1nu4tmwNWPgBtOi0NBgEzNC-jBzaD5q_f",
-    "links": [
+    "id": "lecture4",
+    "teachers": [
       {
-        "type": "personal",
-        "url": "https://researchmap.jp/dkuwahara"
-      },
-      {
-        "type": "facebook",
-        "url": "https://www.facebook.com/daisuke.kuwahara.54/?locale=ja_JP"
-      },
-      {
-        "type": "twitter",
-        "url": "https://twitter.com/kuwahara82?s=20"
+        "name": "桑原 大介",
+        "position": "准教授",
+        "affiliation": "中部大",
+        "image": "https://drive.google.com/uc?id=1nu4tmwNWPgBtOi0NBgEzNC-jBzaD5q_f",
+        "links": [
+          {
+            "type": "personal",
+            "url": "https://researchmap.jp/dkuwahara"
+          },
+          {
+            "type": "facebook",
+            "url": "https://www.facebook.com/daisuke.kuwahara.54/?locale=ja_JP"
+          },
+          {
+            "type": "twitter",
+            "url": "https://twitter.com/kuwahara82?s=20"
+          }
+        ]
       }
     ],
     "title": "高周波プラズマを用いた電気推進機開発と、マイクロ波計測使いませんか in 富山",
     "abstract": "「はやぶさ」の活躍で脚光を浴びた電気推進機ですが、イオンエンジン以外にも様々な方式が提案され実用化に向けた研究が行われています。現在はまだ『Advanced』の括りにある高周波プラズマスラスターの実用化に向けた研究や、電気推進特有の計測技術・装置についてお話します。加えて、私のライフワークでもあるマイクロ波計測器について紹介します。非接触、高時間分解能、電子密度絶対計測等々、様々な利点を持ちながら敷居の高いと思われているこの計測…まだ使っていない人は是非使ってみませんか？悪いようにはしません！きっと！"
   },
   {
-    "id": 5,
-    "name": "荒巻 光利",
-    "position": "教授",
-    "affiliation": "日大",
-    "image": "https://drive.google.com/uc?id=1iixZRwlBdBN0nn0omd2Bp5cfoN7Qqyyi",
-    "links": [
+    "id": "lecture5",
+    "teachers": [
       {
-        "type": "general",
-        "url": "http://aramaki-lab.ee.cit.nihon-u.ac.jp/index.html"
-      },
-      {
-        "type": "personal",
-        "url": "https://researchmap.jp/read0069612"
-      },
-      {
-        "type": "twitter",
-        "url": "https://twitter.com/ara81490270?s=20"
+        "name": "荒巻 光利",
+        "position": "教授",
+        "affiliation": "日大",
+        "image": "https://drive.google.com/uc?id=1iixZRwlBdBN0nn0omd2Bp5cfoN7Qqyyi",
+        "links": [
+          {
+            "type": "general",
+            "url": "http://aramaki-lab.ee.cit.nihon-u.ac.jp/index.html"
+          },
+          {
+            "type": "personal",
+            "url": "https://researchmap.jp/read0069612"
+          },
+          {
+            "type": "twitter",
+            "url": "https://twitter.com/ara81490270?s=20"
+          }
+        ]
       }
     ],
     "title": "レーザー分光法の基礎および測定の簡単な始め方",
     "abstract": "この講演では、レーザー分光法の基礎的な内容を解説した後、低予算で簡単にレーザー吸収分光測定を始めるための実践的な内容を紹介します。研究を立ち上げる際の経費の削減は、若手研究者にとって大変重要なスキルです。この講演では、光学測定の未経験者が波長可変ダイオードレーザー吸収分光（TDLAS）の測定系をできるだけ安価に構築するために必要なノウハウを解説します。レーザー光源等の自作可能な装置については、作製法や調整法を伝授します。また、測定においてよくあるトラブルを紹介し、その解決法についてもお話しします。これら一般的なTDLASに関連した内容を解説した後、（時間があれば）我々の研究グループで開発している新しいレーザー分光計測法についても紹介します。"
   },
   {
-    "id": 2,
-    "name": "波多野 雄治",
-    "position": "教授",
-    "affiliation": "富山大",
-    "image": "https://drive.google.com/uc?id=1vmH64nBJYidxV6hRiFKzOqKthPTKA6Ub",
-    "links": [
+    "id": "lecture2",
+    "teachers": [
       {
-        "type": "general",
-        "url": "http://www.hrc.u-toyama.ac.jp/jp/"
-      },
-      {
-        "type": "personal",
-        "url": "https://researchmap.jp/hatanoyuji_jcml"
+        "name": "波多野 雄治",
+        "position": "教授",
+        "affiliation": "富山大",
+        "image": "https://drive.google.com/uc?id=1vmH64nBJYidxV6hRiFKzOqKthPTKA6Ub",
+        "links": [
+          {
+            "type": "general",
+            "url": "http://www.hrc.u-toyama.ac.jp/jp/"
+          },
+          {
+            "type": "personal",
+            "url": "https://researchmap.jp/hatanoyuji_jcml"
+          }
+        ]
       }
     ],
     "title": "水素研見学のための事前講義",
     "abstract": "翌日の水素同位体科学研究センター見学のための事前講義を行います。"
+  },
+  {
+    "id": "special-lecture2",
+    "teachers": [
+      {
+        "name": "大前 敬祥",
+        "position": "首席戦略官",
+        "affiliation": "ITER",
+        "image": "https://drive.google.com/uc?id=1S5nHb2GeNvrwyJA8RhP1p_smrF4tvfAg",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://www.iter.org/"
+          },
+          {
+            "type": "twitter",
+            "url": "https://twitter.com/takaomae?s=20"
+          },
+          {
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/takaomae/"
+          }
+        ]
+      },
+      {
+        "name": "近藤 貴",
+        "position": "ITER部",
+        "affiliation": "QST",
+        "image": "https://drive.google.com/uc?id=12J8rtlm35XcP4MhrUhL2HsXattNBdVtP",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://www.jsap.or.jp/columns/gx/e2-8"
+          },
+          {
+            "type": "personal",
+            "url": "https://nrid.nii.ac.jp/ja/nrid/1000070360427/"
+          }
+        ]
+      }
+    ],
+    "title": "ITER座談会",
+    "abstract": "ITER計画ってなんだ？インターンもできる！？ITER機構長の右腕である大前敬祥首席戦略官よりITERプロジェクトについてご紹介していただきます。また実際のITERインターンシップ応募までの流れをQSTの近藤氏から教えていただき、さらに実際のフランス生活や仕事内容などインターンの体験談も聞くことができます！"
+  },
+  {
+    "id": "special-lecture1",
+    "teachers": [
+      {
+        "name": "磯貝 里子",
+        "position": "経営企画室",
+        "affiliation": "リバネス",
+        "image": "https://secure.gravatar.com/avatar/ff5dcfd225db6a47c726081b0a7cf6cf?s=480&d=mm&r=g",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://lne.st/author/isogai/"
+          }
+        ]
+      },
+      {
+        "name": "石尾 淳一郎",
+        "position": "部長",
+        "affiliation": "リバネス",
+        "image": "https://secure.gravatar.com/avatar/bb5ab49ffcd9bbdf5115a4e13ad837a7?s=480&d=mm&r=g",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://lne.st/author/junichirou-ishio/"
+          },
+          {
+            "type": "personal",
+            "url": "https://ld.lne.st/author/junichirou-ishio/"
+          },
+          {
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/淳一郎-石尾-731a41230/?originalSubdomain=jp"
+          }
+        ]
+      }
+    ],
+    "title": "1分研究紹介",
+    "abstract": "株式会社リバネスから講師の方を招き、自分の研究を1分で紹介する極意を学びます。自分の研究を相手にわかりやすく伝える力はアカデミックでも就活でも役立つこと間違いなし！"
   }
 ]
