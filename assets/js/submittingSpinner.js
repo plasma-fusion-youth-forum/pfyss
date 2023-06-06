@@ -9,6 +9,6 @@ function submittingSpinner(buttonID) {
   // ボタンをdisabledにする
   button.disabled = true;
 
-  // true を返すとフォームが正常に送信されるtrue を返すとフォームが正常に送信される
+  // true を返すとフォームが正常に送信される
   return true;
 }
