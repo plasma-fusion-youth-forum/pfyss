@@ -59,6 +59,10 @@ index.html をブラウザで開くと、ローカルで確認できます。
 │   ├── img
 │   └── js
 ├── forepast
+│   ├── 2022
+│   │   ├── index.html
+│   │   └── teachers.json
+│   └── 2023
 ├── teachers.json
 ├── index.html
 └── README.md
@@ -96,23 +100,31 @@ index.html をブラウザで開くと、ローカルで確認できます。
 ```json
 [
   {
-    "id": 1,  # 講師の ID 時間割のIDと紐付けるために使用します。
-    "name": "夏学 太郎",  # 講師の名前
-    "position": "准教授",  # 講師の役職
-    "affiliation": "夏学大",  # 講師の所属
-    "image": "https://photo.png",  # 講師の画像リンク先 (google driveに保存してある画像のURL生成は後述)
-    "links": [  #  講師のリンク情報
+    "id": "lecture1",  # スケジュールのcol-sm-8クラスを持つdivタグID
+    "teachers":[  # 講師情報のリスト
       {
-        "type": "twitter",  # リンクの種類 (一般的なSNS名称が使えます)
-        "url": "https://twitter.com/natsugaku"  # リンク先
+        "name": "夏学 太郎",  # 講師の名前
+        "position": "准教授",  # 講師の役職
+        "affiliation": "夏学大",  # 講師の所属
+        "image": "https://photo.png",  # 講師の画像リンク先 (google driveに保存してある画像のURL生成は後述)
+        "links": [  #  講師のリンク情報
+          {
+            "type": "twitter",  # リンクの種類 (一般的なSNS名称が使えます)
+            "url": "https://twitter.com/natsugaku"  # リンク先
+          },
+          {
+            "type": "general",  # 研究室HPなど
+            "url": "https://研究室/index.html"
+          },
+          {
+            "type": "personal",  # 個人サイトなど
+            "url": "https://個人サイト/"
+          }
+        ]
       },
-      {
-        "type": "general",  # 研究室HPなど
-        "url": "https://研究室/index.html"
-      },
-      {
-        "type": "personal",  # 個人サイトなど
-        "url": "https://個人サイト/"
+      {  # 同じ時間スロットに話す複数人の講師情報を格納できます
+        "name":"夏学 花子"
+        ...
       }
     ],
     "title": "核融合の歴史について",  # 講演タイトル
