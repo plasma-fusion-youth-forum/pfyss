@@ -31,8 +31,8 @@ function generateTeacherSection() {
       // 生成したHTMLを入れておく変数
       let html = "";
 
-      // AOSのdelay用のindex
-      let aosDelayIndex = 0;
+      // Teacher index
+      let teacherIndex = 0;
 
       // 割当時間(id)の数だけfor分で回す
       for (let i = 0; i < json.length; i++) {
@@ -44,9 +44,19 @@ function generateTeacherSection() {
           // 前半html
           html +=
             '<div class="col">' +
-            '<div class="card card-hover border-0 bg-transparent" data-aos="fade-up" data-aos-delay=' +
-            aosDelayIndex * 100 +
-            ">" +
+            '<div id="teacher' +
+            teacherIndex +
+            '" ' +
+            'class="card card-hover border-0 bg-transparent" data-aos="fade-up" data-aos-delay=' +
+            teacherIndex * 100;
+
+          if (teacherIndex > 0) {
+            html += ' data-aos-anchor="#teacher0">';
+          } else {
+            html += ">";
+          }
+
+          html +=
             '<div class="position-relative">' +
             '<img src="' +
             teacher.image +
@@ -57,8 +67,8 @@ function generateTeacherSection() {
             '<span class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-35 rounded-3"></span>' +
             '<div class="position-relative d-flex zindex-2">';
 
-          // AOSのdelay用のindexを1つ増やす
-          aosDelayIndex++;
+          // teacher indexを1つ増やす
+          teacherIndex++;
 
           // linksの数だけfor分で回す
           for (let k = 0; k < teacher.links.length; k++) {
