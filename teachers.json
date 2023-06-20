@@ -42,8 +42,8 @@
         ]
       }
     ],
-    "title": "(仮) 半導体関連",
-    "abstract": ""
+    "title": "プラズマプロセスの基礎と応用",
+    "abstract": "プラズマプロセスは広範な産業分野に応用されており、特にドライエッチングなどの微細加工技術は先端電子デバイスの開発を推し進めてきた鍵となる技術である。本講義では、半導体製造プロセスにおけるプラズマプロセスを基礎から解説する。"
   },
   {
     "id": "lecture3",
@@ -153,7 +153,7 @@
         ]
       }
     ],
-    "title": "(仮) 宇宙プラズマ・太陽ダイナモ",
+    "title": "天体プラズマ: 極限的な乱流状態における構造形成",
     "abstract": "太陽対流層は、超高レイノルズ数、超高磁気レイノルズ数、超低プラントル数で特徴づけられた、極限的なMHD乱流状態になっている。太陽対流層の中では、自転や密度成層による対称性の破れの帰結として、自発的に時空間コヒーレンスの高い磁場が組織化される。この講義では、太陽ダイナモ研究の現状を概観するとともに、未解決問題とその解決策について議論する。"
   },
   {
@@ -201,5 +201,76 @@
     ],
     "title": "レーザー方式慣性核融合の概要",
     "abstract": "慣性閉じ込め核融合では、核燃焼の点火条件を達成するために、短時間に非常に大きなパワーを燃料に注入します。パワー注入の有力な候補として、ハイパワーレーザー及びパルスパワー、そしてパルスパワー技術を用いた大電流荷電粒子ビームが挙げられます。本講義では、ローソンの考察に基づく制御核融合成立の条件から出発し、レーザー方式慣性核融合炉の仕組みと研究開発の状況を概説します。"
+  },
+  {
+    "id": "special1",
+    "teachers": [
+      {
+        "name": "松尾 一輝",
+        "position": "CEO",
+        "affiliation": "EX-Fusion",
+        "image": "https://drive.google.com/uc?id=1lUtE0A__FGz0VURabIgLNlEvxIkFb56c",
+        "links": [
+          {
+            "type": "personal",
+            "url": "https://researchmap.jp/kazuki_matsuo"
+          },
+          {
+            "type": "twitter",
+            "url": "https://twitter.com/kazuki_m2o"
+          }
+        ]
+      },
+      {
+        "name": "田口 昂哉",
+        "position": "CFO",
+        "affiliation": "Helical Fusion",
+        "image": "https://static.wixstatic.com/media/652328_0885b2a9809a4a49b5ff612a3c4ac941~mv2.jpg/v1/crop/x_1089,y_1776,w_6234,h_6965/fill/w_618,h_690,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/taguchi_0086_B%26W.jpg",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://www.helicalfusion.com/team"
+          },
+          {
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/takaya-taguchi-426802174/"
+          },
+          {
+            "type": "twitter",
+            "url": "https://twitter.com/takayataguchi"
+          }
+        ]
+      },
+      {
+        "name": "",
+        "position": "",
+        "affiliation": "Kyoto Fusioneering",
+        "image": "/assets/img/unknown_person.jpg",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://kyotofusioneering.com"
+          }
+        ]
+      },
+      {
+        "name": "山田 弘一",
+        "position": "",
+        "affiliation": "金属技研(株)",
+        "image": "https://drive.google.com/uc?id=1TxuDsaYu6rSGwX1N32R24hlGdwAgaikF",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://www.kinzoku.co.jp/"
+          },
+          {
+            "type": "twitter",
+            "url": "https://twitter.com/MetalTechJapan"
+          }
+        ]
+      }
+    ],
+    "title": "協賛企業による講演",
+    "abstract": "プラズマ・核融合業界に関連している協賛企業の方々から、それぞれの会社の紹介をしていただきます。"
   }
 ]
