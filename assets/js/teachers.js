@@ -100,14 +100,11 @@ function generateTeacherSection() {
             '<h3 class="fs-lg fw-semibold pt-1 mb-2">' +
             teacher.name +
             "</h3 >" +
-            '<p class="fs-sm mb-0">' +
-            teacher.position +
-            ", " +
-            teacher.affiliation +
-            "</p>" +
-            "</div>" +
-            "</div>" +
-            "</div>";
+            '<p class="fs-sm mb-0">';
+          if (teacher.position != "") {
+            html += teacher.position + ", ";
+          }
+          html += teacher.affiliation + "</p>" + "</div>" + "</div>" + "</div>";
         }
 
         // Teachers セクションの row にHTMLを挿入
@@ -147,10 +144,14 @@ function generateLectureSchedule() {
         let html = "";
 
         // 割当時間帯のタイトルと概要を追加
-        if (json[i].title == null || json[i].abstract == null) {
-          console.info("id: " + json[i].id + " has no title or abstract.");
-        } else {
+        if (json[i].title != null && json[i].abstract != null) {
           html += "<h5>" + json[i].title + "</h5>" + '<p class="mb-4">' + json[i].abstract + "</p>";
+        } else if (json[i].title == null || json[i].title == "") {
+          html += '<p class="mb-4">' + json[i].abstract + "</p>";
+        } else if (json[i].abstract == null || json[i].abstract == "") {
+          html += "<h5>" + json[i].title + "</h5>";
+        } else {
+          console.info("id: " + json[i].id + " has neither title nor abstract.");
         }
 
         // 先生たちのブロック前半のHTMLを追加
@@ -174,13 +175,11 @@ function generateLectureSchedule() {
             '<h6 class="fw-semibold mb-1">' +
             teacher.name +
             "</h6>" +
-            '<p class="fs-sm text-muted mb-0">' +
-            teacher.position +
-            ", " +
-            teacher.affiliation +
-            "</div>" +
-            "</div>" +
-            "</div>";
+            '<p class="fs-sm text-muted mb-0">';
+          if (teacher.position != "") {
+            html += teacher.position + ", ";
+          }
+          html += teacher.affiliation + "</div>" + "</div>" + "</div>";
         }
         // 先生たちのブロック後半のHTMLを追加
         html += "</div>";
