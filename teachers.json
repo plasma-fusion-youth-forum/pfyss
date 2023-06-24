@@ -222,7 +222,8 @@
         ]
       }
     ],
-    "title": "EX-Fusionの紹介"
+    "title": "EX-Fusionの紹介",
+    "abstract": ""
   },
   {
     "id": "special2",
@@ -248,7 +249,8 @@
         ]
       }
     ],
-    "title": "Helical Fusionの紹介"
+    "title": "Helical Fusionの紹介",
+    "abstract": ""
   },
   {
     "id": "special3",
@@ -306,7 +308,8 @@
         ]
       }
     ],
-    "title": "Kyoto Fusioneeringの紹介"
+    "title": "Kyoto Fusioneeringの紹介",
+    "abstract": ""
   },
   {
     "id": "special4",
@@ -328,6 +331,7 @@
         ]
       }
     ],
-    "title": "金属技研の概要と核融合分野における取り組み"
+    "title": "金属技研の概要と核融合分野における取り組み",
+    "abstract": ""
   }
 ]

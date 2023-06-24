@@ -144,14 +144,29 @@ function generateLectureSchedule() {
         let html = "";
 
         // 割当時間帯のタイトルと概要を追加
-        if (json[i].title != null && json[i].abstract != null) {
-          html += "<h5>" + json[i].title + "</h5>" + '<p class="mb-4">' + json[i].abstract + "</p>";
-        } else if (json[i].title == null || json[i].title == "") {
-          html += '<p class="mb-4">' + json[i].abstract + "</p>";
-        } else if (json[i].abstract == null || json[i].abstract == "") {
-          html += "<h5>" + json[i].title + "</h5>";
-        } else {
+        if (json[i].title == null || json[i].abstract == null) {
+          // タイトルまたは概要が未定義な場合は、次のループへ
           console.info("id: " + json[i].id + " has neither title nor abstract.");
+          continue;
+        } else if (json[i].title == "") {
+          // タイトルの文字列が存在しない場合
+          const title = timeslot.getElementsByTagName("h5")[0].textContent;
+          if (json[i].abstract != "") {
+            // 概要の文字列が存在する場合
+            html += "<h5>" + title + "</h5>" + '<p class="mb-4">' + json[i].abstract + "</p>";
+          } else {
+            // 概要の文字列が存在しない場合
+            html += "<h5>" + title + "</h5>";
+          }
+        } else {
+          // タイトルの文字列が存在する場合
+          if (json[i].abstract != "") {
+            // 概要の文字列が存在する場合
+            html += "<h5>" + json[i].title + "</h5>" + '<p class="mb-4">' + json[i].abstract + "</p>";
+          } else {
+            // 概要の文字列が存在しない場合
+            html += "<h5>" + json[i].title + "</h5>";
+          }
         }
 
         // 先生たちのブロック前半のHTMLを追加
