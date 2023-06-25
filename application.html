@@ -735,7 +735,20 @@
 
     <!-- Main Theme Script -->
     <script src="/assets/js/theme.min.js"></script>
+
+    <!-- Application Form Script -->
     <script src="/assets/js/application-form.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        // 旅費補助が必要な場合のみ表示
+        showReason();
+
+        // WebAPIを用いて申込み可能/キャンセル待ち人数を取得
+        fetchDataFromAPI(40);
+      });
+    </script>
+
+    <!-- Submitting Spinner Script -->
     <script src="/assets/js/submittingSpinner.js"></script>
 
     <!-- aos initialization -->
@@ -744,13 +757,6 @@
         delay: 0, // values from 0 to 3000, with step 50ms
         duration: 500, // values from 0 to 3000, with step 50ms
         once: true, // whether animation should happen only once - while scrolling down
-      });
-    </script>
-
-    <!-- hide/show 旅費事由 -->
-    <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        showReason();
       });
     </script>
 
