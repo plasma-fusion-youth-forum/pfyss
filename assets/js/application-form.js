@@ -1,7 +1,8 @@
-// This file contains the JavaScript code for the application form
+// This file contains the JavaScript code which is executed at /application.html
 // =================================================================================================
-//
-// フォームに入力された値をチェックし、有効な場合は確認モーダルを表示する関数
+/**
+ * フォームに入力された値をチェックし、有効な場合は確認モーダルを表示する関数
+ */
 function validateForm() {
   // get the form
   let form = document.getElementById("application-form");
@@ -23,7 +24,9 @@ function validateForm() {
 }
 
 // =================================================================================================
-// 旅費補助理由の欄を表示する関数
+/**
+ * 旅費補助理由の欄を表示する関数. 旅費補助の選択欄が「必要」の場合にのみ表示される.
+ */
 function showReason() {
   // 旅費補助のselectタグを取得
   const travel = document.getElementById("travel");
@@ -65,36 +68,38 @@ function showReason() {
 }
 
 // =================================================================================================
-// Web APIからデータを取得する関数
-function fetchDataFromAPI(textField) {
+/**
+ * Web APIから 申込み可能人数 or キャンセル待ち人数 を取得し、テキスト欄に貼り付ける関数.
+ * @param {number} total - 募集人数. この数値を超えるとキャンセル待ちになる.
+ * @return {void}
+ */
+function fetchDataFromAPI(total) {
   // Web APIのエンドポイント
-  const apiEndpoint =
+  let endpoint =
     "https://script.google.com/macros/s/AKfycbyYH4EHD8-pXrlfoyFwQKfeDQruaWL4RlAVdOizyniOEYBcxxYJ5KXW4qgAQDIgra6dbw/exec";
 
+  // 募集人数のクエリパラメータをエンドポイントに追加
+  endpoint += "?total=" + total;
+
   // Web APIからデータを取得
-  fetch(apiEndpoint)
+  fetch(endpoint)
     .then(function (response) {
       // レスポンスをJSON形式で解析
       return response.json();
     })
     .then(function (data) {
+      // 表示するテキスト欄の要素を取得
+      let textField = document.getElementById("available-capacity");
+
       // テキスト欄にデータを貼り付ける
-      if (data["waitlistCount"] > 0) {
-        textField.textContent = "キャンセル待ち人数: " + data["waitlistCount"] + "人";
+      if (data.waitlistCount > 0) {
+        textField.textContent = "キャンセル待ち人数: " + data.waitlistCount + "人";
+      } else {
+        textField.textContent = "申込み可能人数: " + data.availableCapacity + "人";
       }
-      textField.textContent = "申込み可能人数: " + data["AvailableCapacity"] + "人";
     })
     .catch(function (error) {
       // エラーハンドリング
       console.log("エラーが発生しました:", error);
     });
 }
-
-// ページが読み込まれたときに実行する処理
-window.addEventListener("load", function () {
-  // テキスト欄の要素を取得
-  let textField = document.getElementById("available-capacity");
-
-  // Web APIからデータを取得
-  fetchDataFromAPI(textField);
-});

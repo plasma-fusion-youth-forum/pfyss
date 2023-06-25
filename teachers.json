@@ -1,6 +1,6 @@
 [
   {
-    "id": "lecture1",
+    "id": "lecture8",
     "teachers": [
       {
         "name": "片山 一成",
@@ -23,7 +23,7 @@
     "abstract": "DT核融合炉は、トリチウムを消費しながら生産し続けるという極めて高度な技術を必要とする巨大なトリチウムプラントです。本講義では、燃料トリチウムに関わる課題について改めて皆さんと一緒に考えてみたいと思います。"
   },
   {
-    "id": "lecture2",
+    "id": "lecture7",
     "teachers": [
       {
         "name": "唐橋 一浩",
@@ -42,11 +42,11 @@
         ]
       }
     ],
-    "title": "(仮) 半導体関連",
-    "abstract": ""
+    "title": "プラズマプロセスの基礎と応用",
+    "abstract": "プラズマプロセスは広範な産業分野に応用されており、特にドライエッチングなどの微細加工技術は先端電子デバイスの開発を推し進めてきた鍵となる技術である。本講義では、半導体製造プロセスにおけるプラズマプロセスを基礎から解説する。"
   },
   {
-    "id": "lecture3",
+    "id": "lecture9",
     "teachers": [
       {
         "name": "小林 達也",
@@ -69,7 +69,7 @@
     "abstract": "プラズマ乱流は時空間スケールが微細であり、信号変化量も小さいため、その計測は困難を極める。本講演では、乱流物理研究を行う上で使用する様々な計測器の特性や性能を、データユーザ視点からレビューする。"
   },
   {
-    "id": "lecture4",
+    "id": "lecture1",
     "teachers": [
       {
         "name": "小菅 祐輔",
@@ -84,7 +84,7 @@
         ]
       }
     ],
-    "title": "(仮) 乱流理論",
+    "title": "核融合の早期実現を目指したプラズマ乱流の理論モデリング研究",
     "abstract": "核融合プラズマの高性能化のためにはプラズマ乱流の理解が必須となる。本講演ではプラズマ乱流が励起する非線形構造に着目し、それらの振舞を記述するモデルを数例紹介し、核融合閉じ込めへの応用例について触れる。"
   },
   {
@@ -134,7 +134,7 @@
     "abstract": "本講義では機械学習、特に教師ありの基本を学びます。具体的には教師あり学習の概要、代表的なモデル、モデルの訓練と評価を扱います。また、統計的学習理論の基本にも簡単に触れる予定です。"
   },
   {
-    "id": "lecture7",
+    "id": "lecture4",
     "teachers": [
       {
         "name": "政田 洋平",
@@ -153,11 +153,11 @@
         ]
       }
     ],
-    "title": "(仮) 宇宙プラズマ・太陽ダイナモ",
+    "title": "天体プラズマ: 極限的な乱流状態における構造形成",
     "abstract": "太陽対流層は、超高レイノルズ数、超高磁気レイノルズ数、超低プラントル数で特徴づけられた、極限的なMHD乱流状態になっている。太陽対流層の中では、自転や密度成層による対称性の破れの帰結として、自発的に時空間コヒーレンスの高い磁場が組織化される。この講義では、太陽ダイナモ研究の現状を概観するとともに、未解決問題とその解決策について議論する。"
   },
   {
-    "id": "lecture8",
+    "id": "lecture2",
     "teachers": [
       {
         "name": "村山 真道",
@@ -176,7 +176,7 @@
     "abstract": "JT-60SA・ITERといった大型のトカマク装置では高温のプラズマを維持するために大規模な中性粒子ビーム入射(NBI)による加熱が用いられています。本講義では、NB加熱開発グループ全体として設計開発に携わる各ビーム入射装置の概要と、私が担当するITER NBI用1MV超高圧電源・真空絶縁やJT-60SA NBI用電源・磁場設計について解説します。"
   },
   {
-    "id": "lecture9",
+    "id": "lecture3",
     "teachers": [
       {
         "name": "森 芳孝",
@@ -201,5 +201,137 @@
     ],
     "title": "レーザー方式慣性核融合の概要",
     "abstract": "慣性閉じ込め核融合では、核燃焼の点火条件を達成するために、短時間に非常に大きなパワーを燃料に注入します。パワー注入の有力な候補として、ハイパワーレーザー及びパルスパワー、そしてパルスパワー技術を用いた大電流荷電粒子ビームが挙げられます。本講義では、ローソンの考察に基づく制御核融合成立の条件から出発し、レーザー方式慣性核融合炉の仕組みと研究開発の状況を概説します。"
+  },
+  {
+    "id": "special1",
+    "teachers": [
+      {
+        "name": "松尾 一輝",
+        "position": "CEO",
+        "affiliation": "EX-Fusion",
+        "image": "https://drive.google.com/uc?id=1lUtE0A__FGz0VURabIgLNlEvxIkFb56c",
+        "links": [
+          {
+            "type": "personal",
+            "url": "https://researchmap.jp/kazuki_matsuo"
+          },
+          {
+            "type": "twitter",
+            "url": "https://twitter.com/kazuki_m2o"
+          }
+        ]
+      }
+    ],
+    "title": "EX-Fusionの紹介",
+    "abstract": ""
+  },
+  {
+    "id": "special2",
+    "teachers": [
+      {
+        "name": "田口 昂哉",
+        "position": "CEO",
+        "affiliation": "Helical Fusion",
+        "image": "https://static.wixstatic.com/media/652328_0885b2a9809a4a49b5ff612a3c4ac941~mv2.jpg/v1/crop/x_1089,y_1776,w_6234,h_6965/fill/w_618,h_690,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/taguchi_0086_B%26W.jpg",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://www.helicalfusion.com/team"
+          },
+          {
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/takaya-taguchi-426802174/"
+          },
+          {
+            "type": "twitter",
+            "url": "https://twitter.com/takayataguchi"
+          }
+        ]
+      }
+    ],
+    "title": "Helical Fusionの紹介",
+    "abstract": ""
+  },
+  {
+    "id": "special3",
+    "teachers": [
+      {
+        "name": "小林 暁",
+        "position": "Senior Staff",
+        "affiliation": "Kyoto Fusioneering",
+        "image": "https://drive.google.com/uc?id=1hXvHvWO7IjKbGDqo2if5elHS9NmFJS1M",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://kyotofusioneering.com"
+          },
+          {
+            "type": "personal",
+            "url": "https://kyotofusioneering.com/news/2023/02/08/1165"
+          }
+        ]
+      },
+      {
+        "name": "Suneui Lee",
+        "position": "Senior Staff",
+        "affiliation": "Kyoto Fusioneering",
+        "image": "https://drive.google.com/uc?id=1UjaHROxBbiiVz7Nd5ADu_p9rTTSASMmH",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://kyotofusioneering.com"
+          },
+          {
+            "type": "personal",
+            "url": "https://www.researchgate.net/profile/Suneui-Lee"
+          },
+          {
+            "type": "linkedin",
+            "url": "https://www.linkedin.com/in/suneui-lee-6a4b27275/"
+          }
+        ]
+      },
+      {
+        "name": "矢ケ崎 誇楠",
+        "position": "Senior Staff",
+        "affiliation": "Kyoto Fusioneering",
+        "image": "https://drive.google.com/uc?id=10zOqZgL9804w1T6D529thRGDBuEuPxW6",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://kyotofusioneering.com"
+          },
+          {
+            "type": "personal",
+            "url": "https://kyotofusioneering.com/news/2023/06/08/1531"
+          }
+        ]
+      }
+    ],
+    "title": "Kyoto Fusioneeringの紹介",
+    "abstract": ""
+  },
+  {
+    "id": "special4",
+    "teachers": [
+      {
+        "name": "山田 弘一",
+        "position": "",
+        "affiliation": "金属技研",
+        "image": "https://drive.google.com/uc?id=1TxuDsaYu6rSGwX1N32R24hlGdwAgaikF",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://www.kinzoku.co.jp/"
+          },
+          {
+            "type": "twitter",
+            "url": "https://twitter.com/MetalTechJapan"
+          }
+        ]
+      }
+    ],
+    "title": "金属技研の概要と核融合分野における取り組み",
+    "abstract": ""
   }
 ]

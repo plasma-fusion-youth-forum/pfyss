@@ -31,8 +31,8 @@ function generateTeacherSection() {
       // 生成したHTMLを入れておく変数
       let html = "";
 
-      // AOSのdelay用のindex
-      let aosDelayIndex = 0;
+      // Teacher index
+      let teacherIndex = 0;
 
       // 割当時間(id)の数だけfor分で回す
       for (let i = 0; i < json.length; i++) {
@@ -44,9 +44,19 @@ function generateTeacherSection() {
           // 前半html
           html +=
             '<div class="col">' +
-            '<div class="card card-hover border-0 bg-transparent" data-aos="fade-up" data-aos-delay=' +
-            aosDelayIndex * 100 +
-            ">" +
+            '<div id="teacher' +
+            teacherIndex +
+            '" ' +
+            'class="card card-hover border-0 bg-transparent" data-aos="fade-up" data-aos-delay=' +
+            teacherIndex * 100;
+
+          if (teacherIndex > 0) {
+            html += ' data-aos-anchor="#teacher0">';
+          } else {
+            html += ">";
+          }
+
+          html +=
             '<div class="position-relative">' +
             '<img src="' +
             teacher.image +
@@ -57,8 +67,8 @@ function generateTeacherSection() {
             '<span class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-35 rounded-3"></span>' +
             '<div class="position-relative d-flex zindex-2">';
 
-          // AOSのdelay用のindexを1つ増やす
-          aosDelayIndex++;
+          // teacher indexを1つ増やす
+          teacherIndex++;
 
           // linksの数だけfor分で回す
           for (let k = 0; k < teacher.links.length; k++) {
@@ -90,14 +100,11 @@ function generateTeacherSection() {
             '<h3 class="fs-lg fw-semibold pt-1 mb-2">' +
             teacher.name +
             "</h3 >" +
-            '<p class="fs-sm mb-0">' +
-            teacher.position +
-            ", " +
-            teacher.affiliation +
-            "</p>" +
-            "</div>" +
-            "</div>" +
-            "</div>";
+            '<p class="fs-sm mb-0">';
+          if (teacher.position != "") {
+            html += teacher.position + ", ";
+          }
+          html += teacher.affiliation + "</p>" + "</div>" + "</div>" + "</div>";
         }
 
         // Teachers セクションの row にHTMLを挿入
@@ -138,9 +145,28 @@ function generateLectureSchedule() {
 
         // 割当時間帯のタイトルと概要を追加
         if (json[i].title == null || json[i].abstract == null) {
-          console.info("id: " + json[i].id + " has no title or abstract.");
+          // タイトルまたは概要が未定義な場合は、次のループへ
+          console.info("id: " + json[i].id + " has neither title nor abstract.");
+          continue;
+        } else if (json[i].title == "") {
+          // タイトルの文字列が存在しない場合
+          const title = timeslot.getElementsByTagName("h5")[0].textContent;
+          if (json[i].abstract != "") {
+            // 概要の文字列が存在する場合
+            html += "<h5>" + title + "</h5>" + '<p class="mb-4">' + json[i].abstract + "</p>";
+          } else {
+            // 概要の文字列が存在しない場合
+            html += "<h5>" + title + "</h5>";
+          }
         } else {
-          html += "<h5>" + json[i].title + "</h5>" + '<p class="mb-4">' + json[i].abstract + "</p>";
+          // タイトルの文字列が存在する場合
+          if (json[i].abstract != "") {
+            // 概要の文字列が存在する場合
+            html += "<h5>" + json[i].title + "</h5>" + '<p class="mb-4">' + json[i].abstract + "</p>";
+          } else {
+            // 概要の文字列が存在しない場合
+            html += "<h5>" + json[i].title + "</h5>";
+          }
         }
 
         // 先生たちのブロック前半のHTMLを追加
@@ -164,13 +190,11 @@ function generateLectureSchedule() {
             '<h6 class="fw-semibold mb-1">' +
             teacher.name +
             "</h6>" +
-            '<p class="fs-sm text-muted mb-0">' +
-            teacher.position +
-            ", " +
-            teacher.affiliation +
-            "</div>" +
-            "</div>" +
-            "</div>";
+            '<p class="fs-sm text-muted mb-0">';
+          if (teacher.position != "") {
+            html += teacher.position + ", ";
+          }
+          html += teacher.affiliation + "</div>" + "</div>" + "</div>";
         }
         // 先生たちのブロック後半のHTMLを追加
         html += "</div>";
