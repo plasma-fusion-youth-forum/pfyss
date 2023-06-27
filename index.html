@@ -372,7 +372,7 @@
               style="max-width: 530px"
               data-aos="fade-up"
             >
-              <h2 class="h3 text-primary">Aug. 29 &ndash; Sep. 1, 2023</h2>
+              <h2 class="h3 text-primary" id="title-duration"><!-- setEventDuration()で生成 --></h2>
               <h2 class="display-5 pb-lg-0 mb-0">第1回 プラズマ・核融合</h2>
               <h1 class="display-1 pb-lg-3 mb-3">若手夏の学校</h1>
               <div class="d-flex justify-content-center justify-content-lg-start text-start mb-2">
@@ -516,7 +516,12 @@
           </div>
           <div class="col-lg-3 mb-4">
             <!-- 日付 Nav tabs -->
-            <div class="nav flex-sm-nowrap flex-lg-column nav-tabs" role="tablist" aria-orientation="vertical">
+            <div
+              id="date-tabs"
+              class="nav flex-sm-nowrap flex-lg-column nav-tabs"
+              role="tablist"
+              aria-orientation="vertical"
+            >
               <a
                 href="#day-1"
                 class="nav-link d-block w-100 rounded-3 p-4 p-xl-5 me-2 me-sm-3 me-lg-0 mb-3 mb-sm-0 mb-lg-3 active"
@@ -573,7 +578,7 @@
           </div>
           <div class="col-lg-8 offset-lg-1">
             <!-- Tab panes -->
-            <div class="tab-content">
+            <div id="date-content" class="tab-content">
               <!-- Day 1 schedule -->
               <div class="tab-pane fade show active" id="day-1" role="tabpanel" aria-labelledby="day-1-tab">
                 <div class="border-bottom pb-4">
@@ -1245,7 +1250,9 @@
                 <div class="px-md-3 position-relative zindex-5">
                   <div class="d-sm-flex align-items-start justify-content-between">
                     <div class="text-center text-sm-start me-sm-4">
-                      <div class="lead fw-semibold text-light text-uppercase mb-2">8月29日 &ndash; 9月1日</div>
+                      <div class="lead fw-semibold text-light text-uppercase mb-2" id="app-card-duration">
+                        <!-- setEventDuration()で生成 -->
+                      </div>
                       <h3 class="h5 text-light mb-0">第1回</h3>
                       <h3 class="h3 text-light mb-0">プラズマ・核融合</h3>
                       <h3 class="h1 text-light">若手夏の学校</h3>
@@ -1418,18 +1425,20 @@
     <!-- Main Theme Script -->
     <script src="/assets/js/theme.min.js"></script>
 
+    <!-- schedule scripts -->
+    <script src="/assets/js/schedule.js"></script>
+
     <!-- teachers script -->
     <script src="/assets/js/teachers.js"></script>
+
+    <!-- DOMが読み込まれたときに実行する処理 -->
     <script>
-      // DOMが読み込まれたときに実行する処理
-      // loadがトリガーだと画像が読み込まれるのが遅れるため、
-      // DOMContentLoadedをトリガーにしている
       window.addEventListener("DOMContentLoaded", function () {
         // 先生のセクションを生成
         generateTeacherSection();
 
-        // 講義の時間割の内容を生成
-        // generateLectureSchedule();
+        // 全スケジュールを取得し、様々な処理を行う
+        FetchAllEvents(2023);
       });
     </script>
 
