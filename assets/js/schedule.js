@@ -207,7 +207,7 @@ function createSchedule(days) {
         innerHTML += "</div>"; // 1列目終了タグ
       } else {
         innerHTML +=
-          '<div class="col-sm-4 mb-0 mb-sm-0">' + // 1列目開始タグ
+          '<div class="col-sm-4 mb-3 mb-sm-0">' + // 1列目開始タグ
           `<div class="h5 mb-1">${timeslotHTML}</div>` +
           `<p class="text-muted mb-0">${dateHTML}</p>` +
           "</div>"; // 1列目終了タグ
