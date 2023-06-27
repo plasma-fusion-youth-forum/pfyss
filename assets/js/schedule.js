@@ -68,6 +68,7 @@ function FetchAllEvents(year) {
       // ---------------------------------------- //
       // 全イベントリストデータを用いた処理はここに記述  //
       // ---------------------------------------- //
+      setEventDuration(days);
       createTabs(days); // 日時タブを作成
       createSchedule(days); // スケジュールを作成
       assignTeachers(); // 講師情報をスケジュールに割り当てる
@@ -79,6 +80,23 @@ function FetchAllEvents(year) {
     });
 }
 // -------------------------------------------------------------------------------------------------
+/**
+ * イベント期間日時を各HTML要素に割り当てる.
+ *  * @param {{date: Date, events: {startTime: Date, endTime: Date, title: String, description: String, color: String}[]}[]} days - 日毎のイベントリスト.
+ */
+function setEventDuration(days) {
+  let titleDuration = document.getElementById("title-duration"); // タイトルの日時
+  let appDuration = document.getElementById("app-card-duration"); // 申込みカードの日時
+
+  startDate = days[0].date;
+  endDate = days[days.length - 1].date;
+  titleDuration.innerHTML = `${MONTHS[startDate.getMonth()].slice(0, 3)}. ${startDate.getDate()} &ndash; ${MONTHS[
+    endDate.getMonth()
+  ].slice(0, 3)}. ${endDate.getDate()}, ${endDate.getFullYear()}`;
+  appDuration.innerHTML = `${
+    startDate.getMonth() + 1
+  }月${startDate.getDate()}日 &ndash; ${endDate.getMonth()}月${endDate.getDate()}日`;
+}
 
 /**
  * 全イベントリストデータをもとに日時タブを作成する.
