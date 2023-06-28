@@ -1,6 +1,8 @@
 // このファイルでは、teachers.jsonを読み込んで、様々な動的処理を行っています。
 
-// 先生のセクションを生成する関数
+/**
+ * 先生のセクションを生成する関数. `teachers.json`を読み込んで、先生のセクションを生成します。
+ */
 function generateTeacherSection() {
   // link用アイコンのオブジェクト
   const linkIcons = {
@@ -114,8 +116,10 @@ function generateTeacherSection() {
   };
 }
 
-// 講義の時間割の内容を生成する関数
-function generateLectureSchedule() {
+/**
+ * 講義の時間割の内容を生成する関数. `teachers.json`を読み込んで、対応する時間帯に講義情報を挿入します。
+ */
+function assignTeachers() {
   // XMLHttpRequestインスタンスを作成
   let request = new XMLHttpRequest();
 

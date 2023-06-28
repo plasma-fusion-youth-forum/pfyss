@@ -73,7 +73,7 @@ function showReason() {
  * @param {number} total - 募集人数. この数値を超えるとキャンセル待ちになる.
  * @return {void}
  */
-function fetchDataFromAPI(total) {
+function fetchAndPasteAvailability(total) {
   // Web APIのエンドポイント
   let endpoint =
     "https://script.google.com/macros/s/AKfycbyYH4EHD8-pXrlfoyFwQKfeDQruaWL4RlAVdOizyniOEYBcxxYJ5KXW4qgAQDIgra6dbw/exec";
