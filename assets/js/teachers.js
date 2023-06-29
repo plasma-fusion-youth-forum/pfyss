@@ -4,7 +4,10 @@
  * 先生のセクションを生成する関数. `teachers.json`を読み込んで、先生のセクションを生成します。
  */
 function generateTeacherSection() {
-  // link用アイコンのオブジェクト
+  /**
+   * link用アイコンのオブジェクト
+   * @type {Object.<string, string>} - key: linkの種類, value: link用アイコンのHTML (e.g. `<i class="bx bxl-twitter"></i>`)
+   */
   const linkIcons = {
     twitter: '<i class="bx bxl-twitter"></i>',
     facebook: '<i class="bx bxl-facebook"></i>',
@@ -43,70 +46,44 @@ function generateTeacherSection() {
           // 先生を1人取り出す
           const teacher = json[i].teachers[j];
 
-          // 前半html
+          // 先生のカードを追加
           html +=
-            '<div class="col">' +
-            '<div id="teacher' +
-            teacherIndex +
-            '" ' +
-            'class="card card-hover border-0 bg-transparent" data-aos="fade-up" data-aos-delay=' +
-            teacherIndex * 100;
-
-          if (teacherIndex > 0) {
-            html += ' data-aos-anchor="#teacher0">';
-          } else {
-            html += ">";
-          }
-
-          html +=
-            '<div class="position-relative">' +
-            '<img src="' +
-            teacher.image +
-            '" class="teacher-card-img rounded-3" alt="' +
-            teacher.name +
-            '">' +
-            '<div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">' +
+            '<div class="col">' + // col開始
+            `<div id="teacher${teacherIndex}"` + // 先生カード div開始
+            `class="card card-hover border-0 bg-transparent" ` +
+            `data-aos="fade-up" data-aos-delay=${teacherIndex * 100}` +
+            `${teacherIndex > 0 ? ' data-aos-anchor="#teacher0">' : ">"}` + // teacher 2人目以降の先生は、1人目の先生をアンカーにする
+            '<div class="position-relative">' + // 先生の画像を囲むdiv
+            `<img src="${teacher.image}" class="teacher-card-img rounded-3" alt="${teacher.name}">` + // 先生の画像 imgタグ
+            '<div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">' + // オーバーレイdiv (先生の画像の上に重なる)
             '<span class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-35 rounded-3"></span>' +
-            '<div class="position-relative d-flex zindex-2">';
-
-          // teacher indexを1つ増やす
-          teacherIndex++;
+            '<div class="position-relative d-flex zindex-2">'; // 先生のリンクボタンを囲むdiv
 
           // linksの数だけfor分で回す
           for (let k = 0; k < teacher.links.length; k++) {
-            // 先生のリンクを1つ取り出す
-            let link = teacher.links[k];
+            const link = teacher.links[k];
 
-            // link領域のhtmlを追加
+            // リンクボタンを追加
             html +=
-              '<a href="' +
-              link.url +
-              '" target="_blank" rel="noopener noreferrer" ' +
-              'class="btn btn-icon btn-secondary btn-sm bg-white btn-' +
-              link.type;
-
-            // 最後のリンクでない場合は、marginを追加
-            if (k < teacher.links.length - 1) {
-              html += ' me-2">';
-            } else {
-              html += '">';
-            }
-            html += linkIcons[link.type] + "</a>";
+              `<a href="${link.url}" target="_blank" rel="noopener noreferrer" ` +
+              `class="btn btn-icon btn-secondary btn-sm bg-white btn-${link.type}` +
+              `${k < teacher.links.length - 1 ? " me-2" : ""}">` + // 最終リンク以外は、margin-rightを追加
+              `${linkIcons[link.type]}</a>`;
           }
 
-          html += "</div>" + "</div>" + "</div>";
+          html += "</div></div></div>"; // 先生のリンクボタンを囲むdiv, オーバーレイdiv, 先生の画像を囲むdivを閉じる
 
-          // 後半html (名前、役職、所属)
+          // カードの本体を追加
           html +=
             '<div class="card-body text-center p-3">' +
-            '<h3 class="fs-lg fw-semibold pt-1 mb-2">' +
-            teacher.name +
-            "</h3 >" +
-            '<p class="fs-sm mb-0">';
-          if (teacher.position != "") {
-            html += teacher.position + ", ";
-          }
-          html += teacher.affiliation + "</p>" + "</div>" + "</div>" + "</div>";
+            `<h3 class="fs-lg fw-semibold pt-1 mb-2">${teacher.name}</h3>` + // 先生の名前
+            `<p class="fs-sm mb-0">${teacher.position != "" ? `${teacher.position}, ` : ""}${teacher.affiliation}</p>` + // 先生の役職と所属
+            "</div>";
+
+          html += "</div></div>"; // 先生カード div終了, col終了
+
+          // teacher indexを1つ増やす
+          teacherIndex++;
         }
 
         // Teachers セクションの row にHTMLを挿入
@@ -118,8 +95,10 @@ function generateTeacherSection() {
 
 /**
  * 講義の時間割の内容を生成する関数. `teachers.json`を読み込んで、対応する時間帯に講義情報を挿入します。
+ * @returns {Promise} - 講義情報の挿入が完了したかどうかを表すPromiseオブジェクト.
  */
-function assignTeachers() {
+async function assignTeachers() {
+  console.log("start assignTeachers()");
   // XMLHttpRequestインスタンスを作成
   let request = new XMLHttpRequest();
 
@@ -157,23 +136,23 @@ function assignTeachers() {
           const title = timeslot.getElementsByTagName("h5")[0].textContent;
           if (json[i].abstract != "") {
             // 概要の文字列が存在する場合
-            html += "<h5>" + title + "</h5>" + '<p class="mb-4">' + json[i].abstract + "</p>";
+            html += `<h5>${title}</h5><p class="mb-4">${json[i].abstract}</p>`;
           } else {
             // 概要の文字列が存在しない場合
-            html += "<h5>" + title + "</h5>";
+            html += `<h5>${title}</h5>`;
           }
         } else {
           // タイトルの文字列が存在する場合
           if (json[i].abstract != "") {
             // 概要の文字列が存在する場合
-            html += "<h5>" + json[i].title + "</h5>" + '<p class="mb-4">' + json[i].abstract + "</p>";
+            html += `<h5>${json[i].title}</h5><p class="mb-4">${json[i].abstract}</p>`;
           } else {
             // 概要の文字列が存在しない場合
-            html += "<h5>" + json[i].title + "</h5>";
+            html += `<h5>${json[i].title}</h5>`;
           }
         }
 
-        // 先生たちのブロック前半のHTMLを追加
+        // 先生たちの情報を追加するrowを開始
         html += '<div class="row row-cols-1 row-cols-md-2 g-1">';
 
         // 割当時間帯に話す先生たちの数だけfor分で回す
@@ -183,29 +162,23 @@ function assignTeachers() {
 
           // 先生たちの情報を追加
           html +=
-            '<div class="col">' +
-            '<div class="d-flex align-items-center">' +
-            '<img src="' +
-            teacher.image +
-            '" class="rounded-circle me-3" width="48" alt="' +
-            teacher.name +
-            '"/>' +
-            '<div class="ps-3">' +
-            '<h6 class="fw-semibold mb-1">' +
-            teacher.name +
-            "</h6>" +
-            '<p class="fs-sm text-muted mb-0">';
-          if (teacher.position != "") {
-            html += teacher.position + ", ";
-          }
-          html += teacher.affiliation + "</div>" + "</div>" + "</div>";
+            '<div class="col">' + // col開始
+            '<div class="d-flex align-items-center">' + // 先生の画像と名前を囲むdiv
+            `<img src="${teacher.image}" class="rounded-circle me-3" width="48" alt="${teacher.name}"/>` + // 先生の画像 imgタグ
+            '<div class="ps-3">' + // 先生の名前と役職を囲むdiv
+            `<h6 class="fw-semibold mb-1">${teacher.name}</h6>` +
+            '<p class="fs-sm text-muted mb-0">' +
+            `${teacher.position != "" ? `${teacher.position}, ` : ""}${teacher.affiliation}` + // 先生の役職と所属
+            "</p>" +
+            "</div></div></div>"; // 先生の名前と役職を囲むdiv, 先生の画像と名前を囲むdiv, col終了
         }
-        // 先生たちのブロック後半のHTMLを追加
-        html += "</div>";
+
+        html += "</div>"; //　先生たちの情報を追加するrowを閉じる
 
         // 講義のブロック要素にHTMLを挿入
         timeslot.innerHTML = html;
       }
     }
   };
+  console.log("finish assignTeachers()");
 }
