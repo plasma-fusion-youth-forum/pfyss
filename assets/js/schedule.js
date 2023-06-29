@@ -90,12 +90,18 @@ function setEventDuration(days) {
 
   startDate = days[0].date;
   endDate = days[days.length - 1].date;
-  titleDuration.innerHTML = `${MONTHS[startDate.getMonth()].slice(0, 3)}. ${startDate.getDate()} &ndash; ${MONTHS[
-    endDate.getMonth()
-  ].slice(0, 3)}. ${endDate.getDate()}, ${endDate.getFullYear()}`;
-  appDuration.innerHTML = `${
-    startDate.getMonth() + 1
-  }月${startDate.getDate()}日 &ndash; ${endDate.getMonth()}月${endDate.getDate()}日`;
+
+  // タイトルの日時を設定
+  titleDuration.innerHTML =
+    `${MONTHS[startDate.getMonth()].slice(0, 3)}. ${startDate.getDate()}` +
+    " &ndash; " +
+    `${MONTHS[endDate.getMonth()].slice(0, 3)}. ${endDate.getDate()}, ${endDate.getFullYear()}`;
+
+  // 申込みカードの日時を設定
+  appDuration.innerHTML =
+    `${startDate.getMonth() + 1}月${startDate.getDate()}日` +
+    " &ndash; " +
+    `${endDate.getMonth() + 1}月${endDate.getDate()}日`;
 }
 
 /**
