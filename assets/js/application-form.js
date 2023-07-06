@@ -92,7 +92,7 @@ function fetchAndPasteAvailability(total) {
       let textField = document.getElementById("available-capacity");
 
       // テキスト欄にデータを貼り付ける
-      if (data.waitlistCount > 0) {
+      if (data.waitlistCount >= 0) {
         textField.textContent = "キャンセル待ち人数: " + data.waitlistCount + "人";
       } else {
         textField.textContent = "申込み可能人数: " + data.availableCapacity + "人";
