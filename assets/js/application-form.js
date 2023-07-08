@@ -103,3 +103,33 @@ function fetchAndPasteAvailability(total) {
       console.log("エラーが発生しました:", error);
     });
 }
+
+// =================================================================================================
+/**
+ * 応募締切を過ぎた場合に、フォームを削除してメッセージを表示する関数.
+ * @param {string} deadline - 応募締切日. YYYY-MM-DD形式でもYYYY/MM/DD形式でも良い. Dateオブジェクトに変換できれば良い.
+ * @return {boolean} - 応募締切を過ぎている場合はtrue, そうでない場合はfalse.
+ */
+function deleteFormIfPastDeadline(deadline) {
+  // 応募締切日をDateオブジェクトに変換
+  let deadlineDate = new Date(deadline);
+
+  // 今日の日付を取得
+  let today = new Date();
+
+  // 応募締切を過ぎている場合
+  if (today > deadlineDate) {
+    // フォームを削除
+    document.getElementById("application-form").remove();
+
+    // 確認モーダルを削除
+    document.getElementById("confirmationModal").remove();
+
+    // メッセージを表示
+    document.getElementById("deadline-message").classList.remove("d-none");
+
+    return true;
+  }
+
+  return false;
+}
