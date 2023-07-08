@@ -361,166 +361,174 @@
           <h2 class="text-center">参加申込みフォーム</h2>
         </div>
 
-        <!-- form section -->
-        <!-- 締め切った場合 formタグにhidden要素をつける -->
-        <form id="application-form" class="container px-4 px-sm-5 needs-validation" novalidate>
-          <!-- 申込み可能/キャンセル待ち人数の表示 -->
-          <div data-aos="fade" data-aos-delay="1500" data-aos-anchor="#annotation1">
-            <p id="available-capacity" class="text-end mb-0 mb-sm-3">&nbsp;</p>
-          </div>
+        <div class="container px-4 px-sm-5">
+          <!-- 申込み締切のお知らせ -->
+          <p id="deadline-message" class="text-center mb-4 d-none">
+            参加申込みを締め切りました。たくさんのご応募ありがとうございました。
+          </p>
 
-          <!-- 名前 (漢字) input -->
-          <div class="row mb-4">
-            <label for="name" class="col-form-label col-sm-4 col-md-3">名前 (漢字)</label>
-            <div class="col-sm-8 col-md-9">
-              <input
-                class="form-control form-control-lg"
-                type="text"
-                id="name"
-                value=""
-                required
-                placeholder="夏学 太郎"
-              />
-              <div class="invalid-feedback">漢字フルネームを入力してください</div>
+          <!-- form section -->
+          <form id="application-form" class="needs-validation" novalidate>
+            <!-- 申込み可能/キャンセル待ち人数の表示 -->
+            <div data-aos="fade" data-aos-delay="1500" data-aos-anchor="#annotation1">
+              <p id="available-capacity" class="text-end mb-0 mb-sm-3">&nbsp;</p>
             </div>
-          </div>
 
-          <!-- 名前 (フリガナ) input -->
-          <div class="row mb-4">
-            <label for="name-furigana" class="col-form-label col-sm-4 col-md-3">名前 (フリガナ)</label>
-            <div class="col-sm-8 col-md-9">
-              <input
-                class="form-control form-control-lg"
-                type="text"
-                id="name-furigana"
-                value=""
-                required
-                placeholder="ナツガク タロウ"
-              />
-              <div class="invalid-feedback">名前のフリガナを入力してください</div>
+            <!-- 名前 (漢字) input -->
+            <div class="row mb-4">
+              <label for="name" class="col-form-label col-sm-4 col-md-3">名前 (漢字)</label>
+              <div class="col-sm-8 col-md-9">
+                <input
+                  class="form-control form-control-lg"
+                  type="text"
+                  id="name"
+                  value=""
+                  required
+                  placeholder="夏学 太郎"
+                />
+                <div class="invalid-feedback">漢字フルネームを入力してください</div>
+              </div>
             </div>
-          </div>
 
-          <!-- Email input -->
-          <div class="row mb-4">
-            <label for="email" class="col-form-label col-sm-4 col-md-3">メールアドレス</label>
-            <div class="col-sm-8 col-md-9">
-              <input
-                class="form-control form-control-lg"
-                type="email"
-                id="email"
-                value=""
-                required
-                placeholder="example@pfyss.org"
-              />
-              <div class="invalid-feedback">有効なメールアドレスを入力してください</div>
+            <!-- 名前 (フリガナ) input -->
+            <div class="row mb-4">
+              <label for="name-furigana" class="col-form-label col-sm-4 col-md-3">名前 (フリガナ)</label>
+              <div class="col-sm-8 col-md-9">
+                <input
+                  class="form-control form-control-lg"
+                  type="text"
+                  id="name-furigana"
+                  value=""
+                  required
+                  placeholder="ナツガク タロウ"
+                />
+                <div class="invalid-feedback">名前のフリガナを入力してください</div>
+              </div>
             </div>
-          </div>
 
-          <!-- 所属 input -->
-          <div class="row mb-4">
-            <label for="member" class="col-form-label col-sm-4 col-md-3">所属</label>
-            <div class="col-sm-8 col-md-9">
-              <input
-                class="form-control form-control-lg"
-                type="text"
-                id="member"
-                value=""
-                required
-                placeholder="夏学大学、核融合研究室"
-              />
-              <div class="invalid-feedback">所属大学と研究室を入力してください</div>
+            <!-- Email input -->
+            <div class="row mb-4">
+              <label for="email" class="col-form-label col-sm-4 col-md-3">メールアドレス</label>
+              <div class="col-sm-8 col-md-9">
+                <input
+                  class="form-control form-control-lg"
+                  type="email"
+                  id="email"
+                  value=""
+                  required
+                  placeholder="example@pfyss.org"
+                />
+                <div class="invalid-feedback">有効なメールアドレスを入力してください</div>
+              </div>
             </div>
-          </div>
 
-          <!-- Select 学年 -->
-          <div class="row mb-4">
-            <label for="grade" class="col-form-label col-sm-4 col-md-3">学年</label>
-            <div class="col-sm-8 col-md-9">
-              <select class="form-select form-control form-control-lg" id="grade" required>
-                <option selected disabled value="">選択...</option>
-                <option>学部4年</option>
-                <option>修士1年</option>
-                <option>修士2年</option>
-                <option>博士1年</option>
-                <option>博士2年</option>
-                <option>博士3年</option>
-                <option>博士研究員</option>
-                <option>その他</option>
-              </select>
-              <div class="invalid-feedback">学年を選択してください</div>
+            <!-- 所属 input -->
+            <div class="row mb-4">
+              <label for="member" class="col-form-label col-sm-4 col-md-3">所属</label>
+              <div class="col-sm-8 col-md-9">
+                <input
+                  class="form-control form-control-lg"
+                  type="text"
+                  id="member"
+                  value=""
+                  required
+                  placeholder="夏学大学、核融合研究室"
+                />
+                <div class="invalid-feedback">所属大学と研究室を入力してください</div>
+              </div>
             </div>
-          </div>
 
-          <!-- Select 性別 -->
-          <div class="row mb-4">
-            <label for="gender" class="col-form-label col-sm-4 col-md-3">性別</label>
-            <div class="col-sm-8 col-md-9">
-              <select class="form-select form-control form-control-lg" id="gender" required>
-                <option selected disabled value="">選択...</option>
-                <option>男性</option>
-                <option>女性</option>
-              </select>
-              <div class="invalid-feedback">性別を選択してください</div>
+            <!-- Select 学年 -->
+            <div class="row mb-4">
+              <label for="grade" class="col-form-label col-sm-4 col-md-3">学年</label>
+              <div class="col-sm-8 col-md-9">
+                <select class="form-select form-control form-control-lg" id="grade" required>
+                  <option selected disabled value="">選択...</option>
+                  <option>学部4年</option>
+                  <option>修士1年</option>
+                  <option>修士2年</option>
+                  <option>博士1年</option>
+                  <option>博士2年</option>
+                  <option>博士3年</option>
+                  <option>博士研究員</option>
+                  <option>その他</option>
+                </select>
+                <div class="invalid-feedback">学年を選択してください</div>
+              </div>
             </div>
-          </div>
 
-          <!-- Select 専門 -->
-          <div class="row mb-4">
-            <label for="major" class="col-form-label col-sm-4 col-md-3">専門分野</label>
-            <div class="col-sm-8 col-md-9">
-              <select class="form-select form-control form-control-lg" id="major" required>
-                <option selected disabled value="">選択...</option>
-                <option>プラズマ基礎（放電物理、天文、プラズマ計測、原子分子過程、プラズマ源、イオン源など）</option>
-                <option>プラズマ応用（産業応用、表面処理、エッチング、ナノテクノロジー、環境・エネルギーなど）</option>
-                <option>
-                  核融合プラズマ（平衡・安定性、閉じ込め、乱流、輸送、加熱、計測・診断、定常運転・制御など）
-                </option>
-                <option>
-                  核融合炉工学（炉設計、ダイバータ、核融合燃料システム、保守安全性、社会的受容性、経済性など）
-                </option>
-              </select>
-              <div class="form-text">専門が決まっていない方は興味のある分野を選択してください。</div>
-              <div class="invalid-feedback">分野を選択してください</div>
+            <!-- Select 性別 -->
+            <div class="row mb-4">
+              <label for="gender" class="col-form-label col-sm-4 col-md-3">性別</label>
+              <div class="col-sm-8 col-md-9">
+                <select class="form-select form-control form-control-lg" id="gender" required>
+                  <option selected disabled value="">選択...</option>
+                  <option>男性</option>
+                  <option>女性</option>
+                </select>
+                <div class="invalid-feedback">性別を選択してください</div>
+              </div>
             </div>
-          </div>
 
-          <!-- Check 旅費補助 -->
-          <div class="row mb-4">
-            <label for="travel" class="col-form-label col-sm-4 col-md-3">旅費補助</label>
-            <div class="col-sm-8 col-md-9">
-              <select class="form-select form-control form-control-lg" id="travel" onchange="showReason()">
-                <option selected>不要</option>
-                <option>必要</option>
-              </select>
+            <!-- Select 専門 -->
+            <div class="row mb-4">
+              <label for="major" class="col-form-label col-sm-4 col-md-3">専門分野</label>
+              <div class="col-sm-8 col-md-9">
+                <select class="form-select form-control form-control-lg" id="major" required>
+                  <option selected disabled value="">選択...</option>
+                  <option>プラズマ基礎（放電物理、天文、プラズマ計測、原子分子過程、プラズマ源、イオン源など）</option>
+                  <option>
+                    プラズマ応用（産業応用、表面処理、エッチング、ナノテクノロジー、環境・エネルギーなど）
+                  </option>
+                  <option>
+                    核融合プラズマ（平衡・安定性、閉じ込め、乱流、輸送、加熱、計測・診断、定常運転・制御など）
+                  </option>
+                  <option>
+                    核融合炉工学（炉設計、ダイバータ、核融合燃料システム、保守安全性、社会的受容性、経済性など）
+                  </option>
+                </select>
+                <div class="form-text">専門が決まっていない方は興味のある分野を選択してください。</div>
+                <div class="invalid-feedback">分野を選択してください</div>
+              </div>
             </div>
-          </div>
 
-          <!-- 旅費補助が必要な場合のみ記入 -->
-          <div id="reason" class="row mb-4">
-            <label for="travel-reason" class="col-form-label col-sm-4 col-md-3"
-              >旅費補助が<span style="display: inline-block">必要な理由</span></label
-            >
-            <div class="col-sm-8 col-md-9">
-              <textarea
-                class="form-control form-control-lg"
-                type="text"
-                id="travel-reason"
-                value=""
-                style="height: 10rem"
-                placeholder=""
-              ></textarea>
-              <div class="invalid-feedback">旅費補助が必要な方は入力してください</div>
+            <!-- Check 旅費補助 -->
+            <div class="row mb-4">
+              <label for="travel" class="col-form-label col-sm-4 col-md-3">旅費補助</label>
+              <div class="col-sm-8 col-md-9">
+                <select class="form-select form-control form-control-lg" id="travel" onchange="showReason()">
+                  <option selected>不要</option>
+                  <option>必要</option>
+                </select>
+              </div>
             </div>
-          </div>
 
-          <!-- Launch modal button -->
-          <div class="row mb-4 mt-5">
-            <div class="col-sm-8 col-md-9 offset-sm-4 offset-md-3 d-flex flex-column flex-sm-row">
-              <button type="button" class="btn btn-primary btn-lg" onclick="validateForm()">確認</button>
+            <!-- 旅費補助が必要な場合のみ記入 -->
+            <div id="reason" class="row mb-4">
+              <label for="travel-reason" class="col-form-label col-sm-4 col-md-3"
+                >旅費補助が<span style="display: inline-block">必要な理由</span></label
+              >
+              <div class="col-sm-8 col-md-9">
+                <textarea
+                  class="form-control form-control-lg"
+                  type="text"
+                  id="travel-reason"
+                  value=""
+                  style="height: 10rem"
+                  placeholder=""
+                ></textarea>
+                <div class="invalid-feedback">旅費補助が必要な方は入力してください</div>
+              </div>
             </div>
-          </div>
-        </form>
+
+            <!-- Launch modal button -->
+            <div class="row mb-4 mt-5">
+              <div class="col-sm-8 col-md-9 offset-sm-4 offset-md-3 d-flex flex-column flex-sm-row">
+                <button type="button" class="btn btn-primary btn-lg" onclick="validateForm()">確認</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
@@ -740,11 +748,16 @@
     <script src="/assets/js/application-form.js"></script>
     <script>
       window.addEventListener("DOMContentLoaded", function () {
-        // 旅費補助が必要な場合のみ表示
-        showReason();
+        // 締切日を過ぎた場合は申込みフォームを非表示
+        deadline = deleteFormIfPastDeadline("2023-07-07T23:59:59+09:00");
 
-        // WebAPIを用いて申込み可能/キャンセル待ち人数を取得
-        fetchAndPasteAvailability(40);
+        if (!deadline) {
+          // 旅費補助が必要な場合のみ表示
+          showReason();
+
+          // WebAPIを用いて申込み可能/キャンセル待ち人数を取得
+          fetchAndPasteAvailability(40);
+        }
       });
     </script>
 
