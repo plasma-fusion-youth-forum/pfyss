@@ -350,8 +350,7 @@
                     novalidate
                     action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSd0to_e2GgQRaijT5Ndp9T88uk6oabtsdr1hTsSeV0RVArNeQ/formResponse"
                     method="POST"
-                    target="hidden_iframe"
-                    onsubmit="submitted=true;"
+                    target="dummyIframe"
                   >
                     <div class="col-12">
                       <div class="form-floating">
@@ -396,15 +395,17 @@
                       </div>
                     </div>
                     <div class="col-12 pt-2 pt-sm-3">
-                      <button
-                        class="g-recaptcha btn btn-lg btn-primary w-100 w-sm-auto"
-                        data-sitekey="6LeSGU0nAAAAAInmmBYoNiyAoYfDEKZZ1oqpcY4K"
-                        data-callback="onSubmit"
-                        data-action="submit"
-                      >
-                        送信
-                      </button>
+                      <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto">送信</button>
                     </div>
+                    <!-- nameの値はGoogleFormから取得 -->
+                    <!-- data-sitekeyにreCAPTCHAのsitekeyを入力 -->
+                    <input
+                      id="recap"
+                      name="entry.2078838576"
+                      type="hidden"
+                      value=""
+                      data-sitekey="6Lc7U00nAAAAAEd9n9Xh4M0KUJMfrOe1ujjzc_99"
+                    />
                   </form>
                 </div>
               </div>
@@ -498,7 +499,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/video/lg-video.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc7U00nAAAAAEd9n9Xh4M0KUJMfrOe1ujjzc_99"></script>
 
     <!-- Main Theme Script -->
     <script src="/assets/js/theme.min.js"></script>
@@ -512,22 +513,35 @@
       });
     </script>
 
-    <!-- Google recaptcha用 -->
+    <!-- reCAPTCHA execution and submit seaquence -->
     <script>
-      function onSubmit(token) {
-        document.getElementById("contact-form").submit();
-      }
+      const key = document.getElementById("recap").getAttribute("data-sitekey"); // reCAPTCHAのsitekeyを取得
+      const form = document.getElementById("contact-form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // submitを止める
+        if (form.checkValidity()) {
+          // check form validity
+          grecaptcha.ready(() => {
+            grecaptcha.execute(key, { action: "submit" }).then((token) => {
+              //recapchaを実行
+              document.getElementById("recap").value = token; // 戻り値tokenを#recapに格納
+              form.submit(); // formをsubmit
+              submitted = true;
+              // window.location="/contact-thanks.html"  // 送信後、お問い合わせ完了ページへ遷移
+            });
+          });
+        }
+      });
     </script>
 
-    <!-- move thanks page after submitting -->
-    <script type="text/javascript">
+    <!-- 送信後、遷移させないためのiframeを用意 -->
+    <script>
       let submitted = false;
     </script>
     <iframe
-      name="hidden_iframe"
-      id="hidden_iframe"
+      name="dummyIframe"
       style="display: none"
-      onload="if(submitted){window.location='/contact-thanks.html';}"
+      onload='if (submitted) {window.location="/contact-thanks.html"}'
     ></iframe>
   </body>
 </html>
