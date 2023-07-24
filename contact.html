@@ -345,6 +345,7 @@
 
                   <!-- form -->
                   <form
+                    id="contact-form"
                     class="row g-4 needs-validation"
                     novalidate
                     action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSd0to_e2GgQRaijT5Ndp9T88uk6oabtsdr1hTsSeV0RVArNeQ/formResponse"
@@ -395,7 +396,14 @@
                       </div>
                     </div>
                     <div class="col-12 pt-2 pt-sm-3">
-                      <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto">送信</button>
+                      <button
+                        class="g-recaptcha btn btn-lg btn-primary w-100 w-sm-auto"
+                        data-sitekey="6LeSGU0nAAAAAInmmBYoNiyAoYfDEKZZ1oqpcY4K"
+                        data-callback="onSubmit"
+                        data-action="submit"
+                      >
+                        送信
+                      </button>
                     </div>
                   </form>
                 </div>
@@ -490,6 +498,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/video/lg-video.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <!-- Main Theme Script -->
     <script src="/assets/js/theme.min.js"></script>
@@ -501,6 +510,13 @@
         duration: 500, // values from 0 to 3000, with step 50ms
         once: true, // whether animation should happen only once - while scrolling down
       });
+    </script>
+
+    <!-- Google recaptcha用 -->
+    <script>
+      function onSubmit(token) {
+        document.getElementById("contact-form").submit();
+      }
     </script>
 
     <!-- move thanks page after submitting -->
