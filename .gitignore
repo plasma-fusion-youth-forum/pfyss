@@ -47,3 +47,6 @@ Thumbs.db
 
 # ignore vscode files
 .vscode
+
+# ignore node_modules
+node_modules
