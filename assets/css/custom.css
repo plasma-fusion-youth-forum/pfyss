@@ -81,3 +81,12 @@
   color: #fff !important;
   box-shadow: 0 0.375rem 1.125rem -0.375rem rgba(24, 119, 242, 0.8) !important;
 }
+
+/* image grow when mouse hover */
+.growOnHover {
+  transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.growOnHover:hover {
+  transform: scale(1.2);
+}

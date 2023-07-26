@@ -160,43 +160,6 @@
         };
       })();
     </script>
-
-    <!-- intitial events after htmls loaded -->
-    <script>
-      window.addEventListener(
-        "load",
-        function () {
-          let bg_sponser = document.getElementById("bg-sponser"),
-            mode = window.localStorage.getItem("mode");
-          if (mode !== null && mode === "dark") {
-            bg_sponser.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
-          } else {
-            bg_sponser.style.backgroundColor = "rgba(255, 255, 255, 0.65)";
-          }
-        },
-        false
-      );
-    </script>
-
-    <!-- ダークモード切り替えイベントで実行されるスクリプト -->
-    <script>
-      window.addEventListener("load", function () {
-        // チェックボックスの取得
-        const btn = document.querySelector("#theme-mode");
-        // sponsorの背景elementを取得
-        let bg_sponser = document.getElementById("bg-sponser");
-        // チェックした時の挙動
-        btn.addEventListener("change", () => {
-          if (btn.checked == true) {
-            // ダークモードの挙動
-            bg_sponser.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
-          } else {
-            // ライトモード時の挙動
-            bg_sponser.style.backgroundColor = "rgba(255, 255, 255, 0.65)";
-          }
-        });
-      });
-    </script>
   </head>
 
   <!-- Body -->
@@ -400,98 +363,83 @@
 
       <!-- Sponsors -->
       <section id="sponsors" class="position-relative bg-dark py-5">
-        <div id="bg-sponser" class="position-absolute top-0 start-0 w-100 h-100"></div>
-        <div class="container position-relative zindex-5 pt-1 pt-md-2 pb-lg-2 pt-lg-4">
-          <h2 class="h3 text-center text-lg-start mb-4 mb-lg-5">Sponsored by:</h2>
-          <!-- slidePerView を最大brand数に合わせるときれいに中央に整列される -->
-          <div
-            class="swiper ms-xxl-n5 me-xxl-n4"
-            data-swiper-options='{
-                    "slidesPerView": 1,
-                    "spaceBetween": 24,
-                    "pagination": {
-                        "el": ".swiper-pagination",
-                        "clickable": true
-                    },
-                    "breakpoints": {
-                        "350": {
-                            "slidesPerView": 2
-                        },
-                        "600": {
-                            "slidesPerView": 3
-                        },
-                        "650": {
-                            "slidesPerView": 3
-                        },
-                        "900": {
-                            "slidesPerView": 4
-                        },
-                        "1100": {
-                            "slidesPerView": 4
-                        }
-                    }
-                }'
-          >
-            <div class="swiper-wrapper">
-              <!-- Item -->
-              <div class="swiper-slide">
-                <a href="https://www.ex-fusion.com/ja" target="_blank" rel="noopener noreferrer" class="d-block py-3">
-                  <img
-                    src="/assets/img/brands/EX_fusion.png"
-                    class="d-block mx-auto"
-                    width="250"
-                    alt="Brand"
-                    data-aos="fade-up"
-                    data-aos-delay="0"
-                  />
-                </a>
-              </div>
-
-              <!-- Item -->
-              <div class="swiper-slide">
-                <a href="https://www.helicalfusion.com" target="_blank" rel="noopener noreferrer" class="d-block py-3">
-                  <img
-                    src="/assets/img/brands/helical fusion.png"
-                    class="d-block mx-auto"
-                    width="280"
-                    alt="Brand"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  />
-                </a>
-              </div>
-
-              <!-- Item -->
-              <div class="swiper-slide">
-                <a href="https://kyotofusioneering.com" target="_blank" rel="noopener noreferrer" class="d-block py-3">
-                  <img
-                    src="/assets/img/brands/KF_logo2.svg"
-                    class="d-block mx-auto"
-                    width="170"
-                    alt="Brand"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  />
-                </a>
-              </div>
-
-              <!-- Item -->
-              <div class="swiper-slide">
-                <a href="https://www.kinzoku.co.jp" target="_blank" rel="noopener noreferrer" class="d-block py-3">
-                  <img
-                    src="/assets/img/brands/MTC(metaltech).png"
-                    class="d-block mx-auto"
-                    width="170"
-                    alt="Brand"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <!-- Pagination (bullets) -->
-            <div class="swiper-pagination position-relative pt-2 mt-4"></div>
+        <div
+          class="position-absolute top-0 start-0 w-100 h-100"
+          style="background-color: rgba(255, 255, 255, 0.05)"
+        ></div>
+        <div class="container position-relative zindex-5 pt-1 pt-md-2">
+          <h2 class="h3 text-light text-center text-lg-start mb-4 mb-lg-5">Sponsored by:</h2>
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 justify-content-center">
+            <!-- EX-Fusion -->
+            <a
+              href="https://ex-fusion.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="col growOnHover py-3 d-flex align-items-center"
+            >
+              <img
+                src="/assets/img/brands/EX_Fusion.svg"
+                class="mx-auto"
+                alt="Brand"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              />
+            </a>
+            <!-- Kyoto Fusioneering -->
+            <a
+              href="https://kyotofusioneering.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="col growOnHover py-3 d-flex align-items-center"
+            >
+              <img
+                src="/assets/img/brands/KF_logo.svg"
+                class="mx-auto"
+                alt="Brand"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
+            </a>
+            <!-- Helical Fusion -->
+            <a
+              href="https://www.helicalfusion.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="col growOnHover py-3 d-flex align-items-center"
+            >
+              <img
+                src="/assets/img/brands/helical_fusion.svg"
+                class="mx-auto"
+                alt="Brand"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              />
+            </a>
+            <!-- kinzoku giken -->
+            <a
+              href="https://www.kinzoku.co.jp"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="col growOnHover py-3 d-flex align-items-center"
+            >
+              <img
+                src="/assets/img/brands/MTC.svg"
+                class="mx-auto"
+                alt="Brand"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              />
+            </a>
+            <!-- HITACHI -->
+            <a href="https://www.hitachi.co.jp" target="_blank" rel="noopener noreferrer" class="col growOnHover py-3">
+              <img
+                src="/assets/img/brands/hitachi.svg"
+                class="mx-auto"
+                alt="Brand"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              />
+            </a>
           </div>
         </div>
       </section>
