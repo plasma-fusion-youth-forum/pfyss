@@ -477,7 +477,12 @@
           </div>
           <div class="col-lg-3 mb-4">
             <!-- 日付 Nav tabs -->
-            <div class="nav flex-sm-nowrap flex-lg-column nav-tabs" role="tablist" aria-orientation="vertical">
+            <div
+              id="date-tabs"
+              class="nav flex-sm-nowrap flex-lg-column nav-tabs"
+              role="tablist"
+              aria-orientation="vertical"
+            >
               <a
                 href="#day-1"
                 class="nav-link d-block w-100 rounded-3 p-4 p-xl-5 me-2 me-sm-3 me-lg-0 mb-3 mb-sm-0 mb-lg-3 active"
@@ -509,7 +514,7 @@
           </div>
           <div class="col-lg-8 offset-lg-1">
             <!-- Tab panes -->
-            <div class="tab-content">
+            <div id="date-content" class="tab-content">
               <!-- Day 1 schedule -->
               <div class="tab-pane fade show active" id="day-1" role="tabpanel" aria-labelledby="day-1-tab">
                 <div class="border-bottom pb-4">
@@ -1134,8 +1139,12 @@
     <!-- Main Theme Script -->
     <script src="/assets/js/theme.min.js"></script>
 
+    <!-- schedule scripts -->
+    <script src="/assets/js/schedule.js"></script>
+
     <!-- teachers script -->
     <script src="/assets/js/teachers.js"></script>
+
     <script>
       // DOMが読み込まれたときに実行する処理
       // loadがトリガーだと画像が読み込まれるのが遅れるため、
@@ -1144,8 +1153,14 @@
         // 先生のセクションを生成
         generateTeacherSection();
 
-        // 講義の時間割の内容を生成
-        generateLectureSchedule();
+        // 全スケジュールを取得し、様々な処理を行う非同期関数定義
+        async function mainSchedule() {
+          const days = await getSchedule(2022); // スケジュールを取得(引数に年を指定)
+          createTabs(days); // スケジュールのタブを生成
+          await createSchedule(days); // スケジュールを生成
+          await assignTeachers(); // 先生をスケジュールに割り当てる
+        }
+        mainSchedule();
       });
     </script>
 

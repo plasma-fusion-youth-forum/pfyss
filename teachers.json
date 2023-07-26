@@ -333,5 +333,32 @@
     ],
     "title": "金属技研の概要と核融合分野における取り組み",
     "abstract": ""
+  },
+  {
+    "id": "special5",
+    "teachers": [
+      {
+        "name": "冨樫 央",
+        "position": "",
+        "affiliation": "日立製作所",
+        "image": "https://drive.google.com/uc?id=1Cv-LuaQQnlSDrrZXgJ_apQNzgC6ZFMMV",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://www.hitachi.co.jp"
+          },
+          {
+            "type": "personal",
+            "url": "https://research-er.jp/researchers/view/744138"
+          },
+          {
+            "type": "twitter",
+            "url": "https://twitter.com/micacimica?s=20"
+          }
+        ]
+      }
+    ],
+    "title": "日立製作所における核融合開発への取組み",
+    "abstract": "～ようこそ核融合のモノづくりへ～"
   }
 ]

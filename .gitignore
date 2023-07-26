@@ -44,3 +44,9 @@ Thumbs.db
 *.der
 *.key
 *.pem
+
+# ignore vscode files
+.vscode
+
+# ignore node_modules
+node_modules
