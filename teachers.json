@@ -339,7 +339,7 @@
     "teachers": [
       {
         "name": "冨樫 央",
-        "position": "",
+        "position": "核装置設計グループ",
         "affiliation": "日立製作所",
         "image": "https://drive.google.com/uc?id=1Cv-LuaQQnlSDrrZXgJ_apQNzgC6ZFMMV",
         "links": [
@@ -354,6 +354,22 @@
           {
             "type": "twitter",
             "url": "https://twitter.com/micacimica?s=20"
+          }
+        ]
+      },
+      {
+        "name": "足立 迅",
+        "position": "ITER-NBプロジェクトグループ",
+        "affiliation": "日立製作所",
+        "image": "https://drive.google.com/uc?id=1qQzxwNV7bn__G1PgXxaJJTacp9M1U80A",
+        "links": [
+          {
+            "type": "general",
+            "url": "https://www.hitachi.co.jp"
+          },
+          {
+            "type": "personal",
+            "url": "https://aees.kyushu-u.ac.jp/~ktanaka/member.html"
           }
         ]
       }
