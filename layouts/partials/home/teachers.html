@@ -33,9 +33,9 @@
 }}
 
 
-<!-- ==========================================================
+<!--==========================================================
 =    data/XXXX/teachers.yamlから講師情報を取得 =
-========================================================== -->
+===========================================================-->
 {{ $directory := printf "%d" $year | index .Site.Data }}
 {{ with $directory }}
   {{ with .teachers }}
@@ -149,8 +149,8 @@ events = [
 
         <div class="col">
           <!--==================
-        =   Teacher's Card   =
-        ===================-->
+          =   Teacher's Card   =
+          ===================-->
           <div
             id="teacher-{{ $index }}"
             class="card card-hover border-0 bg-transparent"
@@ -181,8 +181,8 @@ events = [
             </div>
           </div>
           <!--======================
-        = Teacher's Detail Modal =
-        =======================-->
+          = Teacher's Detail Modal =
+          =======================-->
           <div class="modal fade" id="teacher{{ $index }}-modal" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
               <div class="modal-content p-0">
@@ -224,7 +224,7 @@ events = [
                         </div>
                       </div>
                       <div class="card-body">
-                        <p class="card-text">{{ $teacher.description }}</p>
+                        <p class="card-text">{{ $teacher.description | safeHTML }}</p>
                         <!-- Lecture Information -->
                         {{ if $teacher.timeslot }}
                           {{/* (timeslot番号 - 1)番目のイベント情報の抽出 */}}
