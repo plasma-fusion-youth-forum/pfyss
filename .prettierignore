@@ -1,2 +1,5 @@
 *.min.js
 *.min.css
+/node_modules/**
+/public/**
+/layouts/404.html
