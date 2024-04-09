@@ -1,0 +1,6 @@
+<!-- Main Theme Script -->
+{{/* Main theme scripts are compiled from the `assets/js/theme.js` file */}}
+{{ $options := dict "targetPath" "js/theme.js" }}
+{{ with resources.Get "js/theme.js" | js.Build $options | minify | fingerprint }}
+  <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{ end }}

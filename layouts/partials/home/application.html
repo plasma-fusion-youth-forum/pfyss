@@ -1,0 +1,140 @@
+{{/* Define start & end days */}}
+{{ $startDate := time .Params.duration.start }}
+{{ $endDate := time .Params.duration.end }}
+{{ $startMonth := printf "%d" $startDate.Month }}
+{{ $endMonth := printf "%d" $endDate.Month }}
+{{ $deadline := time .Params.deadline }}
+{{ $deadlineMonth := printf "%d" $deadline.Month }}
+
+
+<section id="application" class="container py-5 mb-2 mb-md-4 mb-lg-5 mt-n3 mt-lg-0">
+  <div class="container py-2 py-md-4 py-lg-5">
+    <h2 class="h1 text-center mb-4 mb-md-0 me-md-3">Application Guide</h2>
+  </div>
+  <div class="row pt-xl-2 pb-md-3">
+    <div class="col-lg-5 mb-4 mb-lg-0 position-relative offset-e-xl-1">
+      <h3 class="h4">参加資格</h3>
+      <ul data-aos="fade-up">
+        <li>プラズマ・核融合に関心のある・研究を行っている日本の大学4年生 &ndash; 大学院生・ポスドク</li>
+      </ul>
+      <ul class="list-group">
+        <li
+          class="list-group-item d-flex flex-column flex-sm-row align-items-center justify-content-between p-4"
+          data-aos="fade-up"
+        >
+          <div class="d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M17.2 3.4 12 10.333 6.8 3.4 5.2 4.6 10 11H7v2h4v2H7v2h4v4h2v-4h4v-2h-4v-2h4v-2h-3l4.8-6.4z"
+                fill="currentColor"
+              />
+            </svg>
+            <h4 class="fs-base fw-semibold text-nowrap ps-1 mb-0">参加費</h4>
+          </div>
+          <h5 class="text-primary my-2 my-sm-0">￥{{ .Params.fee }}</h5>
+          <div class="fs-sm">宿泊・懇親会費込</div>
+        </li>
+        <li
+          class="list-group-item d-flex flex-column flex-sm-row align-items-center justify-content-between p-4"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"
+                fill="currentColor"
+              />
+              <path
+                d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zm1.5 7H8c-3.309 0-6 2.691-6 6v1h2v-1c0-2.206 1.794-4 4-4h3c2.206 0 4 1.794 4 4v1h2v-1c0-3.309-2.691-6-6-6z"
+                fill="currentColor"
+              />
+            </svg>
+            <h4 class="fs-base fw-semibold text-nowrap ps-1 mb-0">募集人数</h4>
+          </div>
+          <h5 class="badge bg-primary fs-5 fw-bold rounded px-3 py-0 my-3 my-sm-0">{{ .Params.capacity }}人</h5>
+          <div class="fs-sm">先着順</div>
+        </li>
+      </ul>
+
+      <!-- Arrow -->
+      <div
+        id="application-arrow"
+        class="position-absolute bottom-0 end-0 text-primary d-none d-lg-block me-xl-n5"
+        data-aos="flip-left"
+        data-aos-delay="500"
+        data-aos-duraion="1000"
+      >
+        <div class="me-xl-n4">
+          <svg width="100" height="100" viewBox="0 0 1 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g transform="rotate(45)">
+              <path
+                d="M78.8361 25.0939C91.1514 40.6379 81.8802 63.3086 61.7212 64.3539C60.7119 64.447 59.5832 64.3477 58.6105 64.2848C58.7669 50.9978 52.4534 36.5276 41.6324 32.847C31.8669 29.5776 26.5235 39.0204 30.5663 47.0383C35.4083 56.5589 43.9198 64.4699 54.2628 67.3808C53.4517 75.7446 49.4008 83.1867 40.4191 85.693C25.2817 89.8859 9.48935 75.832 7.25928 61.4938C7.12064 59.981 4.79 60.0942 4.92864 61.607C5.83171 80.8987 28.9103 96.1621 46.7792 87.3441C53.6867 83.8595 57.3887 76.5003 58.3558 68.173C69.2212 69.5612 79.5859 63.2659 85.1681 54.2081C91.5844 43.7002 88.5763 31.9764 81.257 23.1926C80.1091 21.7727 77.8441 23.7109 78.8361 25.0939ZM39.1221 52.6568C36.2753 49.3596 33.1435 45.1733 32.7276 40.635C32.275 36.2527 38.2211 36.1619 40.7539 36.5897C43.9108 37.163 46.2067 40.0025 47.9151 42.5401C51.7632 47.8805 54.3289 55.8821 54.5172 63.4926C48.5423 61.6026 43.3094 57.2542 39.1221 52.6568Z"
+                fill="currentColor"
+              />
+              <path
+                d="M75.1096 15.0312C74.0848 19.3973 73.3354 23.9923 73.4392 28.4577C73.5047 30.2821 76.0279 30.0497 76.1186 28.2613C76.2997 24.6849 77.2976 21.1349 78.2588 17.7408C80.2501 18.3708 82.3978 19.0372 84.3528 19.8231C85.8397 20.4997 87.9238 22.1382 89.7035 21.5672C90.5937 21.2818 90.7767 20.5022 90.6474 19.6495C90.3065 17.596 87.0302 16.8302 85.3872 16.1172C82.6885 14.993 80.073 14.2174 77.2645 13.561C76.3289 13.3423 75.3292 14.0956 75.1096 15.0312Z"
+                fill="currentColor"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-6 col-lg-7 position-relative">
+      <!-- Ticket card -->
+      <div class="position-relative" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor="#application-arrow">
+        <div class="position-relative overflow-hidden bg-gradient-primary rounded-3 zindex-5 py-5 px-4 p-sm-5">
+          <span class="position-absolute top-50 start-0 translate-middle bg-light rounded-circle p-4"></span>
+          <span
+            class="position-absolute top-0 start-0 w-100 h-100 bg-repeat-0 bg-position-center-end bg-size-cover"
+            style="background-image: url(/img/price-card-pattern.png)"
+          ></span>
+          <div class="px-md-3 position-relative zindex-5">
+            <div class="d-sm-flex align-items-start justify-content-between">
+              <div class="text-center text-sm-start me-sm-4">
+                <div class="lead fw-semibold text-light text-uppercase mb-2">
+                  {{ $startMonth }}月{{ $startDate.Day }}日&nbsp;&ndash;&nbsp;{{ if eq $startMonth $endMonth -}}
+                    {{- $endDate.Day }}日
+                  {{- else -}}
+                    {{- $endMonth }}月{{ $endDate.Day }}日
+                  {{- end -}}
+                </div>
+                <h3 class="h5 text-light mb-0">第{{ .Params.times }}回</h3>
+                <h3 class="h3 text-light mb-0">プラズマ・核融合</h3>
+                <h3 class="h1 text-light">若手夏の学校</h3>
+              </div>
+              <div
+                class="d-table bg-white rounded-3 p-0 flex-shrink-0 mx-auto mx-sm-0
+                {{ if gt now $deadline }}visually-hidden{{ end }}"
+              >
+                <img src="/img/qr_application.svg" width="150" alt="QR Code" />
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row align-items-center pt-4 mt-2">
+              <!-- 申込みフォームにアクセスさせない場合は <a> タグの class に disabled を加える -->
+              <a
+                href="/application"
+                class="btn btn-light btn-lg mb-3 mb-sm-0 me-sm-3 {{ if gt now $deadline }}disabled{{ end }}"
+                tabindex="-1"
+                aria-disabled="true"
+                role="button"
+                >申込はこちらから</a
+              >
+              <div class="d-flex align-items-center">
+                <span class="h4 text-light mb-0">{{ $deadlineMonth }}月{{ $deadline.Day }}日</span>
+                <span class="fs-lg text-light ms-2">〆切</span>
+              </div>
+            </div>
+          </div>
+          <span class="position-absolute top-50 end-0 translate-middle-y bg-light rounded-circle p-4 me-n4"></span>
+        </div>
+        <span
+          class="position-absolute bg-gradient-primary opacity-60 bottom-0 mb-n2 d-dark-mode-none"
+          style="left: 1.5rem; width: calc(100% - 3rem); height: 5rem; filter: blur(0.625rem)"
+        ></span>
+      </div>
+    </div>
+  </div>
+</section>

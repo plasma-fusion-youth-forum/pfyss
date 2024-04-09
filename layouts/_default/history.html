@@ -1,0 +1,36 @@
+{{ define "title" }}
+  {{ .Title }}&nbsp;|&nbsp;{{ .Site.Params.abbreviation }}
+{{ end }}
+
+{{ define "main" }}
+  <section class="position-relative pt-5">
+    <!-- Content -->
+    <div class="container position-relative zindex-5 pt-5">
+      <!-- Breadcrumb -->
+      {{- partial "site-breadcrumb.html" . -}}
+
+
+      <div class="container">
+        <h1 class="text-center text-sm-start">これまでの若手夏の学校の一覧</h1>
+        <div class="list-group">
+          {{ range (.Pages.ByParam "year").Reverse }}
+            <a href="{{ .Permalink }}" class="list-group-item list-group-item-action"
+              >{{ .Params.year }}年 第{{ .Params.times }}回 プラズマ・核融合 若手夏の学校 in {{ .Params.place }}</a
+            >
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="container pt-4">
+        <p>
+          2019年以前の夏学については<a
+            href="https://www.jspf.or.jp/introduction/summer.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >こちらから <i class="bx bx-link-external"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+{{ end }}

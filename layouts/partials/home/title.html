@@ -1,0 +1,86 @@
+{{/* Define start & end date */}}
+{{ $startDate := time .Params.duration.start }}
+{{ $endDate := time .Params.duration.end }}
+{{ $startMonth := $startDate.Month }}
+{{ $endMonth := $endDate.Month }}
+
+
+<section class="container-fluid position-relative px-0 pt-5 mt-3 mt-lg-4">
+  <div class="row g-0">
+    <!-- Carousel column -->
+    <div
+      id="carouselTopFade"
+      class="carousel slide carousel-fade col-xl-7 col-lg-6 pe-lg-5 pt-4 pt-sm-0"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner h-100">
+        {{ range $index, $element := .Params.carousels }}
+          {{/* Load and Convert a carousel image */}}
+          {{ with resources.GetRemote $element.link }}
+            {{ with .Err }}
+              {{ warnf "Unable to get carousel image from %s: %s" $element.link . }}
+            {{ else }}
+              {{ $image := .Resize "1200x webp Center" }}
+              <div class="carousel-item h-100 {{ if eq $index 0 }}active{{ end }}">
+                <img
+                  src="{{ $image.RelPermalink }}"
+                  width="{{ $image.Width }}"
+                  height="{{ $image.Height }}"
+                  class="carousel-img"
+                  alt="{{ $element.alt }}"
+                />
+              </div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    <!-- Title column -->
+    <div class="col-xl-5 col-lg-6 position-relative py-5">
+      <img
+        src="/img/hero-bg.webp"
+        class="position-absolute top-50 translate-middle-y ms-lg-n4"
+        width="866"
+        alt="Background shapes"
+      />
+      <div
+        class="position-relative zindex-5 text-center text-lg-start px-3 px-lg-0 py-xl-4 py-xxl-5 mt-lg-3 mx-auto mx-lg-0"
+        style="max-width: 530px"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <h2 class="h3 text-primary mb-0" id="title-duration">
+          {{- time.Format "Jan" $startDate -}}.&nbsp;{{- $startDate.Day -}}
+          &nbsp;&ndash;&nbsp;
+          {{- if eq $startMonth $endMonth -}}
+            {{- $endDate.Day -}},&nbsp;
+            {{- $startDate.Year -}}
+          {{- else -}}
+            {{- time.Format "Jan" $endDate }}.&nbsp;{{ $endDate.Day }},&nbsp;
+            {{- $startDate.Year -}}
+          {{- end -}}
+        </h2>
+        <h2 class="pb-lg-0 mb-0">
+          第<span class="display-4">{{ .Params.times }}</span>回 <span class="display-6">プラズマ・核融合</span>
+        </h2>
+        <h1 class="display-1 pb-lg-3 mb-3">若手夏の学校</h1>
+        <div class="d-flex justify-content-center justify-content-lg-start text-start mb-2">
+          <i class="bx bx-map fs-4 text-primary me-2"></i>
+          <div class="fs-xl">{{ .Params.venue }},<br />{{ .Params.place }}</div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start py-4 py-lg-5">
+          <a href="#application" class="btn btn-primary shadow-primary btn-lg me-sm-3 me-xl-4 mb-3"> 参加申込み </a>
+          <a
+            href="{{ .Params.schedule.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-primary btn-lg mb-3"
+          >
+            <i class="bx bx-calendar-check fs-xl me-2 ms-n1"></i>
+            Add to calendar
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

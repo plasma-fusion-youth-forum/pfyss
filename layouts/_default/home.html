@@ -1,0 +1,31 @@
+{{ define "title" }}
+  {{ .Site.Params.abbreviation }}&nbsp;{{ .Params.year }}
+{{ end }}
+
+{{ define "main" }}
+
+  <!-- Title & carousel section -->
+  {{- partial "home/title.html" . -}}
+
+
+  <!-- Sponsors section -->
+  {{- partial "home/sponsors.html" . -}}
+
+
+  <!-- Teachers section -->
+  {{- partial "home/teachers.html" . -}}
+
+  <!-- Schedule section -->
+  {{- partial "home/schedule.html" . -}}
+
+  <!-- Venues section -->
+  {{- partial "home/venues.html" . -}}
+
+
+  <!-- Application section -->
+  {{- partial "home/application.html" . -}}
+
+
+  <!-- Discord section -->
+  {{- partial "home/discord.html" . -}}
+{{ end }}
