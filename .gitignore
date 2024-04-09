@@ -1,5 +1,5 @@
 # ignore composer vendor directory
-/assets/vendor
+/static/vendor
 
 # ignore components loaded via Bower
 /bower_components
@@ -45,8 +45,13 @@ Thumbs.db
 *.key
 *.pem
 
-# ignore vscode files
-.vscode
-
 # ignore node_modules
 node_modules
+
+# ignore hugo build directory
+/public
+/resources
+
+# ignore static/js/* & /css directory (should put .js/.css files into assets/)
+/static/js
+/static/css
