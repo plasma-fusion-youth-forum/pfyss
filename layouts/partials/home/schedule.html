@@ -194,9 +194,12 @@
                             {{/* 講師画像の取得と画像処理 */}}
                             {{ $image := "" }}
                             {{ with resources.GetRemote $teacher.image }}
-                              {{ $image = . }}
-                            {{ else }}
-                              {{ with resources.Get "/img/unknown_person.jpg" }}
+                              {{ with .Err }}
+                                {{ warnf "Unable to get teacher image from %s : %s" $teacher.image . }}
+                                {{ with resources.Get "img/unknown_person.jpg" }}
+                                  {{ $image = . }}
+                                {{ end }}
+                              {{ else }}
                                 {{ $image = . }}
                               {{ end }}
                             {{ end }}
