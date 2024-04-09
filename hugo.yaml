@@ -1,0 +1,56 @@
+baseURL: https://pfyss.org/
+languageCode: ja-jp
+timeZone: Asia/Tokyo
+disableKinds:
+  - taxonomy
+  - term
+title: プラズマ・核融合 若手夏の学校
+googleAnalytics: G-3BEMPF90LM
+params:
+  englishTitle: Plasma Fusion Youth Summer School
+  abbreviation: PFYSS
+  description: プラズマ・核融合 若手夏の学校のホームページです。
+  author: プラズマ・核融合 若手フォーラム
+  email: info@pfyss.org
+  keywords:
+    - プラズマ
+    - 核融合
+    - 若手
+    - 夏の学校
+    - 磁場閉じ込め
+    - トカマク
+    - ヘリカル
+    - レーザー
+    - 慣性閉じ込め
+    - フュージョン
+    - plasma
+    - fusion
+    - summer school
+    - magnetic confinement
+    - tokamak
+    - helical
+    - stellarator
+    - plasma physics
+    - laser
+    - inertial confinement
+    - ICF
+    - inertial fusion
+    - ITER
+
+  # SNSの設定
+  social:
+    discord:
+      name: discord
+      url: https://discord.gg/BTaVFm7F3k
+      icon: bxl-discord-alt # iconは https://boxicons.com/ で検索
+    twitter:
+      name: twitter
+      url: https://twitter.com/pfyss_org
+      icon: bxl-twitter
+    youtube:
+      name: youtube
+      url: https://youtube.com/@pfyss
+      icon: bxl-youtube
+
+  # Scheduleの設定 - Google App Scriptを利用してGoogle Calendarから取得する用のWebAPI URL
+  apiURL: https://script.google.com/macros/s/AKfycby7vMNpktGgif6E691IuXeRct9EcQPwIKwCP3xyK9sXs439G6UXo4u7EfbiY2Zx6nX5Tg/exec
