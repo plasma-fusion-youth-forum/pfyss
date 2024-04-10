@@ -1,0 +1,8 @@
+{{- $abbr := .Get "abbr" -}}
+{{- $fullname := .Get "fullname" -}}
+{{- if eq $abbr "" -}}
+  {{- errorf "abbreviation shortcode: missing 'abbr' parameter" -}}
+{{- end -}}
+{{- if eq $fullname "" -}}
+  {{- errorf "abbreviation shortcode: missing 'fullname' parameter" -}}
+{{- end -}}<abbr class="initialism" title="{{ $fullname }}">{{ $abbr }}</abbr>
