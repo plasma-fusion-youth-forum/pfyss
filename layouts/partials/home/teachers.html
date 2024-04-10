@@ -79,20 +79,22 @@ events = [
   {...}
 ]
 -->
-{{ $apiURL := printf "%s?year=%d" .Site.Params.apiURL $year }}
-{{ $opts := dict
-  "method" "get"
-  "headers" (dict  "Content-Type" "application/json")
-}}
-{{ with resources.GetRemote $apiURL $opts }}
-  {{ with .Err }}
-    {{ warnf "Unable to get scuedule info from %s : %s" $apiURL . }}
-  {{ else }}
-    {{ $days = .Content | transform.Unmarshal }}
-    {{/* $eventsに変換 */}}
-    {{ range $day := $days }}
-      {{ range $event := $day.events }}
-        {{ $events = $events | append $event }}
+{{ if .Params.schedule.enable }}
+  {{ $apiURL := printf "%s?year=%d" .Site.Params.apiURL $year }}
+  {{ $opts := dict
+    "method" "get"
+    "headers" (dict  "Content-Type" "application/json")
+  }}
+  {{ with resources.GetRemote $apiURL $opts }}
+    {{ with .Err }}
+      {{ warnf "Unable to get scuedule info from %s : %s" $apiURL . }}
+    {{ else }}
+      {{ $days = .Content | transform.Unmarshal }}
+      {{/* $eventsに変換 */}}
+      {{ range $day := $days }}
+        {{ range $event := $day.events }}
+          {{ $events = $events | append $event }}
+        {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -228,17 +230,19 @@ events = [
                         <!-- Lecture Information -->
                         {{ if $teacher.timeslot }}
                           {{/* (timeslot番号 - 1)番目のイベント情報の抽出 */}}
-                          {{ $event := index $events (sub $teacher.timeslot 1) }}
-                          {{/* イベントの色に対応するBadgeの取得 */}}
-                          {{ with index $eventBadge $event.color }}
-                            <span class="badge bg-{{ index . 0 }} shadow-{{ index . 0 }} fs-sm mb-2"
-                              >{{ index . 1 | safeHTML }}</span
-                            >
+                          {{ if $events }}
+                            {{ $event := index $events (sub $teacher.timeslot 1) }}
+                            {{/* イベントの色に対応するBadgeの取得 */}}
+                            {{ with index $eventBadge $event.color }}
+                              <span class="badge bg-{{ index . 0 }} shadow-{{ index . 0 }} fs-sm mb-2"
+                                >{{ index . 1 | safeHTML }}</span
+                              >
+                            {{ end }}
+                            {{/* タイトル */}}
+                            <h5>{{ $event.title | safeHTML }}</h5>
+                            {{/* アブスト */}}
+                            {{ with $event.description }}<p>{{ . | safeHTML }}</p>{{ end }}
                           {{ end }}
-                          {{/* タイトル */}}
-                          <h5>{{ $event.title | safeHTML }}</h5>
-                          {{/* アブスト */}}
-                          {{ with $event.description }}<p>{{ . | safeHTML }}</p>{{ end }}
                         {{ end }}
                       </div>
                       <div class="modal-footer px-4">
