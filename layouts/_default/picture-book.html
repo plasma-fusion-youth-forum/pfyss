@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <section class="position-relative pt-5 mt-5 mt-md-0">
+    <div class="container position-relative zindex-2 pt-5 mb-4 mb-lg-5">
+      <!-- Breadcrumb -->
+      {{ partial "site-breadcrumb.html" . -}}
+
+      {{ .Content }}
+      {{ range $index, $book := .Params.books }}
+        <div class="container-fluid {{ if gt $index 0 }}mt-5{{ end }}">
+          <div class="g-slide">
+            <iframe
+              src="{{ $book.src | safeURL }}"
+              frameborder="0"
+              allowfullscreen="true"
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+            ></iframe>
+          </div>
+
+          <p>
+            {{ $book.title }}の編集は
+            <a href="{{ $book.link | safeURL }}" target="_blank" rel="noreferrer noopener">こちら </a>
+            から
+          </p>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
