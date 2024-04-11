@@ -20,7 +20,7 @@
             {{ with .Err }}
               {{ warnf "Unable to get carousel image from %s: %s" $element.link . }}
             {{ else }}
-              {{ $image := .Resize "1200x webp Center" }}
+              {{ $image := .Fill "1350x900 webp photo" }}
               <div class="carousel-item h-100 {{ if eq $index 0 }}active{{ end }}">
                 <img
                   src="{{ $image.RelPermalink }}"
@@ -29,6 +29,9 @@
                   class="carousel-img"
                   alt="{{ $element.alt }}"
                 />
+                {{ with $element.credit }}
+                  <div class="position-absolute bottom-0 start-0 text-muted fs-sm bg-secondary">{{ . | safeHTML }}</div>
+                {{ end }}
               </div>
             {{ end }}
           {{ end }}

@@ -203,8 +203,7 @@
                                 {{ $image = . }}
                               {{ end }}
                             {{ end }}
-                            {{ $image = $image.Fit "128x128 webp picture" }}
-                            {{ $image = $image.Crop "128x128 smart" }}
+                            {{ $image = $image.Fill "128x128 webp picture" }}
                             <div class="col">
                               <div class="d-flex align-items-center">
                                 <img
