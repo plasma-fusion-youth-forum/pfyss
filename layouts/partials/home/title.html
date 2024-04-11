@@ -73,15 +73,19 @@
         </div>
         <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start py-4 py-lg-5">
           <a href="#application" class="btn btn-primary shadow-primary btn-lg me-sm-3 me-xl-4 mb-3"> 参加申込み </a>
-          <a
-            href="{{ .Params.schedule.url }}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline-primary btn-lg mb-3"
-          >
-            <i class="bx bx-calendar-check fs-xl me-2 ms-n1"></i>
-            Add to calendar
-          </a>
+          {{ with .Params.schedule.url }}
+            <a
+              href="{{ . | safeURL }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline-primary btn-lg mb-3"
+            >
+              <i class="bx bx-calendar-check fs-xl me-2 ms-n1"></i>
+              Add to calendar
+            </a>
+          {{ else }}
+            {{ errorf "Set up a shareable link for the Google Schedule." }}
+          {{ end }}
         </div>
       </div>
     </div>

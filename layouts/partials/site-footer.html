@@ -28,15 +28,14 @@
         >お問い合わせ</a
       >
       {{ if eq .Layout "home" }}
-        <a
-          href="{{ .Params.calendar }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-outline-light btn-lg mb-3"
-        >
-          <i class="bx bx-calendar-check fs-xl me-2 ms-n1"></i>
-          Add to calendar
-        </a>
+        {{ with .Params.schedule.url }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg mb-3">
+            <i class="bx bx-calendar-check fs-xl me-2 ms-n1"></i>
+            Add to calendar
+          </a>
+        {{ else }}
+          {{ errorf "Set up a shareable link for the Google Schedule." }}
+        {{ end }}
       {{ end }}
     </div>
     <div class="d-flex justify-content-center pt-4 mt-lg-3">
