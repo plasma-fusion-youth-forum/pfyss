@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <section class="position-relative pt-5">
+    <div class="container position-relative pt-5 mb-4 mb-lg-5">
+      <!-- Breadcrumb -->
+      {{- partial "site-breadcrumb.html" . -}}
+      <!-- Main content -->
+      {{ .Content }}
+    </div>
+  </section>
+{{ end }}
