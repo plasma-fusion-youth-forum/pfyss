@@ -1,43 +1,49 @@
 ---
-date: 2022-4-1
+date: 2024-01-01
 draft: false
 kind: { page, home }
 layout: home
 title: home
 
 ### 夏学の基本情報 ###
-year: 2022
-times: ０ # 第〇回 - 全角数字で記入するとフォントが綺麗になります
+year: 2024
+times: ２ # 第〇回 - 全角数字で記入するとフォントが綺麗になります
 duration:
-  start: 2022-11-20
-  end: 2022-11-21
-place: 富山県
-venue: とやま自遊館, 富山大学
-fee: 5,000 # 参加費(円)
-capacity: 40 # 募集人数
-deadline: 2022-11-10 # 参加申し込み締め切り日
-
-### スケジュールの表示 ###
-schedule:
-  enable: true
-  url: https://calendar.google.com/calendar/u/0?cid=NjNiMWY1NGRmZjFiNTNhZmE1MWY4N2I1MmZjZGIwZGUxYjkzODA0MmY4MDJjZjk2MWM5ZjRmYzFkMzY0MmQ2YUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
+  start: 2024-08-27
+  end: 2024-08-30
+place: 長野県野辺山
+venue: リゾートイン黒岩荘
+fee: 23,000 # 参加費(円)
+capacity: ~40 # 募集人数
+deadline: 2024-07-07 # 参加申し込み締め切り日
 
 ### カルーセル画像 ###
+# 画像サイズは1200x800px以上
 carousels:
-  - link: https://lh3.googleusercontent.com/pw/AP1GczNn7vjLJfTm9_87MWbMvkBGlnHu46_UJty74vXynhNJzdEDSl7UaxVzUCL-1VhmuCeBFZV8jw1EMEFlzUVTJ0I0HPCFBg2sYrnX4JyZMJAKCqEKLRI=w2400
-    alt: 雨晴海岸から望む立山連峰②
+  - link: https://www.nro.nao.ac.jp/gallery/images/all_002.jpg
+    alt: 十六夜にうかぶ電波望遠鏡群
+    credit: ©国立天文台
 
-  - link: https://lh3.googleusercontent.com/pw/AP1GczPaY-8QkXadsqL21jNS5LaSYqBlUm3yadtl2QI3Ca7aT6J-sAJ6rTTpClDHtA09nbktijhO03MYjy1vHgqAedhaPLiOqmEJBMz8G7Lf6r1PxSSNkGA=w2400
-    alt: 美しすぎる公園と立山連峰
+  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1227909871605907466/82735c21cb2e1bb1.jpg?ex=662a1f2e&is=6617aa2e&hm=3f080b91d3c1bdee7ef56561037251690319a711b96df64a5c40aafbf280acd7&
+    alt: 野辺山駅
 
-  - link: https://lh3.googleusercontent.com/pw/AP1GczMFdzR1iO9auFoO9audu9xnv7Ze5Tq_qr7KzDsyauSK_bfB8PYIZeyfwSPX_BrPAtNaQDblNH-D0K8mnZRHBYMp7vw8G22mEBP9b_ZnwfVYB_PmiWE=w2400
-    alt: あの公園はグリーンシーズンもすごい
+  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1227911070233133056/8615210ec6386db5.webp?ex=662a204c&is=6617ab4c&hm=a4f136e5e527a1cdd53fff4ef3ddaacd820093f75c42719f4e8e68a893e876e0&
+    alt: 野辺山高原平沢峠
+
+  - link: https://www.nro.nao.ac.jp/gallery/images/rh_004.jpg
+    alt: 夏の電波ヘリオグラフ
+    credit: ©国立天文台
+
 
 ### 協賛リスト ###
 sponsors:
-  enable: true
-  default:
-    - 2024年度の協賛企業様を募集しております！ ご興味のある企業様はinfo@pfyss.orgまでご連絡ください。 これまでの夏学の活動については「Archives」➞「夏学の歴史」からご覧ください。
+  enable: false
+  default: |
+    <h2 class="text-center">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
+    <p class="text-center">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
+    若手夏の学校については<a href="/about">こちら</a>から、
+    これまでの夏学の活動については<a href="/forepast">こちら</a>からご覧ください。
+    </p>
   list:
     - name: EX-Fusion
       link: https://ex-fusion.com
@@ -59,33 +65,32 @@ sponsors:
       link: https://www.hitachi.co.jp
       logo: /img/brands/hitachi.svg
 
+### スケジュールの表示 ###
+schedule:
+  enable: false
+  # GoogleカレンダーのPFYSSカレンダー共有リンクURL
+  url: https://calendar.google.com/calendar/u/2?cid=NjY4YWQyOWM4MGNlMmQ4ZThkZTUzNWZiMjExYmNlNGEwMGQzN2E1MzEzMDU5MzUwM2E3MDE0NWFhY2U1ZDQwN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t
+
 ### Venue Cards ###
 venue_cards:
   enable: true
   list:
-    - name: とやま自遊館
-      # badgeの種類はここから選ぶ - https://silicon.createx.studio/components/badges.html
-      badges:
+    - name: リゾートイン黒岩荘
+      badges: # badgeの種類はここから選ぶ - https://silicon.createx.studio/components/badges.html
         Venue: warning
         Accommodation: primary
-      description: １日目の講演やアクティビティを行う。また、宿泊もここで行う。
-      website: http://www.jiyukan.or.jp
-      image: https://lh3.googleusercontent.com/pw/AP1GczNQisuSe9DKOhr0kHLVudq7GHKNA1HZw1lHDjOulnzj1ruxANE9DatXfPlzMonkoJ_w3iE3BNevDIAIvmp0D4mQ3t8OOIWDCDfehjQC7mZX-3e4b10=w2400
-      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6777.829423867402!2d137.21096003667773!3d36.70551911590117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff79a75339c9c87%3A0xf4e34ac2c32e1b56!2z44Go44KE44G-6Ieq6YGK6aSo!5e0!3m2!1sja!2sjp!4v1685773852329!5m2!1sja!2sjp
+      description: リゾートイン黒岩荘にて宿泊し、講義、ポスターセッション、ナイトセッションを行います。 国立天文台野辺山の特別講義もここで聴講します。
+      website: http://www.kuroiwasou.jp
+      image: https://cdn.discordapp.com/attachments/1227878242975744000/1227878335061950474/a28d7f37b25c8e88.webp?ex=662a01cf&is=66178ccf&hm=fdcd3847400fd64f02dc32f5f527a8964323d93fd34f70709750fb92bf7e13f9&
+      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.77446112953!2d138.46996647541073!3d35.95248687250094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c15f96c0faa8f%3A0x43adb41f97377cfa!2z44Oq44K-44O844OI44Kk44Oz6buS5bKp6I2Y!5e0!3m2!1sja!2sjp!4v1709104505922!5m2!1sja!2sjp
 
-    - name: 水素同位体科学研究センター見学
+    - name: 国立天文台野辺山の見学
       badges:
         Visit: success
-      website: http://www.hrc.u-toyama.ac.jp
-      description: 水素研では水素同位体を用いた低環境負荷エネルギーシステムの構築を目指し、再生可能エネルギーや未利用排熱を利用した水素製造や核融合エネルギーシステム中の三重水素（トリチウム）制御のための研究を推進しています。国内大学において唯一の大量かつ高濃度のトリチウムを取扱える多目的実験施設を有しています。
-      image: https://lh3.googleusercontent.com/pw/AP1GczNlQxJGAy5UlS6Ql4WifMQD7_cRUByUiY4t8QoH9Znk3MktRspiyIdWdKWyxB8F0UjmWqH_Fml-kQ_Pb60HzkOuyBUTMa6ulc-XcZG3F_vT6-n9iyg=w2400
-      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2768.892189899259!2d137.1858229130381!3d36.69740651937619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff79a8718fe32e5%3A0x582ad0cc94c6620f!2z5a-M5bGx5aSn5a2m77yI5Zu956uL5aSn5a2m5rOV5Lq677yJ5LqU56aP44Kt44Oj44Oz44OR44K5IOawtOe0oOWQjOS9jeS9k-enkeWtpueglOeptuOCu-ODs-OCv-ODvA!5e0!3m2!1sja!2sjp!4v1685773774950!5m2!1sja!2sjp
-
-    - name: 富山大学 五福キャンパス
-      badges:
-        Venue: warning
-      website: http://www.hrc.u-toyama.ac.jp
-      description: ２日目の招待講演は富山大学 五福キャンパス内の講義室で行う。
-      image: https://lh3.googleusercontent.com/pw/AP1GczMYdqU6d1oVtqUwjtLgE4nhM6mBL1ahM5ZPtUplr5KlYFVkeIfp2PVEwglDp6DjLPxW55b0Aux_9zl9nDX8VfBCT_-1h-dwbUgSiPcq5Poyl8g9WTY=w2400
-      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.9193752171823!2d137.18627261290203!3d36.70047527216014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff79a8662739645%3A0x77281986dd808f3c!2z5a-M5bGx5aSn5a2m!5e0!3m2!1sja!2sjp!4v1685773925196!5m2!1sja!2sjp
+      website: https://www.nro.nao.ac.jp/
+      description: |
+        国立天文台野辺山は1969年に開所した、電波天文学の国際的な拠点です。 本ツアーでは普段の見学ではわからない詳しいところまで解説していただきます！ さらに、銀河中心巨大ブラックホールの発見により仁科記念賞を受賞された、 国立天文台名誉教授の井上允氏にプラズマ物理含むブラックホールに関する講義をしていただきます。
+      image: https://www.nro.nao.ac.jp/gallery/images/nma_009.jpg
+      credit: ©国立天文台
+      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8372.823780950277!2d138.47445170651952!3d35.94623279772583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c15e6ed59368d%3A0xe5a3821a5f6a3c4b!2z5Zu956uL5aSp5paH5Y-wIOmHjui-uuWxseWuh-Wumembu-azouims-a4rOaJgA!5e0!3m2!1sja!2sjp!4v1712821038271!5m2!1sja!2sjp
 ---
