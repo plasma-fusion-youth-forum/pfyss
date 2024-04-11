@@ -123,29 +123,23 @@
   =    Video showreel    =
   =====================-->
   {{ if .Params.video.enable }}
-    <section class="container text-center pb-5 mt-n2 mt-md-0 mb-md-2 mb-lg-4">
-      <div class="position-relative rounded-3 overflow-hidden">
-        <div
-          class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center zindex-5"
+    <section class="container pb-5 mt-n2 mt-md-0 mb-md-2 mb-lg-4">
+      <div class="gallery" data-video="true">
+        <a
+          href="{{ .Params.video.url | safeURL }}"
+          class="gallery-item video-item is-hovered rounded-3"
+          data-sub-html='<h6 class="fs-sm text-light">PFYSS Introduction Video</h6>'
         >
-          <a
-            href="{{ .Params.video.url | safeURL }}"
-            class="btn btn-video btn-icon btn-xl stretched-link bg-white"
-            data-bs-toggle="video"
-            aria-label="Play video"
-          >
-            <i class="bx bx-play"></i>
-          </a>
-        </div>
-        <span class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-35"></span>
-        {{ with resources.GetRemote .Params.video.cover }}
-          {{ with .Err }}
-            {{ warnf "%s" . }}
-          {{ else }}
-            {{ $image := .Params.video.size | default "1200x560 webp" | .Fill }}
-            <img src="{{ $image.RelPermalink }}" class="d-block w-100" alt="Cover image" />
+          {{/* Get Vedeo Cover Image */}}
+          {{ with resources.GetRemote .Params.video.cover }}
+            {{ with .Err }}
+              {{ warnf "%s" . }}
+            {{ else }}
+              {{ $image := .Params.video.size | default "1200x560 webp" | .Fill }}
+              <img src="{{ $image.RelPermalink }}" class="d-block w-100" alt="Cover image" />
+            {{ end }}
           {{ end }}
-        {{ end }}
+        </a>
       </div>
     </section>
   {{ end }}
