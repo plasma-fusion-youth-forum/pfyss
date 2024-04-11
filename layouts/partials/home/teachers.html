@@ -145,7 +145,7 @@ events = [
         {{ end }}
 
         {{/* Convert original teacher image for thumbnail and card. */}}
-        {{ $teacher_thumbnail := $teacher_image.Fill "400x440 webp picture smart Top" }}
+        {{ $teacher_thumbnail := $teacher_image.Fill "400x440 webp picture Center" }}
         {{ $teacher_card := $teacher_image.Resize "500x webp picture" }}
 
 
