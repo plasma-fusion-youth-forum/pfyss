@@ -29,7 +29,7 @@
                   {{ end }}
                 {{ end }}
                 {{/* Convert original venue image for card. */}}
-                {{ $image = $image.Fill "510x340 webp photo smart" }}
+                {{ $image = $image.Fill "840x560 webp photo smart" }}
                 <img
                   src="{{ $image.RelPermalink }}"
                   width="{{ $image.Width }}"
@@ -37,6 +37,9 @@
                   alt="{{ $venue.name }}"
                   class="rounded-3"
                 />
+                {{ with $venue.credit }}
+                  <div class="position-absolute bottom-0 end-0 text-muted fs-sm bg-secondary">{{ . | safeHTML }}</div>
+                {{ end }}
                 <div class="gallery-item-caption fs-sm fw-medium">Google map</div>
               </a>
               <div class="card-body p-0">
