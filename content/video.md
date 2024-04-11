@@ -7,4 +7,4 @@ description: プラズマ・核融合 若手夏の学校の講演動画を公開
 
 # 講演動画
 
-現在準備中... <i class="bx-hard-hat"></i>
+<i class="bx bxs-hard-hat"></i> 現在準備中 <i class="bx bxs-hard-hat"></i>
