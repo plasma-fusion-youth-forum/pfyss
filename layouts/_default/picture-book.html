@@ -6,7 +6,7 @@
 
       {{ .Content }}
       {{ range $index, $book := .Params.books }}
-        <div class="container-fluid {{ if gt $index 0 }}mt-5{{ end }}">
+        <div class="container {{ if gt $index 0 }}mt-5{{ end }}">
           <div class="g-slide">
             <iframe
               src="{{ $book.src | safeURL }}"
