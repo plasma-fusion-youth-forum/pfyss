@@ -4,26 +4,30 @@
       <img src="/img/logo.svg" class="me-2" width="60" alt="{{ .Site.Title }}" />
       <span class="fs-4">{{ .Site.Title }}</span>
     </div>
-    <ul class="nav justify-content-center pt-3 pb-4 pb-lg-5">
-      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-      <li class="nav-item">
-        <a href="#teachers" class="nav-link">Teachers</a>
-      </li>
-      <li class="nav-item">
-        <a href="#schedule" class="nav-link">Schedule</a>
-      </li>
-      <li class="nav-item">
-        <a href="#sponsors" class="nav-link">Sponsors</a>
-      </li>
-      <li class="nav-item">
-        <a href="#application" class="nav-link">Application</a>
-      </li>
-    </ul>
+    {{ if eq .Layout "home" }}
+      <ul class="nav justify-content-center pt-3 pb-4 pb-lg-5">
+        <li class="nav-item"><a href="/#" class="nav-link">Home</a></li>
+        <li class="nav-item">
+          <a href="#teachers" class="nav-link">Teachers</a>
+        </li>
+        {{ if .Params.schedule.enable }}
+          <li class="nav-item">
+            <a href="#schedule" class="nav-link">Schedule</a>
+          </li>
+        {{ end }}
+        <li class="nav-item">
+          <a href="#sponsors" class="nav-link">Sponsors</a>
+        </li>
+        <li class="nav-item">
+          <a href="#application" class="nav-link">Application</a>
+        </li>
+      </ul>
+    {{ end }}
     <div class="d-flex flex-column flex-sm-row justify-content-center">
       <a href="/contact" class="btn btn-success shadow-success btn-lg mb-3 {{ if eq .Kind "home" }}me-sm-4{{ end }}"
         >お問い合わせ</a
       >
-      {{ if eq .Kind "home" }}
+      {{ if eq .Layout "home" }}
         <a
           href="{{ .Params.calendar }}"
           target="_blank"
