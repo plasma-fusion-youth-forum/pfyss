@@ -5,12 +5,12 @@
 {{ $endMonth := $endDate.Month }}
 
 
-<section class="container-fluid position-relative px-0 pt-5 mt-3 mt-lg-4">
+<section class="container-fluid position-relative px-0 pt-5 mt-5 mt-md-4">
   <div class="row g-0">
     <!-- Carousel column -->
     <div
       id="carouselTopFade"
-      class="carousel slide carousel-fade col-xl-7 col-lg-6 pe-lg-5 pt-4 pt-sm-0"
+      class="carousel slide carousel-fade col-xl-7 col-lg-6 pe-lg-5 pt-sm-0"
       data-bs-ride="carousel"
     >
       <div class="carousel-inner h-100">
@@ -30,7 +30,9 @@
                   alt="{{ $element.alt }}"
                 />
                 {{ with $element.credit }}
-                  <div class="position-absolute bottom-0 start-0 text-muted fs-sm bg-secondary">{{ . | safeHTML }}</div>
+                  <div class="position-absolute bottom-0 start-0 text-muted fs-sm bg-dark opacity-75">
+                    {{ . | safeHTML }}
+                  </div>
                 {{ end }}
               </div>
             {{ end }}

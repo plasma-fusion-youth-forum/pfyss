@@ -38,7 +38,9 @@
                   class="rounded-3"
                 />
                 {{ with $venue.credit }}
-                  <div class="position-absolute bottom-0 end-0 text-muted fs-sm bg-secondary">{{ . | safeHTML }}</div>
+                  <div class="position-absolute bottom-0 end-0 text-muted fs-sm bg-dark opacity-75">
+                    {{ . | safeHTML }}
+                  </div>
                 {{ end }}
                 <div class="gallery-item-caption fs-sm fw-medium">Google map</div>
               </a>
