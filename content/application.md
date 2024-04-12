@@ -1,9 +1,113 @@
 ---
 title: お申し込み
 date: 2024-03-16T12:34:30+09:00
-draft: false
 description: プラズマ・核融合 若手夏の学校への参加を希望される方は、諸注意事項をご確認の上、お申し込みください。
+draft: false
 layout: application
+
+# 募集人数
+capacity: 40
+
+# 参加申込みフォームの設定
+form:
+  enable: true # 申込締め切り後は false に変更する
+  expired_message: 参加申込みを締め切りました。たくさんのご応募ありがとうございました。
+  action: https://docs.google.com/forms/u/2/d/e/1FAIpQLSdFDedriiViCc1kuFJbdd638mbiy7DM8PbKNmsgUbNiIhR66Q/formResponse
+  entries:
+    - id: name
+      name: entry.419423110
+      kind: input
+      type: text
+      label: 名前（漢字）
+      required: true
+      placeholder: 夏学 太郎
+      invalid_message: 漢字フルネームを入力してください
+
+    - id: name-kana
+      name: entry.419423110
+      kind: input
+      label: 名前（ふりがな）
+      type: text
+      required: true
+      placeholder: なつがく たろう
+      invalid_message: 名前のふりがなを入力してください
+
+    - id: gender
+      name: entry.1890782012
+      kind: select
+      label: 性別
+      required: true
+      options:
+        - 男性
+        - 女性
+        - その他
+      invalid_message: 性別を選択してください
+
+    - id: email
+      name: entry.714326778
+      kind: input
+      label: メールアドレス
+      type: email
+      required: true
+      placeholder: example@pfyss.org
+      invalid_message: 有効なメールアドレスを入力してください
+
+    - id: affiliation
+      name: entry.1660680588
+      kind: input
+      label: 所属
+      type: text
+      required: true
+      placeholder: ○○大学○○研究室
+      invalid_message: 所属を入力してください
+
+    - id: grade
+      name: entry.397468645
+      kind: select
+      label: 学年
+      required: true
+      options:
+        - 学部4年
+        - 修士1年
+        - 修士2年
+        - 博士1年
+        - 博士2年
+        - 博士3年
+        - 博士研究員
+        - その他
+      invalid_message: 学年を選択してください
+
+    - id: major
+      name: entry.129570103
+      kind: select
+      label: 専門
+      required: true
+      options:
+        - プラズマ基礎（放電物理、天文、プラズマ計測、原子分子過程、プラズマ源、イオン源など）
+        - プラズマ応用（産業応用、表面処理、エッチング、ナノテクノロジー、環境・エネルギーなど）
+        - 核融合プラズマ（平衡・安定性、閉じ込め、乱流、輸送、加熱、計測・診断、定常運転・制御など）
+        - 核融合炉工学（炉設計、ダイバータ、核融合燃料システム、保守安全性、社会的受容性、経済性など）
+      form-text: 専門が決まっていない方は興味のある分野を選択してください。
+      invalid_message: 専門分野を選択してください
+
+    - id: travel-allowance
+      name: entry.104847365
+      kind: select
+      label: 旅費補助
+      options:
+        - 不要
+        - 必要
+      default: 不要
+      required: false
+
+    - id: allowance_reason
+      name: entry.536200406
+      kind: textarea
+      label: 必要事由
+      type: text
+      required: false
+      style: "height: 10rem"
+      invalid_message: 旅費補助が必要な理由を入力してください
 ---
 
 # 参加の際の留意事項<i class="bx bx-fw bx-md bxs-error"></i>
