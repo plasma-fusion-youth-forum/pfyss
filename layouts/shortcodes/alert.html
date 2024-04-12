@@ -1,0 +1,39 @@
+{{ $types := dict
+  "bell" (slice "alert-primary" "bx-bell")
+  "time" (slice "alert-secondary" "bx-time")
+  "check" (slice "alert-success" "bx-check-circle")
+  "block" (slice "alert-danger" "bx-block")
+  "error" (slice "alert-warning" "bx-error")
+  "info" (slice "alert-info" "bx-info-circle")
+  "unlock" (slice "alert-light" "bx-lock-open")
+  "x" (slice "alert-dark" "bx-x-circle")
+}}
+<div
+  class="alert d-flex
+  {{ if .IsNamedParams }}
+    {{ index $types (.Get `type`) 0 }}
+    {{ with .Get `class` }}
+      {{ . }}
+    {{ end }}
+  {{ else }}
+    {{ index $types (.Get 0) 0 }}
+    {{ with .Get 1 }}
+      {{ . }}
+    {{ end }}
+  {{ end }}
+  "
+  role="alert"
+>
+  <i
+    class="bx
+    {{ if .IsNamedParams }}
+      {{ index $types (.Get `type`) 1 }}
+    {{ else }}
+      {{ index $types (.Get 0) 1 }}
+    {{ end }}
+    lead me-3"
+  ></i>
+  <div>
+    {{ .Inner }}
+  </div>
+</div>

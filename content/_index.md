@@ -39,8 +39,8 @@ carousels:
 sponsors:
   enable: false
   default: |
-    <h2 class="text-center">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
-    <p class="text-center">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
+    <h2 class="text-center text-white">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
+    <p class="text-center text-white">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
     若手夏の学校については<a href="/about">こちら</a>から、
     これまでの夏学の活動については<a href="/forepast">こちら</a>からご覧ください。
     </p>
@@ -94,3 +94,7 @@ venue_cards:
       credit: ©国立天文台
       google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8372.823780950277!2d138.47445170651952!3d35.94623279772583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c15e6ed59368d%3A0xe5a3821a5f6a3c4b!2z5Zu956uL5aSp5paH5Y-wIOmHjui-uuWxseWuh-Wumembu-azouims-a4rOaJgA!5e0!3m2!1sja!2sjp!4v1712821038271!5m2!1sja!2sjp
 ---
+<!-- 中止連絡などのアラートを表示したい場合は以下をアンコメント -->
+<!-- {{< alert type="block" class="mt-3 mb-0" >}}
+中止連絡
+{{< /alert >}} -->
