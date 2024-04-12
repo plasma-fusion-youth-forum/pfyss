@@ -94,14 +94,15 @@
           <div class="px-md-3 position-relative zindex-5">
             <div class="d-sm-flex align-items-start justify-content-between">
               <div class="text-center text-sm-start me-sm-4">
-                <div class="lead fw-semibold text-light text-uppercase mb-2">
-                  {{ $startMonth }}月{{ $startDate.Day }}日&nbsp;&ndash;&nbsp;{{ if eq $startMonth $endMonth -}}
-                    {{- $endDate.Day }}日
+                <div class="lead fw-semibold text-light mb-2">
+                  <span class="fs-1">{{ $startMonth }}</span>月<span class="fs-1">{{ $startDate.Day }}</span>日
+                  {{ if eq $startMonth $endMonth -}}
+                    <span class="fs-1">&ndash; {{ $endDate.Day }}</span>日
                   {{- else -}}
-                    {{- $endMonth }}月{{ $endDate.Day }}日
+                    <span class="fs-1">&ndash; {{ $endMonth }}</span>月<span class="fs-1">{{ $endDate.Day }}</span>日
                   {{- end -}}
                 </div>
-                <h3 class="h5 text-light mb-0">第{{ .Params.times }}回</h3>
+                <h3 class="h5 text-light mb-0">第<span class="fs-2">{{ .Params.times }}</span>回</h3>
                 <h3 class="h3 text-light mb-0">プラズマ・核融合</h3>
                 <h3 class="h1 text-light">若手夏の学校</h3>
               </div>
@@ -122,8 +123,10 @@
                 role="button"
                 >申込はこちらから</a
               >
-              <div class="d-flex align-items-center">
-                <span class="h4 text-light mb-0">{{ $deadlineMonth }}月{{ $deadline.Day }}日</span>
+              <div class="d-flex align-items-baseline">
+                <span class="h4 text-light mb-0"
+                  ><span class="fs-1">{{ $deadlineMonth }}</span>月<span class="fs-1">{{ $deadline.Day }}</span>日</span
+                >
                 <span class="fs-lg text-light ms-2">〆切</span>
               </div>
             </div>
