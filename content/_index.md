@@ -22,6 +22,7 @@ deadline: 2024-07-07 # 参加申し込み締め切り日
 carousels:
   - link: https://www.nro.nao.ac.jp/gallery/images/all_002.jpg
     alt: 十六夜にうかぶ電波望遠鏡群
+    anchor: Bottom
     credit: ©国立天文台
 
   - link: https://cdn.discordapp.com/attachments/1227878242975744000/1227909871605907466/82735c21cb2e1bb1.jpg?ex=662a1f2e&is=6617aa2e&hm=3f080b91d3c1bdee7ef56561037251690319a711b96df64a5c40aafbf280acd7&

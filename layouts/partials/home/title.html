@@ -21,7 +21,11 @@
             {{ with .Err }}
               {{ warnf "Unable to get carousel image from %s: %s" $element.link . }}
             {{ else }}
-              {{ $image := .Fill "1350x900 webp photo" }}
+              {{ $anchor := "" }}
+              {{ with $element.anchor }}
+                {{ $anchor = . }}
+              {{ end }}
+              {{ $image := .Fill (printf "1350x900 %s webp photo" $anchor) }}
               <div class="carousel-item h-100 {{ if eq $index 0 }}active{{ end }}">
                 <img
                   src="{{ $image.RelPermalink }}"
