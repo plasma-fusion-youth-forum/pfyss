@@ -100,7 +100,7 @@ form:
       default: 不要
       required: false
 
-    - id: allowance_reason
+    - id: allowance-reason
       name: entry.536200406
       kind: textarea
       label: 必要事由
