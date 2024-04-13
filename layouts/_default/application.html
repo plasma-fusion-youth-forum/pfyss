@@ -36,7 +36,7 @@
 
           {{/* Formエントリー */}}
           {{ range $i, $entry := .Params.form.entries }}
-            <div class="row mb-4" id="{{ $entry.id }}_row">
+            <div class="row mb-4" id="{{ $entry.id }}-row">
               <label for="{{ $entry.id }}" class="col-form-label col-sm-4 col-md-3">{{ $entry.label }}</label>
               <div class="col-sm-8 col-md-9">
                 {{ if eq $entry.kind "input" }}
@@ -65,7 +65,7 @@
                     class="form-select form-control form-select-lg"
                     id="{{ $entry.id }}"
                     {{ if $entry.required }}required{{ end }}
-                    {{ if eq $entry.id "allowance-reason" }}
+                    {{ if eq $entry.id "travel-allowance" }}
                       onchange="showHideReason();"
                     {{ end }}
                   >
@@ -227,6 +227,13 @@
         reasonModal.classList.add("d-none");
       }
     };
+    window.addEventListener(
+      "load",
+      () => {
+        showHideReason();
+      },
+      false
+    );
   </script>
 
   <!--=================================
