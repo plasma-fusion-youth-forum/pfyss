@@ -66,7 +66,7 @@
   <!--=======================
   =   Benefits (features)   =
   ========================-->
-  <section class="container mt-3 mb-5 pt-lg-5" id="benefits">
+  <section class="container mt-3 mb-5 py-lg-5" id="benefits">
     <div
       class="swiper pt-3"
       data-swiper-options='{
@@ -123,7 +123,7 @@
   =    Video showreel    =
   =====================-->
   {{ if .Params.video.enable }}
-    <section class="container pb-5 mt-n2 mt-md-0 mb-md-2 mb-lg-4">
+    <section class="container mt-3 mb-5 pt-lg-5">
       <div class="gallery" data-video="true">
         <a
           href="{{ .Params.video.url | safeURL }}"
@@ -296,13 +296,13 @@
   <!--==================
   =    Team members    =
   ===================-->
+  {{ $members := "" }}
   {{ if .Params.team.enable }}
 
     {{/* Load team member data */}}
     {{ $year := now.Year }}
     {{ $directory := printf "%d" $year | index .Site.Data }}
 
-    {{ $members := "" }}
     {{ with $directory }}
       {{ $members = .members }}
     {{ else }}
@@ -365,7 +365,7 @@
   <!-- ==============
   =   Contact CTA   =
   ================-->
-  <section class="container mt-n2 {{ if not .Params.team.enable }}py-5{{ end }}">
+  <section class="container {{ if $members }}mt-n2{{ else }}mt-4{{ end }}">
     <div class="card border-0 bg-gradient-primary">
       <div class="card-body p-md-5 p-4 bg-size-cover" style="background-image: url(/img/contact-bg.png);">
         <div class="py-md-5 py-4 text-center">
