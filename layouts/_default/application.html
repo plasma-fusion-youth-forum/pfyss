@@ -3,6 +3,19 @@
 {{ end }}
 
 {{ define "main" }}
+  {{/* ---------------------------------------------------------------------------- */}}
+  {{/* Load startline/deadline of application from homepage frontmatter (_index.md) */}}
+  {{/* ---------------------------------------------------------------------------- */}}
+  {{ $startline := "" }}
+  {{ $deadline := "" }}
+  {{ with .Site.Home.Params.application.startline }}
+    {{ $startline = time . }}
+  {{ end }}
+  {{ with .Site.Home.Params.application.deadline }}
+    {{ $deadline = time . }}
+  {{ end }}
+
+
   <!--==================
   =   諸注意セクション   =
   ===================-->
@@ -23,7 +36,13 @@
   <section class="py-5">
     <h2 class="container display-6 text-center">参加申込みフォーム</h2>
     <div class="container px-4 px-sm-5">
-      {{ if not .Params.form.enable }}
+      {{ if not (and $startline $deadline) }}
+        {{/* 申込み開始日、または申込み期限が設定されていない場合 */}}
+        <div class="text-center">{{ .Params.form.preparing_message }}</div>
+      {{ else if lt now $startline }}
+        {{/* 申込み開始前に表示する内容 */}}
+        <div class="text-center">{{ .Params.form.preparing_message }}</div>
+      {{ else if gt now $deadline }}
         {{/* 申込み期限後に表示する内容 */}}
         <div class="text-center">{{ .Params.form.expired_message }}</div>
       {{ else }}
@@ -32,7 +51,7 @@
           <!-- 申込み可能/キャンセル待ち人数の表示 -->
           <div data-aos="fade" data-aos-delay="1500">
             <!-- APiに知らせるため、募集人数を記述 -->
-            <input type="hidden" id="capacity-total" value="{{ .Params.capacity }}" />
+            <input type="hidden" id="capacity-total" value="{{ .Site.Home.Params.application.capacity }}" />
             <p id="available-capacity" class="text-end mb-0 mb-sm-3">&nbsp;</p>
           </div>
 
