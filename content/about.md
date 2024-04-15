@@ -52,7 +52,7 @@ testimonial:
 supporters:
   - name: 一般社団法人<br/>プラズマ・核融合学会
     url: https://www.jspf.or.jp/
-    logo: https://lh3.googleusercontent.com/drive-viewer/AKGpihaycUi8Cf-cZxtTzml61--1g5OC9ETes-t4fH0Lyoy6VeS-nfvSB31JPkmql_bGhmAn37zFW-KtdD5zDJBUcwVojnV-kg=s1600
+    logo: https://cdn.discordapp.com/attachments/1227808996594028585/1229250328499589231/jspf_logo.png?ex=662eff94&is=661c8a94&hm=9179a98ae4c5d38bdea02f6568deaaf17763f426bbdc003312b7eeeb13e4fdb2&
 
 #### 若手フォーラム委員 ####
 #### 毎年のメンバーは/data/{year}/members.yamlに記載 ####
