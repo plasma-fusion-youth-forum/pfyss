@@ -10,8 +10,12 @@
  * Copyright 2024 プラズマ・核融合 若手フォーラム
  */
 
-export default ((form, text = "送信中...") => {
-  const button = form.querySelector("button[type='submit']");
-  button.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true">${text}</span>`;
-  button.disabled = true;
-})();
+export default (form, text = "送信中...") => {
+  if (form && form.nodeType === Node.ELEMENT_NODE) {
+    const button = form.querySelector("button[type='submit']");
+    button.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>${text}`;
+    button.disabled = true;
+  } else {
+    console.error("Invalid form element passed to .spinner-button default function");
+  }
+};

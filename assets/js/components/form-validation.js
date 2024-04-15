@@ -1,6 +1,10 @@
 /**
  * Form validation
+ *
+ * Modified by: プラズマ・核融合 若手フォーラム at 2024
  */
+
+import spinner from '.spinner-button.js';
 
 export default (() => {
   const selector = 'needs-validation'
@@ -19,6 +23,10 @@ export default (() => {
             if (form.checkValidity() === false) {
               e.preventDefault()
               e.stopPropagation()
+            } else {
+              // show spinner and change button text to "送信中..." at the submit button
+              // copyright 2024 プラズマ・核融合 若手フォーラム
+              spinner(form)
             }
             form.classList.add('was-validated')
           },
