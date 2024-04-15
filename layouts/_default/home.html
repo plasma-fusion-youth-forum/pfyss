@@ -4,6 +4,19 @@
 
 {{ define "main" }}
 
+  <!-- Breadcrumb section -->
+  <!-- This section is shown only if the page is not the home page -->
+  {{ if not .IsHome }}
+    <section class="position-relative pt-5">
+      <div class="container pt-5">
+        <!-- Breadcrumb -->
+        {{- partial "site-breadcrumb.html" . -}}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+
   <!-- Title & carousel section -->
   {{- partial "home/title.html" . -}}
 

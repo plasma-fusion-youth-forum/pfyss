@@ -3,9 +3,9 @@ date: 2024-01-01
 draft: false
 kind: { page, home }
 layout: home
-title: home
 
 ### 夏学の基本情報 ###
+title: PFYSS 2024
 year: 2024
 times: ２ # 第〇回 - 全角数字で記入するとフォントが綺麗になります
 duration:
@@ -13,7 +13,7 @@ duration:
   end: 2024-08-30
 place: 長野県野辺山
 venue: リゾートイン黒岩荘
-fee: 23,000 # 参加費(円)
+fee: 検討中 # ￥23,000 # 参加費
 capacity: ~40 # 募集人数
 deadline: 2024-07-07 # 参加申し込み締め切り日
 
