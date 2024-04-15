@@ -9,5 +9,4 @@ form:
   enable: true
   action: https://submit-form.com/SrifI7wbP
   botpoison: pk_aefc00a9-c7de-4323-8c3f-341c4dbe3ac4
-  success_message: お問い合わせを受け付けました。後日、担当者よりご連絡いたします。
 ---
