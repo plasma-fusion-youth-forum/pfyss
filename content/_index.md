@@ -8,17 +8,21 @@ layout: home
 title: PFYSS 2024
 year: 2024
 times: ２ # 第〇回 - 全角数字で記入するとフォントが綺麗になります
-duration:
+duration:  # 開催期間
   start: 2024-08-27
   end: 2024-08-30
 place: 長野県野辺山
 venue: リゾートイン黒岩荘
-fee: 検討中 # ￥23,000 # 参加費
-capacity: ~40 # 募集人数
-deadline: 2024-07-07 # 参加申し込み締め切り日
+
+### 夏学の参加申込み概要
+application:
+  fee: 検討中 # ￥23,000 # 参加費
+  capacity: ~40 # 募集人数
+  startline: # 2024-06-01 # 参加申し込み募集開始日
+  deadline: # 2024-07-07 # 参加申し込み締め切り日
 
 ### カルーセル画像 ###
-# 画像サイズは1200x800px以上
+# 画像サイズは1350x900px以上
 carousels:
   - link: https://cdn.discordapp.com/attachments/1227878242975744000/1229232684933582918/963a59bdc999ed04.jpg?ex=662eef26&is=661c7a26&hm=ecaa84458b26ecf5dd1d7404a602ac8abcfa61781b24a4853420215622b3e1b8&
     alt: 十六夜にうかぶ電波望遠鏡群
@@ -34,7 +38,6 @@ carousels:
   - link: https://cdn.discordapp.com/attachments/1227878242975744000/1229232629186953347/cc39ba1512c20a87.jpg?ex=662eef18&is=661c7a18&hm=23a77e1a9724a8fc120d3645455f829650c5e4aa1bfdba4fb769a02c8d01069e&
     alt: 夏の電波ヘリオグラフ
     credit: ©国立天文台
-
 
 ### 協賛リスト ###
 sponsors:
@@ -95,6 +98,7 @@ venue_cards:
       credit: ©国立天文台
       google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8372.823780950277!2d138.47445170651952!3d35.94623279772583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c15e6ed59368d%3A0xe5a3821a5f6a3c4b!2z5Zu956uL5aSp5paH5Y-wIOmHjui-uuWxseWuh-Wumembu-azouims-a4rOaJgA!5e0!3m2!1sja!2sjp!4v1712821038271!5m2!1sja!2sjp
 ---
+
 <!-- 中止連絡などのアラートを表示したい場合は以下をアンコメント -->
 <!-- {{< alert type="block" class="mt-3 mb-0" >}}
 中止連絡
