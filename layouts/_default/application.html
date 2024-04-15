@@ -117,7 +117,13 @@
   <!--===============
   =   確認用モーダル  =
   ================-->
-  <div class="modal fade confirmation-modal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+  <div
+    class="modal fade"
+    id="confirmation-modal"
+    tabindex="-1"
+    aria-labelledby="confirmationModalLabel"
+    aria-hidden="true"
+  >
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -136,7 +142,6 @@
           <div class="modal-body">
             <p class="mb-3">以下の内容で送信します。よろしいですか？</p>
 
-            {{/* textare 以外 inputを用いる */}}
             {{ range $i, $entry := .Params.form.entries }}
               <div class="row mb-0" id="{{ $entry.id }}-modal-row">
                 <label for="{{ $entry.id }}-modal" class="col-form-label col-sm-4 col-lg-3">{{ $entry.label }}</label>
@@ -147,7 +152,6 @@
                       class="form-control"
                       type="text"
                       id="{{ $entry.id }}-modal"
-                      value=""
                       style="height: 10rem"
                       readonly
                     ></textarea>
@@ -157,7 +161,6 @@
                       class="form-control"
                       type="text"
                       id="{{ $entry.id }}-modal"
-                      value=""
                       readonly
                     />
                   {{ end }}
@@ -178,10 +181,10 @@
 
 {{ define "scripts" }}
   {{/* このlayoutに必要なscripts (/assets/js/application-form.js) のコンパイル */}}
-  {{ $options := dict "targetPath" "js/application-form.js" }}
-  {{ with resources.Get "js/application-form.js" | js.Build $options | minify | fingerprint }}
+  {{- $options := dict "targetPath" "js/application-form.js" -}}
+  {{- with resources.Get "js/application-form.js" | js.Build $options | minify | fingerprint -}}
     <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
-  {{ end }}
+  {{- end -}}
 
   {{/* 旅費補助理由の選択によって、その事由記入欄の表示/非表示を切り替える */}}
   <script>
