@@ -5,7 +5,7 @@ const configureLogger = require("./logger");
 
 const log = configureLogger("Vendor");
 
-const excludedDependencies = ["bootstrap"];//, "smooth-scroll"];
+const excludedDependencies = ["bootstrap", "smooth-scroll"];
 
 const cleanVendorDirectory = async () => {
   log.info("Cleaning vendor directory...");

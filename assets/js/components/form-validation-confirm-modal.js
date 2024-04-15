@@ -3,15 +3,19 @@
  * フォームのバリデーションが成功したら、確認モーダルを表示する.
  *
  * 確認が必要なフォームには、クラス名「needs-validation-confirmation」を付与する.
- * 確認モーダルには、クラス名「confirmation-modal」を付与する.
+ * 確認モーダルには、ID: "confirmation-modal"を付与する.
  * 確認モーダル中のフォーム要素には、「(元のフォーム要素ID)-modal」を付与する.
  *
  * Copyright 2024 プラズマ・核融合 若手フォーラム
+ *
+ * @requires https://getbootstrap.com
  */
+
+import { Modal } from "bootstrap";
 
 export default (() => {
   const formSelector = "needs-validation-confirmation";
-  const confirmModalSelector = "confirmation-modal";
+  const confirmModalId = "confirmation-modal";
 
   window.addEventListener(
     "load",
@@ -24,12 +28,14 @@ export default (() => {
         form.addEventListener(
           "submit",
           (e) => {
-            if (form.checkValidity() === false) {
-              e.preventDefault();
-              e.stopPropagation();
-            } else {
+            // Prevent submission
+            e.preventDefault();
+            e.stopPropagation();
+
+            // If the form is valid, open the confirmation modal
+            if (form.checkValidity()) {
               // Fetch confirmation modal
-              const confirmModal = document.getElementsByClassName(confirmModalSelector)[0];
+              const confirmModal = document.getElementById(confirmModalId);
 
               // Copy the values from the form to the confirmation modal
               form.querySelectorAll(".form-control").forEach((elm) => {
@@ -37,7 +43,7 @@ export default (() => {
               });
 
               // Open the confirmation modal
-              let modal = new bootstrap.Modal(confirmModal);
+              const modal = new Modal(confirmModal);
               modal.show();
             }
             form.classList.add("was-validated");

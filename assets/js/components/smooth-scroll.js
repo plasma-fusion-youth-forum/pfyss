@@ -3,6 +3,8 @@
  * @requires https://github.com/cferdinandi/smooth-scroll/
  */
 
+import SmoothScroll from "smooth-scroll";
+
 export default (() => {
   /* eslint-disable no-unused-vars, no-undef */
   const selector = '[data-scroll]',

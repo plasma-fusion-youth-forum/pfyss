@@ -7,12 +7,7 @@
  * @version 1.6.0
  */
 
-// Bootstrap
-import "bootstrap/dist/js/bootstrap.bundle";
-
-// Smooth scroll
-import "smooth-scroll/dist/smooth-scroll.polyfills";
-
+// Silicon-UI
 import "./components/sticky-navbar";
 import "./components/smooth-scroll";
 import "./components/scroll-top-button";
