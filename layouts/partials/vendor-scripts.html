@@ -5,15 +5,9 @@
 <script src="/vendor/lightgallery/plugins/video/lg-video.min.js" defer></script>
 <script src="/vendor/aos/dist/aos.js" defer></script>
 
-<!-- Smooth Scroll
-本来ならMain Theme scriptでimportされ、js.Buildでbundleされるはずだが、Hugoではされていない？
-(SmoothScrollクラスが未定義扱いされる)ので、ここで明示的にimportする
--->
-<script src="/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js" defer></script>
-
 <!-- aos initialization -->
 <script>
-  window.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("DOMContentLoaded", () => {
     AOS.init({
       delay: 0, // values from 0 to 3000, with step 50ms
       duration: 500, // values from 0 to 3000, with step 50ms
