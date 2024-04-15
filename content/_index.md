@@ -20,7 +20,7 @@ deadline: 2024-07-07 # 参加申し込み締め切り日
 ### カルーセル画像 ###
 # 画像サイズは1200x800px以上
 carousels:
-  - link: https://www.nro.nao.ac.jp/gallery/images/all_002.jpg
+  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1229232684933582918/963a59bdc999ed04.jpg?ex=662eef26&is=661c7a26&hm=ecaa84458b26ecf5dd1d7404a602ac8abcfa61781b24a4853420215622b3e1b8&
     alt: 十六夜にうかぶ電波望遠鏡群
     anchor: Bottom
     credit: ©国立天文台
@@ -31,7 +31,7 @@ carousels:
   - link: https://cdn.discordapp.com/attachments/1227878242975744000/1227911070233133056/8615210ec6386db5.webp?ex=662a204c&is=6617ab4c&hm=a4f136e5e527a1cdd53fff4ef3ddaacd820093f75c42719f4e8e68a893e876e0&
     alt: 野辺山高原平沢峠
 
-  - link: https://www.nro.nao.ac.jp/gallery/images/rh_004.jpg
+  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1229232629186953347/cc39ba1512c20a87.jpg?ex=662eef18&is=661c7a18&hm=23a77e1a9724a8fc120d3645455f829650c5e4aa1bfdba4fb769a02c8d01069e&
     alt: 夏の電波ヘリオグラフ
     credit: ©国立天文台
 
@@ -91,7 +91,7 @@ venue_cards:
       website: https://www.nro.nao.ac.jp/
       description: |
         国立天文台野辺山は1969年に開所した、電波天文学の国際的な拠点です。 本ツアーでは普段の見学ではわからない詳しいところまで解説していただきます！ さらに、銀河中心巨大ブラックホールの発見により仁科記念賞を受賞された、 国立天文台名誉教授の井上允氏にプラズマ物理含むブラックホールに関する講義をしていただきます。
-      image: https://www.nro.nao.ac.jp/gallery/images/nma_009.jpg
+      image: https://cdn.discordapp.com/attachments/1227878242975744000/1229233286304239717/9a90696d58c795dd.jpg?ex=662eefb5&is=661c7ab5&hm=05f49aa4457b827cc0120a0c595e2570889f14a0f2e772f128e5afd7810fdaa7&
       credit: ©国立天文台
       google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8372.823780950277!2d138.47445170651952!3d35.94623279772583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c15e6ed59368d%3A0xe5a3821a5f6a3c4b!2z5Zu956uL5aSp5paH5Y-wIOmHjui-uuWxseWuh-Wumembu-azouims-a4rOaJgA!5e0!3m2!1sja!2sjp!4v1712821038271!5m2!1sja!2sjp
 ---
