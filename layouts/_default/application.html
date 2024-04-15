@@ -31,6 +31,8 @@
         <form class="needs-validation-confirmation" novalidate>
           <!-- 申込み可能/キャンセル待ち人数の表示 -->
           <div data-aos="fade" data-aos-delay="1500">
+            <!-- APiに知らせるため、募集人数を記述 -->
+            <input type="hidden" id="capacity-total" value="{{ .Params.capacity }}" />
             <p id="available-capacity" class="text-end mb-0 mb-sm-3">&nbsp;</p>
           </div>
 

@@ -4,33 +4,38 @@
  * @return {void}
  */
 
-const fetchAndPasteAvailability = (total) => {
-  // Web APIのエンドポイント
+export default (() => {
   let endpoint =
     "https://script.google.com/macros/s/AKfycbyYH4EHD8-pXrlfoyFwQKfeDQruaWL4RlAVdOizyniOEYBcxxYJ5KXW4qgAQDIgra6dbw/exec";
+  const textFieldID = "available-capacity";
 
-  // 募集人数のクエリパラメータをエンドポイントに追加
-  endpoint += "?total=" + total;
+  window.addEventListener("load", () => {
+    // 募集人数をHTML内から取得
+    const total = document.getElementById("capacity-total").value;
 
-  // Web APIからデータを取得
-  fetch(endpoint)
-    .then((response) => {
-      // レスポンスをJSON形式で解析
-      return response.json();
-    })
-    .then((data) => {
-      // 表示するテキスト欄の要素を取得
-      let textField = document.getElementById("available-capacity");
+    // 募集人数のクエリパラメータをエンドポイントに追加
+    endpoint += "?total=" + total;
 
-      // テキスト欄にデータを貼り付ける
-      if (data.waitlistCount >= 0) {
-        textField.textContent = "キャンセル待ち人数: " + data.waitlistCount + "人";
-      } else {
-        textField.textContent = "申込み可能人数: " + data.availableCapacity + "人";
-      }
-    })
-    .catch((error) => {
-      // エラーハンドリング
-      console.log("エラーが発生しました:", error);
-    });
-};
+    // Web APIからデータを取得
+    fetch(endpoint)
+      .then((response) => {
+        // レスポンスをJSON形式で解析
+        return response.json();
+      })
+      .then((data) => {
+        // 表示するテキスト欄の要素を取得
+        const textField = document.getElementById(textFieldID);
+
+        // テキスト欄にデータを貼り付ける
+        if (data.waitlistCount >= 0) {
+          textField.textContent = "キャンセル待ち人数: " + data.waitlistCount + "人";
+        } else {
+          textField.textContent = "申込み可能人数: " + data.availableCapacity + "人";
+        }
+      })
+      .catch((error) => {
+        // エラーハンドリング
+        console.log("エラーが発生しました:", error);
+      });
+  });
+})();
