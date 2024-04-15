@@ -164,7 +164,7 @@
                     {{ with .Err }}
                       {{ warnf "%s" . }}
                     {{ else }}
-                      {{ $image := .Resize "200x webp" }}
+                      {{ $image := .Resize "x400 webp" }}
                       {{ $image_gray := $image.Filter images.Grayscale }}
                       <img
                         src="{{ $image_gray.RelPermalink }}"
