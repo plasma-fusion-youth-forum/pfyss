@@ -1,16 +1,31 @@
 {{/* Define start & end days */}}
-{{ $startDate := time .Params.duration.start }}
-{{ $endDate := time .Params.duration.end }}
-{{ $startMonth := printf "%d" $startDate.Month }}
-{{ $endMonth := printf "%d" $endDate.Month }}
-{{ $deadline := time .Params.deadline }}
-{{ $deadlineMonth := printf "%d" $deadline.Month }}
+{{- $startDate := time .Params.duration.start -}}
+{{- $endDate := time .Params.duration.end -}}
+{{- $startMonth := printf "%d" $startDate.Month -}}
+{{- $endMonth := printf "%d" $endDate.Month -}}
+
+{{/* Application Startline/Deadline */}}
+{{- $startline := "" -}}
+{{- $deadline := "" -}}
+{{- with .Params.application.startline -}}
+  {{- $startline = time . -}}
+{{- end -}}
+{{- with .Params.application.deadline -}}
+  {{- $deadline = time . -}}
+{{- end -}}
 
 
+<!--===================
+=     Create HTML     =
+====================-->
 <section id="application" class="container py-5 mb-2 mb-md-4 mb-lg-5 mt-n3 mt-lg-0">
   <div class="container py-2 py-md-4 py-lg-5">
     <h2 class="h1 text-center mb-4 mb-md-0 me-md-3">Application Guide</h2>
   </div>
+
+  <!--==============
+  =    参加資格     =
+  ===============-->
   <div class="row pt-xl-2 pb-md-3">
     <div class="col-lg-5 mb-4 mb-lg-0 position-relative offset-e-xl-1">
       <h3 class="h4">参加資格</h3>
@@ -31,7 +46,7 @@
             </svg>
             <h4 class="fs-base fw-semibold text-nowrap ps-1 mb-0">参加費</h4>
           </div>
-          <h5 class="text-primary my-2 my-sm-0">{{ .Params.fee }}</h5>
+          <h5 class="text-primary my-2 my-sm-0">{{ .Params.application.fee }}</h5>
           <div class="fs-sm">宿泊・懇親会費込</div>
         </li>
         <li
@@ -52,7 +67,9 @@
             </svg>
             <h4 class="fs-base fw-semibold text-nowrap ps-1 mb-0">募集人数</h4>
           </div>
-          <h5 class="badge bg-primary fs-5 fw-bold rounded px-3 py-0 my-3 my-sm-0">{{ .Params.capacity }}人</h5>
+          <h5 class="badge bg-primary fs-5 fw-bold rounded px-3 py-0 my-3 my-sm-0">
+            {{ .Params.application.capacity }}人
+          </h5>
           <div class="fs-sm">先着順</div>
         </li>
       </ul>
@@ -83,7 +100,9 @@
     </div>
 
     <div class="col-xl-6 col-lg-7 position-relative">
-      <!-- Ticket card -->
+      <!--===============
+      =   Ticket card   =
+      ================-->
       <div class="position-relative" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor="#application-arrow">
         <div class="position-relative overflow-hidden bg-gradient-primary rounded-3 zindex-5 py-5 px-4 p-sm-5">
           <span class="position-absolute top-50 start-0 translate-middle bg-light rounded-circle p-4"></span>
@@ -106,29 +125,49 @@
                 <h3 class="h3 text-light mb-0">プラズマ・核融合</h3>
                 <h3 class="h1 text-light">若手夏の学校</h3>
               </div>
-              <div
-                class="d-table bg-white rounded-3 p-0 flex-shrink-0 mx-auto mx-sm-0
-                {{ if gt now $deadline }}visually-hidden{{ end }}"
-              >
-                <img src="/img/qr_application.svg" width="150" alt="QR Code" />
-              </div>
+              {{/* 日時によって申込ページへのQRコード画像を表示/非表示する */}}
+              {{ if $startline }}
+                {{ if lt now $startline }}
+                  {{/* 申込み開始前 */}}
+                {{ else if gt now $endDate }}
+                  {{/* 夏学終了後 */}}
+                {{ else }}
+                  {{/* 申込開始後から夏学終わりの間まで */}}
+                  <div class="d-table bg-white rounded-3 p-0 flex-shrink-0 mx-auto mx-sm-0">
+                    <img src="/img/qr_application.svg" width="150" alt="QR Code" />
+                  </div>
+                {{ end }}
+              {{ end }}
             </div>
             <div class="d-flex flex-column flex-sm-row align-items-center pt-4 mt-2">
-              <!-- 申込みフォームにアクセスさせない場合は <a> タグの class に disabled を加える -->
-              <a
-                href="/application"
-                class="btn btn-light btn-lg mb-3 mb-sm-0 me-sm-3 {{ if gt now $deadline }}disabled{{ end }}"
-                tabindex="-1"
-                aria-disabled="true"
-                role="button"
-                >申込はこちらから</a
-              >
-              <div class="d-flex align-items-baseline">
-                <span class="h4 text-light mb-0"
-                  ><span class="fs-1">{{ $deadlineMonth }}</span>月<span class="fs-1">{{ $deadline.Day }}</span>日</span
-                >
-                <span class="fs-lg text-light ms-2">〆切</span>
-              </div>
+              {{/* 日時によって申込ページのボタンを変化させる */}}
+              {{ if $startline }}
+                {{ if lt now $startline }}
+                  {{/* 申込み開始前 */}}
+                  <button type="button" class="btn btn-lg mb-3 mb-sm-0 me-sm-3" disabled>準備中</button>
+                {{ else if gt now $endDate }}
+                  {{/* 夏学終了後 */}}
+                  <button type="button" class="btn btn-lg mb-3 mb-sm-0 me-sm-3" disabled>募集終了</button>
+                {{ else }}
+                  {{/* 申込開始後から夏学終わりの間まで */}}
+                  <a href="/application" class="btn btn-light btn-lg mb-3 mb-sm-0 me-sm-3" tabindex="-1" role="button"
+                    >申込はこちらから
+                  </a>
+                {{ end }}
+              {{ else }}
+                {{/* 申込開始日が設定されていない場合 */}}
+                <button type="button" class="btn btn-lg mb-3 mb-sm-0 me-sm-3" disabled>準備中</button>
+              {{ end }}
+
+              {{/* 参加申込期限が設定されている場合 */}}
+              {{ with $deadline }}
+                <div class="d-flex align-items-baseline">
+                  <span class="h4 text-light mb-0"
+                    ><span class="fs-1">{{ printf "%d" .Month }}</span>月<span class="fs-1">{{ .Day }}</span>日</span
+                  >
+                  <span class="fs-lg text-light ms-2">〆切</span>
+                </div>
+              {{ end }}
             </div>
           </div>
           <span class="position-absolute top-50 end-0 translate-middle-y bg-light rounded-circle p-4 me-n4"></span>
