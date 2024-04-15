@@ -5,13 +5,10 @@ description: プラズマ・核融合 若手夏の学校への参加を希望さ
 draft: false
 layout: application
 
-# 募集人数
-capacity: 40
-
 # 参加申込みフォームの設定
 form:
-  enable: false # 申込締め切り後は false に変更する
-  expired_message: ただいま準備中です。今しばらくおまちください。 # 参加申込みを締め切りました。たくさんのご応募ありがとうございました。
+  preparing_message: ただいま準備中です。今しばらくおまちください
+  expired_message: 参加申込みを締め切りました。たくさんのご応募ありがとうございました。
   action: https://docs.google.com/forms/u/2/d/e/1FAIpQLSdFDedriiViCc1kuFJbdd638mbiy7DM8PbKNmsgUbNiIhR66Q/formResponse
   entries:
     - id: name
