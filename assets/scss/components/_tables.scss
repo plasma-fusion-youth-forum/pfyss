@@ -19,14 +19,13 @@
   border-bottom-color: darken($border-color, 12%);
 }
 .table.table-dark > :not(:last-child) > :last-child > * {
-  border-bottom-color: rgba($white, .3);
+  border-bottom-color: rgba($white, 0.3);
 }
 
 // Remove highlight border color between thead, tbody and tfoot.
 .table > :not(:first-child) {
   border-top: 0;
 }
-
 
 // Dark color mode
 
@@ -37,7 +36,7 @@
       --#{$prefix}table-hover-bg: rgba(#{to-rgb($white)}, #{$table-hover-bg-factor});
       --#{$prefix}table-hover-color: #{$table-hover-color};
       > :not(:last-child) > :last-child > * {
-        border-bottom-color: rgba($white, .3);
+        border-bottom-color: rgba($white, 0.3);
       }
     }
   }

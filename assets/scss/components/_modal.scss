@@ -2,7 +2,6 @@
 // Modal
 // --------------------------------------------------
 
-
 .modal-content {
   padding: {
     right: var(--#{$prefix}modal-padding);
@@ -24,7 +23,6 @@
     left: calc(var(--#{$prefix}modal-padding) * -1);
   }
 }
-
 
 // Dark color mode
 

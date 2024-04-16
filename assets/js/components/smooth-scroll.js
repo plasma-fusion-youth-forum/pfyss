@@ -7,16 +7,16 @@ import SmoothScroll from "smooth-scroll";
 
 export default (() => {
   /* eslint-disable no-unused-vars, no-undef */
-  const selector = '[data-scroll]',
-    fixedHeader = '[data-scroll-header]',
+  const selector = "[data-scroll]",
+    fixedHeader = "[data-scroll-header]",
     scroll = new SmoothScroll(selector, {
       speed: 800,
       speedAsDuration: true,
       offset: (anchor, toggle) => {
-        return toggle.dataset.scrollOffset || 40
+        return toggle.dataset.scrollOffset || 40;
       },
       header: fixedHeader,
       updateURL: false,
-    })
+    });
   /* eslint-enable no-unused-vars, no-undef */
-})()
+})();

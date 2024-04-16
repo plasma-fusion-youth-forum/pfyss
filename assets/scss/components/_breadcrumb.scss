@@ -2,7 +2,6 @@
 // Breadcrumb
 // --------------------------------------------------
 
-
 .breadcrumb {
   --#{$prefix}breadcrumb-font-weight: #{$breadcrumb-font-weight};
   --#{$prefix}breadcrumb-color: #{$breadcrumb-color};
@@ -15,7 +14,7 @@
   display: flex;
   align-items: center;
   + .breadcrumb-item::before {
-    margin-top: .15em;
+    margin-top: 0.15em;
     font: {
       family: $icons-font-family;
       size: $breadcrumb-divider-font-size;
@@ -33,7 +32,6 @@
     color: var(--#{$prefix}breadcrumb-hover-color);
   }
 }
-
 
 // Dark color mode
 

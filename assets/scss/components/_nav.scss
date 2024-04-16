@@ -2,10 +2,11 @@
 // Nav (Navigation components)
 // --------------------------------------------------
 
-
 // Base styles
 
-.nav-item { margin-bottom: 0; }
+.nav-item {
+  margin-bottom: 0;
+}
 
 .nav {
   --#{$prefix}nav-link-active-color: #{$nav-link-active-color};
@@ -23,7 +24,6 @@
   }
 }
 
-
 // Nav tabs
 
 .nav-tabs {
@@ -34,10 +34,10 @@
   --#{$prefix}nav-tabs-link-hover-color: #{$nav-tabs-link-hover-color};
   --#{$prefix}nav-tabs-link-disabled-color: #{$nav-tabs-link-disabled-color};
 
-  margin-bottom: $spacer * .75;
+  margin-bottom: $spacer * 0.75;
 
   .nav-item {
-    margin-bottom: $spacer * .75;
+    margin-bottom: $spacer * 0.75;
   }
 
   .nav-link {
@@ -62,7 +62,6 @@
   }
 }
 
-
 // Alternative tabs
 
 .nav-tabs-alt {
@@ -86,39 +85,41 @@
   }
 }
 
-
 // Spacing
 
 .nav-tabs,
 .nav-pills {
   .nav-item {
-    margin-right: ($spacer * .75);
-    &:last-child { margin-right: 0; }
+    margin-right: ($spacer * 0.75);
+    &:last-child {
+      margin-right: 0;
+    }
   }
   &.justify-content-center .nav-item {
     margin: {
-      right: ($spacer * .375);
-      left: ($spacer * .375);
+      right: ($spacer * 0.375);
+      left: ($spacer * 0.375);
     }
   }
   &.justify-content-end .nav-item {
     margin: {
       right: 0;
-      left: ($spacer * .75);
+      left: ($spacer * 0.75);
     }
   }
   &.flex-column {
     .nav-item {
       margin: {
         right: 0;
-        bottom: ($spacer * .75);
+        bottom: ($spacer * 0.75);
         left: 0;
       }
-      &:last-child { margin-bottom: 0; }
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
-
 
 // Sidebar navigation
 
@@ -168,16 +169,17 @@
   }
 }
 
-
 // Faded primary background on hover
 
 .bg-faded-primary-hover {
-  transition: background-color .2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
   &:hover {
-    background-color: map-get($theme-faded-colors, "primary") !important; // stylelint-disable-line declaration-no-important
+    background-color: map-get(
+      $theme-faded-colors,
+      "primary"
+    ) !important; // stylelint-disable-line declaration-no-important
   }
 }
-
 
 // Dark color mode
 

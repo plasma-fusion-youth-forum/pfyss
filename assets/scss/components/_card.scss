@@ -2,7 +2,6 @@
 // Card
 // --------------------------------------------------
 
-
 // Header and footer
 
 .card-header,
@@ -14,7 +13,6 @@
   }
   margin: auto;
 }
-
 
 // Header navs
 
@@ -31,8 +29,8 @@
 
   &.nav-tabs-alt {
     margin: {
-      top: calc(var(--#{$prefix}card-cap-padding-y) * -.625);
-      bottom: calc((var(--#{$prefix}card-cap-padding-y) + .0625rem) * -1);
+      top: calc(var(--#{$prefix}card-cap-padding-y) * -0.625);
+      bottom: calc((var(--#{$prefix}card-cap-padding-y) + 0.0625rem) * -1);
     }
     border-bottom: 0;
   }
@@ -41,13 +39,12 @@
   background-color: var(--#{$prefix}nav-pills-link-active-bg);
 }
 
-
 // Hover effect
 
 .card-hover:not(.bg-transparent) {
   transition: $card-transition;
   &:hover {
-    transform: translateY(-.25rem);
+    transform: translateY(-0.25rem);
     @include box-shadow($box-shadow-sm);
   }
   &.shadow-sm:hover {
@@ -66,10 +63,10 @@
   .card-img-overlay {
     z-index: 5;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
   }
   .card-icon {
-    transition: color .3s ease-in-out;
+    transition: color 0.3s ease-in-out;
   }
   &:hover {
     .card-icon {
@@ -106,24 +103,32 @@
   .h5,
   h6,
   .h6 {
-    transition: color .2s ease-in-out;
+    transition: color 0.2s ease-in-out;
   }
   .border-top,
   .border-end,
   .border-bottom,
   .border-start {
-    transition: border-color .2s ease-in-out;
+    transition: border-color 0.2s ease-in-out;
   }
   .bg-secondary {
-    transition: background-color .2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
   }
   &:hover {
     background-color: var(--#{$prefix}primary) !important; // stylelint-disable-line declaration-no-important
     border-color: var(--#{$prefix}primary) !important; // stylelint-disable-line declaration-no-important
-    .card-title { color: $white; }
-    .card-body { color: rgba($white, .7); }
-    .text-muted { color: rgba($white, .5) !important; } // stylelint-disable-line declaration-no-important
-    .text-primary { color: $white !important; } // stylelint-disable-line declaration-no-important
+    .card-title {
+      color: $white;
+    }
+    .card-body {
+      color: rgba($white, 0.7);
+    }
+    .text-muted {
+      color: rgba($white, 0.5) !important;
+    } // stylelint-disable-line declaration-no-important
+    .text-primary {
+      color: $white !important;
+    } // stylelint-disable-line declaration-no-important
     .border-top,
     .border-end,
     .border-bottom,
@@ -131,7 +136,7 @@
       border-color: $border-light-color !important; // stylelint-disable-line declaration-no-important
     }
     .bg-secondary {
-      background-color: rgba($white, .05) !important; // stylelint-disable-line declaration-no-important
+      background-color: rgba($white, 0.05) !important; // stylelint-disable-line declaration-no-important
     }
     h1,
     .h1,
@@ -146,13 +151,18 @@
     h6,
     .h6 {
       color: $white !important; // stylelint-disable-line declaration-no-important
-      > a { color: $white !important; } // stylelint-disable-line declaration-no-important
+      > a {
+        color: $white !important;
+      } // stylelint-disable-line declaration-no-important
     }
-    .text-dark:not(.badge.bg-white) { color: $white !important; } // stylelint-disable-line declaration-no-important
-    .text-nav:not(.badge.bg-white) { color: $nav-link-color-dark !important; } // stylelint-disable-line declaration-no-important
+    .text-dark:not(.badge.bg-white) {
+      color: $white !important;
+    } // stylelint-disable-line declaration-no-important
+    .text-nav:not(.badge.bg-white) {
+      color: $nav-link-color-dark !important;
+    } // stylelint-disable-line declaration-no-important
   }
 }
-
 
 // Portfolio card
 
@@ -167,7 +177,7 @@
 
     > img {
       display: block;
-      transition: transform .35s ease-in-out;
+      transition: transform 0.35s ease-in-out;
     }
   }
 
@@ -181,7 +191,7 @@
   @include media-breakpoint-up(md) {
     .card-portfolio-meta {
       opacity: 0;
-      transition: opacity .35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
     }
 
     &:hover {
@@ -194,7 +204,6 @@
     }
   }
 }
-
 
 // Dark color mode
 
@@ -211,12 +220,14 @@
     .card-hover:not([data-bs-theme="light"]) {
       &:hover {
         background-color: var(--#{$prefix}secondary-bg);
-        border-color: rgba($white, .3);
+        border-color: rgba($white, 0.3);
       }
       &.border-0:not(.bg-transparent):not(.bg-light) {
         border: var(--#{$prefix}border-width) solid transparent !important; // stylelint-disable-line declaration-no-important
         &:hover {
-          border-color: var(--#{$prefix}card-border-color) !important; // stylelint-disable-line declaration-no-important
+          border-color: var(
+            --#{$prefix}card-border-color
+          ) !important; // stylelint-disable-line declaration-no-important
         }
       }
       &.bg-light:hover {

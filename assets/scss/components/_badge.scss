@@ -2,7 +2,6 @@
 // Badge
 // --------------------------------------------------
 
-
 // Fix secondary and light badges colors
 
 .badge.bg-secondary,
@@ -10,13 +9,12 @@
   --#{$prefix}badge-color: #{$gray-800};
 }
 
-
 // Badge link
 
-a.badge { // stylelint-disable-line selector-no-qualifying-type
+a.badge {
+  // stylelint-disable-line selector-no-qualifying-type
   text-decoration: none;
 }
-
 
 // Fix badge alignment inside button
 

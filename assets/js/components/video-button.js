@@ -4,14 +4,14 @@
  */
 
 export default (() => {
-  let button = document.querySelectorAll('[data-bs-toggle="video"]')
+  let button = document.querySelectorAll('[data-bs-toggle="video"]');
   if (button.length) {
     for (let i = 0; i < button.length; i++) {
       /* eslint-disable no-undef */
       lightGallery(button[i], {
-        selector: 'this',
+        selector: "this",
         plugins: [lgVideo],
-        licenseKey: 'D4194FDD-48924833-A54AECA3-D6F8E646',
+        licenseKey: "D4194FDD-48924833-A54AECA3-D6F8E646",
         download: false,
         youtubePlayerParams: {
           modestbranding: 1,
@@ -21,10 +21,10 @@ export default (() => {
         vimeoPlayerParams: {
           byline: 0,
           portrait: 0,
-          color: '6366f1',
+          color: "6366f1",
         },
-      })
+      });
       /* eslint-enable no-undef */
     }
   }
-})()
+})();

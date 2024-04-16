@@ -1,13 +1,12 @@
 /**
+ * Copyright 2024 プラズマ・核融合 若手フォーラム
+ *
  * ボタンにスピナーを追加する
  * form要素内の送信ボタンを無効化し、スピナーを表示する関数を提供する
  *
  * @param {HTMLFormElement} form フォーム要素
  * @param {string} text ボタン内のテキスト
  * @return {void}
- *
- *
- * Copyright 2024 プラズマ・核融合 若手フォーラム
  */
 
 export default (form, text = "送信中...") => {

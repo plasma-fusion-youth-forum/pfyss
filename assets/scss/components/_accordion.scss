@@ -2,7 +2,6 @@
 // Accordion
 // --------------------------------------------------
 
-
 .accordion {
   --#{$prefix}accordion-color: var(--#{$prefix}body-color);
   --#{$prefix}accordion-btn-font-weight: #{$accordion-button-font-weight};
@@ -18,7 +17,9 @@
   font-weight: var(--#{$prefix}accordion-btn-font-weight);
   transition: none;
   &:not(.collapsed) {
-    @include box-shadow(inset 0 calc(var(--#{$prefix}accordion-border-width) * -1) 0 var(--#{$prefix}accordion-border-color));
+    @include box-shadow(
+      inset 0 calc(var(--#{$prefix}accordion-border-width) * -1) 0 var(--#{$prefix}accordion-border-color)
+    );
   }
 
   // Indicator (Icon)
@@ -29,7 +30,7 @@
       position: center;
       color: var(--#{$prefix}accordion-btn-icon-box-bg);
     }
-    transition: all .35s;
+    transition: all 0.35s;
     @include border-radius(var(--#{$prefix}accordion-btn-icon-box-border-radius));
   }
 
@@ -38,7 +39,6 @@
     @include box-shadow(var(--#{$prefix}accordion-btn-icon-box-active-shadow));
   }
 }
-
 
 // Dark color mode
 
