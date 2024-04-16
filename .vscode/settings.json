@@ -1,4 +1,7 @@
 {
   "editor.tabSize": 2,
-  "editor.indentSize": "tabSize"
+  "editor.indentSize": "tabSize",
+  "prettier.configPath": "package.json",
+  "prettier.requireConfig": true,
+  "npm.exclude": ["**/static/vendor/**", "**/public/vendor/**"]
 }
