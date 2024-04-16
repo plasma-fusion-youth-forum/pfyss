@@ -1,0 +1,8 @@
+<meta name="description" content="{{ .Description | default .Site.Params.description }}" />
+<meta
+  name="keywords"
+  content="{{ range $index, $keyward := .Site.Params.keywords }}
+    {{- if eq $index 0 }}{{ $keyward }}{{ else }},{{ $keyward }}{{ end }}
+  {{- end }}"
+/>
+<meta name="author" content="{{ .Site.Params.author }}" />

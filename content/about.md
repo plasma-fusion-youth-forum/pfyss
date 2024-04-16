@@ -1,0 +1,64 @@
+---
+title: About
+date: 2023-08-01
+description: プラズマ・核融合 若手夏の学校とは、夏学とも略される合宿系のイベントです。プラズマ・核融合に関わる学生や若手研究者たちが、講義やディスカッションを通じて刺激を与え、交流し合うことを開催の目的としています。
+draft: false
+layout: about
+
+#### About Images and Video ####
+featured_images:
+  column1:
+    - url: https://lh3.googleusercontent.com/drive-viewer/AKGpihZyx_oW8Oq09meYmbP0mwd3dVNxhqW5bLIg33mnSxYewssC7IcJ2OKNZbrdIKJMMR3Ox9J3gjxys1UT9ZlhYRJY54j0EA=s1600
+      alt: 講義 in PFYSS 2022
+      size: 700x600 webp
+
+    - url: https://lh3.googleusercontent.com/drive-viewer/AKGpihYJWozzDZoF-d1mtFP-PVsGyeB1Cpzlb_nyWNUy-NS9aSyYHBryeS4ZFS0U-mIWWFI65-7l4GcwSCv2lrDptD8IwH_MFQ=s1600
+      alt: 水素見学 in PFYSS 2022
+      size: "550x550 center webp"
+
+  column2:
+    - url: https://lh3.googleusercontent.com/drive-viewer/AKGpihYMxyl8524dWGCMNq3mnF8YoZ1Fq8t4azsPDNxx_qEMVu3wQDEr_PMRdq34_RY1Vb-5DT8t0b-G6D-x3aQ0chm4Agj-=s1600
+      alt: アクティビティ in PFYSS 2022
+
+    - url: https://lh3.googleusercontent.com/drive-viewer/AKGpihY-KNnzffD-srU_9vtz0ji6g-Vh6JHTb3vzmQp-X7FvwvoguEiuWR_u3mE-yVr6_5DwVoQJY4kOwYgGzRZyu6rnDQID=s1600
+      alt: ポスター発表 in PFYSS 2023
+      size: "500x450 center webp"
+
+video:
+  enable: true
+  # Video URL
+  url:
+  # Cover image for video
+  cover: https://lh3.googleusercontent.com/drive-viewer/AKGpihaUnXSp7YFeUPasm35U4qaGxDdKA8pMeDKCCZwQkSPoxgu04TUeQ-UPLu_zyUcsbodiHeCarcZE0t1Ex7Lwd2e5ZK_k9g=s1600
+  # size: 1200x560 webp  # Optional
+
+#### Testimonial ####
+testimonial:
+  enable: true
+  testimonial_items:
+    - name: 2023年参加者
+      # affiliation: 〇〇大学学部4年
+      content: 講義内容で、興味はあったが知らなかったことなど全体を通して面白い内容だったと思います。OIST見学も学内や研究室を見学でき非常に良い刺激になりました。BBQは他大学の学生と親睦を深めるいい機会でした。次回も開催して欲しいです。宿泊施設の寝床だけはもう少し良いところが良かったです。ただ、一部屋の人数が多いというのはいろんな人と話す機会になってよかったです。
+
+    - name: 2023年参加者
+      # affiliation: 〇〇大学博士1年
+      content: 様々な大学や研究所の方の貴重なお話を聞けて知見が広まってよかった。また、他大学の人と交流ができ、同じ分野の研究をしている人達のポスター発表を見て刺激になった。
+
+    - name: 2022年参加者
+      # affiliation: 〇〇大学院博士3年
+      content: 普段は周りに核融合研究をしている学生が少ないので、新鮮だった。みんなレベルが高く、刺激になった。ITERについてもインターンの話からぶっちゃけた内情まで聞くことができ、良かった。
+
+#### 後援・協賛組織リスト ####
+supporters:
+  - name: 一般社団法人<br/>プラズマ・核融合学会
+    url: https://www.jspf.or.jp/
+    logo: https://cdn.discordapp.com/attachments/1227808996594028585/1229250328499589231/jspf_logo.png?ex=662eff94&is=661c8a94&hm=9179a98ae4c5d38bdea02f6568deaaf17763f426bbdc003312b7eeeb13e4fdb2&
+
+#### 若手フォーラム委員 ####
+#### 毎年のメンバーは/data/{year}/members.yamlに記載 ####
+#### {year}は毎年最新の年に自動的に変更される ####
+team:
+  enable: true
+---
+
+プラズマ・核融合 若手夏の学校({{< abbreviation abbr="PFYSS" fullname="Plasma Fusion Youth Summer School" >}})は、大学生や大学院生・若手研究者が、プラズマ・核融合の基礎から最新の研究成果を短期間に集中的に学ぶことができる合宿形式のイベントです。毎年、日本国内外の研究者が講師として招かれます。また、参加者間の交流を深めるための懇親会や合宿地ならではのアクティビティなども行われます。

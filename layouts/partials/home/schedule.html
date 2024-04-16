@@ -1,0 +1,243 @@
+{{ if .Params.schedule.enable }}
+  {{ $days := "" }}
+  {{ $year := .Params.year }}
+  {{ $apiURL := printf "%s?year=%d" .Site.Params.apiURL $year }}
+
+
+  <!--===============================================================
+  = GASのWebAPIを用いてGoogle Calenderに登録したPFYSSのイベントデータ取得 =
+  ===================================================================
+  取得した変数$daysは、日付毎にイベントデータを格納した配列:
+  days = [
+    {
+      date: String (ISO 8601),
+      events: [
+        {
+          startTime: String (ISO 8601),
+          endTime: String (ISO 8601),
+          title: String,
+          description: String,
+          color: String
+        }
+      ],
+      [...]
+    },{...}
+  ]
+  -->
+  {{ $opts := dict
+    "method" "get"
+    "headers" (dict  "Content-Type" "application/json")
+  }}
+  {{ with resources.GetRemote $apiURL $opts }}
+    {{ with .Err }}
+      {{ warnf "Unable to get scuedule info from %s : %s" $apiURL . }}
+    {{ else }}
+      {{ $days = .Content | transform.Unmarshal }}
+    {{ end }}
+  {{ end }}
+
+
+  <!-- Googleカレンダーにおけるイベントの色(番号)と、それに対応するBadgeを定義
+  lecture: 講義 黄色（バナナ）= 5
+  special: 特別講義 マーブル（ブドウ）= 3
+  excursion: エクスカーション 緑色（バジル）= 10
+  poster: ポスターセッション 青色（ブルーベリー）= 9
+  -->
+  {{ $eventBadge := dict
+    "5" (slice "warning" "Lecture")
+    "3" (slice "primary" "Special Lecture")
+    "10" (slice "success" "Excursion")
+    "9" (slice "info" "Poster Session")
+  }}
+
+
+  <!--====================================
+  =     teachers.yamlから講師情報を取得     =
+  =====================================-->
+  {{ $teachers := "" }}
+  {{ $directory := printf "%d" $year | index .Site.Data }}
+  {{ with $directory }}
+    {{ with .teachers }}
+      {{ $teachers = . }}
+    {{ else }}
+      {{ warnf "Unable to get team teachers info from data/%d/teachers.yaml" $year }}
+    {{ end }}
+  {{ else }}
+    {{ warnf "Unable to get to directory: data/%d/" $year }}
+  {{ end }}
+
+
+  <!--===================
+  =     Create HTML     =
+  ====================-->
+  <section id="schedule" class="container py-5">
+    <div class="row mt-xl-2 mb-xl-3">
+      <div class="col-12">
+        <h2 class="h1 text-center text-sm-start pb-2 pb-lg-0 mb-4 mb-lg-5">Schedule</h2>
+      </div>
+      <div class="col-lg-3 mb-4">
+        <!--=======================
+        =      日付 Nav tabs       =
+        ========================-->
+        <div
+          id="date-tabs"
+          class="nav flex-sm-nowrap flex-lg-column nav-tabs"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          {{ $date := "" }}
+          {{ range $index, $day := $days }}
+            <a
+              href="#day-{{ add $index 1 }}"
+              class="nav-link d-block w-100 rounded-3 p-4 p-xl-5 me-2
+              {{ if eq $index 0 }}
+                me-sm-3 me-lg-0 mb-3 mb-sm-0 mb-lg-3 active
+              {{ else if eq $index (sub (len $days) 1) }}
+                me-sm-0
+              {{ else }}
+                me-sm-3 me-lg-0 mb-3 mb-sm-0 mb-lg-3
+              {{ end }}"
+              id="day-{{ add $index 1 }}-tab"
+              data-bs-toggle="tab"
+              role="tab"
+              aria-controls="day-{{ add $index 1 }}"
+              aria-selected="{{ if eq $index 0 }}
+                true
+              {{ else }}
+                false
+              {{ end }}"
+              onclick="AOS.refresh();"
+            >
+              <div class="fs-xl">Day {{ add $index 1 }}</div>
+              <div class="fs-3 fw-bold">
+                <!-- Aug 29, 2023 のように表示される -->
+                {{ time $day.date | time.Format ":date_medium" }}
+              </div>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-lg-8 offset-lg-1">
+        <!--=========================
+        =         Tab panes         =
+        ==========================-->
+        <div id="date-content" class="tab-content">
+          {{/* 変数の初期化 */}}
+          {{ $previous_day_event_count := 0 }}
+          {{ $eventNumber := 0 }}
+          {{/* --------- */}}
+          {{/* 日毎の処理 */}}
+          {{/* --------- */}}
+          {{ range $index_i, $day := $days }}
+            <div
+              class="tab-pane fade
+              {{ if eq $index_i 0 }}
+                show active
+              {{ end }}"
+              id="day-{{ add $index_i 1 }}"
+              role="tabpanel"
+              aria-labelledby="day-{{ add $index_i 1 }}-tab"
+            >
+              {{/* -------------- */}}
+              {{/* イベント毎の処理 */}}
+              {{/* -------------- */}}
+              {{ range $index_j, $event := $day.events }}
+                {{ $eventNumber = add $index_j 1 | add $previous_day_event_count }}
+                <div
+                  id="event-{{ $eventNumber }}"
+                  class="{{ if eq $index_j (sub (len $day.events) 1) }}
+                  {{ else }}
+                    border-bottom
+                  {{ end }}
+                  {{ if eq $index_j 0 }}
+                    pb-4
+                  {{ else }}
+                    py-4
+                  {{ end }}
+                  "
+                >
+                  <div class="row py-1 py-xl-3">
+                    {{/* 1列目の処理 */}}
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                      {{/* 開始時間と終了時間 */}}
+                      {{ $startTime := time $event.startTime }}
+                      {{ $endTime := time $event.endTime }}
+                      {{ $timeslot := printf "%s &ndash; %s" (time.Format "15:04" $startTime) (time.Format "15:04" $endTime) }}
+                      <div class="h5 mb-1">{{ $timeslot | safeHTML }}</div>
+                      {{/* 日付 */}}
+                      {{ $date := time $day.date }}
+                      <p class="text-muted mb-2 mb-sm-4">{{ $date.Month }} {{ humanize $date.Day }}</p>
+                      {{/* イベントバッジ(Badge) */}}
+                      {{ with index $eventBadge $event.color }}
+                        <span class="badge bg-{{ index . 0 }} shadow-{{ index . 0 }} fs-sm"
+                          >{{ index . 1 | safeHTML }}</span
+                        >
+                      {{ end }}
+                    </div>
+
+                    {{/* 2列目の処理 */}}
+                    <div class="col-sm-8">
+                      {{/* タイトル */}}
+                      <h5>{{ $event.title | safeHTML }}</h5>
+                      {{/* 説明 */}}
+                      {{ with $event.description }}
+                        <p class="mb-4">{{ . | safeHTML }}</p>
+                      {{ end }}
+                      {{/* 講師情報 */}}
+                      {{ if $teachers }}
+                        <div class="row row-cols-1 row-cols-md-2 g-1">
+                          {{/* timeslotの番号とevent-番号が一致する講師を抽出 */}}
+                          {{ $selected_techers := where $teachers "timeslot" $eventNumber }}
+
+                          {{/* 講師がいる場合の処理 */}}
+                          {{ range $teacher := $selected_techers }}
+                            {{/* 講師画像の取得と画像処理 */}}
+                            {{ $image := "" }}
+                            {{ with resources.GetRemote $teacher.image }}
+                              {{ with .Err }}
+                                {{ warnf "Unable to get teacher image from %s : %s" $teacher.image . }}
+                                {{ with resources.Get "img/unknown_person.jpg" }}
+                                  {{ $image = . }}
+                                {{ end }}
+                              {{ else }}
+                                {{ $image = . }}
+                              {{ end }}
+                            {{ end }}
+                            {{ $image = $image.Fill "128x128 webp picture" }}
+                            <div class="col">
+                              <div class="d-flex align-items-center">
+                                <img
+                                  src="{{ $image.RelPermalink }}"
+                                  class="rounded-circle me-3"
+                                  width="48"
+                                  height="48"
+                                  alt="{{ $teacher.name }}"
+                                />
+                                <div class="ps-3">
+                                  <h6 class="fw-semibold mb-1">{{ $teacher.name }}</h6>
+                                  <p class="fs-sm text-muted mb-0">
+                                    {{- with $teacher.position -}}
+                                      {{ printf "%s, %s" . $teacher.affiliation }}
+                                    {{ else }}
+                                      {{ $teacher.affiliation }}
+                                    {{ end -}}
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          {{ end }}
+                        </div>
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+            {{ $previous_day_event_count = add $previous_day_event_count (len $day.events) }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ else }}
+{{ end }}

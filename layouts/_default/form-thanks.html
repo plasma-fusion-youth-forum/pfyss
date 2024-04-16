@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <section class="position-relative pt-5">
+    <div class="container position-relative zindex-2 pt-5 pb-4 pb-lg-5">
+      <!-- Breadcrumb -->
+      {{ partial "site-breadcrumb.html" . -}}
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            {{ .Content }}
+          </div>
+
+          <div class="col-12">
+            <div class="text-center mt-5">
+              <a href="{{ absURL "" }}" class="btn btn-primary btn-lg">
+                <i class="bx bx-home-alt me-2 ms-n1 lead"></i>
+                ホームに戻る
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

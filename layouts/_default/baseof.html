@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}" data-bs-theme="dark">
+  <!-- Head -->
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ block "title" . }}{{ .Site.Params.abbreviation }}{{ end }}</title>
+
+    <!-- SEO Meta Tags -->
+    {{- partial "site-seo.html" . -}}
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Theme switcher (color modes) -->
+    {{ $option := dict "targetPath" "js/theme-switcher.js" }}
+    {{- with resources.Get "js/theme-switcher.js" | js.Build $option | minify | fingerprint -}}
+      <script src="{{ .RelPermalink }}"></script>
+    {{ end }}
+
+    {{- hugo.Generator -}}
+    {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
+    {{ $production := eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
+    {{ $public := not .Params.private }}
+    {{- if and $production $public -}}
+      <meta name="robots" content="index, follow" />
+    {{- else -}}
+      <meta name="robots" content="noindex, nofollow" />
+    {{- end -}}
+
+
+    <!-- Favicon and Touch Icons -->
+    {{- partialCached "site-favicon.html" . -}}
+
+
+    <!-- Vendor Styles -->
+    {{- block "vendor-styles" . -}}{{- partial "vendor-styles.html" . -}}{{- end -}}
+
+
+    <!-- Main Styles -->
+    {{- partial "site-styles.html" . -}}
+
+
+    <!-- Google Analytics -->
+    {{- if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") -}}
+      {{- template "_internal/google_analytics.html" . -}}
+    {{- end -}}
+
+
+    <!-- OpenGraph -->
+    {{- with .Params.carousels -}}
+      <meta property="og:image" content="{{ (index . 0).link | safeURL }}" />
+    {{ end }}
+    {{- template "_internal/opengraph.html" . -}}
+
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector(".page-loading");
+          preloader.classList.remove("active");
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+      {{ block "header" . }}{{ partial "site-header.html" . }}{{ end }}
+      {{ block "main" . }}{{ end }}
+      {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+    </main>
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Vendor Scripts -->
+    {{- block "vendor-scripts" . -}}{{- partial "vendor-scripts.html" . -}}{{- end -}}
+
+
+    <!-- Scripts -->
+    {{- partial "site-scripts.html" . -}}
+
+
+    <!-- Custom Scripts -->
+    {{- block "scripts" . -}}{{- end -}}
+  </body>
+</html>

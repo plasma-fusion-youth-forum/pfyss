@@ -1,0 +1,45 @@
+{{ define "title" }}
+  {{ .Site.Params.abbreviation }}&nbsp;{{ .Params.year }}
+{{ end }}
+
+{{ define "main" }}
+
+  <!-- Breadcrumb section -->
+  <!-- This section is shown only if the page is not the home page -->
+  {{ if not .IsHome }}
+    <section class="position-relative pt-5">
+      <div class="container pt-5">
+        <!-- Breadcrumb -->
+        {{- partial "site-breadcrumb.html" . -}}
+      </div>
+    </section>
+  {{ end }}
+
+
+  <!-- Title & carousel section -->
+  {{- partial "home/title.html" . -}}
+
+
+  <!-- Sponsors section -->
+  {{- partial "home/sponsors.html" . -}}
+
+
+  <!-- Teachers section -->
+  {{- partial "home/teachers.html" . -}}
+
+
+  <!-- Schedule section -->
+  {{- partial "home/schedule.html" . -}}
+
+
+  <!-- Venues section -->
+  {{- partial "home/venues.html" . -}}
+
+
+  <!-- Application section -->
+  {{- partial "home/application.html" . -}}
+
+
+  <!-- Discord section -->
+  {{- partial "home/discord.html" . -}}
+{{ end }}

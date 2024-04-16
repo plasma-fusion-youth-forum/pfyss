@@ -1,0 +1,116 @@
+- name: 井手 俊介
+  englishName: Shunsuke Ide
+  position: 部長
+  affiliation: QST
+  # 講師画像は最低500x500pxの解像度であること
+  image: https://lh3.googleusercontent.com/pw/AP1GczPpNFiqLDPZbj3jDjsl1UVEFwpzedIVh_Q8Z4e9FPUMKFI0HdWNzhNzsROlTwV18jluzvfYRKSez6T8zWbBQrfowNGWVptw5eihyw507LC9mJGOy5A=w2400
+  description: |
+    国立研究開発法人量子科学技術研究開発機構 那珂研究所 先進プラズマ研究部 部長
+  links:
+    - type: personal
+      url: https://research-er.jp/researchers/view/276091
+  timeslot: 11
+
+- name: 桑原 大介
+  englishName: Daisuke Kuwahara
+  position: 准教授
+  affiliation: 中部大
+  image: https://lh3.googleusercontent.com/pw/AP1GczM3gZXW3CEfcrk-hw0atrFUnU82uxk3MK98LHVTfVp0zmjAuRyTVsz9KR1giUfq7trNxOhFswRpmJXha-AmZ7LWntOo2wKv0LIUqY1fnKed6oHhGdM=w2400
+  description: |
+    中部大学 工学部 准教授
+  links:
+    - type: personal
+      url: https://researchmap.jp/dkuwahara
+    - type: facebook
+      url: https://www.facebook.com/daisuke.kuwahara.54/?locale=ja_JP
+    - type: twitter
+      url: https://twitter.com/kuwahara82?s=20
+  timeslot: 12
+
+- name: 荒巻 光利
+  englishName: Mitsutoshi Aramaki
+  position: 教授
+  affiliation: 日大
+  image: https://lh3.googleusercontent.com/pw/AP1GczN3TsevAVo4bMr8IeLlIRl6JFMYe-Mp76wNk8Ag5xzLdE3gWFG2H3Yi1h4SmdWLCO-kGHJ4mq0Xp5GHX0v0wl52EYsT_NH0sdCN4qzudaCTHlBAD3c=w2400
+  description: |
+    日本大学 生産工学部 電気電子工学科 教授
+  links:
+    - type: general
+      url: http://aramaki-lab.ee.cit.nihon-u.ac.jp/index.html
+    - type: personal
+      url: https://researchmap.jp/read0069612
+    - type: twitter
+      url: https://twitter.com/ara81490270?s=20
+  timeslot: 13
+
+- name: 波多野 雄治
+  englishName: Yuji Hatano
+  position: 教授
+  affiliation: 富山大
+  image: https://lh3.googleusercontent.com/pw/AP1GczMEia58q1NDLFJRC9bpS1E3d6Xo8M7DQOP2cUknfC_S9i2VBSWCfAhtBTLHl5SehEOZYB-Sbi-UftuyCd8kBfYZro0BNd8wxHJCuFU-w8bOAxYf-WI=w2400
+  description: |
+    富山大学 学術研究部理学系 教授
+  links:
+    - type: general
+      url: http://www.hrc.u-toyama.ac.jp/jp/
+    - type: personal
+      url: https://researchmap.jp/hatanoyuji_jcml
+  timeslot: 4
+
+- name: 大前 敬祥
+  englishName: Takayoshi Omae
+  position: 首席戦略官
+  affiliation: ITER
+  image: https://lh3.googleusercontent.com/pw/AP1GczPs2B-iX3WkfMjfg37LYDSgZJIT6vY8M1kFOiqwIuvHJtdKsc-JhFjst42eM_S5sTpLTJPC_DaWkWRPZk6Kwul36oe9kq7_z3ScRgzFwH7X6dDprd4=w2400
+  description: |
+    Chief Strategist, ITER Organization
+  links:
+    - type: general
+      url: https://www.iter.org/
+    - type: twitter
+      url: https://twitter.com/takaomae?s=20
+    - type: linkedin
+      url: https://www.linkedin.com/in/takaomae/
+  timeslot: 6
+
+- name: 近藤 貴
+  englishName: Takashi Kondo
+  position: ITER部
+  affiliation: QST
+  image: https://lh3.googleusercontent.com/pw/AP1GczNTREXAlUxQbkmo-1qxcfy7WuDbjdpdc55W9Prb9HwFZbA63_M-HK6RzoiV3fc3zpsxjiD8fHfnQdwDWZwRiefPLzz9jorZnZr5wjuABR5xyWvPjMM=w2400
+  description: |
+    国立研究開発法人量子科学技術研究開発機構 那珂研究所 ITERプロジェクト部 専門業務員
+  links:
+    - type: general
+      url: https://www.jsap.or.jp/columns/gx/e2-8
+    - type: personal
+      url: https://nrid.nii.ac.jp/ja/nrid/1000070360427/
+  timeslot: 6
+
+- name: 磯貝 里子
+  englishName: Satoko Isogai
+  position: 経営企画室
+  affiliation: リバネス
+  image: https://secure.gravatar.com/avatar/ff5dcfd225db6a47c726081b0a7cf6cf?s=480&d=mm&r=g
+  description: |
+    リバネス, 経営企画室
+  links:
+    - type: general
+      url: https://lne.st/author/isogai/
+  timeslot: 2
+
+- name: 石尾 淳一郎
+  englishName: Junichirou Ishio
+  position: 部長
+  affiliation: リバネス
+  image: https://secure.gravatar.com/avatar/bb5ab49ffcd9bbdf5115a4e13ad837a7?s=480&d=mm&r=g
+  description: |
+    リバネス, 部長
+  links:
+    - type: general
+      url: https://lne.st/author/junichirou-ishio/
+    - type: personal
+      url: https://ld.lne.st/author/junichirou-ishio/
+    - type: linkedin
+      url: https://www.linkedin.com/in/淳一郎-石尾-731a41230/?originalSubdomain=jp
+  timeslot: 2

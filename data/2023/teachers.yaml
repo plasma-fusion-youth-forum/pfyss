@@ -1,0 +1,256 @@
+- name: 片山 一成
+  englishName: Kazunari Katayama
+  position: 准教授
+  affiliation: 九大
+  # 講師画像は最低500x500pxの解像度であること
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859842975404072/fd49c5d8ba82c673.webp?ex=6629f097&is=66177b97&hm=c754fecf16513deb8a6d3829d6da18aae42f6b0128a41a4f6da23facc769ea3e&
+  description: |
+    <strong>研究内容</strong> ／ 核融合炉トリチウムサイクル、プラズマ－壁相互作用、トリチウム増殖材、環境中トリチウム挙動、プラズマ分解水素製造、超臨界CO2など<br>
+    <strong>趣味</strong> ／ 藤澤周平、十二国記、ハン・イェスル、サクラミチ、三国志、キングダム、鬼滅の刃、三生三世十里桃花
+  links:
+    - type: general
+      url: http://eche.kyushu-u.ac.jp/index.html
+    - type: personal
+      url: https://researchmap.jp/read0094245/
+    - type: instagram
+      url: https://www.instagram.com/katayama_laboratory/
+  timeslot: 30
+
+- name: 唐橋 一浩
+  englishName: Kazuhiro Karahashi
+  position: 特任教授
+  affiliation: 阪大
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859740739112972/3a2eb65feaaf4285.webp?ex=6629f07e&is=66177b7e&hm=526f760d14bf763bfe7e8d551d421d0e262b83f6d0f60b16fa09e1ca7edde687&
+  description: |
+    大阪大学 工学研究科 マテリアル生産科学専攻 特任教授
+  links:
+    - type: general
+      url: http://www.camt.eng.osaka-u.ac.jp/hamaguchi/index.html
+    - type: personal
+      url: https://rd.iai.osaka-u.ac.jp/ja/9bda2d6f2049f758.html
+  timeslot: 19
+
+- name: 小林 達哉
+  englishName: Tatsuya Kobayashi
+  position: 准教授
+  affiliation: NIFS
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859741208739860/NIFS.webp?ex=6629f07e&is=66177b7e&hm=5e8cac68cd18705aa6da05c7089b569c56805b9eb54e994b947eeacc9856ff58&https://lh3.googleusercontent.com/drive-viewer/AEYmBYQkGnpnqLAx4WMBLDfellJs8Tg0b5cK-UMhOZVlioKtdUrX7MlnZ0utX7X4IdLjrzMOF5mEZR-jyawOICDnslUlHfjYiQ=s2560
+  description: |
+    自然科学研究機構核融合科学研究所准教授。博士(理学)。<br>
+    九州大学大学院総合理工学府先端エネルギー理工学専攻を修了し、核融合科学研究所助教を経て2023年より現職。
+  links:
+    - type: general
+      url: https://unit.nifs.ac.jp/research/archives/staff/kobayashi-tatsuya?paper=KobayashiTatsuya&unit=unit03&unitpage=82
+    - type: personal
+      url: https://researchmap.jp/30733703/
+  timeslot: 31
+
+- name: 小菅 祐輔
+  englishName: Yusuke Kosuga
+  position: 准教授
+  affiliation: 九大
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859741645213706/48f6a3e6d1de7927.webp?ex=6629f07e&is=66177b7e&hm=4dbc46f7d43050e290e1791f4ac97618b9e4b2fabb45fb9f0e5e05e3426a39f9&
+  description: |
+    九州大学 応用力学研究所 准教授<br>
+    University of California, San Diegoにて博士(理学・物理)を取得。
+  links:
+    - type: general
+      url: https://sites.google.com/site/kosugagroup/
+    - type: personal
+      url: https://researchmap.jp/ykosuga/
+  timeslot: 4
+
+- name: 辻井 直人
+  englishName: Naoto Tsujii
+  position: 講師
+  affiliation: 東大
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859843826847805/f45a3f8e12559edf.webp?ex=6629f097&is=66177b97&hm=52b79ec17eb51fa1efedb0de8783c4f68bfe9b9eb33b5a4f956c89a94ff823c7&
+  description: |
+    東京大学大学院 新領域創成科学研究科 講師。<br>
+    MITにて博士(理学)を取得。核融合プラズマの高周波加熱・電流駆動を研究。
+  links:
+    - type: general
+      url: http://fusion.k.u-tokyo.ac.jp
+    - type: personal
+      url: https://www.k.u-tokyo.ac.jp/gsfs/faculty/naoto_tsujii/
+  timeslot: 12
+
+- name: 原 聡
+  englishName: Satoshi Hara
+  position: 准教授
+  affiliation: 阪大
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859740382593056/ddeb1b582efb2205.webp?ex=6629f07e&is=66177b7e&hm=51d70e5eaac25604de29f8b6e8a21671d9d807eb83ad48aaa1ed192359318f42&https://lh6.googleusercontent.com/WV5RsGCix2gNLPxG58M6odtbdTnPITFcOqX1YbNcNhFIg2re-KVkKfA2Jlqfpf3UqApMMOdVGk2kbKoIrxn33W9JFu-u2AVtTHPGdudx8d3XbAV9=w1280
+  description: |
+    大阪大学 産業科学研究所 准教授<br>
+    大阪大学 電気電子情報工学専攻で博士(工学)を取得。卒業後、IBM東京基礎研究所 研究員、国立情報学研究所 特任助教、大阪大学 産業科学研究所 助教を経て現職。
+  links:
+    - type: general
+      url: http://www.ar.sanken.osaka-u.ac.jp
+    - type: personal
+      url: https://sites.google.com/site/sato9hara/home?pli=1
+  timeslot: 13
+
+- name: 政田 洋平
+  englishName: Yohei Masada
+  position: 准教授
+  affiliation: 福岡大
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859742240669748/b00d66aba985531a.webp?ex=6629f07f&is=66177b7f&hm=d8bfb187937c0236562ecb86b9c5679e77fea32371e2030dd0abd7944a906a02&
+  description: |
+    福岡大学 理学部 物理科学科 准教授<br>
+    京都大学 大学院理学研究科 物理学・宇宙物理学専攻にて博士を取得。
+    過去・現在・未来の太陽活動が地球気候に及ぼす影響を解き明かす「宇宙気候研究」や、データサイエンスの技法で宇宙物理現象の背後にある物理を解き明かす「宇宙情報科学」に関する研究を推進。
+  links:
+    - type: general
+      url: https://www.cis.fukuoka-u.ac.jp/~y.masada.xz/
+    - type: personal
+      url: https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201001015495452472
+  timeslot: 10
+
+- name: 村山 真道
+  englishName: Masamichi Murayama
+  position: 研究員
+  affiliation: QST
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859742546858014/QST.webp?ex=6629f07f&is=66177b7f&hm=2febd085fcd32284934cbae8044039983e56d9879c905b25332e2ad929dadebe&
+  description: |
+    量子科学技術研究開発機構 研究員<br>
+    東京工業大学 原子核工学コースにて博士(工学)を取得。中世粒子ビーム入射装置の主に電源開発に従事。
+  links:
+    - type: personal
+      url: https://researchmap.jp/murayama.masamichi
+  timeslot: 5
+
+- name: 森 芳孝
+  englishName: Yoshitaka Mori
+  position: 准教授
+  affiliation: 光産業創生大学院大
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859842698313778/69a11d2a2865214a.webp?ex=6629f097&is=66177b97&hm=c63bf501462f629281ec54ebc41826fe7f658e79847c05839112d1b54ad6577e&
+  description: |
+    光産業創成大学院大学 光産業創成研究科 光エネルギー分野 准教授<br>
+    九州大学大学院 先端エネルギー理工学専攻で博士(工学)を取得。EX-Fusion株式会社の共同創設者兼CTOとしても活動し、レーザー核融合の実現に向けた研究開発に従事。
+  links:
+    - type: general
+      url: https://www.gpi.ac.jp/research/energy/professor-13/
+    - type: personal
+      url: https://researchmap.jp/read0074936
+    - type: twitter
+      url: https://twitter.com/moriyn?s=20
+  timeslot: 9
+
+- name: 松尾 一輝
+  englishName: Kazuki Matsuo
+  position: CEO
+  affiliation: EX-Fusion
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859842291732490/EX-Fusion.webp?ex=6629f096&is=66177b96&hm=f7d3e51d7983d458b786f69ef99f3bdfbb9db2ae217df4dc839d67de512d13a2&
+  description: |
+    EX-Fusion株式会社 共同創設者兼CEO<br>
+    大阪大学 大学院博士後期課程理学研究科 物理学専攻にて博士(理学)を取得。その後、UCSDで博士研究員を経て現職。レーザー核融合の実現に向けた研究開発に従事。
+  links:
+    - type: personal
+      url: https://researchmap.jp/kazuki_matsuo
+    - type: twitter
+      url: https://twitter.com/kazuki_m2o
+  timeslot: 20
+
+- name: 田口 昂哉
+  englishName: Takaya Taguchi
+  position: CEO
+  affiliation: Helical Fusion
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227866534626721872/HF.webp?ex=6629f6d2&is=661781d2&hm=6f76d08aa684f92bd15f17af633a06dc7167d96aee2e5873f03e42f48f77b058&
+  description: |
+    Helical Fusion株式会社 共同創業者兼CEO<br>
+    みずほ銀行、国際協力銀行（JBIC）、PwCアドバイザリー（M&A）、第一生命、スタートアップCOOなどを経て株式会社Helical Fusionを共同創業
+  links:
+    - type: general
+      url: https://www.helicalfusion.com/team
+    - type: linkedin
+      url: https://www.linkedin.com/in/takaya-taguchi-426802174/
+    - type: twitter
+      url: https://twitter.com/takayataguchi
+  timeslot: 21
+
+- name: 小林 暁
+  englishName: Satoru Kobayashi
+  position: Senior Staff
+  affiliation: Kyoto Fusioneering
+  description: |
+    2022年4月からインターンとしてKFに参画、2023年1月にElectro Magnetic Technology DivisionのSenior Staffとして入社。東京大学博士課程を2023年3月に修了予定。修士・博士課程を通して素粒子物理国際研究センターに在籍し、スイス・ポールシェラー研究所でMEG II実験に参加。
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859740974125067/KF.webp?ex=6629f07e&is=66177b7e&hm=64bea608abb7a04a15419372679b167003202948244b1b132e43f0e7a8681b02&
+  links:
+    - type: general
+      url: https://kyotofusioneering.com
+    - type: personal
+      url: https://kyotofusioneering.com/news/2023/02/08/1165
+  timeslot: 22
+
+- name: Suneui Lee
+  position: Senior Staff
+  affiliation: Kyoto Fusioneering
+  description: |
+    Senior Staff at Kyoto Fusioneering. Ph.D. from the University of Toyama.
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859739518701630/Suneui_Lee_KF.webp?ex=6629f07e&is=66177b7e&hm=d5980200196bc3cd8eedea2f9f28df5d169920a9d5b5a890bfe9a8c6d235244f&
+  links:
+    - type: general
+      url: https://kyotofusioneering.com
+    - type: personal
+      url: https://www.researchgate.net/profile/Suneui-Lee
+    - type: linkedin
+      url: https://www.linkedin.com/in/suneui-lee-6a4b27275/
+  timeslot: 22
+
+- name: 矢ケ崎 誇楠
+  englishName: Konan Yagasaki
+  position: Senior Staff
+  affiliation: Kyoto Fusioneering
+  description: |
+    2022年からKyoto Fusioneeringでインターンシップとして働き、2023年4月からSenior Staffとして正式に入社。名古屋大学大学院工学研究科 総合エネルギー工学専攻の藤田研究室で修士号を取得。
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859843256156160/KF.webp?ex=6629f097&is=66177b97&hm=ffa18c319c7f1738c792d804ee1d2d2e3a52065679fae4d2c8fe63f0bdb64caf&
+  links:
+    - type: general
+      url: https://kyotofusioneering.com
+    - type: personal
+      url: https://kyotofusioneering.com/news/2023/06/08/1531
+  timeslot: 22
+
+- name: 山田 弘一
+  englishName: Koichi Yamada
+  position:
+  affiliation: 金属技研
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859741905129515/ddbf4f57851b76a3.webp?ex=6629f07f&is=66177b7f&hm=e38ad54cdf30ddb709fc9ef2266537728b1206a81425846dedc40e8dcd027d69&
+  description:
+  links:
+    - type: general
+      url: https://www.kinzoku.co.jp/
+    - type: twitter
+      url: https://twitter.com/MetalTechJapan
+  timeslot: 23
+
+- name: 冨樫 央
+  englishName: Hiro Togashi
+  position: 核装置設計グループ
+  affiliation: 日立製作所
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859740080607263/581c66b581609e43.webp?ex=6629f07e&is=66177b7e&hm=1baf093e019a4691c4e816d7ece52f8e2c1449e487a718f20624bd002cefe543&
+  description: |
+    (株)日立製作所 ヘルスケア事業本部 ヘルスケアイノベーション事業部 スマートセラピー本部核融合・加速器部 核装置設計グループ<br>
+    2017年のプラズマ夏の学校の校長。東京大学 大学院新領域創成科学研究科にて博士(科学)を取得。その後、日立製作所に入社し、磁場閉じ込め装置関連の研究開発に従事。
+  links:
+    - type: general
+      url: https://www.hitachi.co.jp
+    - type: personal
+      url: https://research-er.jp/researchers/view/744138
+    - type: linkedin
+      url: https://www.linkedin.com/in/央-冨樫-064327289/
+  timeslot: 24
+
+- name: 足立 迅
+  englishName: Shun Adachi
+  position: ITER-NBプロジェクトグループ
+  affiliation: 日立製作所
+  image: https://cdn.discordapp.com/attachments/1227809897060765716/1227859843570991114/9eab6f04c26a8a30.webp?ex=6629f097&is=66177b97&hm=a4864e11c5a45c4b6c5381e5ce79eec49b5c87233faadccddb0cab04ad4d5798&
+  description: |
+    (株)日立製作所 ヘルスケア事業本部 ヘルスケアイノベーション事業部 スマートセラピー本部核融合・加速器部 ITER-NBプロジェクトグループ
+  links:
+    - type: general
+      url: https://www.hitachi.co.jp
+    - type: personal
+      url: https://aees.kyushu-u.ac.jp/~ktanaka/member.html
+  timeslot: 24
