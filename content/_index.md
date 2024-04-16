@@ -8,7 +8,7 @@ layout: home
 title: PFYSS 2024
 year: 2024
 times: ２ # 第〇回 - 全角数字で記入するとフォントが綺麗になります
-duration:  # 開催期間
+duration: # 開催期間
   start: 2024-08-27
   end: 2024-08-30
 place: 長野県野辺山
