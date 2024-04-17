@@ -33,6 +33,12 @@ export default (() => {
           portrait: 0,
           color: "6366f1",
         },
+        // モバイルデバイスでも閉じるボタンを表示する
+        mobileSettings: {
+          controls: false,
+          showCloseIcon: true,
+          download: false,
+        },
       });
       /* eslint-enable no-undef */
     }
