@@ -1,0 +1,84 @@
+- name: 弥富 豪
+  englishName: Go Yatomi
+  affiliation: 総合研究大学院大学
+  grade: D2
+  designation: 代表
+  # 画像サイズは500x550px以上にしてください
+  image:
+
+- name: 中島 雄太郎
+  englishName: Yutaro Nakajima
+  affiliation: 京都工芸繊維大学
+  grade: D2
+  designation: 副代表/協賛
+  image:
+
+- name: 松本 あずさ
+  englishName: Azusa Matsumoto
+  affiliation: 富山大学
+  grade: D1
+  designation: 副代表/現地施設
+  image:
+
+- name: 一本杉 旭人
+  englishName: Akito Ipponsugi
+  affiliation: 九州大学
+  grade: D3
+  designation: 講義
+  image:
+
+- name: 関 太一
+  englishName: Taichi Seki
+  affiliation: 日本大学
+  grade: D3
+  designation: 講義
+  image:
+
+- name: 皆川 裕貴
+  englishName: Hiroki Minagawa
+  affiliation: 日本大学
+  grade: D3
+  designation: 講義
+  image:
+
+- name: 加藤 桃子
+  englishName: Momoko Kato
+  affiliation: EU
+  grade: M1
+  designation: 講義
+  image:
+
+- name: 宗近 洸洋
+  englishName: Koyo Munechika
+  affiliation: 東京工業大学
+  grade: D3
+  designation: Web開発
+  image:
+
+- name: 蒲沢 明
+  englishName: Haru Kamasawa
+  affiliation: 東京工業大学
+  grade: M1
+  designation: Web開発
+  image:
+
+- name: 瀬戸 拓実
+  englishName: Takumi Seto
+  affiliation: 筑波大学
+  grade: D1
+  designation: 会計
+  image:
+
+- name: 末継 寅英
+  englishName: Tomohide Suetsugu
+  affiliation: 九州大学
+  grade: M2
+  designation: エクスカージョン
+  image:
+
+- name: 杉浦 健斗
+  englishName: Kento Sugiura
+  affiliation: 名古屋大学
+  grade: M2
+  designation: テキスト
+  image:
