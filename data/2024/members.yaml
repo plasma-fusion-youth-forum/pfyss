@@ -41,7 +41,7 @@
   image:
 
 - name: 戴 暁玥
-  englishName: Dai Xiaoyue
+  englishName: Xiaoyue Dai
   affiliation: 東京大学
   grade: M2
   designation: エクスカージョン
@@ -55,7 +55,7 @@
   image:
 
 - name: 國井 朗光
-  englishName: Akimitsu Kuni
+  englishName: Akihiro Kunii
   affiliation: 筑波大学
   grade: B4
   designation: 現地利用施設・会計補佐
@@ -75,8 +75,8 @@
   designation:
   image:
 
-- name: 吉田原 拓実
-  englishName: Takumi Yoshidawara
+- name: 古田原 拓実
+  englishName: Takumi
   affiliation: 日本大学
   grade: M2
   designation:
@@ -84,7 +84,7 @@
 
 - name: 加藤 桃子
   englishName: Momoko Kato
-  affiliation: EU
+  affiliation: Université de Lorraine
   grade: M1
   designation: 講義
   image:
