@@ -45,12 +45,12 @@
     {{- end -}}
 
 
-    <!-- OpenGraph -->
-    {{- with .Params.carousels -}}
-      <meta property="og:image" content="{{ (index . 0).link | safeURL }}" />
-    {{ end }}
+    <!-- Open Graph protocol -->
+    {{- with partial "_funcs/get-ogp-image.html" . -}}
+      <meta property="og:image" content="{{ .Permalink }}" />
+    {{- end -}}
     {{- template "_internal/opengraph.html" . -}}
-
+    {{/* {{- template "_internal/twitter_cards.html" . -}} */}}
 
     <!-- Page loading scripts -->
     <script>

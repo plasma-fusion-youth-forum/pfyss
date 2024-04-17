@@ -1,0 +1,29 @@
+{{- $image := resources.Get "/img/bg.webp" }}
+{{- $overlay := resources.Get "/img/pfyss_ogp.webp" }}
+{{/* {{- $overlay = $overlay.Fill "1200x630 webp" }} */}}
+{{- $font := resources.GetRemote "https://github.com/google/fonts/raw/main/ofl/bizudpgothic/BIZUDPGothic-Regular.ttf" }}
+{{- $fontBold := resources.GetRemote "https://github.com/google/fonts/raw/main/ofl/bizudpgothic/BIZUDPGothic-Bold.ttf" }}
+{{- $text := "" }}
+{{- with .Params.year }}
+  {{- $text = printf "%d年" . }}
+{{- end }}
+{{- /* デフォルト画像フィルター設定 (images.Overlay $overlay 0 0) */ -}}
+{{- $filters := slice
+  (images.Text $text (dict "font" $font "color" "#ffffff" "size" 72 "linespacing" 2 "x" 450 "y" 120))
+  (images.Text "プラズマ・核融合" (dict "font" $font "color" "#ffffff" "size" 72 "linespacing" 2 "x" 330 "y" 220))
+  (images.Text "若手夏の学校" (dict "font" $fontBold "color" "#ffffff" "size" 96 "linespacing" 2 "x" 310 "y" 330))
+}}
+{{- /*  カルーセルがある場合は取得  */ -}}
+{{- with .Params.carousels }}
+  {{- with index . 0 }}
+    {{- with resources.GetRemote .link }}
+      {{- with .Err }}
+      {{- else }}
+        {{- $image = .Filter (slice (images.GaussianBlur 25) (images.Brightness -25)) }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- /* 画像のフィルター処理 */ -}}
+{{- $image = $image.Fill "1200x630 webp photo Bottom" }}
+{{- return $image.Filter $filters -}}
