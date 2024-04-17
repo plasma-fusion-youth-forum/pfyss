@@ -24,20 +24,25 @@ application:
 ### カルーセル画像 ###
 # 画像サイズは1350x900px以上
 carousels:
-  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1229232684933582918/963a59bdc999ed04.jpg?ex=662eef26&is=661c7a26&hm=ecaa84458b26ecf5dd1d7404a602ac8abcfa61781b24a4853420215622b3e1b8&
-    alt: 十六夜にうかぶ電波望遠鏡群
+  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1230014943521406976/all_003.jpg?ex=6631c7af&is=661f52af&hm=1ddb2f7bf7ef2c65ddbf2596ba169b3ceceb5b0e7adcdb12ffa3a947d3b5726a&
+    alt: オニユリと電波望遠鏡
     anchor: Bottom
     credit: ©国立天文台
 
-  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1227909871605907466/82735c21cb2e1bb1.jpg?ex=662a1f2e&is=6617aa2e&hm=3f080b91d3c1bdee7ef56561037251690319a711b96df64a5c40aafbf280acd7&
-    alt: 野辺山駅
+  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1230015605038383194/sgr_norm.jpg?ex=6631c84c&is=661f534c&hm=6ec529cf70e4598d5c4eb33aadac5172f8a46d5328f01de68a255dd92026d70e&
+    alt: 野辺山での天体写真
+    anchor: Bottom
+    credit: ©有限会社スターゲイズ
 
-  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1227911070233133056/8615210ec6386db5.webp?ex=662a204c&is=6617ab4c&hm=a4f136e5e527a1cdd53fff4ef3ddaacd820093f75c42719f4e8e68a893e876e0&
-    alt: 野辺山高原平沢峠
-
-  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1229232629186953347/cc39ba1512c20a87.jpg?ex=662eef18&is=661c7a18&hm=23a77e1a9724a8fc120d3645455f829650c5e4aa1bfdba4fb769a02c8d01069e&
-    alt: 夏の電波ヘリオグラフ
+  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1230015161415237673/rh_001.jpg?ex=6631c7e3&is=661f52e3&hm=2976ee4d3e8c27aff9355e9a02250c847e27c5447d38457a038c7c5ed7f4e81b&
+    alt: 夏のヘリオグラフ
+    anchor: Bottom
     credit: ©国立天文台
+
+  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1230015775822188574/BP19-130245.webp?ex=6631c875&is=661f5375&hm=73efe763cadc44bb9ff01089105ceb2af76b31bb121e1ef4be1f1e833d124c20&
+    alt: 野辺山高原平沢峠
+    anchor: Bottom
+    credit: ©株式会社クリード
 
 ### 協賛リスト ###
 sponsors:
