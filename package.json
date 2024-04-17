@@ -56,7 +56,8 @@
     "vendor": "node build/vendor.js",
     "prepare": "husky && husky install",
     "format": "prettier --write .",
-    "lint:assets:js": "eslint ./assets/js/*.js"
+    "lint:assets:js": "eslint ./assets/js/*.js",
+    "delete:public": "rm -rf public/ resources/"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
