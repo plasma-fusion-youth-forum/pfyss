@@ -1,0 +1,72 @@
+<!-- Venue & Excursions -->
+{{ if .Params.venue_cards.enable }}
+  <section id="venue" class="bg-secondary py-5">
+    <div class="container py-2 py-md-4 py-lg-5">
+      <h2 class="h1 mb-4 mb-md-0 me-md-3">Venue &amp; Excursions</h2>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 {{ if gt (len .Params.venue_cards.list) 2 }}row-cols-md-3{{ end }}">
+        {{ range $index, $venue := .Params.venue_cards.list }}
+          <div class="col-sm">
+            <div
+              class="card gallery border-0 bg-transparent mb-4"
+              data-aos="fade-up"
+              data-aos-delay="{{ mul 100 $index | add 100 }}"
+            >
+              <a
+                href="{{ $venue.google_map | safeURL }}"
+                data-iframe="true"
+                class="gallery-item rounded-3"
+                data-sub-html='<h6 class="fs-sm text-light">Google map</h6>'
+              >
+                {{/* Get Venue's image */}}
+                {{ $image := "" }}
+                {{ with resources.GetRemote $venue.image }}
+                  {{ with .Err }}
+                    {{ errorf "Unable to get venue %s's image: %s" $venue.name . }}
+                  {{ else }}
+                    {{ $image = . }}
+                  {{ end }}
+                {{ end }}
+                {{/* Convert original venue image for card. */}}
+                {{ $image = $image.Fill "840x560 webp photo" }}
+                <img
+                  src="{{ $image.RelPermalink }}"
+                  width="{{ $image.Width }}"
+                  height="{{ $image.Height }}"
+                  alt="{{ $venue.name }}"
+                  class="rounded-3"
+                />
+                {{ with $venue.credit }}
+                  <div class="position-absolute bottom-0 end-0 text-muted fs-sm bg-dark opacity-75">
+                    {{ . | safeHTML }}
+                  </div>
+                {{ end }}
+                <div class="gallery-item-caption fs-sm fw-medium">Google map</div>
+              </a>
+              <div class="card-body p-0">
+                <div class="my-3">
+                  {{ range $name, $badge := $venue.badges }}
+                    <span class="badge bg-{{ $badge }}">{{ $name }}</span>
+                  {{ end }}
+                </div>
+                <h3 class="card-title">{{ $venue.name }}</h3>
+                <p class="card-text fs-sm">
+                  {{ $venue.description | safeHTML }}
+                </p>
+                <a
+                  href="{{ $venue.website | safeURL }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary"
+                  >Visit the website
+                  <i class="bx bx-fw bx-link-external"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

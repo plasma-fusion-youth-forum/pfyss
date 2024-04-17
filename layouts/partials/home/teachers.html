@@ -1,0 +1,265 @@
+{{/* Define Global Variables */}}
+{{ $year := .Params.year }}
+{{ $teachers := "" }}
+{{ $days := "" }}
+{{ $events := slice }}
+{{ $socialIcons := dict
+  "twitter" "bxl-twitter"
+  "facebook" "bxl-facebook"
+  "linkedin" "bxl-linkedin"
+  "instagram" "bxl-instagram"
+  "youtube" "bxl-youtube"
+  "github" "bxl-github"
+  "gitlab" "bxl-gitlab"
+  "bitbucket" "bxl-bitbucket"
+  "slack" "bxl-slack"
+  "discord" "bxl-discord"
+  "twitch" "bxl-twitch"
+  "medium" "bxl-medium"
+  "general" "bx-world"
+  "personal" "bxs-user"
+}}
+{{/* Googleカレンダーにおけるイベントの色(番号)と、それに対応するBadgeを定義
+  lecture: 講義 黄色（バナナ）= 5
+  special: 特別講義 マーブル（ブドウ）= 3
+  excursion: エクスカーション 緑色（バジル）= 10
+  poster: ポスターセッション 青色（ブルーベリー）= 9
+*/}}
+{{ $eventBadge := dict
+  "5" (slice "warning" "Lecture")
+  "3" (slice "primary" "Special Lecture")
+  "10" (slice "success" "Excursion")
+  "9" (slice "info" "Poster Session")
+}}
+
+
+<!--==========================================================
+=    data/XXXX/teachers.yamlから講師情報を取得 =
+===========================================================-->
+{{ $directory := printf "%d" $year | index .Site.Data }}
+{{ with $directory }}
+  {{ with .teachers }}
+    {{ $teachers = . }}
+  {{ else }}
+    {{ warnf "Unable to get team teachers info from data/%d/teachers.yaml" $year }}
+  {{ end }}
+{{ else }}
+  {{ warnf "Unable to get to directory: data/%d/" $year }}
+{{ end }}
+
+
+<!--===============================================================
+= GASのWebAPIを用いてGoogle Calenderに登録したPFYSSのイベントデータ取得 =
+===================================================================
+取得した変数$daysは、日付毎にイベントデータを格納した配列になっている:
+days = [
+  {
+    date: String (ISO 8601),
+    events: [
+      {
+        startTime: String (ISO 8601),
+        endTime: String (ISO 8601),
+        title: String,
+        description: String,
+        color: String
+      }
+    ],
+    [...]
+  },{...}
+]
+これを時間軸に沿って各イベントが格納された配列に変換する:
+events = [
+  {
+    startTime: String (ISO 8601),
+    endTime: String (ISO 8601),
+    title: String,
+    description: String,
+    color: String
+  },
+  {...}
+]
+-->
+{{ if .Params.schedule.enable }}
+  {{ $apiURL := printf "%s?year=%d" .Site.Params.apiURL $year }}
+  {{ $opts := dict
+    "method" "get"
+    "headers" (dict  "Content-Type" "application/json")
+  }}
+  {{ with resources.GetRemote $apiURL $opts }}
+    {{ with .Err }}
+      {{ warnf "Unable to get scuedule info from %s : %s" $apiURL . }}
+    {{ else }}
+      {{ $days = .Content | transform.Unmarshal }}
+      {{/* $eventsに変換 */}}
+      {{ range $day := $days }}
+        {{ range $event := $day.events }}
+          {{ $events = $events | append $event }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+
+<!--===================
+=     Create HTML     =
+====================-->
+{{ if $teachers }}
+  <section id="teachers" class="container py-5 mt-2 mt-md-4 mt-lg-5">
+    <div class="d-md-flex align-items-center justify-content-between text-center text-md-start pt-md-1">
+      <h2 class="h1 text-center text-sm-start mb-md-0 me-md-3">Teachers</h2>
+    </div>
+    <div id="teachers-row" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4 mt-2 mt-lg-4">
+      <!-- Loop through teachers data -->
+      {{ range $index, $teacher := $teachers }}
+        {{/* ---------------------- */}}
+        {{/* Define local valiables */}}
+        {{/* ---------------------- */}}
+        {{ $name := $teacher.name }}
+        {{ $englishName := $teacher.englishName }}
+        {{ $position := $teacher.position }}
+        {{ $affiliation := $teacher.affiliation }}
+        {{ $titles := "" }}
+        {{ if $position }}
+          {{ $titles = printf "%s, %s" $position $affiliation }}
+        {{ else }}
+          {{ $titles = $affiliation }}
+        {{ end }}
+
+        {{/* Prepare for teacher's image */}}
+        {{ $teacher_image := "" }}
+        {{ with resources.GetRemote $teacher.image }}
+          {{ with .Err }}
+            {{ warnf "Unable to get teacher %s's image: %s" $name . }}
+            {{/* Get default teacher image */}}
+            {{ with resources.Get "/img/unknown_person.jpg" }}
+              {{ with .Err }}
+                {{ errorf "Unable to get default teacher image: %s" . }}
+              {{ else }}
+                {{ $teacher_image = . }}
+              {{ end }}
+            {{ end }}
+          {{ else }}
+            {{ $teacher_image = . }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Convert original teacher image for thumbnail and card. */}}
+        {{ $teacher_thumbnail := $teacher_image.Fill "400x440 webp picture" }}
+        {{ $teacher_card := $teacher_image.Resize "500x webp picture" }}
+
+
+        <div class="col">
+          <!--==================
+          =   Teacher's Card   =
+          ===================-->
+          <div
+            id="teacher-{{ $index }}"
+            class="card card-hover border-0 bg-transparent"
+            data-aos="fade-up"
+            data-aos-delay="{{ mul $index 100 }}"
+            {{ if gt $index 0 }}data-aos-anchor="#teacher-0"{{ end }}
+          >
+            <!-- Teacher's Image -->
+            <a href="#teacher{{ $index }}-modal" data-bs-toggle="modal" data-bs-target="#teacher{{ $index }}-modal">
+              <div class="position-relative">
+                <img
+                  src="{{ $teacher_thumbnail.RelPermalink }}"
+                  width="{{ $teacher_thumbnail.Width }}"
+                  height="{{ $teacher_thumbnail.Height }}"
+                  class="rounded-3"
+                  alt="{{ $name }}"
+                />
+                <div class="card-img-overlay d-flex align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35 rounded-3"></span>
+                  <i class="bx bx-zoom-in bx-md text-light"></i>
+                </div>
+              </div>
+            </a>
+            <!-- Teacher's Name and Position -->
+            <div class="card-body text-center p-3">
+              <h3 class="fs-lg fw-semibold pt-1 mb-2">{{ $name }}</h3>
+              <p class="fs-sm mb-0">{{ $titles }}</p>
+            </div>
+          </div>
+          <!--======================
+          = Teacher's Detail Modal =
+          =======================-->
+          <div class="modal fade" id="teacher{{ $index }}-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+              <div class="modal-content p-0">
+                <!-- Card -->
+                <div class="card border-0">
+                  <div class="row g-0">
+                    <!-- Teacher's Image -->
+                    <div class="col-md-5">
+                      <img
+                        src="{{ $teacher_card.RelPermalink }}"
+                        width="{{ $teacher_card.Width }}"
+                        height="{{ $teacher_card.Height }}"
+                        class="modal-teacher-img"
+                        alt="{{ $name }}"
+                      />
+                    </div>
+                    <!-- Teacher's Information -->
+                    <div class="col-md-7">
+                      <div class="card-header">
+                        <div class="d-flex justify-content-between">
+                          <h3 class="card-title mb-1">{{ $name }}</h3>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <p class="fs-5 mb-0">{{ $englishName }}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <p class="fs-5 fw-bold mb-0 text-info">{{ $titles }}</p>
+                          <div>
+                            <!-- Social Media Links -->
+                            {{ range $teacher.links }}
+                              <a
+                                href="{{ .url | safeURL }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-icon btn-secondary btn-{{ .type }} me-2"
+                                ><i class="bx {{ index $socialIcons .type }}"></i
+                              ></a>
+                            {{ end }}
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">{{ $teacher.description | safeHTML }}</p>
+                        <!-- Lecture Information -->
+                        {{ if $teacher.timeslot }}
+                          {{/* (timeslot番号 - 1)番目のイベント情報の抽出 */}}
+                          {{ if $events }}
+                            {{ $event := index $events (sub $teacher.timeslot 1) }}
+                            {{/* イベントの色に対応するBadgeの取得 */}}
+                            {{ with index $eventBadge $event.color }}
+                              <span class="badge bg-{{ index . 0 }} shadow-{{ index . 0 }} fs-sm mb-2"
+                                >{{ index . 1 | safeHTML }}</span
+                              >
+                            {{ end }}
+                            {{/* タイトル */}}
+                            <h5>{{ $event.title | safeHTML }}</h5>
+                            {{/* アブスト */}}
+                            {{ with $event.description }}<p>{{ . | safeHTML }}</p>{{ end }}
+                          {{ end }}
+                        {{ end }}
+                      </div>
+                      <div class="modal-footer px-4">
+                        {{/* <button type="button" class="btn btn-primary btn-sm" onclick="redirectToTarget('event-1');">
+                          Go to Schedule
+                          </button>
+                        */}}
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

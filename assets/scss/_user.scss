@@ -1,0 +1,150 @@
+//
+// user.scss
+// Use this to write your custom SCSS
+//
+
+/* $break-point以上の時に@contentを適用 */
+@mixin min-screen($break-point) {
+  @media (min-width: $break-point) {
+    @content;
+  }
+}
+
+/* $break-point以下の時に@contentを適用 */
+@mixin max-screen($break-point) {
+  @media (max-width: $break-point) {
+    @content;
+  }
+}
+// ===================================
+
+// Import BIZ UDPGothic font
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap");
+
+// -----------------------------------
+// Import Bootstrap Carousel Component
+// -----------------------------------
+@import "bootstrap/scss/carousel";
+
+// control images in carousel depending on a breakpoint
+.carousel-img {
+  object-fit: cover;
+  @include max-screen(991px) {
+    width: 100%;
+    aspect-ratio: 3/2;
+  }
+  @include min-screen(992px) {
+    height: 100%;
+  }
+}
+
+// break point control for teacher's image in modal
+.modal-teacher-img {
+  @include max-screen(767px) {
+    border-top-left-radius: var(--si-border-radius);
+    border-top-right-radius: var(--si-border-radius);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  @include min-screen(768px) {
+    border-top-left-radius: var(--si-border-radius);
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--si-border-radius);
+    border-bottom-right-radius: 0;
+  }
+}
+
+// custom breakpoint for ticket margin right
+.offset-e-xl-1 {
+  margin-right: 0%;
+  @include min-screen(1200px) {
+    margin-right: 8.33333333%;
+  }
+}
+
+// custom floating form style
+.form-floating > {
+  .form-control-plaintext ~ label::after {
+    position: absolute;
+    inset: 1rem 0.375rem;
+    z-index: -1;
+    height: 1.5em;
+    content: "";
+    color: var(--si-card-color);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: var(--bs-border-radius);
+  }
+  .form-control {
+    &:focus ~ label::after,
+    &:not(:placeholder-shown) ~ label::after {
+      position: absolute;
+      inset: 1rem 0.375rem;
+      z-index: -1;
+      height: 1.5em;
+      content: "";
+      color: var(--si-card-color);
+      background-color: rgba(255, 255, 255, 0);
+      border-radius: var(--bs-border-radius);
+    }
+  }
+  .form-select ~ label::after {
+    position: absolute;
+    inset: 1rem 0.375rem;
+    z-index: -1;
+    height: 1.5em;
+    content: "";
+    color: var(--si-card-color);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: var(--bs-border-radius);
+  }
+  .form-control:not(:placeholder-shown) ~ label {
+    color: var(--si-card-color);
+  }
+}
+
+// custom social button for teacher links
+.btn-general {
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #1877f2 !important;
+    background-color: #1877f2 !important;
+    color: #fff !important;
+    box-shadow: 0 0.375rem 1.125rem -0.375rem rgba(24, 119, 242, 0.8) !important;
+  }
+}
+
+.btn-personal {
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #1877f2 !important;
+    background-color: #1877f2 !important;
+    color: #fff !important;
+    box-shadow: 0 0.375rem 1.125rem -0.375rem rgba(24, 119, 242, 0.8) !important;
+  }
+}
+
+// image grow when mouse hover
+.growOnHover {
+  transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+// Google Slide Embed
+.g-slide {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50%;
+  padding-top: 65px;
+}
+.g-slide iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

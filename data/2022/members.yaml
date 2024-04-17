@@ -1,0 +1,112 @@
+- name: 宗近 洸洋
+  englishName: Koyo Munechika
+  affiliation: 東京工業大学
+  grade: D2
+  designation: 代表
+  # 画像サイズは500x550px以上にしてください
+  image:
+
+- name: 関 太一
+  englishName: Taiichi Seki
+  affiliation: 日本大学
+  grade: D2
+  designation: 副代表
+  image:
+
+- name: 皆川 裕貴
+  englishName: Yuki Minagawa
+  affiliation: 日本大学
+  grade: D2
+  designation: 副代表
+  image:
+
+- name: 弥富 豪
+  englishName: Go Yatomi
+  affiliation: 総合研究大学院大学
+  grade: D1
+  designation: 会計
+  image:
+
+- name: 松本 あずさ
+  englishName: Azusa Matsumoto
+  affiliation: 富山大学
+  grade: M2
+  designation: 現地施設
+  image:
+
+- name: 平田 詩織
+  englishName: Shiori Hirata
+  affiliation: 静岡大学
+  grade: M2
+  designation: 現地施設
+  image:
+
+- name: 蒲沢 明
+  englishName: Haru Kamasawa
+  affiliation: 東京工業大学
+  grade: B4
+  designation: Web開発
+  image:
+
+- name: 小島 信一郎
+  englishName: Shinichiro Kojima
+  affiliation: QST
+  grade: PD
+  designation: 講義
+  image:
+
+- name: 末継 寅英
+  englishName: Tomohide Suetsugu
+  affiliation: 九州大学
+  grade: M1
+  designation: 講義
+  image:
+
+- name: 太田 雅人
+  englishName: Masato Ota
+  affiliation: 大阪大学
+  grade: PD
+  designation: 集中ゼミ
+  image:
+
+- name: 田村 晃汰
+  englishName: Kota Tamura
+  affiliation: 名古屋大学
+  grade: D3
+  designation: 集中ゼミ
+  image:
+
+- name: 斉藤 巧
+  englishName: Takumi Saito
+  affiliation: 京都大学
+  grade: M2
+  designation: 集中ゼミ
+  image:
+
+- name: 夏目 裕揮
+  englishName: Hiroki Natsume
+  affiliation: 名古屋大学
+  grade: D3
+  designation: アクティビティ
+  image:
+
+- name: 杉浦 健斗
+  englishName: Kento Sugiura
+  affiliation: 名古屋大学
+  grade: M1
+  designation: アクティビティ
+  image:
+
+- name: 麝嶋 祐樹
+  englishName: Yuki Jajima
+  affiliation: 日本大学
+  grade: M1
+  designation: アクティビティ
+  image:
+
+- name: 一本杉 旭人
+  englishName: Akito Ipponsugi
+  affiliation: 九州大学
+  grade: D2
+  designation: ITER座談会
+  image:
