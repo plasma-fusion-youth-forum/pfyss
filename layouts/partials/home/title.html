@@ -33,6 +33,7 @@
                   height="{{ $image.Height }}"
                   class="carousel-img"
                   alt="{{ $element.alt }}"
+                  {{ if gt $index 0 }}loading="lazy"{{ end }}
                 />
                 {{ with $element.credit }}
                   <div class="position-absolute bottom-0 start-0 text-muted fs-sm bg-dark opacity-75">
