@@ -24,22 +24,22 @@ application:
 ### カルーセル画像 ###
 # 画像サイズは1350x900px以上
 carousels:
-  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1230014943521406976/all_003.jpg?ex=6631c7af&is=661f52af&hm=1ddb2f7bf7ef2c65ddbf2596ba169b3ceceb5b0e7adcdb12ffa3a947d3b5726a&
-    alt: オニユリと電波望遠鏡
-    anchor: Bottom
-    credit: ©国立天文台
-
-  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1230015605038383194/sgr_norm.jpg?ex=6631c84c&is=661f534c&hm=6ec529cf70e4598d5c4eb33aadac5172f8a46d5328f01de68a255dd92026d70e&
+  - link: https://lh3.googleusercontent.com/pw/AP1GczPIuPdI2SX3hL69EQ9tRXCJmK1DfvEGMj0fdFlZICV4vqggNd92eUt1l789gg0GqrBxSEyS5ijAfv_z20SoICgeFHZbH0WnIltFa9yoFig0qnOMTdY=w2400
     alt: 野辺山での天体写真
     anchor: Bottom
     credit: ©有限会社スターゲイズ
 
-  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1230015161415237673/rh_001.jpg?ex=6631c7e3&is=661f52e3&hm=2976ee4d3e8c27aff9355e9a02250c847e27c5447d38457a038c7c5ed7f4e81b&
+  - link: https://lh3.googleusercontent.com/pw/AP1GczPVQUZA482eeY1TbuscO3-aGyqYoF_T8U5fjyCE5_bwwSVAvTG5ON2EzdwCGN_xjmuW2cPjNk5S3lGuEyHiMYe_bL7C5lNM-9m4rjiqIkPiu5SS2mU=w2400
     alt: 夏のヘリオグラフ
     anchor: Bottom
     credit: ©国立天文台
 
-  - link: https://cdn.discordapp.com/attachments/1227878242975744000/1230015775822188574/BP19-130245.webp?ex=6631c875&is=661f5375&hm=73efe763cadc44bb9ff01089105ceb2af76b31bb121e1ef4be1f1e833d124c20&
+  - link: https://lh3.googleusercontent.com/pw/AP1GczN8mqVyE5MAEdO-GVQ9SUZ_TPsAZRcuqyIohR1HN2E0-gQj4bLf3x1MRMsBcXGJ2wanhs432wNBq7Joc_BJQX8ubYUqdRJj-vkrdzeREW1himR4agY=w2400
+    alt: 夏夕暮れと電波望遠鏡
+    anchor: Bottom
+    credit: ©国立天文台
+
+  - link: https://lh3.googleusercontent.com/pw/AP1GczOhW1h2j-5NjhUE-rnPptkv_zb7JGSbz6y1rMQuDS74TE-WkHp91ajeVZEWanz3qrmEq4L6b4bEPwI8M1cBHKO-6S-OQkEgnet_4YQA6qGLQOECAnE=w2400
     alt: 野辺山高原平沢峠
     anchor: Bottom
     credit: ©株式会社クリード
@@ -90,7 +90,7 @@ venue_cards:
         Accommodation: primary
       description: リゾートイン黒岩荘にて宿泊し、講義、ポスターセッション、ナイトセッションを行います。 国立天文台野辺山の特別講義もここで聴講します。
       website: http://www.kuroiwasou.jp
-      image: https://cdn.discordapp.com/attachments/1227878242975744000/1227878335061950474/a28d7f37b25c8e88.webp?ex=662a01cf&is=66178ccf&hm=fdcd3847400fd64f02dc32f5f527a8964323d93fd34f70709750fb92bf7e13f9&
+      image: https://lh3.googleusercontent.com/pw/AP1GczMA2UCkN-F6Rh6WuOWAta-GsvXreCijNL48ps9AXIix97gBOKPl5lWlMGGn0ugWBVzBI0-HOd1_fTYC9FUHjnFk2gtF9fOz9l1llR0mDvQvWaBhOsw=w2400
       google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.77446112953!2d138.46996647541073!3d35.95248687250094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c15f96c0faa8f%3A0x43adb41f97377cfa!2z44Oq44K-44O844OI44Kk44Oz6buS5bKp6I2Y!5e0!3m2!1sja!2sjp!4v1709104505922!5m2!1sja!2sjp
 
     - name: 国立天文台野辺山の見学
@@ -99,7 +99,7 @@ venue_cards:
       website: https://www.nro.nao.ac.jp/
       description: |
         国立天文台野辺山は1969年に開所した、電波天文学の国際的な拠点です。 本ツアーでは普段の見学ではわからない詳しいところまで解説していただきます！ さらに、銀河中心巨大ブラックホールの発見により仁科記念賞を受賞された、 国立天文台名誉教授の井上允氏にプラズマ物理含むブラックホールに関する講義をしていただきます。
-      image: https://cdn.discordapp.com/attachments/1227878242975744000/1229233286304239717/9a90696d58c795dd.jpg?ex=662eefb5&is=661c7ab5&hm=05f49aa4457b827cc0120a0c595e2570889f14a0f2e772f128e5afd7810fdaa7&
+      image: https://lh3.googleusercontent.com/pw/AP1GczPt2J67LTAWJsaVXxmhm-KNP1KI0EJevvBOAuAx93AZPo2V-8FZzH96PEuhJGcMm7RhIv1L6Cix8a4oHLMVGC1X-rKDF6wKV-gc_r9q2ul9vGXQy0U=w2400
       credit: ©国立天文台
       google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8372.823780950277!2d138.47445170651952!3d35.94623279772583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c15e6ed59368d%3A0xe5a3821a5f6a3c4b!2z5Zu956uL5aSp5paH5Y-wIOmHjui-uuWxseWuh-Wumembu-azouims-a4rOaJgA!5e0!3m2!1sja!2sjp!4v1712821038271!5m2!1sja!2sjp
 ---

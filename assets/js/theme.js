@@ -28,3 +28,6 @@ import "./components/masonry-grid";
 import "./components/subscription-form";
 import "./components/hover-animation";
 import "./components/audio-player";
+
+// User scripts
+import "./components/lazy-load";
