@@ -13,11 +13,13 @@
         <div class="container {{ if gt $index 0 }}mt-5{{ end }}">
           <div class="g-slide">
             <iframe
-              src="{{ $book.src | safeURL }}"
+              data-src="{{ $book.src | safeURL }}"
               frameborder="0"
               allowfullscreen="true"
               mozallowfullscreen="true"
               webkitallowfullscreen="true"
+              width="1272"
+              height="701"
             ></iframe>
           </div>
 

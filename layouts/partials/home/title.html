@@ -28,12 +28,15 @@
               {{ $image := .Fill (printf "1350x900 %s webp photo" $anchor) }}
               <div class="carousel-item h-100 {{ if eq $index 0 }}active{{ end }}">
                 <img
-                  src="{{ $image.RelPermalink }}"
+                  {{ if eq $index 0 }}
+                    src="{{ $image.RelPermalink }}"
+                  {{ else }}
+                    data-src="{{ $image.RelPermalink }}"
+                  {{ end }}
                   width="{{ $image.Width }}"
                   height="{{ $image.Height }}"
                   class="carousel-img"
                   alt="{{ $element.alt }}"
-                  {{ if gt $index 0 }}loading="lazy"{{ end }}
                 />
                 {{ with $element.credit }}
                   <div class="position-absolute bottom-0 start-0 text-muted fs-sm bg-dark opacity-75">
