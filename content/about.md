@@ -8,19 +8,19 @@ layout: about
 #### About Images and Video ####
 featured_images:
   column1:
-    - url: https://lh3.googleusercontent.com/drive-viewer/AKGpihZyx_oW8Oq09meYmbP0mwd3dVNxhqW5bLIg33mnSxYewssC7IcJ2OKNZbrdIKJMMR3Ox9J3gjxys1UT9ZlhYRJY54j0EA=s1600
+    - url: https://lh3.googleusercontent.com/pw/AP1GczOBx_L2ekG5f8BXPwRx2UpCc0IYBDBABN5hpBRnqE9XI5MpT_xPfnyyG4t8Vp7tkBZpW4yQLepr1YxHfXqkr22qnMEcRQlJ9thVI6icjzxGnPzCDLU=w2400
       alt: 講義 in PFYSS 2022
       size: 700x600 webp
 
-    - url: https://lh3.googleusercontent.com/drive-viewer/AKGpihYJWozzDZoF-d1mtFP-PVsGyeB1Cpzlb_nyWNUy-NS9aSyYHBryeS4ZFS0U-mIWWFI65-7l4GcwSCv2lrDptD8IwH_MFQ=s1600
+    - url: https://lh3.googleusercontent.com/pw/AP1GczMvbEw1meuIko7oTIlhIkgt3afOHW5mkF1BePF-6pMy71WMwCFdnkKZdsK9F1PvMtbWi8Df_CxX40a2bZX786t5PhIu_SWYUt4EXrwIaUSDsBN0C0M=w2400
       alt: 水素見学 in PFYSS 2022
       size: "550x550 center webp"
 
   column2:
-    - url: https://lh3.googleusercontent.com/drive-viewer/AKGpihYMxyl8524dWGCMNq3mnF8YoZ1Fq8t4azsPDNxx_qEMVu3wQDEr_PMRdq34_RY1Vb-5DT8t0b-G6D-x3aQ0chm4Agj-=s1600
+    - url: https://lh3.googleusercontent.com/pw/AP1GczPBCDXm9R0jp1JCx-jx4IB-EKABvGNp67UG0fXBfLlz9e18q2nfs42wYqcAxjTCbELxx8EE0--9fIgjcx2UIxxYMTFZ0cNb5lvWtftv6Ovx2JOvpw8=w2400
       alt: アクティビティ in PFYSS 2022
 
-    - url: https://lh3.googleusercontent.com/drive-viewer/AKGpihY-KNnzffD-srU_9vtz0ji6g-Vh6JHTb3vzmQp-X7FvwvoguEiuWR_u3mE-yVr6_5DwVoQJY4kOwYgGzRZyu6rnDQID=s1600
+    - url: https://lh3.googleusercontent.com/pw/AP1GczNkfbQNHsa0N8ec_UQYiOcRTcvy5kJz7G5zLt66w41wEFNBQhzGWaOh1gp0T5NrwzYVIZBLnF45HYm4NNxIbbh6x-Gb7D4oM6UNXueAQb3y5UN-Bxo=w2400
       alt: ポスター発表 in PFYSS 2023
       size: "500x450 center webp"
 
@@ -29,7 +29,7 @@ video:
   # Video URL
   url:
   # Cover image for video
-  cover: https://lh3.googleusercontent.com/drive-viewer/AKGpihaUnXSp7YFeUPasm35U4qaGxDdKA8pMeDKCCZwQkSPoxgu04TUeQ-UPLu_zyUcsbodiHeCarcZE0t1Ex7Lwd2e5ZK_k9g=s1600
+  cover: https://lh3.googleusercontent.com/pw/AP1GczPGlA31Fvb_6lGJlB_MpzdEQM5mMuYqMKhypZPPjmToZQU_oE6kbsITMqtvDBkDIoMVmQZTtPTKjOaJADcjz2nUM83OI7ODcBBqCqmgzR3ZRO40lx0=w2400
   # size: 1200x560 webp  # Optional
 
 #### Testimonial ####
@@ -52,7 +52,7 @@ testimonial:
 supporters:
   - name: 一般社団法人<br/>プラズマ・核融合学会
     url: https://www.jspf.or.jp/
-    logo: https://cdn.discordapp.com/attachments/1227808996594028585/1229250328499589231/jspf_logo.png?ex=662eff94&is=661c8a94&hm=9179a98ae4c5d38bdea02f6568deaaf17763f426bbdc003312b7eeeb13e4fdb2&
+    logo: https://lh3.googleusercontent.com/pw/AP1GczNzgdMMypY2uCbYXcGtpCeWWqQ78h-FXpslcapymVEaPDsB18pLSj6UlA9IBq9gUcWNjIRTfy1Ed1iLxlBPFBKLL6cz77sNJ3xAP-R2VzAJ75xKg54=w2400
 
 #### 若手フォーラム委員 ####
 #### 毎年のメンバーは/data/{year}/members.yamlに記載 ####
