@@ -98,10 +98,20 @@ venue_cards:
         Visit: success
       website: https://www.nro.nao.ac.jp/
       description: |
-        国立天文台野辺山は1969年に開所した、電波天文学の国際的な拠点です。 本ツアーでは普段の見学ではわからない詳しいところまで解説していただきます！ さらに、銀河中心巨大ブラックホールの発見により仁科記念賞を受賞された、 国立天文台名誉教授の井上允氏にプラズマ物理含むブラックホールに関する講義をしていただきます。
+        国立天文台野辺山は1969年に開所した、電波天文学の国際的な拠点です。本ツアーでは普段の見学ではわからない詳しいところまで解説していただきます。
       image: https://lh3.googleusercontent.com/pw/AP1GczPt2J67LTAWJsaVXxmhm-KNP1KI0EJevvBOAuAx93AZPo2V-8FZzH96PEuhJGcMm7RhIv1L6Cix8a4oHLMVGC1X-rKDF6wKV-gc_r9q2ul9vGXQy0U=w2400
       credit: ©国立天文台
       google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8372.823780950277!2d138.47445170651952!3d35.94623279772583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c15e6ed59368d%3A0xe5a3821a5f6a3c4b!2z5Zu956uL5aSp5paH5Y-wIOmHjui-uuWxseWuh-Wumembu-azouims-a4rOaJgA!5e0!3m2!1sja!2sjp!4v1712821038271!5m2!1sja!2sjp
+
+    - name: 懇親会
+      badges:
+        After party: success
+      website: http://www.strawhat-1982.com/
+      description: |
+        3日目の天文台見学後に南牧村にあるレストラン「ストローハット」にて懇親会を開催します。
+      image: https://lh3.googleusercontent.com/pw/AP1GczMSr6xS-M_PTm055kGsDTawywU3pllF6Rnggq3taXdiHQCYKjssptJ5Xmyt3hPLaztokC_4ZDGIJbXAhdnNqvqPPX18mpcCj7EfsQ5J801UiviIbGA=w2400
+      credit: ©39BAR
+      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6639.427979650402!2d138.48494115699773!3d36.01854275899984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c3c1718a1e3fd%3A0xe37a810557f0fa24!2z44Os44K544OI44Op44Oz44O744K544OI44Ot44O844OP44OD44OI!5e0!3m2!1sja!2sjp!4v1716366922956!5m2!1sja!2sjp
 ---
 
 <!-- 中止連絡などのアラートを表示したい場合は以下をアンコメント -->
