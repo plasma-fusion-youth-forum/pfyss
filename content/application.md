@@ -105,6 +105,19 @@ form:
       required: false
       style: "height: 10rem"
       invalid_message: 旅費補助が必要な理由を入力してください
+
+    - id: pre-lecture
+      name: entry.
+      kind: select
+      label: オンライン事前講義(7/() **:00~)
+      required: true
+      options:
+        - 出席
+        - 欠席
+      default: 出席
+      form-text: 事前講義では京都大学・小野英理先生からショートプレゼンの手法を学びます。
+        今年度の夏学では、自分の研究を短時間でプレゼンし合うアイスブレイクを企画しているため、参加を推奨しております。
+      invalid_message: 出欠を選択してください
 ---
 
 # 参加の際の留意事項<i class="bx bx-fw bx-md bxs-error"></i>
