@@ -46,7 +46,7 @@ carousels:
 
 ### 協賛リスト ###
 sponsors:
-  enable: false
+  enable: true
   default: |
     <h2 class="text-center text-white">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
     <p class="text-center text-white">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
@@ -54,25 +54,45 @@ sponsors:
     これまでの夏学の活動については<a href="/forepast">こちら</a>からご覧ください。
     </p>
   list:
+    #- name: アライドマテリアル
+    #  link: https://www.allied-material.co.jp/
+    #  logo:
+
     - name: EX-Fusion
       link: https://ex-fusion.com
       logo: /img/brands/EX_Fusion.svg
 
-    - name: Kyoto Fusioneeering
-      link: https://kyotofusioneering.com
-      logo: /img/brands/KF_logo.svg
+    #- name: Faraday Factory Japan
+    #  link: https://www.faradaygroup.com/
+    #  logo:
 
-    - name: Helical Fusion
-      link: https://www.helicalfusion.com
-      logo: /img/brands/helical_fusion.svg
+    #- name: 伯東株式会社
+    #  link: https://www.hakuto.co.jp/
+    #  logo:
+
+    #- name: Helical Fusion
+    #  link: https://www.helicalfusion.com
+    #  logo: /img/brands/helical_fusion.svg
+
+    #- name: 日立製作所
+    #  link: https://www.hitachi.co.jp
+    #  logo: /img/brands/hitachi.svg
 
     - name: 金属技研
       link: https://www.kinzoku.co.jp
       logo: /img/brands/MTC.svg
 
-    - name: 日立製作所
-      link: https://www.hitachi.co.jp
-      logo: /img/brands/hitachi.svg
+    #- name: Kyoto Fusioneeering
+    #  link: https://kyotofusioneering.com
+    #  logo: /img/brands/KF_logo.svg
+
+    #- name: LINEAイノベーション
+    #  link: https://linea-innovations.com/
+    #  logo:
+
+    #- name: 助川電気工業
+    #  link: https://sukegawadenki.co.jp/
+    #  logo:
 
 ### スケジュールの表示 ###
 schedule:
