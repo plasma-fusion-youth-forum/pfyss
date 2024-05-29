@@ -158,6 +158,10 @@ form:
 テーマは研究室の研究内容や自身の研究内容等、自由形式です。<br>
 A0ポスターとして、{{< link-download name="PowerPointのテンプレート" src="https://drive.google.com/uc?export=download&id=1snER2uDq1vXbW3EqtvkQ2R0IPWgKFiCj" >}}を用意しています。また、{{< link-download name="夏学のロゴ" src="https://drive.google.com/uc?export=download&id=1A-urydv6NHkl7Rnr5t8I4AO_hP9yrGXC" >}}も用意しておりますので、ご自由にお使いください。
 
+### 個人情報の取り扱いについて<i class="bx bx-fw bx-md bx-id-card"></i>
+
+記載していただいた個人情報は、第2回プラズマ・核融合若手夏の学校における各種お問い合わせの対応、お知らせ等、業務を円滑に行うために利用いたします。ご本人の同意がなければ、第三者に個人情報を提供することはありません。また取得した個人情報は、紛失や漏洩等が発生しないよう積極的な安全対策を実施いたします。
+
 ### その他<i class="bx bx-fw bx-md bxs-info-circle"></i>
 
 - 申込みをされた方は事前に{{< link-external name="<i class='bx bxl-discord-alt'></i>Discordサーバー" link="https://discord.gg/BTaVFm7F3k" >}}に**必ず**参加してください。
