@@ -67,7 +67,7 @@
       url: https://researchmap.jp/kuniyoshi_tabata?lang=ja
     - type: personal
       url: https://www.isas.jaxa.jp/home/research-portal/project-research-associate/05_tabata/
-  timeslot:
+  timeslot: 19
 
 - name: 井上 允
   englishName: Makoto Inoue
@@ -84,7 +84,7 @@
       url: https://www.asiaa.sinica.edu.tw/people/cv.php?i=inoue
     - type: personal
       url: https://sites.google.com/asiaa.sinica.edu.tw/inoue/
-  timeslot:
+  timeslot: 20
 
 - name: 成田 絵美
   englishName: Emi Narita
@@ -98,7 +98,7 @@
       url: https://researchmap.jp/naritaemi
     - type: personal
       url: https://kdb.iimc.kyoto-u.ac.jp/profile/ja.42e1ab24739b5a9d.html
-  timeslot:
+  timeslot: 27
 
 - name: 小林 達哉
   englishName: Tatsuya Kobayashi
@@ -110,7 +110,7 @@
   links:
     - type: general
       url: https://researchmap.jp/30733703
-  timeslot:
+  timeslot: 28
 
 - name: 小野 英理
   englishName: Eiri Ono
