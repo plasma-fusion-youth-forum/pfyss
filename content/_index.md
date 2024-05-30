@@ -62,9 +62,9 @@ sponsors:
       link: https://ex-fusion.com
       logo: /img/brands/EX_Fusion.svg
 
-    #- name: Faraday Factory Japan
-    #  link: https://www.faradaygroup.com/
-    #  logo:
+    - name: Faraday Factory Japan
+      link: https://www.faradaygroup.com/
+      logo: /img/brands/faraday_factory.jpg
 
     #- name: 伯東株式会社
     #  link: https://www.hakuto.co.jp/
