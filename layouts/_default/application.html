@@ -116,7 +116,7 @@
 
                 {{/* フォーム共通部分 */}}
                 {{ with index $entry "form-text" }}
-                  <small class="form-text text-muted">{{ . }}</small>
+                  <p class="fs-sm form-text text-muted">{{ . }}</p>
                 {{ end }}
                 {{ with index $entry "invalid_message" }}
                   <div class="invalid-feedback">{{ . }}</div>

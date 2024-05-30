@@ -1,9 +1,83 @@
+- name: 井上 静雄
+  englishName: Shizuo Inoue
+  position: 主任研究員
+  affiliation: QST
+  image:
+  description: |
+    QST 那珂フュージョン科学技術研究所 先進プラズマ研究部 主任研究員。
+  links:
+    - type: general
+      url: https://researchmap.jp/inoues
+  timeslot: 4
+
+- name: 向井 啓祐
+  englishName: Keisuke Mukai
+  position: 准教授
+  affiliation: NIFS
+  image: https://lh3.googleusercontent.com/pw/AP1GczN7lSqjTEc3ljb2bo2B7MOganFGskkXYdDUNuN0mQvZvELRJ_SJWe0C0KkeNVYw6vebCFz7FyCcJJXx_cQywrfEocH3E-LH4yY6_Ki0CmKpzH972SE=w2400
+  description: |
+    NIFS 超高流束協奏材料ユニット 准教授。
+  links:
+    - type: general
+      url: https://researchmap.jp/7000020231
+  timeslot: 9
+
+- name: 古川 勝
+  englishName: Masaru Furukawa
+  position: 教授
+  affiliation: 鳥取大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczPK4KCs_OTIhL9SulPVgKU5EmUO8wi9vftvxX_qXxqeZqzwNqfelARGUNXJGgI8rfVkYyAnwR4FNooDzLk94Opl1fmcEyB-R9iqt2gMPO17t1D6UR0=w2400
+  description: |
+    鳥取大学 工学部 機械物理系学科 教授。<br>
+    京都大学大学院エネルギー科学研究科にて博士（エネルギー科学）を取得。
+    磁場閉じ込め核融合プラズマの理論・シミュレーション研究を行ってきた。
+    最近はハミルトン力学、力学系理論の観点に重点を置いている。
+    核融合プラズマ分野の問題を数理的に研究することで他分野との交流を広げている。
+  links:
+    - type: general
+      url: https://researchers.adm.tottori-u.ac.jp/html/100000919_ja.html
+    - type: personal
+      url: https://www.damp.tottori-u.ac.jp/~lab8/
+  timeslot: 10
+
+- name: 永岡 賢一
+  englishName: Kenichi Nagaoka
+  position: 教授
+  affiliation: NIFS
+  image:
+  description: |
+    NIFS ヘリカル研究部プラズマ加熱物理研究系 教授。
+  links:
+    - type: general
+      url: https://researchmap.jp/nagaokakenichi
+    - type: personal
+      url: http://www.sigma.phys.nagoya-u.ac.jp/sigmae/index.html
+  timeslot: 12
+
+- name: 田畑 邦佳
+  englishName: Kuniyoshi Tabata
+  position: 開発員
+  affiliation: JAXA
+  image: https://lh3.googleusercontent.com/pw/AP1GczPQhXCr6GWMKAxG2OQyWZPSThiJTIWe99QOGMalYbQdKwlHYopmOMFUJ7yYKPUqwJFfDOkeuTHvcYrLQc0CYsiicCxYtN8K6fGT1r86UDRx-NdKx18=w2400
+  description: |
+    JAXA宇宙科学研究所 DESTINY+プロジェクト 宇宙航空プロジェクト研究員。
+    東京大学大学院 航空宇宙工学専攻で博士（工学）を取得。
+    専門はプラズマを利用した宇宙推進工学で、大学院ではビーム推進研究や、東大初のジャイロトロン開発に従事。
+    現在は、小惑星Phaethonを探査するDESTINY+に搭載予定のイオンエンジンを開発中。
+
+  links:
+    - type: general
+      url: https://researchmap.jp/kuniyoshi_tabata?lang=ja
+    - type: personal
+      url: https://www.isas.jaxa.jp/home/research-portal/project-research-associate/05_tabata/
+  timeslot: 19
+
 - name: 井上 允
   englishName: Makoto Inoue
   position: 特聘訪問学者
   affiliation: 台湾中央研究院
   # 講師画像は最低500x500pxの解像度であること
-  image: https://lh3.googleusercontent.com/pw/AP1GczM_JM0zmOPStcTEXEBjxYaqQyYsX1BrJyvT3MQzYFveVjA9db_tNQ-a9PAZBVAqQjIw4m4jK-NjsROoCdJ6TcG7Htb0FZucgwxvvEzcOOw8ZVElLnc=w2400
+  image: https://lh3.googleusercontent.com/pw/AP1GczM8Exhg5Tb0TagsLqYk4v-ZBgML6T2uZ4ky1W_xOLc1zekGgjmqJwNlpif56iJ6-73C_v2IXRl-Q0qpIG8bo43DDnSUJDJTNqSRpNEhm74a4Z9iZMc=w2400
   description: |
     台湾中央研究院 天文及天文物理研究所 特聘訪問学者。国立天文台 名誉教授。<br>
     電波天文学に従事。超長基線干渉計（VLBI）などを利用して活動銀河中心核やジェットなどの観測を行ってきた。<br>
@@ -13,4 +87,52 @@
       url: https://www.asiaa.sinica.edu.tw/people/cv.php?i=inoue
     - type: personal
       url: https://sites.google.com/asiaa.sinica.edu.tw/inoue/
+  timeslot: 20
+
+- name: 成田 絵美
+  englishName: Emi Narita
+  position: 講師
+  affiliation: 京都大学
+  image:
+  description: |
+    京都大学 大学院工学研究科 原子核工学専攻 講師。
+  links:
+    - type: general
+      url: https://researchmap.jp/naritaemi
+    - type: personal
+      url: https://kdb.iimc.kyoto-u.ac.jp/profile/ja.42e1ab24739b5a9d.html
+  timeslot: 27
+
+- name: 小林 達哉
+  englishName: Tatsuya Kobayashi
+  position: 准教授
+  affiliation: NIFS
+  image: https://lh3.googleusercontent.com/pw/AP1GczMe_evion5Xkv1xsumQVSGzSTlr2VcG9-RP0S3y5WlMR4RvIDMIa3E9kCXf1q_mWWYob5q5eiWEfzBed36KpHO8U4ExsiKwGmuSW6DcXy3CEVsorV0=w2400
+  description: |
+
+  links:
+    - type: general
+      url: https://researchmap.jp/30733703
+  timeslot: 28
+
+- name: 小野 英理
+  englishName: Eiri Ono
+  position: 准教授
+  affiliation: 京都大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczOtZ918RKCnWWnlKMijhnxMzvhn9xxA13H_DGR0KrjeS92fbeTGAbNjcFCDSiQK3EjolhH2ULAFxDhb1xnh3B7obdwopKtxvtYULJFjIOcYpqTFvrw=w2400
+  description: |
+    京都大学情報環境機構 データ運用支援基盤センター 准教授。<br><br>
+    <span class="badge bg-warning text-light">Pre-lecture</span>
+    <h5>【事前講義】 魅せるショートプレゼンのコツ</h5>
+    <p>
+    1分という短いショートプレゼンで何を伝えるべきでしょうか？
+    複雑な研究内容をどこまで簡略化すべきでしょうか？
+    プレゼンの相手や目的をしっかり考えた上で資料を作成する方法やヒントについてお伝えします。<br>
+    ※小野先生の講義はオンラインで7月下旬から8月上旬の間に開講されます。
+    </p>
+  links:
+    - type: general
+      url: https://researchmap.jp/7000022582
+    - type: personal
+      url: https://kdb.iimc.kyoto-u.ac.jp/profile/ja.29237788b1eaf0a8.html
   timeslot:

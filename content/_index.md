@@ -16,10 +16,10 @@ venue: リゾートイン黒岩荘
 
 ### 夏学の参加申込み概要
 application:
-  fee: 検討中 # ￥23,000 # 参加費
-  capacity: ~40 # 募集人数
-  startline: # 2024-06-01 # 参加申し込み募集開始日
-  deadline: # 2024-07-07 # 参加申し込み締め切り日
+  fee: ￥25,000 # ￥23,000 # 参加費
+  capacity: ~50 # 募集人数
+  startline: 2024-06-15 # 参加申し込み募集開始日
+  deadline: 2024-07-10 # 参加申し込み締め切り日
 
 ### カルーセル画像 ###
 # 画像サイズは1350x900px以上
@@ -46,7 +46,7 @@ carousels:
 
 ### 協賛リスト ###
 sponsors:
-  enable: false
+  enable: true
   default: |
     <h2 class="text-center text-white">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
     <p class="text-center text-white">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
@@ -54,29 +54,49 @@ sponsors:
     これまでの夏学の活動については<a href="/forepast">こちら</a>からご覧ください。
     </p>
   list:
+    #- name: アライドマテリアル
+    #  link: https://www.allied-material.co.jp/
+    #  logo:
+
     - name: EX-Fusion
       link: https://ex-fusion.com
       logo: /img/brands/EX_Fusion.svg
 
-    - name: Kyoto Fusioneeering
-      link: https://kyotofusioneering.com
-      logo: /img/brands/KF_logo.svg
+    - name: Faraday Factory Japan
+      link: https://www.faradaygroup.com/
+      logo: /img/brands/faraday_factory.jpg
 
-    - name: Helical Fusion
-      link: https://www.helicalfusion.com
-      logo: /img/brands/helical_fusion.svg
+    #- name: 伯東株式会社
+    #  link: https://www.hakuto.co.jp/
+    #  logo:
+
+    #- name: Helical Fusion
+    #  link: https://www.helicalfusion.com
+    #  logo: /img/brands/helical_fusion.svg
+
+    #- name: 日立製作所
+    #  link: https://www.hitachi.co.jp
+    #  logo: /img/brands/hitachi.svg
 
     - name: 金属技研
       link: https://www.kinzoku.co.jp
       logo: /img/brands/MTC.svg
 
-    - name: 日立製作所
-      link: https://www.hitachi.co.jp
-      logo: /img/brands/hitachi.svg
+    #- name: Kyoto Fusioneeering
+    #  link: https://kyotofusioneering.com
+    #  logo: /img/brands/KF_logo.svg
+
+    #- name: LINEAイノベーション
+    #  link: https://linea-innovations.com/
+    #  logo:
+
+    #- name: 助川電気工業
+    #  link: https://sukegawadenki.co.jp/
+    #  logo:
 
 ### スケジュールの表示 ###
 schedule:
-  enable: false
+  enable: true
   # GoogleカレンダーのPFYSSカレンダー共有リンクURL
   url: https://calendar.google.com/calendar/u/2?cid=NjY4YWQyOWM4MGNlMmQ4ZThkZTUzNWZiMjExYmNlNGEwMGQzN2E1MzEzMDU5MzUwM2E3MDE0NWFhY2U1ZDQwN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t
 
@@ -98,10 +118,20 @@ venue_cards:
         Visit: success
       website: https://www.nro.nao.ac.jp/
       description: |
-        国立天文台野辺山は1969年に開所した、電波天文学の国際的な拠点です。 本ツアーでは普段の見学ではわからない詳しいところまで解説していただきます！ さらに、銀河中心巨大ブラックホールの発見により仁科記念賞を受賞された、 国立天文台名誉教授の井上允氏にプラズマ物理含むブラックホールに関する講義をしていただきます。
+        国立天文台野辺山は1969年に開所した、電波天文学の国際的な拠点です。本ツアーでは普段の見学ではわからない詳しいところまで解説していただきます。
       image: https://lh3.googleusercontent.com/pw/AP1GczPt2J67LTAWJsaVXxmhm-KNP1KI0EJevvBOAuAx93AZPo2V-8FZzH96PEuhJGcMm7RhIv1L6Cix8a4oHLMVGC1X-rKDF6wKV-gc_r9q2ul9vGXQy0U=w2400
       credit: ©国立天文台
       google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8372.823780950277!2d138.47445170651952!3d35.94623279772583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c15e6ed59368d%3A0xe5a3821a5f6a3c4b!2z5Zu956uL5aSp5paH5Y-wIOmHjui-uuWxseWuh-Wumembu-azouims-a4rOaJgA!5e0!3m2!1sja!2sjp!4v1712821038271!5m2!1sja!2sjp
+
+    - name: 懇親会
+      badges:
+        After party: success
+      website: http://www.strawhat-1982.com/
+      description: |
+        3日目の天文台見学後に南牧村にあるレストラン「ストローハット」にて懇親会を開催します。
+      image: https://lh3.googleusercontent.com/pw/AP1GczMSr6xS-M_PTm055kGsDTawywU3pllF6Rnggq3taXdiHQCYKjssptJ5Xmyt3hPLaztokC_4ZDGIJbXAhdnNqvqPPX18mpcCj7EfsQ5J801UiviIbGA=w2400
+      credit: ©39BAR
+      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6639.427979650402!2d138.48494115699773!3d36.01854275899984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c3c1718a1e3fd%3A0xe37a810557f0fa24!2z44Os44K544OI44Op44Oz44O744K544OI44Ot44O844OP44OD44OI!5e0!3m2!1sja!2sjp!4v1716366922956!5m2!1sja!2sjp
 ---
 
 <!-- 中止連絡などのアラートを表示したい場合は以下をアンコメント -->

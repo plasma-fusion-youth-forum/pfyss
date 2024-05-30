@@ -105,6 +105,19 @@ form:
       required: false
       style: "height: 10rem"
       invalid_message: 旅費補助が必要な理由を入力してください
+
+    - id: pre-lecture
+      name: entry.
+      kind: select
+      label: オンライン事前講義(7/() **:00~)
+      required: true
+      options:
+        - 出席
+        - 欠席
+      default: 出席
+      form-text: 事前講義では京都大学・小野英理先生からショートプレゼンの手法を学びます。
+        今年度の夏学では、自分の研究を短時間でプレゼンし合うアイスブレイクを企画しているため、参加を推奨しております。
+      invalid_message: 出欠を選択してください
 ---
 
 # 参加の際の留意事項<i class="bx bx-fw bx-md bxs-error"></i>
@@ -144,6 +157,10 @@ form:
 1人1枚とは限らず、複数名で1つのポスターを制作して頂いても良いです。
 テーマは研究室の研究内容や自身の研究内容等、自由形式です。<br>
 A0ポスターとして、{{< link-download name="PowerPointのテンプレート" src="https://drive.google.com/uc?export=download&id=1snER2uDq1vXbW3EqtvkQ2R0IPWgKFiCj" >}}を用意しています。また、{{< link-download name="夏学のロゴ" src="https://drive.google.com/uc?export=download&id=1A-urydv6NHkl7Rnr5t8I4AO_hP9yrGXC" >}}も用意しておりますので、ご自由にお使いください。
+
+### 個人情報の取り扱いについて<i class="bx bx-fw bx-md bx-id-card"></i>
+
+記載していただいた個人情報は、第2回プラズマ・核融合若手夏の学校における各種お問い合わせの対応、お知らせ等、業務を円滑に行うために利用いたします。ご本人の同意がなければ、第三者に個人情報を提供することはありません。また取得した個人情報は、紛失や漏洩等が発生しないよう積極的な安全対策を実施いたします。
 
 ### その他<i class="bx bx-fw bx-md bxs-info-circle"></i>
 
