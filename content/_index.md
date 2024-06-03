@@ -64,7 +64,7 @@ sponsors:
 
     - name: Faraday Factory Japan
       link: https://www.faradaygroup.com/
-      logo: /img/brands/faraday_factory.jpg
+      logo: /img/brands/faraday_factory.png
 
     #- name: 伯東株式会社
     #  link: https://www.hakuto.co.jp/
