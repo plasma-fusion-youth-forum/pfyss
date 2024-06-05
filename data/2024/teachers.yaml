@@ -46,9 +46,12 @@
   englishName: Kenichi Nagaoka
   position: 教授
   affiliation: NIFS
-  image:
+  image: https://lh3.googleusercontent.com/pw/AP1GczN4fsxBrQwdtFvH5Ep5KrD_iSCAo7_qOqWsnngnlW3GDjJLaKYQch-V8kkxr326w1nVKojUsj3AmZlbVWW2T68atWS4EYlzIJOk_UwXIeaokvZQNCg=w2400
   description: |
     NIFS ヘリカル研究部プラズマ加熱物理研究系 教授。<br>
+    基礎プラズマ装置で巨視的な構造形成を学び、中型装置（ＣＨＳ）でＭＨＤ波動励起を調べ、
+    大型装置（ＬＨＤ）で微視的乱流駆動の輸送改善の理解を深めました。
+    最近は顕微鏡を使って、本当に微視的な乱流輸送の研究にもはまっています。
   links:
     - type: general
       url: https://researchmap.jp/nagaokakenichi
