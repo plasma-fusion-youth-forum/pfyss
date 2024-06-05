@@ -64,7 +64,7 @@ sponsors:
 
     - name: Faraday Factory Japan
       link: https://www.faradaygroup.com/
-      logo: /img/brands/faraday_factory.png
+      logo: /img/brands/FFJ.png
 
     #- name: 伯東株式会社
     #  link: https://www.hakuto.co.jp/
@@ -89,6 +89,10 @@ sponsors:
     #- name: LINEAイノベーション
     #  link: https://linea-innovations.com/
     #  logo:
+
+    #- name: NTT R&D
+    #  link: https://www.rd.ntt/
+    #  logo: /img/brands/
 
     #- name: 助川電気工業
     #  link: https://sukegawadenki.co.jp/
