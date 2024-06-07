@@ -3,9 +3,13 @@
   englishName: Shizuo Inoue
   position: 主任研究員
   affiliation: QST
-  image:
+  image: https://lh3.googleusercontent.com/pw/AP1GczPuq-ws-yoMFTuhp5kdJuktuOixKlwfMgQapcGCpBKRzXiYN6Y0P_qT1XmEvsmPH3Bc531ugAAB8jeUnj6_DzLbpApVJOAOQjOKgl36u_ITgfquPik=w2400
   description: |
-    QST 那珂フュージョン科学技術研究所 先進プラズマ研究部 主任研究員。<br>
+    QST 先進プラズマ研究部 先進プラズマ統合解析グループ 主任研究員。<br>
+    東京大学大学院工学系研究科電気系工学専攻で博士（工学）を取得。
+    博士課程では磁気リコネクションのエネルギー変換過程を研究。
+    現在は世界最大の超伝導トカマク装置JT-60SAにおいて平衡制御手法や
+    MHD不安定性の制御手法に関する研究開発に従事。
   links:
     - type: general
       url: https://researchmap.jp/inoues
@@ -75,7 +79,7 @@
       url: https://researchmap.jp/kuniyoshi_tabata?lang=ja
     - type: personal
       url: https://www.isas.jaxa.jp/home/research-portal/project-research-associate/05_tabata/
-  timeslot: 19
+  timeslot: 20
 
 - name: 井上 允
   englishName: Makoto Inoue
@@ -91,7 +95,7 @@
       url: https://www.asiaa.sinica.edu.tw/people/cv.php?i=inoue
     - type: personal
       url: https://sites.google.com/asiaa.sinica.edu.tw/inoue/
-  timeslot: 20
+  timeslot: 21
 
 - name: 成田 絵美
   englishName: Emi Narita
@@ -107,7 +111,7 @@
       url: https://researchmap.jp/naritaemi
     - type: personal
       url: https://kdb.iimc.kyoto-u.ac.jp/profile/ja.42e1ab24739b5a9d.html
-  timeslot: 27
+  timeslot: 28
 
 - name: 小林 達哉
   englishName: Tatsuya Kobayashi
@@ -119,7 +123,7 @@
   links:
     - type: general
       url: https://researchmap.jp/30733703
-  timeslot: 28
+  timeslot: 29
 
 - name: 小野 英理
   englishName: Eiri Ono
