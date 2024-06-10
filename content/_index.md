@@ -54,9 +54,9 @@ sponsors:
     これまでの夏学の活動については<a href="/forepast">こちら</a>からご覧ください。
     </p>
   list:
-    #- name: アライドマテリアル
-    #  link: https://www.allied-material.co.jp/
-    #  logo: /img/brands/
+    - name: アライドマテリアル
+      link: https://www.allied-material.co.jp/
+      logo: /img/brands/allied_material.png
 
     - name: EX-Fusion
       link: https://ex-fusion.com
@@ -78,10 +78,6 @@ sponsors:
       link: https://www.hitachi.co.jp
       logo: /img/brands/hitachi.svg
 
-    - name: 金属技研
-      link: https://www.kinzoku.co.jp
-      logo: /img/brands/MTC.svg
-
     - name: Kyoto Fusioneeering
       link: https://kyotofusioneering.com
       logo: /img/brands/KF_logo.svg
@@ -90,9 +86,13 @@ sponsors:
     #  link: https://linea-innovations.com/
     #  logo: /img/brands/
 
-    #- name: NTT R&D
-    #  link: https://www.rd.ntt/
-    #  logo: /img/brands/
+    - name: 金属技研
+      link: https://www.kinzoku.co.jp
+      logo: /img/brands/MTC.svg
+
+    - name: NTT R&D
+      link: https://www.rd.ntt/
+      logo: /img/brands/NTT.png
 
     #- name: 助川電気工業
     #  link: https://sukegawadenki.co.jp/
