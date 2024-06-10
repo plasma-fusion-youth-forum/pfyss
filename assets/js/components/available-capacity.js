@@ -27,10 +27,10 @@ export default (() => {
         const textField = document.getElementById(textFieldID);
 
         // テキスト欄にデータを貼り付ける
-        if (data.waitlistCount >= 0) {
-          textField.textContent = "キャンセル待ち人数: " + data.waitlistCount + "人";
-        } else {
+        if (data.availableCapacity >= 0) {
           textField.textContent = "申込み可能人数: " + data.availableCapacity + "人";
+        } else {
+          textField.textContent = "キャンセル待ち人数: " + data.waitlistCount + "人";
         }
       })
       .catch((error) => {
