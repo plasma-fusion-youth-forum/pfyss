@@ -1,10 +1,15 @@
+# 講師画像は最低500x500pxの解像度であること
 - name: 井上 静雄
   englishName: Shizuo Inoue
   position: 主任研究員
   affiliation: QST
-  image:
+  image: https://lh3.googleusercontent.com/pw/AP1GczPuq-ws-yoMFTuhp5kdJuktuOixKlwfMgQapcGCpBKRzXiYN6Y0P_qT1XmEvsmPH3Bc531ugAAB8jeUnj6_DzLbpApVJOAOQjOKgl36u_ITgfquPik=w2400
   description: |
-    QST 那珂フュージョン科学技術研究所 先進プラズマ研究部 主任研究員。
+    QST 先進プラズマ研究部 先進プラズマ統合解析グループ 主任研究員。<br>
+    東京大学大学院工学系研究科電気系工学専攻で博士（工学）を取得。
+    博士課程では磁気リコネクションのエネルギー変換過程を研究。
+    現在は世界最大の超伝導トカマク装置JT-60SAにおいて平衡制御手法や
+    MHD不安定性の制御手法に関する研究開発に従事。
   links:
     - type: general
       url: https://researchmap.jp/inoues
@@ -16,7 +21,9 @@
   affiliation: NIFS
   image: https://lh3.googleusercontent.com/pw/AP1GczN7lSqjTEc3ljb2bo2B7MOganFGskkXYdDUNuN0mQvZvELRJ_SJWe0C0KkeNVYw6vebCFz7FyCcJJXx_cQywrfEocH3E-LH4yY6_Ki0CmKpzH972SE=w2400
   description: |
-    NIFS 超高流束協奏材料ユニット 准教授。
+    NIFS 超高流束協奏材料ユニット 准教授。<br>
+    カールスルーエ工科大学研究員、京都大学エネルギー理工学研究所助教を経て現職。
+    主として、核融合機能材料の研究に従事。趣味は登山とe-bike。
   links:
     - type: general
       url: https://researchmap.jp/7000020231
@@ -44,9 +51,12 @@
   englishName: Kenichi Nagaoka
   position: 教授
   affiliation: NIFS
-  image:
+  image: https://lh3.googleusercontent.com/pw/AP1GczN4fsxBrQwdtFvH5Ep5KrD_iSCAo7_qOqWsnngnlW3GDjJLaKYQch-V8kkxr326w1nVKojUsj3AmZlbVWW2T68atWS4EYlzIJOk_UwXIeaokvZQNCg=w2400
   description: |
-    NIFS ヘリカル研究部プラズマ加熱物理研究系 教授。
+    NIFS ヘリカル研究部プラズマ加熱物理研究系 教授。<br>
+    基礎プラズマ装置で巨視的な構造形成を学び、中型装置（ＣＨＳ）でＭＨＤ波動励起を調べ、
+    大型装置（ＬＨＤ）で微視的乱流駆動の輸送改善の理解を深めました。
+    最近は顕微鏡を使って、本当に微視的な乱流輸送の研究にもはまっています。
   links:
     - type: general
       url: https://researchmap.jp/nagaokakenichi
@@ -60,48 +70,48 @@
   affiliation: JAXA
   image: https://lh3.googleusercontent.com/pw/AP1GczPQhXCr6GWMKAxG2OQyWZPSThiJTIWe99QOGMalYbQdKwlHYopmOMFUJ7yYKPUqwJFfDOkeuTHvcYrLQc0CYsiicCxYtN8K6fGT1r86UDRx-NdKx18=w2400
   description: |
-    JAXA宇宙科学研究所 DESTINY+プロジェクト 宇宙航空プロジェクト研究員。
+    JAXA宇宙科学研究所 DESTINY+プロジェクト 宇宙航空プロジェクト研究員。<br>
     東京大学大学院 航空宇宙工学専攻で博士（工学）を取得。
     専門はプラズマを利用した宇宙推進工学で、大学院ではビーム推進研究や、東大初のジャイロトロン開発に従事。
     現在は、小惑星Phaethonを探査するDESTINY+に搭載予定のイオンエンジンを開発中。
-
   links:
     - type: general
       url: https://researchmap.jp/kuniyoshi_tabata?lang=ja
     - type: personal
       url: https://www.isas.jaxa.jp/home/research-portal/project-research-associate/05_tabata/
-  timeslot: 19
+  timeslot: 20
 
 - name: 井上 允
   englishName: Makoto Inoue
   position: 特聘訪問学者
   affiliation: 台湾中央研究院
-  # 講師画像は最低500x500pxの解像度であること
   image: https://lh3.googleusercontent.com/pw/AP1GczM8Exhg5Tb0TagsLqYk4v-ZBgML6T2uZ4ky1W_xOLc1zekGgjmqJwNlpif56iJ6-73C_v2IXRl-Q0qpIG8bo43DDnSUJDJTNqSRpNEhm74a4Z9iZMc=w2400
   description: |
     台湾中央研究院 天文及天文物理研究所 特聘訪問学者。国立天文台 名誉教授。<br>
-    電波天文学に従事。超長基線干渉計（VLBI）などを利用して活動銀河中心核やジェットなどの観測を行ってきた。<br>
-    Event Horizon Telescope (EHT) の超巨大質量ブラックホール観測に参加。<br>
+    電波天文学に従事。超長基線干渉計（VLBI）などを利用して活動銀河中心核やジェットなどの観測を行ってきた。
+    Event Horizon Telescope (EHT) の超巨大質量ブラックホール観測に参加。
   links:
     - type: general
       url: https://www.asiaa.sinica.edu.tw/people/cv.php?i=inoue
     - type: personal
       url: https://sites.google.com/asiaa.sinica.edu.tw/inoue/
-  timeslot: 20
+  timeslot: 21
 
 - name: 成田 絵美
   englishName: Emi Narita
   position: 講師
   affiliation: 京都大学
-  image:
+  image: https://lh3.googleusercontent.com/pw/AP1GczNEQ1u9hItnWIrBGp1kNmtsr9wFgMxs8RNzxoq5aW7Cerd4bANC5KxZAkU8xygCCcAJrCWhL4FFIyXvYeVSpUIJ3PpQeTzrxl7IgifWNCVjvu1EC4U=w2400
   description: |
-    京都大学 大学院工学研究科 原子核工学専攻 講師。
+    京都大学 大学院工学研究科 講師。<br>
+    大阪大学大学院工学研究科環境・エネルギー工学選考で博士（工学）を取得。
+    核融合炉の実現に向け、炉心プラズマのモデリング研究開発に従事。
   links:
     - type: general
       url: https://researchmap.jp/naritaemi
     - type: personal
       url: https://kdb.iimc.kyoto-u.ac.jp/profile/ja.42e1ab24739b5a9d.html
-  timeslot: 27
+  timeslot: 28
 
 - name: 小林 達哉
   englishName: Tatsuya Kobayashi
@@ -113,7 +123,7 @@
   links:
     - type: general
       url: https://researchmap.jp/30733703
-  timeslot: 28
+  timeslot: 29
 
 - name: 小野 英理
   englishName: Eiri Ono

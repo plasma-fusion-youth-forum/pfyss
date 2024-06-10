@@ -16,9 +16,9 @@ venue: リゾートイン黒岩荘
 
 ### 夏学の参加申込み概要
 application:
-  fee: ￥25,000 # ￥23,000 # 参加費
-  capacity: ~50 # 募集人数
-  startline: 2024-06-15 # 参加申し込み募集開始日
+  fee: 検討中 # ￥23,000 # 参加費
+  capacity: 50 # 募集人数 (募集時は数値のみ指定可能)
+  startline: 2024-06-17 # 参加申し込み募集開始日
   deadline: 2024-07-10 # 参加申し込み締め切り日
 
 ### カルーセル画像 ###
@@ -54,9 +54,9 @@ sponsors:
     これまでの夏学の活動については<a href="/forepast">こちら</a>からご覧ください。
     </p>
   list:
-    #- name: アライドマテリアル
-    #  link: https://www.allied-material.co.jp/
-    #  logo:
+    - name: アライドマテリアル
+      link: https://www.allied-material.co.jp/
+      logo: /img/brands/allied_material.png
 
     - name: EX-Fusion
       link: https://ex-fusion.com
@@ -64,35 +64,39 @@ sponsors:
 
     - name: Faraday Factory Japan
       link: https://www.faradaygroup.com/
-      logo: /img/brands/faraday_factory.jpg
+      logo: /img/brands/faraday_factory.png
 
     #- name: 伯東株式会社
     #  link: https://www.hakuto.co.jp/
-    #  logo:
+    #  logo: /img/brands/
 
-    #- name: Helical Fusion
-    #  link: https://www.helicalfusion.com
-    #  logo: /img/brands/helical_fusion.svg
+    - name: Helical Fusion
+      link: https://www.helicalfusion.com
+      logo: /img/brands/helical_fusion.svg
 
-    #- name: 日立製作所
-    #  link: https://www.hitachi.co.jp
-    #  logo: /img/brands/hitachi.svg
+    - name: 日立製作所
+      link: https://www.hitachi.co.jp
+      logo: /img/brands/hitachi.svg
+
+    - name: Kyoto Fusioneeering
+      link: https://kyotofusioneering.com
+      logo: /img/brands/KF_logo.svg
+
+    #- name: LINEAイノベーション
+    #  link: https://linea-innovations.com/
+    #  logo: /img/brands/
 
     - name: 金属技研
       link: https://www.kinzoku.co.jp
       logo: /img/brands/MTC.svg
 
-    #- name: Kyoto Fusioneeering
-    #  link: https://kyotofusioneering.com
-    #  logo: /img/brands/KF_logo.svg
-
-    #- name: LINEAイノベーション
-    #  link: https://linea-innovations.com/
-    #  logo:
+    - name: NTT R&D
+      link: https://www.rd.ntt/
+      logo: /img/brands/NTT.png
 
     #- name: 助川電気工業
     #  link: https://sukegawadenki.co.jp/
-    #  logo:
+    #  logo: /img/brands/
 
 ### スケジュールの表示 ###
 schedule:

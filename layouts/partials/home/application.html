@@ -31,6 +31,7 @@
       <h3 class="h4">参加資格</h3>
       <ul data-aos="fade-up">
         <li>プラズマ・核融合に関心のある・研究を行っている日本の大学4年生 &ndash; 大学院生・ポスドク</li>
+        <li>ポスター発表ができる方</li>
       </ul>
       <ul class="list-group">
         <li
@@ -144,7 +145,9 @@
               {{ if $startline }}
                 {{ if lt now $startline }}
                   {{/* 申込み開始前 */}}
-                  <button type="button" class="btn btn-lg mb-3 mb-sm-0 me-sm-3" disabled>準備中</button>
+                  <button type="button" class="btn btn-lg mb-3 mb-sm-0 me-sm-3" disabled>
+                    {{ printf "%d" $startline.Month }}月{{ printf "%d" $startline.Day }}日申し込み開始
+                  </button>
                 {{ else if gt now $endDate }}
                   {{/* 夏学終了後 */}}
                   <button type="button" class="btn btn-lg mb-3 mb-sm-0 me-sm-3" disabled>募集終了</button>

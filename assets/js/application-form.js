@@ -8,4 +8,3 @@
  */
 
 import "./components/available-capacity";
-import "./components/form-validation-confirm-modal";
