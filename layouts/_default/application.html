@@ -46,159 +46,22 @@
         {{/* 申込み期限後に表示する内容 */}}
         <div class="text-center">{{ .Params.form.expired_message }}</div>
       {{ else }}
-        {{/* フォーム欄 */}}
-        <form class="needs-validation-confirmation" novalidate>
-          <!-- 申込み可能/キャンセル待ち人数の表示 -->
-          <div data-aos="fade" data-aos-delay="1500">
-            <!-- APiに知らせるため、募集人数を記述 -->
-            <input type="hidden" id="capacity-total" value="{{ .Site.Home.Params.application.capacity }}" />
-            <p id="available-capacity" class="text-end mb-0 mb-sm-3">&nbsp;</p>
-          </div>
-
-          {{/* Formエントリー */}}
-          {{ range $i, $entry := .Params.form.entries }}
-            <div class="row mb-4" id="{{ $entry.id }}-row">
-              <label for="{{ $entry.id }}" class="col-form-label col-sm-4 col-md-3">{{ $entry.label }}</label>
-              <div class="col-sm-8 col-md-9">
-                {{ if eq $entry.kind "input" }}
-                  {{/* input エントリー */}}
-                  <input
-                    class="form-control form-control-lg"
-                    type="{{ $entry.type }}"
-                    id="{{ $entry.id }}"
-                    value=""
-                    {{ if $entry.required }}required{{ end }}
-                    placeholder="{{ $entry.placeholder }}"
-                  />
-                {{ else if eq $entry.kind "textarea" }}
-                  {{/* textarea エントリー */}}
-                  <textarea
-                    class="form-control form-control-lg"
-                    type="{{ $entry.type }}"
-                    id="{{ $entry.id }}"
-                    {{ if $entry.required }}required{{ end }}
-                    placeholder="{{ with $entry.placeholder }}{{ . }}{{ end }}"
-                    {{ with $entry.style }}style="{{ . }}"{{ end }}
-                  ></textarea>
-                {{ else if eq $entry.kind "select" }}
-                  {{/* select エントリー */}}
-                  <select
-                    class="form-select form-control form-select-lg"
-                    id="{{ $entry.id }}"
-                    {{ if $entry.required }}required{{ end }}
-                    {{ if eq $entry.id "travel-allowance" }}
-                      onchange="showHideReason();"
-                    {{ end }}
-                  >
-                    {{/* デフォルト値があれば取得 */}}
-                    {{ $default := "" }}
-                    {{ with $entry.default }}
-                      {{ $default = . }}
-                    {{ end }}
-
-                    {{/* デフォルト値がない場合、選択不可な選択肢を追加 */}}
-                    {{ if not $default }}
-                      <option selected disabled value="">選択...</option>
-                    {{ end }}
-
-                    {{/* 選択肢の反復処理 */}}
-                    {{ range $i, $option := $entry.options }}
-                      {{ if eq $option $default }}
-                        <option selected>{{ . }}</option>
-                      {{ else }}
-                        <option>{{ . }}</option>
-                      {{ end }}
-                    {{ end }}
-                  </select>
-                {{ else }}
-                  {{ errorf "Invalid entry kind: %s" $entry.kind }}
-                {{ end }}
-
-                {{/* フォーム共通部分 */}}
-                {{ with index $entry "form-text" }}
-                  <p class="fs-sm form-text text-muted">{{ . }}</p>
-                {{ end }}
-                {{ with index $entry "invalid_message" }}
-                  <div class="invalid-feedback">{{ . }}</div>
-                {{ end }}
-              </div>
-            </div>
-          {{ end }}
-          <!-- 確認モーダル表示ボタン -->
-          <div class="row mb-4 mt-5">
-            <div class="col-sm-8 col-md-9 offset-sm-4 offset-md-3 d-flex flex-column flex-sm_row">
-              <button type="submit" class="btn btn-primary btn-lg">確認</button>
-            </div>
-          </div>
-        </form>
+        <!-- 申込み可能/キャンセル待ち人数の表示 -->
+        <div data-aos="fade" data-aos-delay="1500">
+          <!-- APiに知らせるため、募集人数を記述 -->
+          <input type="hidden" id="capacity-total" value="{{ .Site.Home.Params.application.capacity }}" />
+          <p id="available-capacity" class="text-center mb-0 mb-sm-3">&nbsp;</p>
+        </div>
+        <!-- FormFacadeの埋め込み -->
+        <div class="container" id="ff-compose"></div>
+        <script
+          async
+          defer
+          src="https://formfacade.com/include/117233485567985944662/form/1FAIpQLSdFDedriiViCc1kuFJbdd638mbiy7DM8PbKNmsgUbNiIhR66Q/bootstrap.js?div=ff-compose"
+        ></script>
       {{ end }}
     </div>
   </section>
-
-  <!--===============
-  =   確認用モーダル  =
-  ================-->
-  <div
-    class="modal fade"
-    id="confirmation-modal"
-    tabindex="-1"
-    aria-labelledby="confirmationModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="confirmationModalLabel">送信確認</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
-        </div>
-
-        <form
-          class="needs-validation"
-          novalidate
-          action="{{ .Params.form.action | safeURL }}"
-          method="POST"
-          target="hidden_iframe"
-          onsubmit="submitted=true;"
-        >
-          <!-- Modal Body -->
-          <div class="modal-body">
-            <p class="mb-3">以下の内容で送信します。よろしいですか？</p>
-
-            {{ range $i, $entry := .Params.form.entries }}
-              <div class="row mb-0" id="{{ $entry.id }}-modal-row">
-                <label for="{{ $entry.id }}-modal" class="col-form-label col-sm-4 col-lg-3">{{ $entry.label }}</label>
-                <div class="col-sm-8 col-lg-9">
-                  {{ if eq $entry.kind "textarea" }}
-                    <textarea
-                      name="{{ $entry.name }}"
-                      class="form-control"
-                      type="text"
-                      id="{{ $entry.id }}-modal"
-                      style="height: 10rem"
-                      readonly
-                    ></textarea>
-                  {{ else }}
-                    <input
-                      name="{{ $entry.name }}"
-                      class="form-control"
-                      type="text"
-                      id="{{ $entry.id }}-modal"
-                      readonly
-                    />
-                  {{ end }}
-                </div>
-              </div>
-            {{ end }}
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">戻る</button>
-            <button type="submit" class="btn btn-primary submit-spinner">送信</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
 {{ end }}
 
 {{ define "scripts" }}
@@ -207,70 +70,4 @@
   {{- with resources.Get "js/application-form.js" | js.Build $options | minify | fingerprint -}}
     <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
   {{- end -}}
-
-  {{/* 旅費補助理由の選択によって、その事由記入欄の表示/非表示を切り替える */}}
-  <script>
-    /**
-     * 旅費補助理由の欄を表示する関数. 旅費補助の選択欄が「必要」の場合にのみ表示される.
-     */
-    const showHideReason = () => {
-      // フォーム中の旅費補助のselectタグを取得
-      const travel = document.getElementById("travel-allowance");
-
-      // フォーム中の旅費補助理由の行divタグを取得
-      let reason = document.getElementById("allowance-reason-row");
-
-      // フォーム中の旅費補助理由のテキストエリアを取得
-      let reasonText = document.getElementById("allowance-reason");
-
-      // 確認モーダル中の旅費補助理由の行divタグを取得
-      let reasonModal = document.getElementById("allowance-reason-modal-row");
-
-      // 旅費補助の選択欄が「必要」の場合
-      if (travel.value == "必要") {
-        // 旅費補助理由の欄を表示
-        reason.classList.remove("d-none");
-
-        // 旅費補助理由の欄を必須にする
-        reasonText.setAttribute("required", "");
-
-        // 旅費補助理由のモーダル欄を表示
-        reasonModal.classList.remove("d-none");
-
-        // 旅費補助の選択欄が「不要」の場合
-      } else {
-        // 旅費補助理由の欄を非表示
-        reason.classList.add("d-none");
-
-        // 旅費補助理由の欄を必須にしない
-        reasonText.removeAttribute("required");
-
-        // 旅費補助理由の欄を空にする
-        reasonText.value = "";
-
-        // 旅費補助理由のモーダル欄を非表示
-        reasonModal.classList.add("d-none");
-      }
-    };
-    window.addEventListener(
-      "load",
-      () => {
-        showHideReason();
-      },
-      false
-    );
-  </script>
-
-  <!--=================================
-  = move thanks page after submitting =
-  ==================================-->
-  <script type="text/javascript">
-    let submitted = false;
-  </script>
-  <iframe
-    name="hidden_iframe"
-    id="hidden_iframe"
-    style="display: none"
-    onload="if(submitted){window.location.href='/application-thanks';}"
-  ></iframe>
 {{ end }}
