@@ -82,9 +82,9 @@ sponsors:
       link: https://kyotofusioneering.com
       logo: /img/brands/KF_logo.svg
 
-    #- name: LINEAイノベーション
-    #  link: https://linea-innovations.com/
-    #  logo: /img/brands/
+    - name: LINEAイノベーション
+      link: https://linea-innovations.com/
+      logo: /img/brands/LINEA_innovations.png
 
     - name: 金属技研
       link: https://www.kinzoku.co.jp
@@ -94,9 +94,9 @@ sponsors:
       link: https://www.rd.ntt/
       logo: /img/brands/NTT.png
 
-    #- name: 助川電気工業
-    #  link: https://sukegawadenki.co.jp/
-    #  logo: /img/brands/
+    - name: 助川電気工業
+      link: https://sukegawadenki.co.jp/
+      logo: /img/brands/sukegawa_denki.png
 
 ### スケジュールの表示 ###
 schedule:
