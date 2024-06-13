@@ -16,7 +16,7 @@ venue: リゾートイン黒岩荘
 
 ### 夏学の参加申込み概要
 application:
-  fee: 検討中 # ￥23,000 # 参加費
+  fee: ￥23,000 # ￥23,000 # 参加費
   capacity: 50 # 募集人数 (募集時は数値のみ指定可能)
   startline: 2024-06-17 # 参加申し込み募集開始日
   deadline: 2024-07-10 # 参加申し込み締め切り日
@@ -82,9 +82,9 @@ sponsors:
       link: https://kyotofusioneering.com
       logo: /img/brands/KF_logo.svg
 
-    #- name: LINEAイノベーション
-    #  link: https://linea-innovations.com/
-    #  logo: /img/brands/
+    - name: LINEAイノベーション
+      link: https://linea-innovations.com/
+      logo: /img/brands/LINEA_innovations.png
 
     - name: 金属技研
       link: https://www.kinzoku.co.jp
@@ -94,9 +94,9 @@ sponsors:
       link: https://www.rd.ntt/
       logo: /img/brands/NTT.png
 
-    #- name: 助川電気工業
-    #  link: https://sukegawadenki.co.jp/
-    #  logo: /img/brands/
+    - name: 助川電気工業
+      link: https://sukegawadenki.co.jp/
+      logo: /img/brands/sukegawa_denki.png
 
 ### スケジュールの表示 ###
 schedule:
