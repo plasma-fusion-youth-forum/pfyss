@@ -66,7 +66,7 @@ $form-label-focus-color-dark: $body-color-dark !default;
 
 $input-color-dark: $body-color-dark !default;
 $input-border-color-dark: rgba($white, 0.18) !default;
-$input-bg-dark: rgba($white, 0.02) !default;
+$input-bg-dark: $gray-900 !default;
 $input-placeholder-color-dark: rgba($white, 0.4) !default;
 $input-disabled-bg-dark: rgba($white, 0.01) !default;
 $input-disabled-border-color-dark: rgba($white, 0.1) !default;
