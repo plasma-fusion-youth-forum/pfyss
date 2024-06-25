@@ -151,3 +151,41 @@
     - type: personal
       url: https://kdb.iimc.kyoto-u.ac.jp/profile/ja.29237788b1eaf0a8.html
   timeslot:
+
+#協賛企業の講演者
+#企業講演① timeslot: 13
+- name:
+  englishName:
+  position:
+  affiliation:
+  image:
+  description: |
+    <br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5></h5>
+  timeslot:
+
+- name: 田中 遥暁
+  englishName: Haruaki Tanaka
+  position:
+  affiliation: 株式会社日立製作所
+  image:
+  description: |
+    株式会社日立製作所 原子力ビジネスユニット 原子力事業技術センタ 核融合・加速器部 ITER-NBプロジェクトGr.<br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5></h5>
+  timeslot:
+
+#企業講演② timeslot: 14
+
+#企業講演③ timeslot: 23
+- name: 白澤 唯汰
+  englishName: Yuita Shirasawa
+  position:
+  affiliation: 日本電信電話株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczOvzPln4wThgVm3bPnj8wN1muDv1g2VxU1nK5YHC4LFpHM3wXEvxdFUA7w63bIMN68W7l_rSzMciEQMJJSkjYuKpWGn0ROLjKIA7qldQH_Us359LRA=w2400
+  description: |
+    日本電信電話株式会社 宇宙環境エネルギー研究所<br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5>NTT R&Dの活動の紹介</h5>
+  timeslot:
