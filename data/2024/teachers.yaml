@@ -209,7 +209,7 @@
   description: |
     Kyoto Fusioneering EM Development Division<br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
-    <h5></h5>
+    <h5>フュージョンエネルギーの商業化に向けた京都フュージョニアリングの取り組み</h5>
   timeslot:
 
 - name: 川本 宗千力
@@ -220,5 +220,20 @@
   description: |
     Kyoto Fusioneering Business Development and Operations Division<br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
-    <h5></h5>
+    <h5>フュージョンエネルギーの商業化に向けた京都フュージョニアリングの取り組み</h5>
+  timeslot:
+
+- name: 中村 美幸
+  englishName: Miyuki Nakamura
+  position: R&D/NEDO部門 マネージャー
+  affiliation: Faraday Factory Japan LLC
+  image: https://lh3.googleusercontent.com/pw/AP1GczMeWg6-G4BUqZ9pG7KomXX39Pd5VYauW0Tf-iZDyGu2gnIIEiTJBu5pN44bKAc2q_VT5kp01_lCdFbLuRkhtS_AZeeTIjDhv3hOTsPufhQp62lyAyM=w2400
+  description: |
+    2009年 福岡女子大学環境理学科修士課程卒業。<br>
+    2009年-2016年（一財）国際超電導産業技術研究センター/超電導工学研究所 線材・応用パワー研究部在籍<br>
+    イットリウム系高温超電導線材の研究開発に従事。<br>
+    2016年-現在 Faraday Factory Japan LLC(旧 SuperOx Japan LLC)
+    <br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5>Faraday Factory Japanにおける2GHTS線材の研究開発と生産の現状</h5>
   timeslot:
