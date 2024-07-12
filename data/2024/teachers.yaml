@@ -138,12 +138,11 @@
   description: |
     京都大学情報環境機構 データ運用支援基盤センター 准教授。<br><br>
     <span class="badge bg-warning text-light">Pre-lecture</span>
-    <h5>【事前講義】 魅せるショートプレゼンのコツ</h5>
+    <h5>【7/23(火)10:30~ 事前オンライン講義】<br> 魅せるショートプレゼンのコツ</h5>
     <p>
     1分という短いショートプレゼンで何を伝えるべきでしょうか？
     複雑な研究内容をどこまで簡略化すべきでしょうか？
     プレゼンの相手や目的をしっかり考えた上で資料を作成する方法やヒントについてお伝えします。<br>
-    ※小野先生の講義はオンラインで7月下旬から8月上旬の間に開講されます。
     </p>
   links:
     - type: general
@@ -165,6 +164,19 @@
 #    <h5></h5>
 #  timeslot:
 
+- name: 山本 晋平
+  englishName: Shinpei Yamamoto
+  position: 熱マネジメント営業部主事
+  affiliation: 株式会社アライドマテリアル
+  image: https://lh3.googleusercontent.com/pw/AP1GczNv7_hwWDKhZnVw1HI-mM8-HEo1lN__ges6OtatOT4A1-KKqki94cvj45uriByML38pCHxl62SA0LvQZrze07DCFCAIufc7yUL4qIQzdRTI9IeJkeU=w2400
+  description: |
+    2016年入社。
+    2019年より核融合関連製品の営業に従事。
+    <br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5>アライドマテリアルの核融合分野への取組</h5>
+  timeslot:
+
 - name: 田中 遥暁
   englishName: Haruaki Tanaka
   position:
@@ -185,6 +197,22 @@
     (株)日立製作所 原子力ビジネスユニット 原子力事業技術センタ 核融合・加速器部 核装置設計Gr., Ph.D.<br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
     <h5>日立製作所における核融合開発への貢献 ～核融合実現を支えるモノづくり～</h5>
+  timeslot:
+
+- name: 野尻 悠太
+  englishName: Yuta Nojiri
+  position: 取締役
+  affiliation: 株式会社LINEAイノベーション
+  image: https://lh3.googleusercontent.com/pw/AP1GczPR5oB31SRocPO3jSCIhMr7p7LSZOdL5OOKjVE49-Ypyy1chzoMRTkU1C1qUBF8_b_NCPV0n9Q1t6jHgZ-GuR_N8H-n4zAZK4PdNApCvNpj1zPEgKY=w2400
+  description: |
+    東京大学大学院航空宇宙工学専攻修士課程修了。<br>
+    2006年にみずほ証券に入社。投資銀行業務に従事。2009年に宇宙スタートアップであるアクセルスペースに参画。
+    CFOやCOOを歴任し、資金調達、衛星プロジェクト等を主導。2019年にAIスタートアップのJDSCにCFOとして入社。
+    2020年にPEファンド投資先の技術者人材派遣のナレルグループにCFOとして入社し、その後2023年の上場を主導。
+    2024年より核融合スタートアップのLINEAイノベーションの代表取締役CEOに就任。現在に至る。
+    <br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5>LINEAイノベーションによる革新的核融合炉への挑戦</h5>
   timeslot:
 
 #企業講演② timeslot: 14
@@ -209,7 +237,7 @@
   description: |
     Kyoto Fusioneering EM Development Division<br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
-    <h5></h5>
+    <h5>フュージョンエネルギーの商業化に向けた京都フュージョニアリングの取り組み</h5>
   timeslot:
 
 - name: 川本 宗千力
@@ -220,5 +248,20 @@
   description: |
     Kyoto Fusioneering Business Development and Operations Division<br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
-    <h5></h5>
+    <h5>フュージョンエネルギーの商業化に向けた京都フュージョニアリングの取り組み</h5>
+  timeslot:
+
+- name: 中村 美幸
+  englishName: Miyuki Nakamura
+  position: R&D/NEDO部門 マネージャー
+  affiliation: Faraday Factory Japan LLC
+  image: https://lh3.googleusercontent.com/pw/AP1GczMeWg6-G4BUqZ9pG7KomXX39Pd5VYauW0Tf-iZDyGu2gnIIEiTJBu5pN44bKAc2q_VT5kp01_lCdFbLuRkhtS_AZeeTIjDhv3hOTsPufhQp62lyAyM=w2400
+  description: |
+    2009年 福岡女子大学環境理学科修士課程卒業。<br>
+    2009年-2016年（一財）国際超電導産業技術研究センター/超電導工学研究所 線材・応用パワー研究部在籍。
+    イットリウム系高温超電導線材の研究開発に従事。<br>
+    2016年-現在 Faraday Factory Japan LLC(旧 SuperOx Japan LLC)
+    <br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5>Faraday Factory Japanにおける2GHTS線材の研究開発と生産の現状</h5>
   timeslot:
