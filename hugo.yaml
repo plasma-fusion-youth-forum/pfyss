@@ -1,6 +1,7 @@
 baseURL: https://pfyss.org/
 languageCode: ja-jp
 timeZone: Asia/Tokyo
+timeout: 100s
 disableKinds:
   - taxonomy
   - term
