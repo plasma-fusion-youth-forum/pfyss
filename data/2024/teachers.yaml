@@ -177,8 +177,9 @@
     2024年より核融合スタートアップのLINEAイノベーションの代表取締役CEOに就任。現在に至る。
     <br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
+    <span class="ms-2">企業の核融合開発への取り組み①</span>
     <h5>LINEAイノベーションによる革新的核融合炉への挑戦</h5>
-  timeslot: 13
+  timeslot:
 
 - name: 山本 晋平
   englishName: Shinpei Yamamoto
@@ -190,8 +191,9 @@
     2019年より核融合関連製品の営業に従事。
     <br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
+    <span class="ms-2">企業の核融合開発への取り組み①</span>
     <h5>アライドマテリアルの核融合分野への取組</h5>
-  timeslot: 13
+  timeslot:
 
 - name: 中村 美幸
   englishName: Miyuki Nakamura
@@ -205,8 +207,9 @@
     2016年-現在 Faraday Factory Japan LLC(旧 SuperOx Japan LLC)
     <br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
+    <span class="ms-2">企業の核融合開発への取り組み①</span>
     <h5>Faraday Factory Japanにおける2GHTS線材の研究開発と生産の現状</h5>
-  timeslot: 13
+  timeslot:
 
 - name: 田中 遥暁
   englishName: Haruaki Tanaka
@@ -216,8 +219,9 @@
   description: |
     (株)日立製作所 原子力ビジネスユニット 原子力事業技術センタ 核融合・加速器部 ITER-NBプロジェクトGr., Ph.D.<br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
+    <span class="ms-2">企業の核融合開発への取り組み①</span>
     <h5>日立製作所における核融合開発への貢献 ～核融合実現を支えるモノづくり～</h5>
-  timeslot: 13
+  timeslot:
 
 - name: 田原 大夢
   englishName: Taimu Tahara
@@ -227,8 +231,9 @@
   description: |
     (株)日立製作所 原子力ビジネスユニット 原子力事業技術センタ 核融合・加速器部 核装置設計Gr., Ph.D.<br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
+    <span class="ms-2">企業の核融合開発への取り組み①</span>
     <h5>日立製作所における核融合開発への貢献 ～核融合実現を支えるモノづくり～</h5>
-  timeslot: 13
+  timeslot:
 
 #企業講演② timeslot: 22
 - name: 白澤 唯汰
@@ -239,8 +244,9 @@
   description: |
     日本電信電話株式会社 宇宙環境エネルギー研究所<br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
+    <span class="ms-2">企業の核融合開発への取り組み②</span>
     <h5>NTT R&Dの活動の紹介</h5>
-  timeslot: 22
+  timeslot:
 
 - name: 山田 弘一
   englishName: Hirokazu Yamada
@@ -250,8 +256,9 @@
   description: |
     金属技研株式会社<br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
+    <span class="ms-2">企業の核融合開発への取り組み②</span>
     <h5>金属技研の概要と核融合分野における取り組み</h5>
-  timeslot: 22
+  timeslot:
 
 - name: 大岩 晴矩
   englishName: Harunori Oiwa
@@ -265,8 +272,9 @@
     2023年に出資先のHelical Fusionに参画。
     <br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
+    <span class="ms-2">企業の核融合開発への取り組み②</span>
     <h5>Helical Fusion事業紹介 〜世界初の定常核融合炉の実現を目指す〜</h5>
-  timeslot: 22
+  timeslot:
 
 - name: 安藤 颯介
   englishName: Sosuke Ando
@@ -276,8 +284,9 @@
   description: |
     Kyoto Fusioneering EM Development Division<br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
+    <span class="ms-2">企業の核融合開発への取り組み②</span>
     <h5>フュージョンエネルギーの商業化に向けた京都フュージョニアリングの取り組み</h5>
-  timeslot: 22
+  timeslot:
 
 - name: 川本 宗千力
   englishName: Munechika Kawamoto
@@ -287,5 +296,6 @@
   description: |
     Kyoto Fusioneering Business Development and Operations Division<br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
+    <span class="ms-2">企業の核融合開発への取り組み②</span>
     <h5>フュージョンエネルギーの商業化に向けた京都フュージョニアリングの取り組み</h5>
-  timeslot: 22
+  timeslot:
