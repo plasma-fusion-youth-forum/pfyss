@@ -79,7 +79,7 @@
       url: https://researchmap.jp/kuniyoshi_tabata?lang=ja
     - type: personal
       url: https://www.isas.jaxa.jp/home/research-portal/project-research-associate/05_tabata/
-  timeslot: 20
+  timeslot: 19
 
 - name: 井上 允
   englishName: Makoto Inoue
@@ -95,7 +95,7 @@
       url: https://www.asiaa.sinica.edu.tw/people/cv.php?i=inoue
     - type: personal
       url: https://sites.google.com/asiaa.sinica.edu.tw/inoue/
-  timeslot: 21
+  timeslot: 20
 
 - name: 成田 絵美
   englishName: Emi Narita
@@ -111,7 +111,7 @@
       url: https://researchmap.jp/naritaemi
     - type: personal
       url: https://kdb.iimc.kyoto-u.ac.jp/profile/ja.42e1ab24739b5a9d.html
-  timeslot: 28
+  timeslot: 27
 
 - name: 小林 達哉
   englishName: Tatsuya Kobayashi
@@ -128,7 +128,7 @@
   links:
     - type: general
       url: https://researchmap.jp/30733703
-  timeslot: 29
+  timeslot: 28
 
 - name: 小野 英理
   englishName: Eiri Ono
@@ -152,7 +152,6 @@
   timeslot:
 
 #協賛企業の講演者
-#企業講演① timeslot: 13
 #- name:
 #  englishName:
 #  position:
@@ -164,41 +163,7 @@
 #    <h5></h5>
 #  timeslot:
 
-- name: 山本 晋平
-  englishName: Shinpei Yamamoto
-  position: 熱マネジメント営業部主事
-  affiliation: 株式会社アライドマテリアル
-  image: https://lh3.googleusercontent.com/pw/AP1GczNv7_hwWDKhZnVw1HI-mM8-HEo1lN__ges6OtatOT4A1-KKqki94cvj45uriByML38pCHxl62SA0LvQZrze07DCFCAIufc7yUL4qIQzdRTI9IeJkeU=w2400
-  description: |
-    2016年入社。
-    2019年より核融合関連製品の営業に従事。
-    <br><br>
-    <span class="badge bg-primary text-light">Special lecture</span>
-    <h5>アライドマテリアルの核融合分野への取組</h5>
-  timeslot:
-
-- name: 田中 遥暁
-  englishName: Haruaki Tanaka
-  position:
-  affiliation: 株式会社日立製作所
-  image: https://lh3.googleusercontent.com/pw/AP1GczORfYjXdf5fEYotUrk_oI-Gm4ANVfk7j0hsHq39AY97gvp7JCWQ2Mv3_u5ANIvGWADYO_zfUlt_2R7CiaQ8iD-G0E2O9OMfnP07X9GnrzGNo4l7U0E=w2400
-  description: |
-    (株)日立製作所 原子力ビジネスユニット 原子力事業技術センタ 核融合・加速器部 ITER-NBプロジェクトGr., Ph.D.<br><br>
-    <span class="badge bg-primary text-light">Special lecture</span>
-    <h5>日立製作所における核融合開発への貢献 ～核融合実現を支えるモノづくり～</h5>
-  timeslot:
-
-- name: 田原 大夢
-  englishName: Taimu Tahara
-  position:
-  affiliation: 株式会社日立製作所
-  image: https://lh3.googleusercontent.com/pw/AP1GczOhvtBB8mJzgzhGCNKO7W6ev_xMK6l9ys3FNaE5ZFPgGobHdSIgaCD5GQKUlTp-4lObP7tR7rS3ARJESi-eAVXMgCfAd5WOfhpq0UMWiMFU1y0ciWU=w2400
-  description: |
-    (株)日立製作所 原子力ビジネスユニット 原子力事業技術センタ 核融合・加速器部 核装置設計Gr., Ph.D.<br><br>
-    <span class="badge bg-primary text-light">Special lecture</span>
-    <h5>日立製作所における核融合開発への貢献 ～核融合実現を支えるモノづくり～</h5>
-  timeslot:
-
+#企業講演① timeslot: 13
 - name: 野尻 悠太
   englishName: Yuta Nojiri
   position: 取締役
@@ -213,43 +178,20 @@
     <br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
     <h5>LINEAイノベーションによる革新的核融合炉への挑戦</h5>
-  timeslot:
+  timeslot: 13
 
-#企業講演② timeslot: 14
-
-#企業講演③ timeslot: 23
-- name: 白澤 唯汰
-  englishName: Yuita Shirasawa
-  position:
-  affiliation: 日本電信電話株式会社
-  image: https://lh3.googleusercontent.com/pw/AP1GczOvzPln4wThgVm3bPnj8wN1muDv1g2VxU1nK5YHC4LFpHM3wXEvxdFUA7w63bIMN68W7l_rSzMciEQMJJSkjYuKpWGn0ROLjKIA7qldQH_Us359LRA=w2400
+- name: 山本 晋平
+  englishName: Shinpei Yamamoto
+  position: 熱マネジメント営業部主事
+  affiliation: 株式会社アライドマテリアル
+  image: https://lh3.googleusercontent.com/pw/AP1GczNv7_hwWDKhZnVw1HI-mM8-HEo1lN__ges6OtatOT4A1-KKqki94cvj45uriByML38pCHxl62SA0LvQZrze07DCFCAIufc7yUL4qIQzdRTI9IeJkeU=w2400
   description: |
-    日本電信電話株式会社 宇宙環境エネルギー研究所<br><br>
+    2016年入社。
+    2019年より核融合関連製品の営業に従事。
+    <br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
-    <h5>NTT R&Dの活動の紹介</h5>
-  timeslot:
-
-- name: 安藤 颯介
-  englishName: Sosuke Ando
-  position:
-  affiliation: Kyoto Fusioneering
-  image: https://lh3.googleusercontent.com/pw/AP1GczMRi1d4D28ASEpU_y6BrN6t7_oXDbkvlheB6euzNiluL_v8HqRVKjF1V5DXfBDLY2OsNZgmrP7oWpSEYs0rmQU9PHQfTBiDE3y5hT_8hk9s91U_p_A=w2400
-  description: |
-    Kyoto Fusioneering EM Development Division<br><br>
-    <span class="badge bg-primary text-light">Special lecture</span>
-    <h5>フュージョンエネルギーの商業化に向けた京都フュージョニアリングの取り組み</h5>
-  timeslot:
-
-- name: 川本 宗千力
-  englishName: Munechika Kawamoto
-  position:
-  affiliation: Kyoto Fusioneering
-  image: https://lh3.googleusercontent.com/pw/AP1GczP3lHI3Iv22Q9C-FM4EkhurjxkB5qGzDQcp7ssMUGZbaRbxyjLZVlTqAkjkH57WH0HEJtpmQ0AoJE-5LY8JdlbVLWrdjhJX_v6h7rxaelqUpV5YjkE=w2400
-  description: |
-    Kyoto Fusioneering Business Development and Operations Division<br><br>
-    <span class="badge bg-primary text-light">Special lecture</span>
-    <h5>フュージョンエネルギーの商業化に向けた京都フュージョニアリングの取り組み</h5>
-  timeslot:
+    <h5>アライドマテリアルの核融合分野への取組</h5>
+  timeslot: 13
 
 - name: 中村 美幸
   englishName: Miyuki Nakamura
@@ -264,4 +206,86 @@
     <br><br>
     <span class="badge bg-primary text-light">Special lecture</span>
     <h5>Faraday Factory Japanにおける2GHTS線材の研究開発と生産の現状</h5>
-  timeslot:
+  timeslot: 13
+
+- name: 田中 遥暁
+  englishName: Haruaki Tanaka
+  position:
+  affiliation: 株式会社日立製作所
+  image: https://lh3.googleusercontent.com/pw/AP1GczORfYjXdf5fEYotUrk_oI-Gm4ANVfk7j0hsHq39AY97gvp7JCWQ2Mv3_u5ANIvGWADYO_zfUlt_2R7CiaQ8iD-G0E2O9OMfnP07X9GnrzGNo4l7U0E=w2400
+  description: |
+    (株)日立製作所 原子力ビジネスユニット 原子力事業技術センタ 核融合・加速器部 ITER-NBプロジェクトGr., Ph.D.<br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5>日立製作所における核融合開発への貢献 ～核融合実現を支えるモノづくり～</h5>
+  timeslot: 13
+
+- name: 田原 大夢
+  englishName: Taimu Tahara
+  position:
+  affiliation: 株式会社日立製作所
+  image: https://lh3.googleusercontent.com/pw/AP1GczOhvtBB8mJzgzhGCNKO7W6ev_xMK6l9ys3FNaE5ZFPgGobHdSIgaCD5GQKUlTp-4lObP7tR7rS3ARJESi-eAVXMgCfAd5WOfhpq0UMWiMFU1y0ciWU=w2400
+  description: |
+    (株)日立製作所 原子力ビジネスユニット 原子力事業技術センタ 核融合・加速器部 核装置設計Gr., Ph.D.<br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5>日立製作所における核融合開発への貢献 ～核融合実現を支えるモノづくり～</h5>
+  timeslot: 13
+
+#企業講演② timeslot: 22
+- name: 白澤 唯汰
+  englishName: Yuita Shirasawa
+  position:
+  affiliation: 日本電信電話株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczOvzPln4wThgVm3bPnj8wN1muDv1g2VxU1nK5YHC4LFpHM3wXEvxdFUA7w63bIMN68W7l_rSzMciEQMJJSkjYuKpWGn0ROLjKIA7qldQH_Us359LRA=w2400
+  description: |
+    日本電信電話株式会社 宇宙環境エネルギー研究所<br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5>NTT R&Dの活動の紹介</h5>
+  timeslot: 22
+
+- name: 山田 弘一
+  englishName: Hirokazu Yamada
+  position:
+  affiliation: 金属技研株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczOYsIM-nLIx-E1hi4Gngv8_5ANqbtbYYcE0hP0dcCgQGHVkUwgM9EQa1wCeYhRfV_N8OcTQU-WgH065n3JXoucu41-pH4HbLtkcpKwC036k9jlmzR8=w2400
+  description: |
+    金属技研株式会社<br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5>金属技研の概要と核融合分野における取り組み</h5>
+  timeslot: 22
+
+- name: 大岩 晴矩
+  englishName: Harunori Oiwa
+  position: 経営戦略室Director
+  affiliation: 株式会社Helical Fusion
+  image: https://lh3.googleusercontent.com/pw/AP1GczN7c5pbOUaNiCht_cU7uIxGeCF8RDh5Rzalk_Fhx8bYaxESq5HF3j0OaRLc03z5sdbpr0z2_O0QbHvZO9cfrhAG9VS3BFhp46YAl5tTW4wP7SOBVFQ=w2400
+  description: |
+    大阪大学大学院 薬学研究科 修了 / University of Washington Global Business Program 修了<br>
+    医薬品開発、シリコンバレーのコンサルティング会社、バイオ系スタートアップを経て
+    VC・AcceleratorのPlug and Play Japanに参画し、DeepTech投資を担当。<br>
+    2023年に出資先のHelical Fusionに参画。
+    <br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5>Helical Fusion事業紹介 〜世界初の定常核融合炉の実現を目指す〜</h5>
+  timeslot: 22
+
+- name: 安藤 颯介
+  englishName: Sosuke Ando
+  position:
+  affiliation: Kyoto Fusioneering
+  image: https://lh3.googleusercontent.com/pw/AP1GczMRi1d4D28ASEpU_y6BrN6t7_oXDbkvlheB6euzNiluL_v8HqRVKjF1V5DXfBDLY2OsNZgmrP7oWpSEYs0rmQU9PHQfTBiDE3y5hT_8hk9s91U_p_A=w2400
+  description: |
+    Kyoto Fusioneering EM Development Division<br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5>フュージョンエネルギーの商業化に向けた京都フュージョニアリングの取り組み</h5>
+  timeslot: 22
+
+- name: 川本 宗千力
+  englishName: Munechika Kawamoto
+  position:
+  affiliation: Kyoto Fusioneering
+  image: https://lh3.googleusercontent.com/pw/AP1GczP3lHI3Iv22Q9C-FM4EkhurjxkB5qGzDQcp7ssMUGZbaRbxyjLZVlTqAkjkH57WH0HEJtpmQ0AoJE-5LY8JdlbVLWrdjhJX_v6h7rxaelqUpV5YjkE=w2400
+  description: |
+    Kyoto Fusioneering Business Development and Operations Division<br><br>
+    <span class="badge bg-primary text-light">Special lecture</span>
+    <h5>フュージョンエネルギーの商業化に向けた京都フュージョニアリングの取り組み</h5>
+  timeslot: 22
