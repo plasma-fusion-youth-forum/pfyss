@@ -49,7 +49,9 @@ form:
 ポスターサイズ: **A0サイズ以内**<br>
 1人1枚とは限らず、複数名で1つのポスターを制作して頂いても良いです。
 テーマは研究室の研究内容や自身の研究内容等、自由形式です。<br>
-A0ポスターとして、{{< link-download name="PowerPointのテンプレート" src="https://drive.google.com/uc?export=download&id=1snER2uDq1vXbW3EqtvkQ2R0IPWgKFiCj" >}}を用意しています。また、{{< link-download name="夏学のロゴ" src="https://drive.google.com/uc?export=download&id=1A-urydv6NHkl7Rnr5t8I4AO_hP9yrGXC" >}}も用意しておりますので、ご自由にお使いください。
+A0ポスターとして、{{< link-download name="PowerPointのテンプレート" src="https://drive.google.com/uc?export=download&id=1snER2uDq1vXbW3EqtvkQ2R0IPWgKFiCj" >}}を用意しています。また、{{< link-download name="夏学のロゴ" src="https://drive.google.com/uc?export=download&id=1A-urydv6NHkl7Rnr5t8I4AO_hP9yrGXC" >}}も用意しておりますので、ご自由にお使いください。<br>
+2024年度は50名の参加者が**プラズマ・核融合に限らず、宇宙や量子コンピュータなど幅広いテーマで**ポスター発表を行いました。<br>
+※2024年度の参加者の内訳：学部生15%、修士1年生30%、修士2年生30%、博士課程学生25%
 
 ### 個人情報の取り扱いについて<i class="bx bx-fw bx-md bx-id-card"></i>
 
