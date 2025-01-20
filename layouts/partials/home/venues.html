@@ -21,11 +21,13 @@
               >
                 {{/* Get Venue's image */}}
                 {{ $image := "" }}
-                {{ with resources.GetRemote $venue.image }}
+                {{ with try (resources.GetRemote $venue.image) }}
                   {{ with .Err }}
                     {{ errorf "Unable to get venue %s's image: %s" $venue.name . }}
-                  {{ else }}
+                  {{ else with .Value }}
                     {{ $image = . }}
+                  {{ else }}
+                    {{ errorf "Failed to get remote resource: %s" $venue.image }}
                   {{ end }}
                 {{ end }}
                 {{/* Convert original venue image for card. */}}

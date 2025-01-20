@@ -1,7 +1,7 @@
 {{/* Define Global Variables */}}
 {{ $year := .Params.year }}
 {{ $teachers := "" }}
-{{ $days := "" }}
+{{ $days := slice }}
 {{ $events := slice }}
 {{ $socialIcons := dict
   "twitter" "bxl-twitter"
@@ -85,18 +85,22 @@ events = [
     "method" "get"
     "headers" (dict  "Content-Type" "application/json")
   }}
-  {{ with resources.GetRemote $apiURL $opts }}
+  {{ with try (resources.GetRemote $apiURL $opts) }}
     {{ with .Err }}
-      {{ warnf "Unable to get scuedule info from %s : %s" $apiURL . }}
-    {{ else }}
+      {{ errorf "%s" . }}
+    {{ else with .Value }}
+      {{/* TODO: Support for redirects */}}
       {{ $days = .Content | transform.Unmarshal }}
-      {{/* $eventsに変換 */}}
-      {{ range $day := $days }}
-        {{ range $event := $day.events }}
-          {{ $events = $events | append $event }}
-        {{ end }}
-      {{ end }}
+    {{ else }}
+      {{ errorf "Failed to get remote resource: %s" . }}
     {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* $eventsに変換 */}}
+{{ range $day := $days }}
+  {{ range $event := $day.events }}
+    {{ $events = $events | append $event }}
   {{ end }}
 {{ end }}
 
@@ -128,19 +132,23 @@ events = [
 
         {{/* Prepare for teacher's image */}}
         {{ $teacher_image := "" }}
-        {{ with resources.GetRemote $teacher.image }}
+        {{ with try (resources.GetRemote $teacher.image) }}
           {{ with .Err }}
             {{ warnf "Unable to get teacher %s's image: %s" $name . }}
             {{/* Get default teacher image */}}
-            {{ with resources.Get "/img/unknown_person.jpg" }}
+            {{ with try (resources.Get "/img/unknown_person.jpg") }}
               {{ with .Err }}
                 {{ errorf "Unable to get default teacher image: %s" . }}
-              {{ else }}
+              {{ else with .Value }}
                 {{ $teacher_image = . }}
+              {{ else }}
+                {{ errorf "Failed to get default teacher image: %s" . }}
               {{ end }}
             {{ end }}
-          {{ else }}
+          {{ else with .Value }}
             {{ $teacher_image = . }}
+          {{ else }}
+            {{ errorf "Failed to get teacher %s's image: %s" $name . }}
           {{ end }}
         {{ end }}
 
