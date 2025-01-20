@@ -54,7 +54,7 @@ params:
       icon: bxl-youtube
 
   # Scheduleの設定 - Google App Scriptを利用してGoogle Calendarから取得する用のWebAPI URL
-  apiURL: https://script.google.com/macros/s/AKfycby7vMNpktGgif6E691IuXeRct9EcQPwIKwCP3xyK9sXs439G6UXo4u7EfbiY2Zx6nX5Tg/exec
+  apiURL: https://script.google.com/macros/s/AKfycbx42KlPgabfzq6ooQT-fEZAqfq8Fmm1sIRHYcTxZ1YEUjV57i5IBfcIl1m90SfNaNNRVw/exec
 
 # Markdown中でのHTMLタグを許可する
 markup:

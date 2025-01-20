@@ -1,5 +1,5 @@
 {{ if .Params.schedule.enable }}
-  {{ $days := "" }}
+  {{ $days := dict }}
   {{ $year := .Params.year }}
   {{ $apiURL := printf "%s?year=%d" .Site.Params.apiURL $year }}
 
@@ -34,6 +34,8 @@
     {{ else }}
       {{ $days = .Content | transform.Unmarshal }}
     {{ end }}
+  {{ else }}
+    {{ errorf "Unable to get scuedule info from %s" $apiURL }}
   {{ end }}
 
 
