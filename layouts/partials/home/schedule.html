@@ -1,5 +1,5 @@
 {{ if .Params.schedule.enable }}
-  {{ $days := "" }}
+  {{ $days := slice }}
   {{ $year := .Params.year }}
   {{ $apiURL := printf "%s?year=%d" .Site.Params.apiURL $year }}
 
@@ -28,11 +28,14 @@
     "method" "get"
     "headers" (dict  "Content-Type" "application/json")
   }}
-  {{ with resources.GetRemote $apiURL $opts }}
+  {{ with try (resources.GetRemote $apiURL $opts) }}
     {{ with .Err }}
-      {{ warnf "Unable to get scuedule info from %s : %s" $apiURL . }}
-    {{ else }}
+      {{ errorf "%s" . }}
+    {{ else with .Value }}
+      {{/* TODO: Support for redirects */}}
       {{ $days = .Content | transform.Unmarshal }}
+    {{ else }}
+      {{ errorf "Unable to get schedule info of year=%d" $year }}
     {{ end }}
   {{ end }}
 
@@ -190,14 +193,22 @@
                           {{ range $teacher := $selected_techers }}
                             {{/* 講師画像の取得と画像処理 */}}
                             {{ $image := "" }}
-                            {{ with resources.GetRemote $teacher.image }}
+                            {{ with try (resources.GetRemote $teacher.image) }}
                               {{ with .Err }}
                                 {{ warnf "Unable to get teacher image from %s : %s" $teacher.image . }}
-                                {{ with resources.Get "img/unknown_person.jpg" }}
-                                  {{ $image = . }}
+                                {{ with try (resources.Get "img/unknown_person.jpg") }}
+                                  {{ with .Err }}
+                                    {{ errorf "%s" . }}
+                                  {{ else with .Value }}
+                                    {{ $image = . }}
+                                  {{ else }}
+                                    {{ errorf "Failed to get default image: img/unknown_person.jpg" }}
+                                  {{ end }}
                                 {{ end }}
-                              {{ else }}
+                              {{ else with .Value }}
                                 {{ $image = . }}
+                              {{ else }}
+                                {{ warnf "Failed to get remote resource: %s" $teacher.image }}
                               {{ end }}
                             {{ end }}
                             {{ $image = $image.Fill "128x128 webp picture" }}

@@ -16,10 +16,13 @@
 {{- /*  カルーセルがある場合は取得  */ -}}
 {{- with .Params.carousels }}
   {{- with index . 0 }}
-    {{- with resources.GetRemote .link }}
+    {{- with try (resources.GetRemote .link) }}
       {{- with .Err }}
-      {{- else }}
+        {{ errorf "%s" . }}
+      {{- else with .Value }}
         {{- $image = .Filter (slice (images.GaussianBlur 25) (images.Brightness -25)) }}
+      {{- else }}
+        {{- errorf "Failed to get remote resource: %s" . -}}
       {{- end }}
     {{- end }}
   {{- end }}

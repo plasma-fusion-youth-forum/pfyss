@@ -40,10 +40,10 @@
             {{ range $column, $elements := .Params.featured_images }}
               <div class="col {{ if eq $column "column1" }}pt-lg-5 mt-lg-1{{ end }}">
                 {{ range $index_j, $element := $elements }}
-                  {{ with resources.GetRemote $element.url }}
+                  {{ with try (resources.GetRemote $element.url) }}
                     {{ with .Err }}
                       {{ warnf "%s" . }}
-                    {{ else }}
+                    {{ else with .Value }}
                       {{ $image := $element.size | default "800x900 center webp" | .Fill }}
                       <img
                         src="{{ $image.RelPermalink }}"
@@ -52,6 +52,8 @@
                         class="d-block rounded-3 {{ if eq $index_j 0 }}mb-3 mb-lg-4{{ end }}"
                         alt="{{ $element.alt }}"
                       />
+                    {{ else }}
+                      {{ warnf "Failed to get remote resource: %s" . }}
                     {{ end }}
                   {{ end }}
                 {{ end }}
@@ -131,12 +133,14 @@
           data-sub-html='<h6 class="fs-sm text-light">PFYSS Introduction Video</h6>'
         >
           {{/* Get Vedeo Cover Image */}}
-          {{ with resources.GetRemote .Params.video.cover }}
+          {{ with try (resources.GetRemote .Params.video.cover) }}
             {{ with .Err }}
               {{ warnf "%s" . }}
-            {{ else }}
+            {{ else with .Value }}
               {{ $image := .Params.video.size | default "1200x560 webp" | .Fill }}
               <img src="{{ $image.RelPermalink }}" class="d-block w-100" alt="Cover image" />
+            {{ else }}
+              {{ warnf "Failed to get remote resource: %s" . }}
             {{ end }}
           {{ end }}
         </a>
@@ -160,10 +164,10 @@
               <div class="position-relative text-center">
                 <div class="swap-image">
                   {{/* Get supporters logo image and transform it */}}
-                  {{ with resources.GetRemote $supporters.logo }}
+                  {{ with try (resources.GetRemote $supporters.logo) }}
                     {{ with .Err }}
                       {{ warnf "%s" . }}
-                    {{ else }}
+                    {{ else with .Value }}
                       {{ $image := .Resize "x400 webp" }}
                       {{ $image_gray := $image.Filter images.Grayscale }}
                       <img
@@ -180,6 +184,8 @@
                         alt="{{ $supporters.name }}"
                         class="d-block mb-3 swap-to container-fluid justify-content-center"
                       />
+                    {{ else }}
+                      {{ warnf "Failed to get remote resource: %s" . }}
                     {{ end }}
                   {{ end }}
                   <a
@@ -327,13 +333,17 @@
               <div class="card card-hover border-0 bg-transparent">
                 {{/* Get member's image */}}
                 {{ $image := "" }}
-                {{ with resources.GetRemote $member.image }}
+                {{ with try (resources.GetRemote $member.image) }}
                   {{ with .Err }}
                     {{ warnf "At /about, %s's image is not found: %s" $member.name . }}
-                    {{ with resources.Get "/img/unknown_person.jpg" }}
-                      {{ $image = . }}
-                    {{ else }}
-                      {{ errorf "unknown_person.jpg is not found: %s" . }}
+                    {{ with try (resources.Get "/img/unknown_person.jpg") }}
+                      {{ with .Err }}
+                        {{ errorf "%s" . }}
+                      {{ else with .Value }}
+                        {{ $image = . }}
+                      {{ else }}
+                        {{ errorf "unknown_person.jpg is not found: %s" . }}
+                      {{ end }}
                     {{ end }}
                   {{ end }}
                 {{ end }}

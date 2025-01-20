@@ -17,10 +17,10 @@
       <div class="carousel-inner h-100">
         {{ range $index, $element := .Params.carousels }}
           {{/* Load and Convert a carousel image */}}
-          {{ with resources.GetRemote $element.link }}
+          {{ with try (resources.GetRemote $element.link) }}
             {{ with .Err }}
               {{ warnf "Unable to get carousel image from %s: %s" $element.link . }}
-            {{ else }}
+            {{ else with .Value }}
               {{ $anchor := "" }}
               {{ with $element.anchor }}
                 {{ $anchor = . }}
@@ -44,6 +44,8 @@
                   </div>
                 {{ end }}
               </div>
+            {{ else }}
+              {{ warnf "Failed to get remote resource: %s" $element.link }}
             {{ end }}
           {{ end }}
         {{ end }}
