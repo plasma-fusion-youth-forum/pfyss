@@ -1,52 +1,37 @@
 ---
-date: 2024-01-01
+date: 2025-01-01
 draft: false
 kind: { page, home }
 layout: home
 
 ### 夏学の基本情報 ###
-title: PFYSS 2024
-year: 2024
-times: ２ # 第〇回 - 全角数字で記入するとフォントが綺麗になります
+title: PFYSS 2025
+year: 2025
+times: ３ # 第〇回 - 全角数字で記入するとフォントが綺麗になります
 duration: # 開催期間
-  start: 2024-08-27
-  end: 2024-08-30
-place: 長野県野辺山
-venue: リゾートイン黒岩荘
+  start: 2025-08-26
+  end: 2025-08-29
+place: 宮城県仙台
+venue: エスポールみやぎ
 
 ### 夏学の参加申込み概要
 application:
-  fee: ￥23,000 # ￥23,000 # 参加費
+  fee: # ￥23,000 # 参加費
   capacity: 50 # 募集人数 (募集時は数値のみ指定可能)
-  startline: 2024-06-17 # 参加申し込み募集開始日
-  deadline: 2024-07-10 # 参加申し込み締め切り日
+  startline: # 参加申し込み募集開始日
+  deadline: # 参加申し込み締め切り日
 
 ### カルーセル画像 ###
 # 画像サイズは1350x900px以上
 carousels:
-  - link: https://lh3.googleusercontent.com/pw/AP1GczPIuPdI2SX3hL69EQ9tRXCJmK1DfvEGMj0fdFlZICV4vqggNd92eUt1l789gg0GqrBxSEyS5ijAfv_z20SoICgeFHZbH0WnIltFa9yoFig0qnOMTdY=w2400
-    alt: 野辺山での天体写真
+  - link: https://lh3.googleusercontent.com/pw/AP1GczNCsjf4bF1pWg0zJhHl4Ttqr1N8A0pUG8WXwNp9ap4xiT56_5_slJyfmtPNg0iM3dgSZzofG8xzmaGzn_3w0E-_-B-aeidHUZl2cfnhXeUHLSA8uvE=w2400
+    alt: 伊達政宗像
     anchor: Bottom
-    credit: ©有限会社スターゲイズ
-
-  - link: https://lh3.googleusercontent.com/pw/AP1GczPVQUZA482eeY1TbuscO3-aGyqYoF_T8U5fjyCE5_bwwSVAvTG5ON2EzdwCGN_xjmuW2cPjNk5S3lGuEyHiMYe_bL7C5lNM-9m4rjiqIkPiu5SS2mU=w2400
-    alt: 夏のヘリオグラフ
-    anchor: Bottom
-    credit: ©国立天文台
-
-  - link: https://lh3.googleusercontent.com/pw/AP1GczN8mqVyE5MAEdO-GVQ9SUZ_TPsAZRcuqyIohR1HN2E0-gQj4bLf3x1MRMsBcXGJ2wanhs432wNBq7Joc_BJQX8ubYUqdRJj-vkrdzeREW1himR4agY=w2400
-    alt: 夏夕暮れと電波望遠鏡
-    anchor: Bottom
-    credit: ©国立天文台
-
-  - link: https://lh3.googleusercontent.com/pw/AP1GczOhW1h2j-5NjhUE-rnPptkv_zb7JGSbz6y1rMQuDS74TE-WkHp91ajeVZEWanz3qrmEq4L6b4bEPwI8M1cBHKO-6S-OQkEgnet_4YQA6qGLQOECAnE=w2400
-    alt: 野辺山高原平沢峠
-    anchor: Bottom
-    credit: ©株式会社クリード
+    credit:
 
 ### 協賛リスト ###
 sponsors:
-  enable: true
+  enable: false
   default: |
     <h2 class="text-center text-white">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
     <p class="text-center text-white">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
@@ -100,22 +85,22 @@ sponsors:
 
 ### スケジュールの表示 ###
 schedule:
-  enable: true
+  enable: false
   # GoogleカレンダーのPFYSSカレンダー共有リンクURL
   url: https://calendar.google.com/calendar/u/2?cid=NjY4YWQyOWM4MGNlMmQ4ZThkZTUzNWZiMjExYmNlNGEwMGQzN2E1MzEzMDU5MzUwM2E3MDE0NWFhY2U1ZDQwN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t
 
 ### Venue Cards ###
 venue_cards:
-  enable: true
+  enable: false
   list:
-    - name: リゾートイン黒岩荘
+    - name: エスポールみやぎ
       badges: # badgeの種類はここから選ぶ - https://silicon.createx.studio/components/badges.html
         Venue: warning
         Accommodation: primary
-      description: リゾートイン黒岩荘にて宿泊し、講義、ポスターセッション、ナイトセッションを行います。 国立天文台野辺山の特別講義もここで聴講します。
-      website: http://www.kuroiwasou.jp
-      image: https://lh3.googleusercontent.com/pw/AP1GczMA2UCkN-F6Rh6WuOWAta-GsvXreCijNL48ps9AXIix97gBOKPl5lWlMGGn0ugWBVzBI0-HOd1_fTYC9FUHjnFk2gtF9fOz9l1llR0mDvQvWaBhOsw=w2400
-      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.77446112953!2d138.46996647541073!3d35.95248687250094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c15f96c0faa8f%3A0x43adb41f97377cfa!2z44Oq44K-44O844OI44Kk44Oz6buS5bKp6I2Y!5e0!3m2!1sja!2sjp!4v1709104505922!5m2!1sja!2sjp
+      description: エスポールみやぎにて宿泊し、講義、ポスターセッション、ナイトセッションを行います。
+      website: https://seinenkaikan.or.jp/
+      image:
+      google_map: https://www.google.com/maps/place/%E3%82%A8%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%AB%E3%81%BF%E3%82%84%E3%81%8E(%E5%AE%AE%E5%9F%8E%E7%9C%8C%E9%9D%92%E5%B9%B4%E4%BC%9A%E9%A4%A8)/@38.2772634,140.9045082,17z/data=!4m9!3m8!1s0x5f8987bc5bab1f05:0xda92e5f4a8ad555d!5m2!4m1!1i2!8m2!3d38.2772634!4d140.9070831!16s%2Fg%2F1tl1n7yw?authuser=0&entry=ttu&g_ep=EgoyMDI1MDEyMS4wIKXMDSoASAFQAw%3D%3D
 
     - name: 国立天文台野辺山の見学
       badges:
