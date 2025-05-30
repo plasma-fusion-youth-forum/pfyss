@@ -118,7 +118,7 @@ venue_cards:
       description: エスポールみやぎにて宿泊し、講義、ポスターセッション、ナイトセッション、懇親会を行います。
       website: https://seinenkaikan.or.jp/
       image: https://lh3.googleusercontent.com/pw/AP1GczM6Z1XoKPpIi2JhaV_5K0BJe2zNeHrpX5aQqAhrm5VsVAZ20hHYGvv0pRx9TJmWpIMUrwaVWNfyjxCt1g3Yb3z-KRFBTn6qKUNPz05KIbW6UL1vIIM=w2400
-      google_map: https://www.google.com/maps/place/%E3%82%A8%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%AB%E3%81%BF%E3%82%84%E3%81%8E(%E5%AE%AE%E5%9F%8E%E7%9C%8C%E9%9D%92%E5%B9%B4%E4%BC%9A%E9%A4%A8)/@38.2772634,140.9045082,17z/data=!4m9!3m8!1s0x5f8987bc5bab1f05:0xda92e5f4a8ad555d!5m2!4m1!1i2!8m2!3d38.2772634!4d140.9070831!16s%2Fg%2F1tl1n7yw?authuser=0&entry=ttu&g_ep=EgoyMDI1MDEyMS4wIKXMDSoASAFQAw%3D%3D
+      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.127780628486!2d140.9009443264681!3d38.27557533709355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8987bc5bab1f05%3A0xda92e5f4a8ad555d!2z44Ko44K544Od44O844Or44G_44KE44GOKOWuruWfjuecjOmdkuW5tOS8mumkqCk!5e0!3m2!1sja!2sjp!4v1748602174342!5m2!1sja!2sjp
 
     - name: JAXA角田宇宙センターの見学
       badges:
@@ -128,7 +128,7 @@ venue_cards:
         JAXA角田宇宙センターは、ロケットエンジン開発の重要拠点です。本ツアーでは普段の見学ではわからない詳しいところまで解説していただきます。
       image: https://lh3.googleusercontent.com/pw/AP1GczOFWhO9q3j4KynIQsnONLIDGqBdjWDcShFq2oBuEUEWTWhxp0HIkPIlvVncaagghM53Mg5fV25CQfylKcrqqrjMd0CRn79NLt-a83AZfXRjnrhHYiA=w2400
       credit: ©JAXA
-      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8372.823780950277!2d138.47445170651952!3d35.94623279772583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c15e6ed59368d%3A0xe5a3821a5f6a3c4b!2z5Zu956uL5aSp5paH5Y-wIOmHjui-uuWxseWuh-Wumembu-azouims-a4rOaJgA!5e0!3m2!1sja!2sjp!4v1712821038271!5m2!1sja!2sjp
+      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76648.96816819947!2d140.683070291041!3d38.03805079237342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a1570726f5fbb%3A0x1f3a6f1223998219!2z6KeS55Sw5a6H5a6Z44K744Oz44K_44O8!5e0!3m2!1sja!2sjp!4v1748602343239!5m2!1sja!2sjp
 
     #- name: 懇親会
     #  badges:
