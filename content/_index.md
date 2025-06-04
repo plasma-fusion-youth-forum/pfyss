@@ -18,7 +18,7 @@ venue: エスポールみやぎ
 application:
   fee: ￥23,000 # 参加費
   capacity: 50 # 募集人数 (募集時は数値のみ指定可能)
-  startline: 2025-05-16 # 参加申し込み募集開始日
+  startline: # 2025-05-16 # 参加申し込み募集開始日
   deadline: 2025-07-11 # 参加申し込み締め切り日
 
 ### カルーセル画像 ###
@@ -41,7 +41,7 @@ carousels:
 
 ### 協賛リスト ###
 sponsors:
-  enable: true
+  enable: false
   default: |
     <h2 class="text-center text-white">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
     <p class="text-center text-white">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
@@ -125,7 +125,7 @@ venue_cards:
         Visit: success
       website: https://www.jaxa.jp/about/centers/kspc/index_j.html
       description: |
-        JAXA角田宇宙センターは、ロケットエンジン開発の重要拠点です。本ツアーでは普段の見学ではわからない詳しいところまで解説していただきます。
+        JAXA角田宇宙センターは、ロケットエンジン開発の重要拠点です。事前講義、見学ツアーを行い、普段の見学ではわからない詳しいところまで解説していただきます。
       image: https://lh3.googleusercontent.com/pw/AP1GczOFWhO9q3j4KynIQsnONLIDGqBdjWDcShFq2oBuEUEWTWhxp0HIkPIlvVncaagghM53Mg5fV25CQfylKcrqqrjMd0CRn79NLt-a83AZfXRjnrhHYiA=w2400
       credit: ©JAXA
       google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76648.96816819947!2d140.683070291041!3d38.03805079237342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a1570726f5fbb%3A0x1f3a6f1223998219!2z6KeS55Sw5a6H5a6Z44K744Oz44K_44O8!5e0!3m2!1sja!2sjp!4v1748602343239!5m2!1sja!2sjp
