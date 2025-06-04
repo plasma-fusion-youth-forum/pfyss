@@ -34,6 +34,11 @@ carousels:
     anchor: Bottom
     credit: ©JAXA
 
+  - link: https://lh3.googleusercontent.com/pw/AP1GczP_H6k0KaH1WiDdRff46pbQqdTuYIZJYTjI8oDSFN6e45ShORTG-g_ML0MziOg-FPG8hqvrrhXycvBSek6KJKZQe9y1p-yaPY8-ynZ4zeTf6K9byrM=w2400
+    alt: 仙台の風景
+    anchor: Bottom
+    credit:
+
   - link: https://lh3.googleusercontent.com/pw/AP1GczNiGUr1GqgAEfx1emvOdXhi6pie2hC6g_oHS5LkjvDrE3hjhG4f4pOQbiefif_IN6UAJVGhDCMO3hjJgfuOD-FcGTfSe49ECVeO2NyTgmchh4xDhq0=w2400
     alt: ロケットエンジン燃焼試験
     anchor: Bottom
