@@ -44,21 +44,34 @@
         <div class="text-center">{{ .Params.form.preparing_message }}</div>
       {{ else if gt now $deadline }}
         {{/* 申込み期限後に表示する内容 */}}
-        <div class="text-center">{{ .Params.form.expired_message }}</div>
+        <div class="text-center">
+          {{ .Params.form.expired_mes
+            <!-- 申込み可能/キャンセル待ち人数の表示 -->sage
+          }}
+        </div>
       {{ else }}
-        <!-- 申込み可能/キャンセル待ち人数の表示 -->
         <div data-aos="fade" data-aos-delay="1500">
           <!-- APiに知らせるため、募集人数を記述 -->
           <input type="hidden" id="capacity-total" value="{{ .Site.Home.Params.application.capacity }}" />
           <p id="available-capacity" class="text-center mb-0 mb-sm-3">&nbsp;</p>
         </div>
         <!-- FormFacadeの埋め込み -->
+        <!--
         <div class="container" id="ff-compose"></div>
         <script
           async
           defer
           src="https://formfacade.com/include/117233485567985944662/form/1FAIpQLSdFDedriiViCc1kuFJbdd638mbiy7DM8PbKNmsgUbNiIhR66Q/bootstrap.js?div=ff-compose"
         ></script>
+        -->
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdFDedriiViCc1kuFJbdd638mbiy7DM8PbKNmsgUbNiIhR66Q/viewform?embedded=true"
+          width="100%"
+          style="min-height: 2450px; height: 100%;"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
       {{ end }}
     </div>
   </section>
