@@ -171,7 +171,19 @@
                   <span class="fs-lg text-light ms-2">〆切</span>
                 </div>
               {{ end }}
+
             </div>
+            <!-- 申込み可能/キャンセル待ち人数の表示 -->
+            {{ if not (and $startline $deadline) }}
+              {{/* 申込み開始日、または申込み期限が設定されていない場合 */}}
+            {{ else if and (not (lt now $startline)) (not (gt now $deadline)) }}
+              {{/* 申込み可能な場合 */}}
+              <div data-aos="fade" data-aos-delay="2000">
+                <!-- APiに知らせるため、募集人数を記述 -->
+                <input type="hidden" id="capacity-total" value="{{ .Params.application.capacity }}" />
+                <p id="available-capacity" class="text-left mt-3 mb-0">&nbsp;</p>
+              </div>
+            {{ end }}
           </div>
           <span class="position-absolute top-50 end-0 translate-middle-y bg-light rounded-circle p-4 me-n4"></span>
         </div>
