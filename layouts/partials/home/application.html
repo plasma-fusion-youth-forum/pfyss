@@ -153,7 +153,13 @@
                   <button type="button" class="btn btn-lg mb-3 mb-sm-0 me-sm-3" disabled>募集終了</button>
                 {{ else }}
                   {{/* 申込開始後から夏学終わりの間まで */}}
-                  <a href="/application" class="btn btn-light btn-lg mb-3 mb-sm-0 me-sm-3" tabindex="-1" role="button"
+                  <a
+                    href="{{ .Site.Params.form.registration | safeURL }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-light btn-lg mb-3 mb-sm-0 me-sm-3"
+                    tabindex="-1"
+                    role="button"
                     >申込はこちらから
                   </a>
                 {{ end }}
