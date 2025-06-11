@@ -23,9 +23,9 @@
     <h2 class="h1 text-center mb-4 mb-md-0 me-md-3">Application Guide</h2>
   </div>
 
-  <!--==============
-  =    参加資格     =
-  ===============-->
+  <!--======================
+  =    参加資格 + tiket     =
+  =======================-->
   <div class="row pt-xl-2 pb-md-3">
     <div class="col-lg-5 mb-4 mb-lg-0 position-relative offset-e-xl-1">
       <h3 class="h4">参加資格</h3>
@@ -199,5 +199,38 @@
         ></span>
       </div>
     </div>
+  </div>
+
+  <!-- 参加にあたっての注意事項 -->
+  <div class="container pt-4 pt-sm-0 px-0 mx-0">
+    <h3 class="h4" id="application-notes">参加にあたっての注意事項</h3>
+  </div>
+  <div class="accordion">
+    {{- range $index, $note := .Params.application.note -}}
+      <div
+        class="accordion-item accordion-item border-0 rounded-3 shadow-sm mb-3"
+        data-aos="fade-up"
+        data-aos-delay="{{ add (mul $index 100) 1000 }}"
+        data-aos-anchor="#application-notes"
+      >
+        <h4 class="accordion-header" id="heading{{ $index }}">
+          <button
+            class="accordion-button shadow-none rounded-3 collapsed "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse{{ $index }}"
+            aria-expanded="false"
+            aria-controls="collapse{{ $index }}"
+          >
+            {{ $note.title | safeHTML }}
+          </button>
+        </h4>
+        <div class="accordion-collapse collapse" id="collapse{{ $index }}" aria-labelledby="heading{{ $index }}">
+          <div class="accordion-body pt-0">
+            {{ $note.content | markdownify }}
+          </div>
+        </div>
+      </div>
+    {{- end -}}
   </div>
 </section>
