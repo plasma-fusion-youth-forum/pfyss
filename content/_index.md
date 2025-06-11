@@ -142,7 +142,7 @@ venue_cards:
 application:
   fee: ￥23,000 # 参加費
   capacity: 50 # 募集人数 (募集時は数値のみ指定可能)
-  startline: 2025-05-16 # 参加申し込み募集開始日
+  startline: 2025-06-11 # 参加申し込み募集開始日
   deadline: 2025-07-11 # 参加申し込み締め切り日
   note: # 留意事項
     - title: <i class="bx bx-fw bx-md bxs-user-x"></i>キャンセルポリシー # 注意タイトル (html形式)
@@ -164,6 +164,14 @@ application:
       content: |
         - 旅費の補助については、**原則として研究室、大学等の支援を受けていただく**こととなります。
         - どうしても支援が受けられない場合のみ、限られた予算内で旅費の一部を援助いたしますので、申込みフォームにて旅費補助「**必要**」を選択し、その理由をご記入ください。
+
+        {{< alert "info" >}}
+        支援実績
+        <ul>
+        <li>第１回 全体の８割支援</li>
+        <li>第２回 全額支援</li>
+        </ul>
+        {{< /alert >}}
 
     - title: <i class="bx bx-fw bx-md bxs-user-detail"></i>ポスターについて
       content: |
