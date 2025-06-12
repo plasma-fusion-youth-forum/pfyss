@@ -57,7 +57,7 @@ sponsors:
 
     - name: 伯東株式会社
       link: https://www.hakuto.co.jp/
-      logo: /img/brands/hakuto.jpg
+      logo: /img/brands/hakuto.png
 
     - name: 浜松ホトニクス
       link: https://www.hamamatsu.com/jp/ja.html
@@ -123,7 +123,7 @@ venue_cards:
         Visit: success
       website: https://www.jaxa.jp/about/centers/kspc/index_j.html
       description: |
-        JAXA角田宇宙センターは、ロケットエンジン開発の重要拠点です。事前講義、見学ツアーを行い、普段の見学ではわからない詳しいところまで解説していただきます。
+        JAXA角田宇宙センターは、ロケットエンジン開発の重要拠点です。現地講義、見学ツアーを行い、普段の見学ではわからない詳しいところまで解説していただきます。
       image: https://lh3.googleusercontent.com/pw/AP1GczOFWhO9q3j4KynIQsnONLIDGqBdjWDcShFq2oBuEUEWTWhxp0HIkPIlvVncaagghM53Mg5fV25CQfylKcrqqrjMd0CRn79NLt-a83AZfXRjnrhHYiA=w2400
       credit: ©JAXA
       google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76648.96816819947!2d140.683070291041!3d38.03805079237342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a1570726f5fbb%3A0x1f3a6f1223998219!2z6KeS55Sw5a6H5a6Z44K744Oz44K_44O8!5e0!3m2!1sja!2sjp!4v1748602343239!5m2!1sja!2sjp
