@@ -11,7 +11,7 @@
 
 
       <div class="container">
-        <h1 class="text-center text-sm-start">FAQ</h1>
+        <h1 class="text-center text-sm-start" id="faq_title">FAQ</h1>
         <p class="text-center text-sm-start">
           よく寄せられる質問と回答をまとめました。
           <br />
@@ -24,6 +24,7 @@
               class="accordion-item accordion-item border-0 rounded-3 shadow-sm mb-3"
               data-aos="fade-up"
               data-aos-delay="{{ add (mul $index 100) 400 }}"
+              data-aos-anchor="#faq_title"
             >
               <h2 class="accordion-header" id="heading{{ $index }}">
                 <button
