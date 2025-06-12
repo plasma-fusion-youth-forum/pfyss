@@ -43,3 +43,27 @@
   <!-- Discord section -->
   {{- partial "home/discord.html" . -}}
 {{ end }}
+
+{{ define "scripts" }}
+  {{/* Homeに必要なスクリプトはここで統合的にコンパイルする */}}
+
+  {{/* /assets/js/application-form.jsのコンパイル */}}
+  {{/* 定数定義 */}}
+  {{- $startline := "" -}}
+  {{- $deadline := "" -}}
+  {{- with .Params.application.startline -}}
+    {{- $startline = time . -}}
+  {{- end -}}
+  {{- with .Params.application.deadline -}}
+    {{- $deadline = time . -}}
+  {{- end -}}
+
+  {{/* 申し込み開始日、期限日が設定されている場合のみ */}}
+  {{- if and (not (lt now $startline)) (not (gt now $deadline)) -}}
+    {{- $options := dict "targetPath" "js/application-form.js" -}}
+    {{- with resources.Get "js/application-form.js" | js.Build $options | minify | fingerprint -}}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+      {{/* {{- end -}} */}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

@@ -14,13 +14,6 @@ duration: # 開催期間
 place: 宮城県仙台
 venue: エスポールみやぎ
 
-### 夏学の参加申込み概要
-application:
-  fee: ￥23,000 # 参加費
-  capacity: 50 # 募集人数 (募集時は数値のみ指定可能)
-  startline: # 2025-06-11 # 参加申し込み募集開始日
-  deadline: 2025-07-11 # 参加申し込み締め切り日
-
 ### カルーセル画像 ###
 # 画像サイズは1350x900px以上
 carousels:
@@ -144,6 +137,58 @@ venue_cards:
     #  image: https://lh3.googleusercontent.com/pw/AP1GczM6Z1XoKPpIi2JhaV_5K0BJe2zNeHrpX5aQqAhrm5VsVAZ20hHYGvv0pRx9TJmWpIMUrwaVWNfyjxCt1g3Yb3z-KRFBTn6qKUNPz05KIbW6UL1vIIM=w2400
     #  #credit: ©
     #  google_map: https://www.google.com/maps/place/%E3%82%A8%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%AB%E3%81%BF%E3%82%84%E3%81%8E(%E5%AE%AE%E5%9F%8E%E7%9C%8C%E9%9D%92%E5%B9%B4%E4%BC%9A%E9%A4%A8)/@38.2772634,140.9045082,17z/data=!4m9!3m8!1s0x5f8987bc5bab1f05:0xda92e5f4a8ad555d!5m2!4m1!1i2!8m2!3d38.2772634!4d140.9070831!16s%2Fg%2F1tl1n7yw?authuser=0&entry=ttu&g_ep=EgoyMDI1MDEyMS4wIKXMDSoASAFQAw%3D%3D
+
+### 参加申込みフォームの設定 ###
+application:
+  fee: ￥23,000 # 参加費
+  capacity: 50 # 募集人数 (募集時は数値のみ指定可能)
+  startline: 2025-06-11 # 参加申し込み募集開始日
+  deadline: 2025-07-11 # 参加申し込み締め切り日
+  note: # 留意事項
+    - title: <i class="bx bx-fw bx-md bxs-user-x"></i>キャンセルポリシー # 注意タイトル (html形式)
+      content: | # 内容 (Markdown形式)
+        - キャンセルの場合は、**申込み締切までに**[お問い合わせフォーム]({{< ref "/contact" >}})、または受付完了メールに返信する形でご連絡ください。
+        - 申込み締切後のキャンセルの場合、**参加費の返却はいたしません**。
+
+        {{< alert "info" >}}
+        天候や災害などの事態により夏学が中止になった場合、参加費は全額返金いたします。
+        {{< /alert >}}
+
+    - title: <i class="bx bx-fw bx-md bxs-calendar-x"></i>災害時の対応・開催中止判断
+      content: |
+        - 開催場所に災害が発生した場合、参加者の安全を最優先に、開催中止とする場合があります。
+        - **開催日前日の夜12時に**開催場所で警報が発令、及び自然災害が発生した場合、開催中止とします。
+        - 開催中止の場合、**上記時刻から概ね1時間以内**に、ホームページ、メール、SNS(Discord、Twitter、Line等)にて連絡いたします。
+
+    - title: <i class="bx bx-fw bx-md bxs-train"></i>旅費の補助について
+      content: |
+        - 旅費の補助については、**原則として研究室、大学等の支援を受けていただく**こととなります。
+        - どうしても支援が受けられない場合のみ、限られた予算内で旅費の一部を援助いたしますので、申込みフォームにて旅費補助「**必要**」を選択し、その理由をご記入ください。
+
+        {{< alert "info" >}}
+        支援実績
+        <ul>
+        <li>第１回 全体の８割支援</li>
+        <li>第２回 全額支援</li>
+        </ul>
+        {{< /alert >}}
+
+    - title: <i class="bx bx-fw bx-md bxs-user-detail"></i>ポスターについて
+      content: |
+        - ポスターサイズ: **A0サイズ以内**
+        - 1人1枚とは限らず、複数名で1つのポスターを制作しても良い
+        - テーマは研究室の研究内容や自身の研究内容等、自由形式
+        - A0ポスターとして、{{< link-download name="PowerPointのテンプレート" src="https://drive.google.com/uc?export=download&id=1snER2uDq1vXbW3EqtvkQ2R0IPWgKFiCj" >}}を用意しています。また、{{< link-download name="夏学のロゴ" src="https://drive.google.com/uc?export=download&id=1A-urydv6NHkl7Rnr5t8I4AO_hP9yrGXC" >}}も用意しておりますので、ご自由にお使いください。
+
+    - title: <i class="bx bx-fw bx-md bx-id-card"></i>個人情報の取り扱いについて
+      content: |
+        - 記載していただいた個人情報は、夏学における各種お問い合わせの対応、お知らせ等、業務を円滑に行うために利用いたします。
+        - ご本人の同意がなければ、第三者に個人情報を提供することはありません。また取得した個人情報は、紛失や漏洩等が発生しないよう積極的な安全対策を実施いたします。
+
+    - title: <i class="bx bx-fw bx-md bxs-info-circle"></i>その他
+      content: |
+        - 申込みをされた方は事前に{{< link-external name="<i class='bx bxl-discord-alt'></i>Discordサーバー" link="https://discord.gg/BTaVFm7F3k" >}}に**必ず**ご参加いただき、**表示名を本名**にしていただくようお願いいたします。
+        - 夏学の様子を映像・写真撮影させていただきます。撮影した映像や写真は、今後のイベント開催時、ホームページ、SNS、イベントの告知等に使用させていただきます。
 ---
 
 <!-- 中止連絡などのアラートを表示したい場合は以下をアンコメント -->
