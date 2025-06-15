@@ -1,0 +1,129 @@
+# 講師画像は最低500x500pxの解像度であること
+- name: 赤塚 洋
+  englishName: Hiroshi Akatsuka
+  position: 准教授
+  affiliation: 東京科学大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczMvlVwj33y3bfVXERozFZbL9BDsEc_4o7r69okJKkHVzMV2nCfMWABn1BNyivQuisxcX0noDXca13hdrfDiItwPV_tKXiCwy3I3yz-TQd4KUIvtlyg=w2400
+  description: |
+    京都大学大学院工学研究科修士課程修了。日本電気 (株) 勤務を経て東京工業大学 原子炉工学研究所 勤務。1995年 論文提出により東京工業大学から博士(工学)。2024年の組織改編を経て、現在に至る。<br>
+    現在、主に低温プラズマの発光分光計測、非平衡プラズマの原子分子過程の研究を行い、半導体プロセスや大気圧プラズマの発光分光計測手法開発に努力している。並びに、情報工学・統計力学に基づき、非平衡状態の「温度」の定義につき検討している。<br>
+
+  links:
+    - type: general
+      url: https://www.webofscience.com/wos/author/record/G-3776-2014
+    - type: personal
+      url: https://akatsuka.zc.iir.titech.ac.jp/
+  timeslot: 0
+
+- name: 池添 竜也
+  englishName: Ryuya Ikezoe
+  position: 准教授
+  affiliation: 九州大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczNhk3lL8pcwuYM1Wf2LwGtBy_A82ic-pWcMkNRUshpDdl2ipd-Mha7FEAmlrrKme1-n0NEj3RnqZJP57Pv9FT05-vz_XS0ubTXcm9jliHIz-XJYEQM=w2400
+  description: |
+    <br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/7000008174
+    - type: personal
+      url: https://www.triam.kyushu-u.ac.jp/ideiken/index.html
+  timeslot: 0
+
+- name: 今田 晋亮
+  englishName: Shinsuke Imada
+  position: 教授
+  affiliation: 東京大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczPbGUpSZ4AJh58ufl4eOqGFtVR0fFDbeWZx7mgldi0e6vNjvM4fAAf1zo6infybdsHFBcA0DD7luMAM2PniR14mXMaatgx0emA5Yxi9E4pciry25XU=w2400
+  description: |
+    <br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/read0138421
+    - type: personal
+      url: https://www-space.eps.s.u-tokyo.ac.jp/~imada/
+  timeslot: 0
+
+- name: 浦野 創
+  englishName: Hajime Urano
+  position: 上席研究員
+  affiliation: QST
+  image: https://lh3.googleusercontent.com/pw/AP1GczOfkU7n6L4kKuhpm3in3kiMC2VV0ZxI6rkaYltDaDYEbLw7r03FKF5RROjP_cO8aFFqd4ZZmLm1PMN1yyM5buW0lA1dAyEF3xNaNxK5iL59wjXgZmg=w2400
+  description: |
+    <br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/UranoHajime
+  timeslot: 0
+
+- name: 大宅 諒
+  englishName: Makoto Oya
+  position: 助教
+  affiliation: 九州大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczPYKwwruR4-xkDZ337NT1TgseYJHws4UYE_hmIUZjzo4lnDjlztCijo-O1FeiQVxUh-fuJuUiLt3y4gZbE9Iv0nLLt86JAxsPc0sE3uJVEXpCx2gj0=w2400
+  description: |
+    <br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/makoto_oya
+  timeslot: 0
+
+- name: 笠田 竜太
+  englishName: Ryuta Kasada
+  position: 教授
+  affiliation: 東北大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczMbrYQhnV-NwQjXNtVTBWDvfz6cs2E8hXmcA4STQSe_EseHOZeQZbUkhbvEMbEdrmG8uDEMUgT6LPigHEVoXW7G2pyMRRlfcr1J_-T1984xlqum-Ac=w2400
+  description: |
+    東北大学において学士（工学）、修士（工学）、京都大学において博士（エネルギー工学）。京都大学エネルギー理工学研究所助教、准教授を経て2017年より現職。 核融合炉・原子力材料の照射効果、酸化物分散強化超合金等の耐照射性材料開発に学生時代より携わる。文科省において核融合原型炉のロードマップやアクションプランの策定に従事。北海道大学科学技術コミュニケーター養成講座（CoSTEP）を修了し、フュージョンエネルギーや材料科学に関するサイエンスコミュニケーションの活動や研究も進めている。サイエンスライターとしては「核融合エネルギーのきほん」「機動戦士ガンダム 宇宙世紀vs.現代科学」を共同執筆。東北大学総長特別補佐（広報）としても活動。<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/gundariumalloy-rk
+    - type: personal
+      url: https://web.tohoku.ac.jp/imr-numat/
+  timeslot: 0
+
+- name: 金 吏良
+  englishName: Humiyoshi Kin
+  position: 助教
+  affiliation: 京都大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczPfiQFMQAyjQOf8BRrLMHYusRyMmW3yh_FGd3KlIxUchMvs6wGa_bOLmlS1wsWrnlvolR5j3twh6Abz38rc0TxaZcS79xKc3xEGYNUuHlkvtL1oNhM=w2400
+  description: |
+    京都大学エネルギー理工学研究所 助教。<br>
+    九州大学大学院総合理工学府先端エネルギー理工学専攻にて博士（理学）を取得。修了後、量子科学技術研究開発機構にて博士研究員を務め、2022年より現職。現在はヘリオトロンJにて、マイクロ波を用いた乱流輸送の研究に従事している。 <br>
+
+  links:
+    - type: general
+      url: https://kdb.iimc.kyoto-u.ac.jp/profile/ja.6a0fd38e73f0cf41.html#display-items_basic-information
+  timeslot: 0
+
+- name: 高橋 宏幸
+  englishName: Hiroyuki Takahashi
+  position: 講師
+  affiliation: 東北大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczMJ4u1PKjUxlVjo1aUN77CCtvmTnJU3tFtLr5WFdxAuPq7fzWgD9jjrZe6CXn0RxDhl0UuF2im7zVFY9YiWqxQ5pfz1uZPy4YEGy2Tw4cDC7iFlbHI=w2400
+  description: |
+    <br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/7000014703?lang=ja
+  timeslot: 0
+
+- name: 西浦 正樹
+  englishName: Masaki Nishiura
+  position: 准教授
+  affiliation: NIFS
+  image: https://lh3.googleusercontent.com/pw/AP1GczODxssD59ONuZT58nSmmuRiL15_0Q36_tI8yTlUT21fCIsbyOHC29uS64BFchdt_iQcUkGQr2YCYgG35Xoj37oDbuN8H5XK62cQvqhT6p6IdNWWnE8=w2400
+  description: |
+    <br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/nishiura.masaki
+    - type: personal
+      url: https://www.ppl.k.u-tokyo.ac.jp/nishiura/
+  timeslot: 0

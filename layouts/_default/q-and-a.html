@@ -1,0 +1,57 @@
+{{ define "title" }}
+  {{ .Title }}&nbsp;|&nbsp;{{ .Site.Params.abbreviation }}
+{{ end }}
+
+{{ define "main" }}
+  <section class="position-relative pt-5">
+    <!-- Content -->
+    <div class="container position-relative pt-5 pb-4 pb-lg-5">
+      <!-- Breadcrumb -->
+      {{- partial "site-breadcrumb.html" . -}}
+
+
+      <div class="container">
+        <h1 class="text-center text-sm-start" id="faq_title">FAQ</h1>
+        <p class="text-center text-sm-start">
+          よく寄せられる質問と回答をまとめました。
+          <br />
+          ここにない質問は<a href="/contact">お問い合わせ</a>からご連絡ください。
+        </p>
+
+        <div class="accordion" id="accordionQA">
+          {{- range $index, $faq := .Params.faq -}}
+            <div
+              class="accordion-item accordion-item border-0 rounded-3 shadow-sm mb-3"
+              data-aos="fade-up"
+              data-aos-delay="{{ add (mul $index 100) 400 }}"
+              data-aos-anchor="#faq_title"
+            >
+              <h2 class="accordion-header" id="heading{{ $index }}">
+                <button
+                  class="accordion-button shadow-none rounded-3 collapsed "
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse{{ $index }}"
+                  aria-expanded="false"
+                  aria-controls="collapse{{ $index }}"
+                >
+                  {{ $faq.question | safeHTML }}
+                </button>
+              </h2>
+              <div
+                class="accordion-collapse collapse"
+                id="collapse{{ $index }}"
+                aria-labelledby="heading{{ $index }}"
+                data-bs-parent="#accordionQA"
+              >
+                <div class="accordion-body pt-0">
+                  {{ $faq.answer | markdownify }}
+                </div>
+              </div>
+            </div>
+          {{- end -}}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

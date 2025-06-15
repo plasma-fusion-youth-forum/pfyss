@@ -56,6 +56,10 @@ params:
   # Scheduleの設定 - Google App Scriptを利用してGoogle Calendarから取得する用のWebAPI URL
   apiURL: https://script.google.com/macros/s/AKfycby7vMNpktGgif6E691IuXeRct9EcQPwIKwCP3xyK9sXs439G6UXo4u7EfbiY2Zx6nX5Tg/exec
 
+  form:
+    # 参加登録フォームのURL
+    registration: https://docs.google.com/forms/d/e/1FAIpQLSdFDedriiViCc1kuFJbdd638mbiy7DM8PbKNmsgUbNiIhR66Q/viewform?usp=sf_link
+
 # Markdown中でのHTMLタグを許可する
 markup:
   goldmark:
