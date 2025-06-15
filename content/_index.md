@@ -39,7 +39,7 @@ carousels:
 
 ### 協賛リスト ###
 sponsors:
-  enable: false
+  enable: true
   default: |
     <h2 class="text-center text-white">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
     <p class="text-center text-white">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
@@ -142,7 +142,7 @@ venue_cards:
 application:
   fee: ￥23,000 # 参加費
   capacity: 50 # 募集人数 (募集時は数値のみ指定可能)
-  startline: 2025-06-11 # 参加申し込み募集開始日
+  startline: 2025-06-16 # 参加申し込み募集開始日
   deadline: 2025-07-11 # 参加申し込み締め切り日
   note: # 留意事項
     - title: <i class="bx bx-fw bx-md bxs-user-x"></i>キャンセルポリシー # 注意タイトル (html形式)
