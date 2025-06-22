@@ -13,7 +13,51 @@
       url: https://www.webofscience.com/wos/author/record/G-3776-2014
     - type: personal
       url: https://akatsuka.zc.iir.titech.ac.jp/
-  timeslot: 0
+  timeslot: 3
+
+- name: 浦野 創
+  englishName: Hajime Urano
+  position: 次長
+  affiliation: QST
+  image: https://lh3.googleusercontent.com/pw/AP1GczOfkU7n6L4kKuhpm3in3kiMC2VV0ZxI6rkaYltDaDYEbLw7r03FKF5RROjP_cO8aFFqd4ZZmLm1PMN1yyM5buW0lA1dAyEF3xNaNxK5iL59wjXgZmg=w2400
+  description: |
+    量子科学技術研究開発機構 先進プラズマ研究部 次長。<br>
+    北海道大学大学院工学研究科博士課程修了。独国 Max Planck研究所、日本原子力研究開発機構を経て現職。専門は周辺プラズマ物理。2017年から2020年までITPA国際トカマク物理活動周辺ペデスタル物理トピカルグループ議長。現在は、JT-60SA実験を円滑かつ安全に運転するための環境整備、JT-60SAの運転に携わる全設備・グループと連携のための調整業務を担う。JT-60SA実験チームリーダーを務め、実験運転・研究計画全体の立案・策定を担う。<br>
+    工学博士。<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/UranoHajime
+  timeslot: 4
+
+- name: 西浦 正樹
+  englishName: Masaki Nishiura
+  position: 准教授
+  affiliation: NIFS
+  image: https://lh3.googleusercontent.com/pw/AP1GczODxssD59ONuZT58nSmmuRiL15_0Q36_tI8yTlUT21fCIsbyOHC29uS64BFchdt_iQcUkGQr2YCYgG35Xoj37oDbuN8H5XK62cQvqhT6p6IdNWWnE8=w2400
+  description: |
+    核融合科学研究所　研究部　位相空間乱流ユニット　准教授，及び東京大学大学院新領域創成科学研究科　客員准教授．<br>
+    核融合プラズマ中の高エネルギーイオン計測器開発と熱・粒子輸送物理についての研究や，磁気圏プラズマを実験室で再現し，自己組織化や渦構造に着目した研究を進めてきました．最近は，プラズマ中の速度空間中において熱化・非熱化の粒子分布が相互作用する現象について，メカニズムの解明に取り組んでいます．<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/nishiura.masaki
+    - type: personal
+      url: https://www.ppl.k.u-tokyo.ac.jp/nishiura/
+  timeslot: 9
+
+- name: 大宅 諒
+  englishName: Makoto Oya
+  position: 助教
+  affiliation: 九州大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczPYKwwruR4-xkDZ337NT1TgseYJHws4UYE_hmIUZjzo4lnDjlztCijo-O1FeiQVxUh-fuJuUiLt3y4gZbE9Iv0nLLt86JAxsPc0sE3uJVEXpCx2gj0=w2400
+  description: |
+    <br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/makoto_oya
+  timeslot: 10
 
 - name: 池添 竜也
   englishName: Ryuya Ikezoe
@@ -28,7 +72,7 @@
       url: https://researchmap.jp/7000008174
     - type: personal
       url: https://www.triam.kyushu-u.ac.jp/ideiken/index.html
-  timeslot: 0
+  timeslot: 11
 
 - name: 今田 晋亮
   englishName: Shinsuke Imada
@@ -43,33 +87,34 @@
       url: https://researchmap.jp/read0138421
     - type: personal
       url: https://www-space.eps.s.u-tokyo.ac.jp/~imada/
-  timeslot: 0
+  timeslot: 19
 
-- name: 浦野 創
-  englishName: Hajime Urano
-  position: 上席研究員
-  affiliation: QST
-  image: https://lh3.googleusercontent.com/pw/AP1GczOfkU7n6L4kKuhpm3in3kiMC2VV0ZxI6rkaYltDaDYEbLw7r03FKF5RROjP_cO8aFFqd4ZZmLm1PMN1yyM5buW0lA1dAyEF3xNaNxK5iL59wjXgZmg=w2400
+- name: 高橋 宏幸
+  englishName: Hiroyuki Takahashi
+  position: 講師
+  affiliation: 東北大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczMJ4u1PKjUxlVjo1aUN77CCtvmTnJU3tFtLr5WFdxAuPq7fzWgD9jjrZe6CXn0RxDhl0UuF2im7zVFY9YiWqxQ5pfz1uZPy4YEGy2Tw4cDC7iFlbHI=w2400
   description: |
     <br>
 
   links:
     - type: general
-      url: https://researchmap.jp/UranoHajime
-  timeslot: 0
+      url: https://researchmap.jp/7000014703?lang=ja
+  timeslot: 27
 
-- name: 大宅 諒
-  englishName: Makoto Oya
+- name: 金 吏良
+  englishName: Humiyoshi Kin
   position: 助教
-  affiliation: 九州大学
-  image: https://lh3.googleusercontent.com/pw/AP1GczPYKwwruR4-xkDZ337NT1TgseYJHws4UYE_hmIUZjzo4lnDjlztCijo-O1FeiQVxUh-fuJuUiLt3y4gZbE9Iv0nLLt86JAxsPc0sE3uJVEXpCx2gj0=w2400
+  affiliation: 京都大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczPfiQFMQAyjQOf8BRrLMHYusRyMmW3yh_FGd3KlIxUchMvs6wGa_bOLmlS1wsWrnlvolR5j3twh6Abz38rc0TxaZcS79xKc3xEGYNUuHlkvtL1oNhM=w2400
   description: |
-    <br>
+    京都大学エネルギー理工学研究所 助教。<br>
+    九州大学大学院総合理工学府先端エネルギー理工学専攻にて博士（理学）を取得。修了後、量子科学技術研究開発機構にて博士研究員を務め、2022年より現職。現在はヘリオトロンJにて、マイクロ波を用いた乱流輸送の研究に従事している。 <br>
 
   links:
     - type: general
-      url: https://researchmap.jp/makoto_oya
-  timeslot: 0
+      url: https://kdb.iimc.kyoto-u.ac.jp/profile/ja.6a0fd38e73f0cf41.html#display-items_basic-information
+  timeslot: 28
 
 - name: 笠田 竜太
   englishName: Ryuta Kasada
@@ -84,46 +129,4 @@
       url: https://researchmap.jp/gundariumalloy-rk
     - type: personal
       url: https://web.tohoku.ac.jp/imr-numat/
-  timeslot: 0
-
-- name: 金 吏良
-  englishName: Humiyoshi Kin
-  position: 助教
-  affiliation: 京都大学
-  image: https://lh3.googleusercontent.com/pw/AP1GczPfiQFMQAyjQOf8BRrLMHYusRyMmW3yh_FGd3KlIxUchMvs6wGa_bOLmlS1wsWrnlvolR5j3twh6Abz38rc0TxaZcS79xKc3xEGYNUuHlkvtL1oNhM=w2400
-  description: |
-    京都大学エネルギー理工学研究所 助教。<br>
-    九州大学大学院総合理工学府先端エネルギー理工学専攻にて博士（理学）を取得。修了後、量子科学技術研究開発機構にて博士研究員を務め、2022年より現職。現在はヘリオトロンJにて、マイクロ波を用いた乱流輸送の研究に従事している。 <br>
-
-  links:
-    - type: general
-      url: https://kdb.iimc.kyoto-u.ac.jp/profile/ja.6a0fd38e73f0cf41.html#display-items_basic-information
-  timeslot: 0
-
-- name: 高橋 宏幸
-  englishName: Hiroyuki Takahashi
-  position: 講師
-  affiliation: 東北大学
-  image: https://lh3.googleusercontent.com/pw/AP1GczMJ4u1PKjUxlVjo1aUN77CCtvmTnJU3tFtLr5WFdxAuPq7fzWgD9jjrZe6CXn0RxDhl0UuF2im7zVFY9YiWqxQ5pfz1uZPy4YEGy2Tw4cDC7iFlbHI=w2400
-  description: |
-    <br>
-
-  links:
-    - type: general
-      url: https://researchmap.jp/7000014703?lang=ja
-  timeslot: 0
-
-- name: 西浦 正樹
-  englishName: Masaki Nishiura
-  position: 准教授
-  affiliation: NIFS
-  image: https://lh3.googleusercontent.com/pw/AP1GczODxssD59ONuZT58nSmmuRiL15_0Q36_tI8yTlUT21fCIsbyOHC29uS64BFchdt_iQcUkGQr2YCYgG35Xoj37oDbuN8H5XK62cQvqhT6p6IdNWWnE8=w2400
-  description: |
-    <br>
-
-  links:
-    - type: general
-      url: https://researchmap.jp/nishiura.masaki
-    - type: personal
-      url: https://www.ppl.k.u-tokyo.ac.jp/nishiura/
-  timeslot: 0
+  timeslot: 29
