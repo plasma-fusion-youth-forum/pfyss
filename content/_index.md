@@ -101,9 +101,9 @@ sponsors:
 
 ### スケジュールの表示 ###
 schedule:
-  enable: false
+  enable: true
   # GoogleカレンダーのPFYSSカレンダー共有リンクURL
-  url: https://calendar.google.com/calendar/u/2?cid=NjY4YWQyOWM4MGNlMmQ4ZThkZTUzNWZiMjExYmNlNGEwMGQzN2E1MzEzMDU5MzUwM2E3MDE0NWFhY2U1ZDQwN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t
+  url: https://calendar.google.com/calendar/u/0?cid=ODFlZmE4ZWRiMGMwNjEyOGI1NGRhMzY2Mjg4YmM3Njk1NmMwMmQ1MzA4N2I3NjhkYmYxYjJlZTEwNjgwMjQzZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
 
 ### Venue Cards ###
 venue_cards:
