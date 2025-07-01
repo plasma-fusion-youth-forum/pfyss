@@ -85,7 +85,7 @@ sponsors:
 
     - name: NTT R&D # 7月以降に新ロゴに変更
       link: https://www.rd.ntt/
-      logo: /img/brands/NTT.png
+      logo: /img/brands/NTT_new.png
 
     - name: 助川電気工業
       link: https://sukegawadenki.co.jp/
