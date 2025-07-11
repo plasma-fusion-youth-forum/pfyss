@@ -131,3 +131,160 @@
     - type: personal
       url: https://web.tohoku.ac.jp/imr-numat/
   timeslot: 29
+
+#協賛企業の講演者
+#- name:
+#  englishName:
+#  position:
+#  affiliation:
+#  image:
+#  description: |
+#    <br><br>
+#    <span class="badge bg-primary text-light">Special lecture</span>
+#    <h5></h5>
+#  timeslot:
+
+# 8/27 前半
+- name: 西村 美紀
+  englishName: Miki Nishimura
+  position:
+  affiliation: 京都フュージョニアリング
+  image: https://lh3.googleusercontent.com/pw/AP1GczORqw6tCSpoutPm7weKsKNpuzipLzsFHNc585XHHLaJe1iVTeEy3dN1nXY9UM1LcjtAaBGkGJ484m4m53azoAvN8_YxdXduxzarclhAIcfgAUo-OX4=w2400
+  description: |
+    京都フュージョニアリング Business Development and Operations Division / FAST Preparation Office<br><br>
+    講義タイトル<br>
+    【アカデミアで働く。スタートアップで働く。　京都フュージョニアリングの紹介も交えて】
+  timeslot: 13
+
+- name: 浜田 竜巳
+  englishName: Tatsumi Hamada
+  position:
+  affiliation: 株式会社アライドマテリアル
+  image: https://lh3.googleusercontent.com/pw/AP1GczNvhwlb94oqZFV_C5uIu7tQhNNWpUywII_9yoHBARHmtCa86NW6HtYUl6aU8Wn7e7p5eGCQ73f_cc-djFj0L-uWd-1ApC4idawgO2bYArVYObKBuA4=w2400
+  description: |
+    講義タイトル<br>
+    【アライドマテリアルと核融合への取り組み】
+  timeslot: 13
+
+- name: 梶山 修
+  englishName: Shu Kajiyama
+  position:
+  affiliation: 伯東株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczMXyYl1BcBxn6PyhxUuI991GeO57zl_SnF8rsFsZIu5RoE0GJchsCZ-FW_RIKLIk3GfbG-8sat_nnDVlCDAAs3RRevoSVLd0rEEOaj9cacKkRfXjuo=w2400
+  description: |
+    システムイノベーションカンパニー バキューム・ファブソリューション営業部 R&D営業グループ グループ長<br><br>
+    講義タイトル<br>
+    【ファイファーバキューム社真空機器の紹介/伯東会社紹介】
+  timeslot: 13
+
+- name: 大木 美佑佳
+  englishName: Miyuka Oki
+  position:
+  affiliation: 伯東株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczPxiVgWWrGzSMB-7A5NnT0uV74_PfUDGC0VHTtRfezsZX4tqSEPyl2GkoYvP9_XObQzEf6ZurRvpqXzeeDAiNreH-z5KNJrekk-jUVmoXaLQSnOueE=w2400
+  description: |
+    ESG経営推進ユニットHRソリューション部HR開発グループ<br><br>
+    講義タイトル<br>
+    【ファイファーバキューム社真空機器の紹介/伯東会社紹介】
+  timeslot: 13
+
+- name: 安田 幸平
+  englishName: Kohei Yasuda
+  position:
+  affiliation: 東芝エネルギーシステムズ
+  image: https://lh3.googleusercontent.com/pw/AP1GczPBPxjBEqj9sZ65svaa41B2lA_oefIGgDBlGX7TwFWAckS-NRAmNiqYWdzURKizT9vmpWSvUoXsxnHK38KYH6jaL0r-0_2xOhr8Zx3O_4a_1qi3S7U=w2400
+  description: |
+    東芝エネルギーシステムズ 原子力システム設計部<br><br>
+    講義タイトル<br>
+    【東芝の核融合開発における実績と貢献】
+  timeslot: 13
+
+# 8/27 後半
+- name: 野尻 悠太
+  englishName: Yuta Nojiri
+  position:
+  affiliation: 株式会社LINEAイノベーション
+  image: https://lh3.googleusercontent.com/pw/AP1GczNu2eUZuFPxEjWASTAZCsc9HKecOvXDUwdaxKZP3kJZ-9CB70AuYQGotIneLWkPVxgyr42ULkIjyCqRhm4y320E-vkfMzO3lZY9_Z610hP-oEE7Q1k=w2400
+  description: |
+    株式会社LINEAイノベーション 代表取締役CEO<br><br>
+    講義タイトル<br>
+    【LINEAイノベーションによる革新的核融合炉への挑戦】
+  timeslot: 14
+
+- name: 吉村 勇紀
+  englishName: Yuki Yoshimura
+  position:
+  affiliation: 株式会社EX-Fusion
+  image: https://lh3.googleusercontent.com/pw/AP1GczM-6iE5vX0tH7bB8H306NJIzBeEa3YtKG4MNvYkmK48Jr98XNxDnvgBaFJBdKhffZP_LTwCXc0OLgcz3XJcY-l_Q8phmX1f-ldJ68pu7KSEyWasFRE=w2400
+  description: |
+    株式会社EX-Fusion 技術開発部<br><br>
+    講義タイトル<br>
+    【レーザー核融合商用炉実現に向けたEX-Fusionの取り組み】
+  timeslot: 14
+
+- name: 馬場 貴志
+  englishName: Takashi Baba
+  position:
+  affiliation: 三菱重工業
+  image: https://lh3.googleusercontent.com/pw/AP1GczPz4224jTCnf2FhPCrWlHoXNr3uPJnSCOdbErjl2JFgPrE_0fDx29PX0aimJyV4uedV7mXC0k7Cj3tA8J7HTM-BxUjDiB_n6m3GeKV5Pt34ZqzQKVU=w2400
+  description: |
+    三菱重工業 原子力セグメント 核融合推進室<br><br>
+    講義タイトル<br>
+    【三菱重工　核融合開発への取組】
+  timeslot: 14
+
+- name: 田辺 良太
+  englishName: Ryota Tanabe
+  position:
+  affiliation: 株式会社日立製作所
+  image: https://lh3.googleusercontent.com/pw/AP1GczNmQwMK5Jt6nUqRkK916LPZi2jM8hX75Q6KUx5uuL295bzn2CYlT_xp1JkvAyB5L9cPRUnOr1HbVtXyIh7YX1BSa3pLOq03E6k1BWvvdXXwpxM2IuY=w2400
+  description: |
+    (株)日立製作所 原子力ビジネスユニット 原子力事業統括本部 次世代炉推進本部 核融合・加速器推進センタ プロジェクト管理グループ<br><br>
+    講義タイトル<br>
+    【(株)日立製作所における核融合開発への貢献～核融合実現を支えるモノづくり～】
+  timeslot: 14
+
+- name: 足立 迅
+  englishName: Shun Adachi
+  position:
+  affiliation: 株式会社日立製作所
+  image: https://lh3.googleusercontent.com/pw/AP1GczPQYWmN5UH1FGbgWsyQJcWZdhonJGKUPB5v0IxFJHzjJc0fhaAsNOm2_ADAYQT0INYCQVkmwu3Okfuv8AhUcOlxRYWVUzcfYGY6VFxYnlbCkjClAHQ=w2400
+  description: |
+    (株)日立製作所 原子力ビジネスユニット 原子力事業統括本部 次世代炉推進本部 核融合・加速器推進センタ NBI設計グループ<br><br>
+    講義タイトル<br>
+    【(株)日立製作所における核融合開発への貢献～核融合実現を支えるモノづくり～】
+  timeslot: 14
+
+# 8/28
+- name: 田口 昂哉
+  englishName: Takaya Taguchi
+  position:
+  affiliation: 株式会社Helical Fusion
+  image: https://lh3.googleusercontent.com/pw/AP1GczP09NGEJ-5WtpfBAhTFWFu_HqMQnnER8LGdOoPpDTIniTN5ZDRhtXfcP58zbPemPvI6FyN8PgVs0oPPEQD0b_JUQPeHMOc_RtPHKbGFaru4L9eWpls=w2400
+  description: |
+    株式会社Helical Fusion 代表取締役CEO<br><br>
+    講義タイトル<br>
+    【オールジャパンで実現する世界初の定常核融合炉】
+  timeslot: 20
+
+- name: Amrita Kaur Ghag
+  englishName:
+  position:
+  affiliation: 孫正義育英財団
+  image: https://lh3.googleusercontent.com/pw/AP1GczNIzjIHRis9AoDLO8DRg9COGIhlJ7KdHYIwbxIUKWKGtwy9K5sO_f1sQPJuYWYV_0jwD6mQNoPFvoirWdWGmwHikJbTQTu03naMWkPFnaM0qg2tkHM=w2400
+  description: |
+    孫正義育英財団8期生<br><br>
+    講義タイトル<br>
+    【オールジャパンで実現する世界初の定常核融合炉】
+  timeslot: 20
+
+- name: 岩下 秀徳
+  englishName: Hidenori Iwashita
+  position:
+  affiliation: 日本電信電話株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczPlWQLFG5Ca0RoEDLmdGFz0VNiItNvYf0_JXGweaxHwWrQgvbPZZPuaLthc3Iyi-cTTMmSftdQwE8ErXEuvm4ZOgtefG82DVA2_GWblRzphJ7ybeFQ=w2400
+  description: |
+    日本電信電話株式会社 宇宙環境エネルギー研究所<br><br>
+    講義タイトル<br>
+    【NTT R&Dの研究紹介】
+  timeslot: 20
