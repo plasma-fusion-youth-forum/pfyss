@@ -148,11 +148,11 @@
                   <button type="button" class="btn btn-lg mb-3 mb-sm-0 me-sm-3" disabled>
                     {{ printf "%d" $startline.Month }}月{{ printf "%d" $startline.Day }}日申し込み開始
                   </button>
-                {{ else if gt now $endDate }}
-                  {{/* 夏学終了後 */}}
+                {{ else if gt now $deadline }}
+                  {{/* 申し込み終了後 */}}
                   <button type="button" class="btn btn-lg mb-3 mb-sm-0 me-sm-3" disabled>募集終了</button>
                 {{ else }}
-                  {{/* 申込開始後から夏学終わりの間まで */}}
+                  {{/* 申込開始後から申し込み締め切りまで */}}
                   <a
                     href="{{ .Site.Params.form.registration | safeURL }}"
                     target="_blank"
