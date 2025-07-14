@@ -225,7 +225,7 @@
 - name: 馬場 貴志
   englishName: Takashi Baba
   position:
-  affiliation: 三菱重工業
+  affiliation: 三菱重工業株式会社
   image: https://lh3.googleusercontent.com/pw/AP1GczPz4224jTCnf2FhPCrWlHoXNr3uPJnSCOdbErjl2JFgPrE_0fDx29PX0aimJyV4uedV7mXC0k7Cj3tA8J7HTM-BxUjDiB_n6m3GeKV5Pt34ZqzQKVU=w2400
   description: |
     三菱重工業 原子力セグメント 核融合推進室<br><br>
@@ -281,10 +281,10 @@
 - name: 岩下 秀徳
   englishName: Hidenori Iwashita
   position:
-  affiliation: 日本電信電話株式会社
+  affiliation: NTT株式会社
   image: https://lh3.googleusercontent.com/pw/AP1GczPlWQLFG5Ca0RoEDLmdGFz0VNiItNvYf0_JXGweaxHwWrQgvbPZZPuaLthc3Iyi-cTTMmSftdQwE8ErXEuvm4ZOgtefG82DVA2_GWblRzphJ7ybeFQ=w2400
   description: |
-    日本電信電話株式会社 宇宙環境エネルギー研究所<br><br>
+    NTT株式会社 宇宙環境エネルギー研究所<br><br>
     講義タイトル<br>
     【NTT R&Dの研究紹介】
   timeslot: 20
