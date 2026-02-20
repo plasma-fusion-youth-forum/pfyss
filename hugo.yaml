@@ -65,3 +65,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+build:
+  sass:
+    useDartSass: true
+    dartSassBinary: "C:/dart-sass-1.97.3/sass.exe"

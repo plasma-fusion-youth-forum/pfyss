@@ -20,3 +20,8 @@
 # 開発者向け情報
 
 本ホームページは、[Hugo](https://gohugo.io/)という静的サイトジェネレータを使用しています。また、[GitHub Pages](https://pages.github.com/)を利用してWebホスティングしています。詳しくはPFYSSの[wikiページ](https://github.com/plasma-fusion-youth-forum/pfyss/wiki)を参照してください。
+
+## Styles 2026/02/09
+
+SCSS is compiled using npm (sass).
+Hugo Pipes (toCSS) is intentionally disabled for cross-platform stability.

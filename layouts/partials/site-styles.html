@@ -9,10 +9,11 @@
   "enableSourceMap" (not hugo.IsProduction)
   "includePaths" (slice "node_modules")
 }}
-{{ with resources.Get "scss/theme.scss" | toCSS $options | minify | fingerprint }}
-  <link rel="stylesheet" media="screen" href="{{ .RelPermalink }}" />
-{{ end }}
 
+{{/* with resources.Get "scss/theme.scss" | toCSS $options | minify | fingerprint }}
+  <link rel="stylesheet" media="screen" href="{{ .RelPermalink }}" />
+{{ end */}}
+<link rel="stylesheet" media="screen" href="/css/theme.css" />
 
 <!-- Page loading styles -->
 <style>
