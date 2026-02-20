@@ -1,5 +1,5 @@
 ---
-date: 2025-01-01
+date: 2026-01-01
 draft: false
 kind: { page, home }
 layout: home
@@ -39,7 +39,7 @@ carousels:
 
 ### 協賛リスト ###
 sponsors:
-  enable: true
+  enable: false
   default: |
     <h2 class="text-center text-white">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
     <p class="text-center text-white">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
@@ -101,13 +101,13 @@ sponsors:
 
 ### スケジュールの表示 ###
 schedule:
-  enable: true
+  enable: false
   # GoogleカレンダーのPFYSSカレンダー共有リンクURL
   url: https://calendar.google.com/calendar/u/0?cid=ODFlZmE4ZWRiMGMwNjEyOGI1NGRhMzY2Mjg4YmM3Njk1NmMwMmQ1MzA4N2I3NjhkYmYxYjJlZTEwNjgwMjQzZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
 
 ### Venue Cards ###
 venue_cards:
-  enable: true
+  enable: false
   list:
     - name: エスポールみやぎ
       badges: # badgeの種類はここから選ぶ - https://silicon.createx.studio/components/badges.html
