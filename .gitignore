@@ -57,7 +57,7 @@ node_modules
 
 # ignore static/js/* & /css directory (should put .js/.css files into assets/)
 /static/js
-/static/css
+# /static/css
 
 # ignore eslint cache
 .eslintcache
