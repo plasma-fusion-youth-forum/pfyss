@@ -52,6 +52,8 @@ jobs:
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Copy vendor's scripts
         run: npm run vendor
+      - name: Build SCSS
+        run: npm run scss
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
