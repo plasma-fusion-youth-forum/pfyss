@@ -64,3 +64,7 @@ node_modules
 
 # ignore jsconfig.json
 assets/jsconfig.json
+
+# pixi environments
+.pixi/*
+!.pixi/config.toml
