@@ -3,5 +3,14 @@
   "editor.indentSize": "tabSize",
   "prettier.configPath": "package.json",
   "prettier.requireConfig": true,
-  "npm.exclude": ["**/static/vendor/**", "**/public/vendor/**"]
+  "npm.exclude": ["**/static/vendor/**", "**/public/vendor/**"],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
