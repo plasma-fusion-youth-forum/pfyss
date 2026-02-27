@@ -43,15 +43,11 @@ cmd = [
   "--baseURL",
   "{{ baseURL }}",
 ]
-description = "👷 Build the project for production"
+description = "🏗️ Build the project for production"
 
 [tasks.get-start]
 depends-on = ["init", "dev"]
 description = "🚀 Get started with the development environment"
-
-[tasks.deploy]
-depends-on = ["init", "build"]
-description = "🚀 Deploy the site to GitHub Pages"
 
 [dependencies]
 nodejs = "*"
