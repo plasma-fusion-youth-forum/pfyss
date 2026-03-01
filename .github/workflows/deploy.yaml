@@ -1,8 +1,7 @@
-# Hugo サイトをビルドして GitHub Pages にデプロイするためのサンプル ワークフロー
-name: Deploy Hugo site to Pages
+name: 🚀 Deploy
 
 on:
-  # デフォルト ブランチをターゲットとしたプッシュで実行されます
+  # main ブランチにコードがプッシュされたときにワークフローをトリガーします
   push:
     branches:
       - main
