@@ -9,7 +9,7 @@ import { Tooltip } from "bootstrap";
 export default (() => {
   const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
 
-  /* eslint-disable no-unused-vars, no-undef */
+  /* eslint-disable no-unused-vars */
   const tooltipList = tooltipTriggerList.map((tooltipTriggerEl) => new Tooltip(tooltipTriggerEl, { trigger: "hover" }));
-  /* eslint-enable no-unused-vars, no-undef */
+  /* eslint-enable no-unused-vars */
 })();
