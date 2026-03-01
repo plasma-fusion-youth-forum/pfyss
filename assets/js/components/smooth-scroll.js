@@ -6,7 +6,7 @@
 import SmoothScroll from "smooth-scroll";
 
 export default (() => {
-  /* eslint-disable no-unused-vars, no-undef */
+  /* eslint-disable no-unused-vars */
   const selector = "[data-scroll]",
     fixedHeader = "[data-scroll-header]",
     scroll = new SmoothScroll(selector, {
@@ -18,5 +18,5 @@ export default (() => {
       header: fixedHeader,
       updateURL: false,
     });
-  /* eslint-enable no-unused-vars, no-undef */
+  /* eslint-enable no-unused-vars */
 })();

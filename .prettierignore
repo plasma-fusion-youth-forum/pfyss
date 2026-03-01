@@ -1,3 +1,4 @@
 /node_modules/**
 /public/**
 /layouts/404.html
+pixi.lock

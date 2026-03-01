@@ -1,0 +1,63 @@
+name: 🚀 Deploy
+
+on:
+  # main ブランチにコードがプッシュされたときにワークフローをトリガーします
+  push:
+    branches:
+      - main
+
+  # 「Action」タブからこのワークフローを手動で実行できます
+  workflow_dispatch:
+
+# GITHUB_TOKEN のパーミッションを設定し、GitHub Pages へのデプロイを許可します
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同時デプロイメントは 1 つだけ許可し、進行中の実行と最後にキューに入れられた実行の間でキューに入れられた実行をスキップします。
+# しかし、本番環境でのデプロイを完了させたいので、実行中のデプロイをキャンセルしないでください。
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# デフォルトは bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # ビルドジョブ
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: 🟨 Set up Pixi
+        uses: prefix-dev/setup-pixi@v0.9.4
+      - name: 🔧 Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: 🏗️ Build site pages
+        run: |
+          pixi run init
+          pixi run build "${{ steps.pages.outputs.base_url }}/"
+      - name: 📤 Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./public
+
+  # デプロイジョブ
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
