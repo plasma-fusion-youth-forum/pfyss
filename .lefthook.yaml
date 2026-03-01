@@ -29,11 +29,11 @@ pre-commit:
       group:
         piped: true
         jobs:
-          - name: prettier format
-            run: pixi {run} prettier-format {staged_files}
-            stage_fixed: true
           - name: prettier check
             run: pixi {run} prettier-check {staged_files}
+            stage_fixed: true
+          - name: prettier format
+            run: pixi {run} prettier-format {staged_files}
             stage_fixed: true
 
     - name: eslint
