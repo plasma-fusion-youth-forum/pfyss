@@ -39,4 +39,4 @@ jobs:
       - name: 🧪 Execute test build
         env:
           pytest_github_report: true
-        run: pixi run deploy
+        run: pixi run init && pixi run build
