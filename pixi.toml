@@ -1,6 +1,6 @@
 [workspace]
-channels = ["conda-forge", "https://prefix.dev/github-releases"]
-platforms = ["linux-64", "win-64", "osx-64", "osx-arm64"]
+channels = ["conda-forge", "https://prefix.dev/pfyss-forge"]
+platforms = ["linux-64", "win-64", "osx-arm64"]
 name = "pfyss"
 repository = "https://github.com/plasma-fusion-youth-forum/pfyss"
 documentation = "https://github.com/plasma-fusion-youth-forum/pfyss/wiki/"
@@ -53,8 +53,8 @@ description = "🚀 Get started with the development environment"
 
 [dependencies]
 nodejs = "*"
-hugo = ">=0.155.3,<0.156"
-dart-sass = { version = ">=1.97.3,<2", channel = "https://prefix.dev/github-releases" }
+hugo = ">=0.145.0,<0.146"
+dart-sass = ">=1.90,<2"
 
 # === Linting feature ===
 [feature.lint.dependencies]
