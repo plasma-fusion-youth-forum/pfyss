@@ -1,16 +1,22 @@
 <!-- Main Theme Styles + Bootstrap -->
-{{/* Main theme styles are compiled from the `scss/theme.scss` file
-  and minified using the `dartsass` transpiler.
-*/}}
-{{ $options := dict
-  "transpiler" "dartsass"
-  "targetPath" "css/theme.css"
-  "outputStyle" "compressed"
-  "enableSourceMap" (not hugo.IsProduction)
-  "includePaths" (slice "node_modules")
-}}
-{{ with resources.Get "scss/theme.scss" | toCSS $options | minify | fingerprint }}
-  <link rel="stylesheet" media="screen" href="{{ .RelPermalink }}" />
+{{/* Main theme styles are compiled from the `scss/theme.scss` file. */}}
+{{ with resources.Get "scss/theme.scss" }}
+  {{ $options := dict
+    "transpiler" "dartsass"
+    "targetPath" "css/theme.css"
+    "outputStyle" (cond hugo.IsProduction "compressed" "expanded")
+    "enableSourceMap" (not hugo.IsProduction)
+    "includePaths" (slice "node_modules")
+  }}
+  {{ with . | toCSS $options }}
+    {{ if not hugo.IsProduction }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" />
+    {{ else }}
+      {{ with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />
+      {{ end }}
+    {{ end }}
+  {{ end }}
 {{ end }}
 
 
