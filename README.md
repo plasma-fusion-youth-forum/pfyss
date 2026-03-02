@@ -12,8 +12,8 @@
 
 [ci]: https://github.com/plasma-fusion-youth-forum/pfyss/actions/workflows/ci.yaml
 [ci-badge]: https://img.shields.io/github/actions/workflow/status/plasma-fusion-youth-forum/pfyss/ci.yaml?style=flat-square&logo=GitHub&label=CI
-[deploy]: https://github.com/plasma-fusion-youth-forum/pfyss/actions/workflows/hugo.yaml
-[deploy-badge]: https://img.shields.io/github/actions/workflow/status/plasma-fusion-youth-forum/pfyss/hugo.yaml?style=flat-square&logo=GitHub&label=Deploy
+[deploy]: https://github.com/plasma-fusion-youth-forum/pfyss/actions/workflows/deploy.yaml
+[deploy-badge]: https://img.shields.io/github/actions/workflow/status/plasma-fusion-youth-forum/pfyss/deploy.yaml?style=flat-square&logo=GitHub&label=Deploy
 [prettier]: https://github.com/prettier/prettier
 [prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
 
