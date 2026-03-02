@@ -48,7 +48,7 @@ cmd = [
 description = "🏗️ Build the project for production"
 
 [tasks.get-start]
-depends-on = ["init", "dev"]
+depends-on = ["hooks", "init", "dev"]
 description = "🚀 Get started with the development environment"
 
 [dependencies]
