@@ -50,7 +50,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openssl-3.6.1-hd24854e_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstd-1.5.7-hbf9d68e_6.conda
       win-64:
-      - conda: https://prefix.dev/pfyss-forge/win-64/dart-sass-1.97.3-h9490d1a_0.conda
+      - conda: https://prefix.dev/pfyss-forge/win-64/dart-sass-1.97.3-h9490d1a_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/hugo-0.145.0-ha2862d8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/nodejs-25.7.0-h80d1838_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/ucrt-10.0.26100.0-h57928b3_0.conda
@@ -70,7 +70,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/eslint-10.0.2-hee61e0b_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/hugo-0.145.0-h9a0b160_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/icu-78.2-h33c6efd_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/lefthook-2.1.1-hfc2019e_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/lefthook-2.1.2-hfc2019e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libbrotlicommon-1.2.0-hb03c661_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libbrotlidec-1.2.0-hb03c661_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libbrotlienc-1.2.0-hb03c661_1.conda
@@ -96,7 +96,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/eslint-10.0.2-hee61e0b_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/hugo-0.145.0-h286801f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/icu-78.2-hef89b57_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/lefthook-2.1.1-h820172f_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/lefthook-2.1.2-hf76c51c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libbrotlicommon-1.2.0-hc919400_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libbrotlidec-1.2.0-hc919400_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libbrotlienc-1.2.0-hc919400_1.conda
@@ -113,10 +113,10 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstd-1.5.7-hbf9d68e_6.conda
       win-64:
       - conda: https://conda.anaconda.org/conda-forge/win-64/actionlint-1.7.11-he477eed_0.conda
-      - conda: https://prefix.dev/pfyss-forge/win-64/dart-sass-1.97.3-h9490d1a_0.conda
+      - conda: https://prefix.dev/pfyss-forge/win-64/dart-sass-1.97.3-h9490d1a_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/eslint-10.0.2-hee61e0b_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/hugo-0.145.0-ha2862d8_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/lefthook-2.1.1-h11686cb_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/lefthook-2.1.2-h11686cb_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/nodejs-22.22.0-he453025_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/prettier-3.8.1-hc95d2ff_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/taplo-0.10.0-h63977a8_1.conda
@@ -215,12 +215,12 @@ packages:
   license: MIT
   size: 3611379
   timestamp: 1772208828122
-- conda: https://prefix.dev/pfyss-forge/win-64/dart-sass-1.97.3-h9490d1a_0.conda
-  sha256: 4cea3f5b491652ed152e13ceb877d501c1d4e334c60c0893d7c2baaa1f618a70
-  md5: b2f61e4e2decf2b7d8932e530d481f1a
+- conda: https://prefix.dev/pfyss-forge/win-64/dart-sass-1.97.3-h9490d1a_1.conda
+  sha256: 55915734806d6f760aaa695df183f0f16f91555c8e3d32e0fc0597f5ea21640a
+  md5: 8d6c28bd43df694a604f6e1307c7754b
   license: MIT
-  size: 3965284
-  timestamp: 1772212676531
+  size: 4001681
+  timestamp: 1772467296947
 - conda: https://conda.anaconda.org/conda-forge/noarch/eslint-10.0.2-hee61e0b_0.conda
   sha256: 1c90954b00b1c4811f90037b9a59b85a147635a2b039815e8a96219feea092ea
   md5: adbead14faba6c0c5311df361afaed7b
@@ -281,27 +281,24 @@ packages:
   license_family: MIT
   size: 12389400
   timestamp: 1772209104304
-- conda: https://conda.anaconda.org/conda-forge/linux-64/lefthook-2.1.1-hfc2019e_0.conda
-  sha256: e8efb8381edcffe8ae7c10dc64480037e3cc0c16021b599c8b76a07769d05904
-  md5: 9f9cebad9936bc1743334084c0a27739
+- conda: https://conda.anaconda.org/conda-forge/linux-64/lefthook-2.1.2-hfc2019e_0.conda
+  sha256: fa355de3ea89e3b504e6e0747d36788730c17aedc231c127f9b43877c83b9e39
+  md5: 506b8aa244a3e86af542fa7f37f584c2
   license: MIT
-  license_family: MIT
-  size: 5409727
-  timestamp: 1770905219267
-- conda: https://conda.anaconda.org/conda-forge/osx-arm64/lefthook-2.1.1-h820172f_0.conda
-  sha256: b947d3ad77714b062dad5562b89f08e38c0f1b97536533b762143fd6f2c5e547
-  md5: 372cc0f19142aa66d62ff22c5caf8520
+  size: 5418394
+  timestamp: 1772403150747
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/lefthook-2.1.2-hf76c51c_0.conda
+  sha256: e7ed98923ab8994ed97b07860f7fb67f6a0316dfb884f67d0397115f11684465
+  md5: 7bf30b98c8440d642fc3907247105817
   license: MIT
-  license_family: MIT
-  size: 4863513
-  timestamp: 1770905316649
-- conda: https://conda.anaconda.org/conda-forge/win-64/lefthook-2.1.1-h11686cb_0.conda
-  sha256: ffbb6455609f43a933df269b7b7c24a9e694864ab28428602d0fc7ee4a9962d7
-  md5: 03df7d6458d5c559f480ce31aa7c15fa
+  size: 4873130
+  timestamp: 1772403162813
+- conda: https://conda.anaconda.org/conda-forge/win-64/lefthook-2.1.2-h11686cb_0.conda
+  sha256: 6e555ffcb14b4c99e108869b975add86c391301f890ee005890486c1202db7e1
+  md5: 7f32be7f0394808a5f6c141c570e1161
   license: MIT
-  license_family: MIT
-  size: 5345121
-  timestamp: 1770905270840
+  size: 5351626
+  timestamp: 1772403192813
 - conda: https://conda.anaconda.org/conda-forge/linux-64/libabseil-20260107.1-cxx17_h7b12aa8_0.conda
   sha256: a7a4481a4d217a3eadea0ec489826a69070fcc3153f00443aa491ed21527d239
   md5: 6f7b4302263347698fd24565fbf11310
@@ -595,6 +592,7 @@ packages:
   - libzlib >=1.3.1,<2.0a0
   - libsqlite >=3.51.2,<4.0a0
   license: MIT
+  license_family: MIT
   size: 18875002
   timestamp: 1772300115686
 - conda: https://conda.anaconda.org/conda-forge/osx-arm64/nodejs-24.14.0-h396074d_0.conda
@@ -638,6 +636,7 @@ packages:
   - libnghttp2 >=1.67.0,<2.0a0
   - libzlib >=1.3.1,<2.0a0
   license: MIT
+  license_family: MIT
   size: 17351648
   timestamp: 1772299122966
 - conda: https://conda.anaconda.org/conda-forge/win-64/nodejs-22.22.0-he453025_0.conda
@@ -651,6 +650,7 @@ packages:
   sha256: 0ea0ddad32366396d1beda7ce93ddd3d9f705286c1a4f99f05ec0049183c1e97
   md5: 61b62d3be12c9edbe34f202d51891927
   license: MIT
+  license_family: MIT
   size: 31254428
   timestamp: 1772299132945
 - conda: https://conda.anaconda.org/conda-forge/linux-64/openssl-3.6.1-h35e630c_1.conda
