@@ -17,24 +17,24 @@ output:
   - skips # Print "skip" (i.e. no files matched)
 
 pre-commit:
-  parallel: true
+  parallel: false
   jobs:
     - name: taplo
       glob: "*.toml"
       stage_fixed: true
       run: pixi {run} taplo {staged_files}
 
-    - name: prettier
+    - name: prettier check
       glob: "*.{css,scss,html,js,json,jsonc,md,yaml,yml}"
-      group:
-        piped: true
-        jobs:
-          - name: prettier check
-            run: pixi {run} prettier-check {staged_files}
-            stage_fixed: true
-          - name: prettier format
-            run: pixi {run} prettier-format {staged_files}
-            stage_fixed: true
+      stage_fixed: true
+      run: pixi {run} prettier-check {staged_files}
+
+    - name: prettier format
+      glob: "*.{css,scss,html,js,json,jsonc,md,yaml,yml}"
+      stage_fixed: true
+      skip:
+        - run: test ${CI} -eq 1
+      run: pixi {run} prettier-format {staged_files}
 
     - name: eslint
       glob: "*.{js,jsx,ts,tsx}"
