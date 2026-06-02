@@ -28,5 +28,7 @@
   {{- end }}
 {{- end }}
 {{- /* 画像のフィルター処理 */ -}}
-{{- $image = $image.Fill "1200x630 webp photo Bottom" }}
-{{- return $image.Filter $filters -}}
+{{- with $image }}
+  {{- $image = $image.Fill "1200x630 webp photo Bottom" }}
+  {{- return $image.Filter $filters -}}
+{{- end }}

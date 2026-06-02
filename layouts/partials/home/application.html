@@ -146,7 +146,7 @@
                 {{ if lt now $startline }}
                   {{/* 申込み開始前 */}}
                   <button type="button" class="btn btn-lg mb-3 mb-sm-0 me-sm-3" disabled>
-                    {{ printf "%d" $startline.Month }}月{{ printf "%d" $startline.Day }}日申し込み開始
+                    {{ printf "%d" $startline.Month }}月{{ printf "%d" $startline.Day }}日申し込み開始予定
                   </button>
                 {{ else if gt now $deadline }}
                   {{/* 申し込み終了後 */}}
@@ -174,7 +174,7 @@
                   <span class="h4 text-light mb-0"
                     ><span class="fs-1">{{ printf "%d" .Month }}</span>月<span class="fs-1">{{ .Day }}</span>日</span
                   >
-                  <span class="fs-lg text-light ms-2">〆切</span>
+                  <span class="fs-lg text-light ms-2">〆切予定</span>
                 </div>
               {{ end }}
 
