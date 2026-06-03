@@ -1,0 +1,99 @@
+[workspace]
+channels = ["conda-forge", "https://prefix.dev/pfyss-forge"]
+platforms = ["linux-64", "win-64", "osx-arm64"]
+name = "pfyss"
+repository = "https://github.com/plasma-fusion-youth-forum/pfyss"
+documentation = "https://github.com/plasma-fusion-youth-forum/pfyss/wiki/"
+
+[tasks.install]
+cmd = ["npm", "ci"]
+description = "📦 Install npm dependencies"
+inputs = ["package-lock.json"]
+outputs = ["node_modules/"]
+
+[tasks.vendor]
+cmd = ["node", "build/vendor.js"]
+depends-on = ["install"]
+description = "📦 Copy vendor's scripts"
+inputs = ["node_modules/"]
+outputs = ["static/vendor/"]
+
+[tasks.init]
+depends-on = ["install", "vendor"]
+description = "🚀 Initialize the project by installing dependencies and copying vendor scripts"
+
+[tasks.dev]
+env = { HUGO_ENV = "development", HUGO_ENVIRONMENT = "development" }
+cmd = [
+  "hugo",
+  "server",
+  "--gc",
+  "--disableFastRender",
+  "--navigateToChanged",
+  "--ignoreCache",
+]
+description = "🚀 Start the development server"
+
+[tasks.build]
+args = [{ arg = "baseURL", default = "http://localhost" }]
+env = { HUGO_ENV = "production", HUGO_ENVIRONMENT = "production" }
+cmd = [
+  "hugo",
+  "--gc",
+  "--minify",
+  "--cleanDestinationDir",
+  "--baseURL",
+  "{{ baseURL }}",
+]
+description = "🏗️ Build the project for production"
+
+[tasks.get-start]
+depends-on = ["init", "dev"]
+description = "🚀 Get started with the development environment"
+
+[dependencies]
+nodejs = "*"
+hugo = ">=0.145.0,<0.146"
+dart-sass = ">=1.90,<2"
+
+# === Linting feature ===
+[feature.lint.dependencies]
+eslint = "*"
+prettier = "*"
+actionlint = ">=1.7.11,<2"
+lefthook = ">=2.1.1,<3"
+taplo = ">=0.10.0,<0.11"
+
+[feature.lint.tasks]
+lefthook = { cmd = "lefthook", description = "🔗 Run lefthook" }
+hooks = { cmd = "lefthook install", description = "🔗 Install pre-commit hooks" }
+pre-commit = { cmd = "lefthook run pre-commit", description = "🔗 Run pre-commit checks" }
+actionlint = { cmd = "actionlint", description = "🔍 Lint GitHub Actions workflows" }
+taplo = { cmd = "taplo fmt", description = "🎨 Format toml files with taplo" }
+prettier-format = { cmd = "prettier --write .", description = "🎨 Format code with Prettier", depends-on = [
+  "install",
+] }
+prettier-check = { cmd = "prettier --check .", description = "🎨 Check code formatting with Prettier", depends-on = [
+  "install",
+] }
+eslint = { cmd = "eslint assets/js/**/*.js --fix", description = "🛠️ Lint JavaScript with ESLint", depends-on = [
+  "install",
+] }
+lint = { cmd = "lefthook run pre-commit --all-files --force", description = "🧹 Run all linters" }
+
+# === Development feature ===
+# Here we define some tasks that have no dependencies but are useful for development.
+[feature.tools.tasks.clean]
+cmd = ["rm", "-rf", "public/", "resources/"]
+description = "🔥 Delete the public and resources directories"
+
+[feature.tools.tasks.clean-all]
+depends-on = ["clean"]
+cmd = ["rm", "-rf", "node_modules/", "static/vendor/"]
+description = "🔥 Delete all generated files and installed dependencies"
+
+
+# === Environments ===
+[environments]
+lint = ["lint", "default"]
+tools = { features = ["tools"], no-default-feature = true }
