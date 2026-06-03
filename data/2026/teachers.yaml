@@ -1,124 +1,121 @@
 # 講師画像は最低500x500pxの解像度であること
-- name:
-  englishName:
-  position:
-  affiliation:
-  image:
-  description: <br>
+- name: 有川 安信
+  englishName: Yasunobu Arikawa
+  position: 准教授
+  affiliation: 大阪大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczO3npaZUoiF4_UM6QOOTwcJaWglmegLS85f50Td8SzIxGMCTSETs6Aa9KH-YCrRR9iUjGjziltGI177cV0g6g4ZFqBNy-iMtkLbauVjfqeGKVzd45U=w2400
+  description: 2010年大阪大学レーザー科学研究所において博士（工学）を取得後、特任研究員、助教、講師を経て現在に至る<br>
+    主な研究内容：レーザー核融合全般、核融合中性子計測器の開発、ハイパワーレーザーによる中性子科学、<br>
 
   links:
     - type: general
-      url:
+      url: https://researchmap.jp/yasunobuarikawa
     - type: personal
-      url:
+      url: https://www.eng.osaka-u.ac.jp/department/905/
   timeslot:
 
-- name:
-  englishName:
-  position:
-  affiliation:
-  image:
-  description: <br>
+- name: 沖野 晃俊
+  englishName: Akitoshi Okino
+  position: 教授
+  affiliation: 東京科学大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczOLWVQjRxmnZAry6wjeOUVbAaCKITN_QIi2236KnvRTDvHEtiMdO1dsMqOcgAkmCGao3SWHQ79JFpUEjczXRR1d6wk5625nr6Tq84DnkY-n6wTgh-4=w2400
+  description: 東京科学大学 国際医工共創研究院 教授<br>
+    京都市出身，阪大工学部応用物理学科卒業，東工大原子核工学専攻博士課程修了。<br>
+    様々な新しい大気圧プラズマ装置を開発し，医歯薬農藝工の多方面連携研究を実施中。<br>
 
   links:
     - type: general
-      url:
-  timeslot:
-
-- name:
-  englishName:
-  position:
-  affiliation:
-  image:
-  description: <br>
-
-  links:
-    - type: general
-      url:
+      url: https://researchmap.jp/read0183732
     - type: personal
-      url:
+      url: https://ap.first.iir.titech.ac.jp/index.html
   timeslot:
 
-- name:
-  englishName:
-  position:
-  affiliation:
+- name: 笠田 竜太
+  englishName: Ryuta Kasada
+  position: 教授
+  affiliation: 東北大学
   image:
   description: <br>
 
   links:
     - type: general
-      url:
-  timeslot:
-
-- name:
-  englishName:
-  position:
-  affiliation:
-  image:
-  description: <br>
-
-  links:
-    - type: general
-      url:
+      url: https://researchmap.jp/gundariumalloy-rk
     - type: personal
-      url:
+      url: https://web.tohoku.ac.jp/imr-numat/
   timeslot:
 
-- name:
-  englishName:
-  position:
-  affiliation:
+- name: 澤田 和宏
+  englishName: Kazuhiro Sawada
+  position: 研究開発局 研究開発戦略官(フュージョン・原子力国際協力担当)
+  affiliation: 文部科学省
   image:
+  description: <br>
+
+  timeslot:
+
+- name: 染谷 洋二
+  englishName: Yoji Someya
+  position:
+  affiliation: 量子科学技術研究開発機構
+  image:
+  description: <br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/yojisomeya
+  timeslot:
+
+- name: 田口 善弘
+  englishName: Yoshihiro Taguchi
+  position: 教授
+  affiliation: 中央大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczNHXwrUK1ujontGAVwz4ipam8P4-GWrZq8I_4Zzm0XNfXle8CJNAONp96Hapb7bvPIw5Rh90UYihTKRB4aF99iS1_r_gDskQTcIt8BE7cAZvkOGDJw=w2400
+  description: 中央大学理工学術院教授。専門はバイオインフォマティクスですが所属は基幹理工学部物理学科です。経歴などはWikipediaみて下さい（https://w.wiki/KrwG）<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/Yh_Taguchi
+  timeslot:
+
+- name: 武村 勇輝
+  englishName: Yuki Takemura
+  position: 助教
+  affiliation: 核融合科学研究所
+  image: https://lh3.googleusercontent.com/pw/AP1GczM1SyjRgazlcHBGlfjDMCGxs8tnJQobCApOXQI4AaJRrX5ghgRLIElHmrRaY31h5FrJ7Bo2rWG37sl57TaLx4n8Z_s_6TSqIv6_cino-pOpKo8VdhE=w2400
+  description: 自然科学研究機構 核融合科学研究所 可知化センシングユニット。総合研究大学院大学 物理科学研究科 核融合科学専攻にて博士（工学）を取得。博士課程では、世界最大級の超伝導ヘリカル装置である大型ヘリカル装置を対象として、MHD不安定性および磁気島ダイナミクスに関する研究に従事した。現在は、大型ヘリカル装置に加えてトカマク装置も対象とし、装置横断的な視点からMHD不安定性のモデリングに関する研究を進めている。<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/ytakemura
+  timeslot:
+
+- name: 仲田 資季
+  englishName: Motoki Nakata
+  position: 教授
+  affiliation: 駒沢大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczP1XZjEHhgWtNVredVBxpvfLIywXpHT8iUs3J8dz2rwSyFkLCerK34-_OuDM6UEN0XOyQTYlv38ksD9RT8nYaL1lnw7i3V61QV9ci-IQEhnzvBXAHc=w2400
   description: |
-    <br>
+    駒澤大学 総合教育研究部 自然科学部門 教授。<br>
+    理化学研究所 数理創造研究センター(iTHEMS) 客員研究員。<br>
+    2011年3月に総合研究大学院大学物理科学研究科にて博士(理学)の学位を取得。<br>
+    日本原子力研究開発機構、自然科学研究機構核融合科学研究所を経て2024年度より現職。<br>
+    乱流プラズマをはじめとする非平衡ダイナミクス全般に関する数理・情報・物理の沼にずーーーーっとハマっています。”Interesting first”の自由悦楽研究主義。<br>
 
   links:
     - type: general
-      url:
-    - type: personal
-      url:
+      url: https://researchmap.jp/moto0607
   timeslot:
 
-- name:
-  englishName:
-  position:
-  affiliation:
+- name: 中野 治久
+  englishName: Haruhisa Nakano
+  position: 准教授
+  affiliation: 核融合科学研究所
   image:
-  description: |
-    <br>
+  description: <br>
 
   links:
     - type: general
-      url:
-  timeslot:
-
-- name:
-  englishName:
-  position:
-  affiliation:
-  image:
-  description: |
-    <br>
-
-  links:
-    - type: general
-      url:
-  timeslot:
-
-- name:
-  englishName:
-  position:
-  affiliation:
-  image:
-  description: |
-    <br>
-
-  links:
-    - type: general
-      url:
-    - type: personal
-      url:
+      url: https://researchmap.jp/read0132712
   timeslot:
 
 #協賛企業の講演者
@@ -139,8 +136,7 @@
   position:
   affiliation:
   image:
-  description: |
-    <br><br>
+  description: <br><br>
     講義タイトル<br>
     【】
   timeslot:
@@ -150,7 +146,16 @@
   position:
   affiliation:
   image:
-  description: |
+  description: 講義タイトル<br>
+    【】
+  timeslot:
+
+- name:
+  englishName:
+  position:
+  affiliation:
+  image:
+  description: <br><br>
     講義タイトル<br>
     【】
   timeslot:
@@ -160,8 +165,7 @@
   position:
   affiliation:
   image:
-  description: |
-    <br><br>
+  description: <br><br>
     講義タイトル<br>
     【】
   timeslot:
@@ -171,19 +175,7 @@
   position:
   affiliation:
   image:
-  description: |
-    <br><br>
-    講義タイトル<br>
-    【】
-  timeslot:
-
-- name:
-  englishName:
-  position:
-  affiliation:
-  image:
-  description: |
-    <br><br>
+  description: <br><br>
     講義タイトル<br>
     【】
   timeslot:
@@ -194,8 +186,7 @@
   position:
   affiliation:
   image:
-  description: |
-    <br><br>
+  description: <br><br>
     講義タイトル<br>
     【】
   timeslot:
@@ -205,8 +196,7 @@
   position:
   affiliation:
   image:
-  description: |
-    <br><br>
+  description: <br><br>
     講義タイトル<br>
     【】
   timeslot:
@@ -216,8 +206,7 @@
   position:
   affiliation:
   image:
-  description: |
-    <br><br>
+  description: <br><br>
     講義タイトル<br>
     【】
   timeslot:
@@ -227,8 +216,7 @@
   position:
   affiliation:
   image:
-  description: |
-    <br><br>
+  description: <br><br>
     講義タイトル<br>
     【】
   timeslot:
@@ -248,8 +236,7 @@
   position:
   affiliation:
   image:
-  description: |
-    <br><br>
+  description: <br><br>
     講義タイトル<br>
     【】
   timeslot:
@@ -259,8 +246,7 @@
   position:
   affiliation:
   image:
-  description: |
-    <br><br>
+  description: <br><br>
     講義タイトル<br>
     【】
   timeslot:
@@ -270,8 +256,7 @@
   position:
   affiliation:
   image:
-  description: |
-    <br><br>
+  description: <br><br>
     講義タイトル<br>
     【】
   timeslot:
@@ -281,8 +266,7 @@
   position:
   affiliation:
   image:
-  description: |
-    <br><br>
+  description: <br><br>
     講義タイトル<br>
     【】
   timeslot:
