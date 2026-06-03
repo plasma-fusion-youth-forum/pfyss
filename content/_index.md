@@ -102,7 +102,7 @@ schedule:
 
 ### Venue Cards ###
 venue_cards:
-  enable: true
+  enable: false
   list:
     - name: 静岡県立森林公園 森の家
       badges: # badgeの種類はここから選ぶ - https://silicon.createx.studio/components/badges.html
@@ -110,9 +110,9 @@ venue_cards:
         Accommodation: primary
       description: 静岡県立森林公園 森の家に宿泊し、講義、ポスターセッション、ナイトセッション、懇親会を行います。
       website: https://morinoie.biz/
-      image: https://lh3.googleusercontent.com/pw/AP1GczM6Z1XoKPpIi2JhaV_5K0BJe2zNeHrpX5aQqAhrm5VsVAZ20hHYGvv0pRx9TJmWpIMUrwaVWNfyjxCt1g3Yb3z-KRFBTn6qKUNPz05KIbW6UL1vIIM=w2400
-      alt: 森の家外観
-      credit: PFYSS staff
+      image: https://lh3.googleusercontent.com/pw/AP1GczOJ8MV4QTAkumRX5n0nsa5yadyTWOwg2iPZ7jQYVU2hBTLAhXZWAm8wFx8SBOwpzI7z--3x8AjK4gsFj6WM0aOfrzVfLVWFUeRKEqns9bf19Sk-YDU=w2400
+      alt: 森の家 外観
+      credit: (c)森の家
       google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.2558378266613!2d137.7920165!3d34.8497984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601b1f170b6cf9f9%3A0x303de4800a8995fc!2z6Z2Z5bKh55yM56uL5qOu5p6X5YWs5ZySIOajruOBruWutg!5e0!3m2!1sja!2sjp!4v1780137059132!5m2!1sja!2sjp
 
     - name: 浜松ホトニクスの見学
