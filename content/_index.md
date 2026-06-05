@@ -102,7 +102,7 @@ schedule:
 
 ### Venue Cards ###
 venue_cards:
-  enable: false
+  enable: true
   list:
     - name: 静岡県立森林公園 森の家
       badges: # badgeの種類はここから選ぶ - https://silicon.createx.studio/components/badges.html
@@ -118,10 +118,10 @@ venue_cards:
     - name: 浜松ホトニクスの見学
       badges:
         Visit: success
-      website:
+      website: https://www.hamamatsu.com/jp/ja.html
       description: 浜松ホトニクスでは、レーザフュージョンの実現に向けた研究が行われています。現地講義、バーチャルツアーを行い、普段の見学ではわからない詳しいところまで解説していただきます。
-      image: https://lh3.googleusercontent.com/pw/AP1GczM6Z1XoKPpIi2JhaV_5K0BJe2zNeHrpX5aQqAhrm5VsVAZ20hHYGvv0pRx9TJmWpIMUrwaVWNfyjxCt1g3Yb3z-KRFBTn6qKUNPz05KIbW6UL1vIIM=w2400
-      credit:
+      image: https://lh3.googleusercontent.com/pw/AP1GczM704w8oZos97-y_P1aT66MfVj4yb625nkc4A53kprKdvdrkgkhlJuyT-VBxUNVXLGJfnFImlrFMupKYpH9E6jaG0XKElD9QN9bgqJNYiBMAcJm2LA=w2400
+      credit: 写真提供：浜松ホトニクス株式会社
       google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.1267751220425!2d137.62585917574785!3d34.77758367289257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601b2646d641f265%3A0x5c1895557b64fa96!2z5rWc5p2-44Ob44OI44OL44Kv44K5IOeUo-alremWi-eZuueglOeptuOCu-ODs-OCv-ODvA!5e0!3m2!1sja!2sjp!4v1780138902538!5m2!1sja!2sjp
 
     #- name: 懇親会
