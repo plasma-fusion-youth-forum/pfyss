@@ -9,7 +9,7 @@
   links:
     - type: general
       url: https://researchmap.jp/ytakemura
-  timeslot:
+  timeslot: 6
 
 - name: 中野 治久
   englishName: Haruhisa Nakano
@@ -21,7 +21,7 @@
   links:
     - type: general
       url: https://researchmap.jp/read0132712
-  timeslot:
+  timeslot: 7
 
 - name: 仲田 資季
   englishName: Motoki Nakata
@@ -38,7 +38,7 @@
   links:
     - type: general
       url: https://researchmap.jp/moto0607
-  timeslot:
+  timeslot: 8
 
 - name: 有川 安信
   englishName: Yasunobu Arikawa
@@ -53,7 +53,7 @@
       url: https://researchmap.jp/yasunobuarikawa
     - type: personal
       url: https://www.eng.osaka-u.ac.jp/department/905/
-  timeslot:
+  timeslot: 10
 
 - name: 藤田 隆明
   englishName: Takaaki Fujita
@@ -67,7 +67,7 @@
       url:
     - type: personal
       url:
-  timeslot:
+  timeslot: 15
 
 - name: 田口 善弘
   englishName: Yoshihiro Taguchi
@@ -79,7 +79,7 @@
   links:
     - type: general
       url: https://researchmap.jp/Yh_Taguchi
-  timeslot:
+  timeslot: 16
 
 - name: 沖野 晃俊
   englishName: Akitoshi Okino
@@ -95,7 +95,7 @@
       url: https://researchmap.jp/read0183732
     - type: personal
       url: https://ap.first.iir.titech.ac.jp/index.html
-  timeslot:
+  timeslot: 19
 
 - name: 染谷 洋二
   englishName: Yoji Someya
@@ -107,30 +107,30 @@
   links:
     - type: general
       url: https://researchmap.jp/yojisomeya
-  timeslot:
+  timeslot: 25
 
-- name: 澤田 和宏
-  englishName: Kazuhiro Sawada
-  position: 研究開発局 研究開発戦略官(フュージョン・原子力国際協力担当)
+- name: 長澤 幸祐
+  englishName: Kosuke Nagasawa
+  position: 研究開発局 研究開発戦略官（フュージョン・原子力国際協力担当）付専門官
   affiliation: 文部科学省
-  image:
-  description: <br>
+  image: https://lh3.googleusercontent.com/pw/AP1GczMapdS-oledMe9Grcufllme9kS4kW2U8MAZB_9gAPpr6YQNQzTAotU7d0LAOea9xldAibB8zLQkN-k5CCy0v2_RuehirzyUVshorcai6e02s6cjyaM=w2400
+  description: 2018年文部科学省入省。核燃料サイクル、計算科学等の分野を経験。<br>
 
-  timeslot:
+  timeslot: 26
 
 - name: 笠田 竜太
   englishName: Ryuta Kasada
   position: 教授
   affiliation: 東北大学
-  image:
-  description: <br>
+  image: https://lh3.googleusercontent.com/pw/AP1GczPHDBnMPntGV4quKxbrYC5lkfQu3xTnTwWHb3C5kp-FaLdT1YTSi1nUHamZxLUKsAPmXTHqVPq6TBv67muZXpPBKwB3Ms__TME7a2VVJpN62ug09Yg=w2400
+  description: 京都大学エネルギー理工学研究所助教、准教授を経て、現在は東北大学金属材料研究所教授。専門は原子力・核融合材料、エネルギーシステム工学、科学コミュニケーション。文科省にて核融合研究関連委員、原子力規制委員会にて原子炉安全関連委員を務める。千葉県木更津市出身。<br>
 
   links:
     - type: general
       url: https://researchmap.jp/gundariumalloy-rk
     - type: personal
       url: https://web.tohoku.ac.jp/imr-numat/
-  timeslot:
+  timeslot: 27
 #協賛企業の講演者
 #- name:
 #  englishName:
