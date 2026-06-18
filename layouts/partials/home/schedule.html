@@ -34,6 +34,12 @@
     {{ else with .Value }}
       {{/* TODO: Support for redirects */}}
       {{ $days = .Content | transform.Unmarshal }}
+      <!--カレンダーの読み込み状況を確認するためのデバッグ用コード．表示数が足りない場合，
+        pixi または hugo serverの立ち上げなおしで、キャッシュがクリアされるため、再度読み込みが行われて直るかも
+      <pre>
+      {{ jsonify (dict "indent" "  ") $days }}
+      </pre>
+      -->
     {{ else }}
       {{ errorf "Unable to get schedule info of year=%d" $year }}
     {{ end }}
