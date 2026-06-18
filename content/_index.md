@@ -35,7 +35,7 @@ carousels:
 ### 協賛リスト ###
 sponsors:
   enable: false
-  default: |
+  default:
     <h2 class="text-center text-white">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
     <p class="text-center text-white">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
     若手夏の学校については<a href="/about">こちら</a>から、
@@ -96,9 +96,9 @@ sponsors:
 
 ### スケジュールの表示 ###
 schedule:
-  enable: false
+  enable: true
   # GoogleカレンダーのPFYSSカレンダー共有リンクURL
-  url: https://calendar.google.com/calendar/u/0?cid=ODFlZmE4ZWRiMGMwNjEyOGI1NGRhMzY2Mjg4YmM3Njk1NmMwMmQ1MzA4N2I3NjhkYmYxYjJlZTEwNjgwMjQzZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
+  url: https://calendar.google.com/calendar/u/0?cid=MmIyOTUwMjdiY2U2Mjg3OTBkMWFhYTE4MWZkMjBhMTUxMDJmNzVjY2NjOTQ5Njk4NWVlZTFiOGM2YTcyNTg2YkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
 
 ### Venue Cards ###
 venue_cards:
@@ -138,8 +138,8 @@ venue_cards:
 application:
   fee: 25,000~30,000円 # 参加費
   capacity: 50~60 # 募集人数 (募集時は数値のみ指定可能)
-  startline: 2026-06-22 # 参加申し込み募集開始日
-  deadline: 2026-07-12 # 参加申し込み締め切り日
+  startline: 2026-07-01 # 参加申し込み募集開始日
+  deadline: 2026-07-22 # 参加申し込み締め切り日
   note: # 留意事項
     - title: <i class="bx bx-fw bx-md bxs-user-x"></i>キャンセルポリシー # 注意タイトル (html形式)
       content: | # 内容 (Markdown形式)
