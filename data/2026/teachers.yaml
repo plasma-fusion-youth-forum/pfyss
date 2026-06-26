@@ -59,14 +59,14 @@
   englishName: Takaaki Fujita
   position: 教授
   affiliation: 名古屋大学
-  image:
-  description: <br>
+  image: https://lh3.googleusercontent.com/pw/AP1GczMMeQYl2ixpLWmqXeFTeWtOaK3Pec8r2Wb2fVERV7zRqoeGz-wk3OoKmZMS2Kt_EjzAgJbrhTsJOCDdsoQCtAbMqizs6HuGMnZiPFKGUUDV821mS3Q=w2400
+  description: 東京大学工学系研究科原子力工学専攻博士課程修了（工学博士）。原研核融合特別研究生（JFT-2M）、九州大学応用力学研究所助手（TRIAM-1M）を経て、20年間那珂研に勤めJT-60U実験（電流分布計測、負磁気シアプラズマ開発など）やJT-60SAの設計検討に携わっていました。2013年からは名古屋大学で、小型トーラス装置（TOKASTAR-2、SOLEIL（写真））や統合コードTOTALを用いた研究を行っています。2024年3月よりBAサテライト・トカマク（JT-60SA）計画事業委員会議長。<br>
 
   links:
     - type: general
-      url:
+      url: https://researchmap.jp/7000007665
     - type: personal
-      url:
+      url: https://fuspla.energy.nagoya-u.ac.jp/index.html
   timeslot: 15
 
 - name: 田口 善弘
@@ -101,8 +101,8 @@
   englishName: Yoji Someya
   position:
   affiliation: 量子科学技術研究開発機構
-  image:
-  description: <br>
+  image: https://lh3.googleusercontent.com/pw/AP1GczMxLChoDvXHO8unoDXkj4kt8At4tWLZcV81ICel1HmeD2MoeZ0oMOpdXY47tdwkHjQCYc7wZvG488qRFPJFfDynVJ-FdWr6qL-j_FE21M6cmYN6uIM=w2400
+  description: QST六ヶ所フュージョンエネルギー研究所 原型炉統合設計グループ 主幹研究員。専門は中性子輸送工学で、核融合原型炉の増殖ブランケット設計および安全設計（廃止措置の検討を含む）などに取り組んでいる。2017年からは、産学連携による原型炉設計合同特別チームの安全設計グループリーダーとして、核融合原型炉の安全確保に向けた方針策定と設計の取りまとめを担っている。<br>
 
   links:
     - type: general
@@ -131,23 +131,24 @@
     - type: personal
       url: https://web.tohoku.ac.jp/imr-numat/
   timeslot: 27
+
 #協賛企業の講演者
 #- name:
 #  englishName:
 #  position:
 #  affiliation:
 #  image:
-#  description: |
+#  description:
 #    <br><br>
 #    <span class="badge bg-primary text-light">Special lecture</span>
 #    <h5></h5>
 #  timeslot:
 
-# 8/29 前半
+# 8/29
 #- name:
 #  englishName:
 #  position:
-#  affiliation:
+#  affiliation: 株式会社EX-Fusion
 #  image:
 #  description: <br><br>
 #    講義タイトル<br>
@@ -157,129 +158,92 @@
 #- name:
 #  englishName:
 #  position:
-#  affiliation:
+#  affiliation: 伯東株式会社
 #  image:
 #  description: 講義タイトル<br>
 #    【】
 #  timeslot:
 
+- name: 石井 健介
+  englishName: Kensuke Ishii
+  position: コーポレート戦略部門 マネージャー
+  affiliation: 株式会社Helical Fusion
+  image: https://lh3.googleusercontent.com/pw/AP1GczMjefnouro3A-J1icBY3t3E0PNgxCcyd0tvsC1AqVN8cASFJFpEwBVtq5Q8SHSRhEk540XBsZ5rfoxlZndCqnXl7plLrE9vJtfy-5LZ59YIMxVtmks=w2400
+  description:
+    メーカーの法人営業、エンジニア採用に関するコンサルティング営業を経てHelical Fusionへ参画。主に採用全般、事業開発に従事。<br><br>
+    講義タイトル<br>
+    【Helical Fusionの核融合事業の強み、および現状とこれから】
+  timeslot:
+
+- name: 今村 寿郎
+  englishName: Toshiro Imamura
+  position:
+  affiliation: 株式会社日立製作所
+  image: https://lh3.googleusercontent.com/pw/AP1GczOOhI1I3VxIvALQKM6ktXuUcuvflnlawtmd3tI1TBIZDg2ZDWRDT_P_74BW0ZauyfWRQ7xqfun_JTOTg64zFA5TTT-JT-SCMgWt77w0AFVLbcQf250=w2400
+  description: <br><br>
+    講義タイトル<br>
+    【】
+  timeslot:
+
+- name: 武田 健太郎
+  englishName: Kentaro Takeda
+  position:
+  affiliation: 株式会社日立製作所
+  image: https://lh3.googleusercontent.com/pw/AP1GczNdQxGTl4E0YP2dmSKd-JfSp7GEzSdRkifSWOyUcgup3vv0hmF2d5oSM7OtjFroCyLX7FV0Swn92CHR2QtdVqq6PEmhCTd6b-gGxDIBjno6HwdPm28=w2400
+  description: <br><br>
+    講義タイトル<br>
+    【】
+  timeslot:
+
 #- name:
 #  englishName:
 #  position:
-#  affiliation:
+#  affiliation: 株式会社LINEAイノベーション
 #  image:
 #  description: <br><br>
 #    講義タイトル<br>
 #    【】
 #  timeslot:
 
+- name: 馬場 貴志
+  englishName: Takashi Baba
+  position: 原子力セグメント 核融合推進室
+  affiliation: 三菱重工業株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczNeOt3FyoAwsOBn-BbD2MJsxQZ0Wv2r5M8RxuKuOKKof0WyU5v9tw8I2gu5SX8cQfQy6w9y0K5z5fNJog5RNwXEoDm8DyGqitTqMgODND0gmK_mS1U=w2400
+  description: 1980年生まれ、46歳。<br>
+    先日、会社仲間と琵琶湖横断水泳大会に参加し、無事完泳！<br><br>
+    講義タイトル<br>
+    【三菱重工の核融合取組】
+  timeslot:
+
 #- name:
 #  englishName:
 #  position:
-#  affiliation:
+#  affiliation: NTT株式会社
 #  image:
 #  description: <br><br>
 #    講義タイトル<br>
 #    【】
 #  timeslot:
 
-#- name:
-#  englishName:
-#  position:
-#  affiliation:
-#  image:
-#  description: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
+- name: 伊庭野 健造
+  englishName: Kenzo Ibano
+  position: 執行役員CTO
+  affiliation: Starlight Engine株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczNx_tUlOWUhDnoKhQ2OzviX9OYTgR_X7TCUuWXF1GqISGaUGaDM9bEZ58VXppEz9r6Z-VyW3TiQp-qi7dSugPZc3ZDn_rWE_dozzx24zc1NsqrmpqQ=w2400
+  description:
+    米国大学・研究機関と連携し、フュージョン炉設計とプラズマ材料の相互作用研究に15年以上従事し、商業炉の実現を科学的に検証。自身の経験をもとにOISTにてVSM Mentorとしてスタートアップ支援を実施。慶応義塾大学。イリノイ大学M.S.。京都大学Ph.D.。<br><br>
+    講義タイトル<br>
+    【Starlight Engineが取り組むフュージョンエネルギー発電実証プラント「FAST」について】
+  timeslot:
 
-# 8/29 後半
-#- name:
-#  englishName:
-#  position:
-#  affiliation:
-#  image:
-#  description: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
-
-#- name:
-#  englishName:
-#  position:
-#  affiliation:
-#  image:
-#  description: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
-
-#- name:
-#  englishName:
-#  position:
-#  affiliation:
-#  image:
-#  description: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
-
-#- name:
-#  englishName:
-#  position:
-#  affiliation:
-#  image:
-#  description: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
-
-#- name:
-#  englishName:
-#  position:
-#  affiliation:
-#  image: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
-
-# 8/30
-#- name:
-#  englishName:
-#  position:
-#  affiliation:
-#  image:
-#  description: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
-
-#- name:
-#  englishName:
-#  position:
-#  affiliation:
-#  image:
-#  description: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
-
-#- name:
-#  englishName:
-#  position:
-#  affiliation:
-#  image:
-#  description: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
-
-#- name:
-#  englishName:
-#  position:
-#  affiliation:
-#  image:
-#  description: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
+- name: 安田 幸平
+  englishName: Kohei Yasuda
+  position: 原子力先端システム設計部
+  affiliation: 株式会社東芝
+  image: https://lh3.googleusercontent.com/pw/AP1GczNn-Y_sVNFjcod9vMKqhsGCCpve6QCISeCvRPJRCiwXdVdB1uGBwQMHsAfxP12KiQ6lNNTyU8LhT99LESxKRXbK4BY3RLL-rNL89H5JFa8hp1r1phw=w2400
+  description:
+    名古屋大学大学院にて核融合プラズマの実験研究で博士(工学)を取得。現在は主にITER・原型炉向けのブランケット開発等に従事しています。<br><br>
+    講義タイトル<br>
+    【東芝の核融合開発における実績と貢献】
+  timeslot:
