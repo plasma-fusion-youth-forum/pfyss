@@ -3,13 +3,13 @@
   englishName: Yuki Takemura
   position: 助教
   affiliation: 核融合科学研究所
-  image: https://lh3.googleusercontent.com/pw/AP1GczM1SyjRgazlcHBGlfjDMCGxs8tnJQobCApOXQI4AaJRrX5ghgRLIElHmrRaY31h5FrJ7Bo2rWG37sl57TaLx4n8Z_s_6TSqIv6_cino-pOpKo8VdhE=w2400
+  image: https://lh3.googleusercontent.com/pw/AP1GczO0ythNHAHRLLB1BZDNycYgQBjUUQu5UbUfuTLZcdxFdzHEXIPbvyC_38xU2IsERNWQcczjvLFSRW2JKgIrNBsWqaFxNP1kgvUXBEnZEl6quD-BwaE=w2400
   description: 自然科学研究機構 核融合科学研究所 可知化センシングユニット。総合研究大学院大学 物理科学研究科 核融合科学専攻にて博士（工学）を取得。博士課程では、世界最大級の超伝導ヘリカル装置である大型ヘリカル装置を対象として、MHD不安定性および磁気島ダイナミクスに関する研究に従事した。現在は、大型ヘリカル装置に加えてトカマク装置も対象とし、装置横断的な視点からMHD不安定性のモデリングに関する研究を進めている。<br>
 
   links:
     - type: general
       url: https://researchmap.jp/ytakemura
-  timeslot: 6
+  timeslot: 7
 
 - name: 中野 治久
   englishName: Haruhisa Nakano
@@ -21,7 +21,7 @@
   links:
     - type: general
       url: https://researchmap.jp/read0132712
-  timeslot: 7
+  timeslot: 8
 
 - name: 仲田 資季
   englishName: Motoki Nakata
@@ -38,7 +38,7 @@
   links:
     - type: general
       url: https://researchmap.jp/moto0607
-  timeslot: 8
+  timeslot: 9
 
 - name: 有川 安信
   englishName: Yasunobu Arikawa
@@ -53,7 +53,7 @@
       url: https://researchmap.jp/yasunobuarikawa
     - type: personal
       url: https://www.eng.osaka-u.ac.jp/department/905/
-  timeslot: 10
+  timeslot: 11
 
 - name: 藤田 隆明
   englishName: Takaaki Fujita
@@ -67,7 +67,7 @@
       url: https://researchmap.jp/7000007665
     - type: personal
       url: https://fuspla.energy.nagoya-u.ac.jp/index.html
-  timeslot: 15
+  timeslot: 16
 
 - name: 田口 善弘
   englishName: Yoshihiro Taguchi
@@ -79,7 +79,7 @@
   links:
     - type: general
       url: https://researchmap.jp/Yh_Taguchi
-  timeslot: 16
+  timeslot: 17
 
 - name: 沖野 晃俊
   englishName: Akitoshi Okino
@@ -95,7 +95,7 @@
       url: https://researchmap.jp/read0183732
     - type: personal
       url: https://ap.first.iir.titech.ac.jp/index.html
-  timeslot: 19
+  timeslot: 20
 
 - name: 染谷 洋二
   englishName: Yoji Someya
@@ -107,7 +107,7 @@
   links:
     - type: general
       url: https://researchmap.jp/yojisomeya
-  timeslot: 25
+  timeslot: 27
 
 - name: 長澤 幸祐
   englishName: Kosuke Nagasawa
@@ -116,7 +116,7 @@
   image: https://lh3.googleusercontent.com/pw/AP1GczMapdS-oledMe9Grcufllme9kS4kW2U8MAZB_9gAPpr6YQNQzTAotU7d0LAOea9xldAibB8zLQkN-k5CCy0v2_RuehirzyUVshorcai6e02s6cjyaM=w2400
   description: 2018年文部科学省入省。核燃料サイクル、計算科学等の分野を経験。<br>
 
-  timeslot: 26
+  timeslot: 28
 
 - name: 笠田 竜太
   englishName: Ryuta Kasada
@@ -130,7 +130,7 @@
       url: https://researchmap.jp/gundariumalloy-rk
     - type: personal
       url: https://web.tohoku.ac.jp/imr-numat/
-  timeslot: 27
+  timeslot: 29
 
 #協賛企業の講演者
 #- name:
@@ -248,7 +248,7 @@
     【東芝の核融合開発における実績と貢献】
   timeslot:
 
-- name: 随時更新予定
+- name: 随時更新
   englishName:
   position:
   affiliation:
