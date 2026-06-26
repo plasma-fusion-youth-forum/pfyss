@@ -36,16 +36,15 @@ carousels:
 sponsors:
   enable: false
   default:
-    <h2 class="text-center text-white">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
-    <p class="text-center text-white">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
-    若手夏の学校については<a href="/about">こちら</a>から、
-    これまでの夏学の活動については<a href="/forepast">こちら</a>からご覧ください。
-    </p>
-  list:
-    - name: アライドマテリアル
-      link: https://www.allied-material.co.jp/
-      logo: /img/brands/allied_material.png
+    #<h2 class="text-center text-white">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
+    #<p class="text-center text-white">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
+    #若手夏の学校については<a href="/about">こちら</a>から、
+    #これまでの夏学の活動については<a href="/forepast">こちら</a>からご覧ください。
+    #</p>
 
+    <h2 class="text-center text-white">協賛企業ロゴ準備中</h2></br> #協賛募集終了後ロゴが集まるまでの間
+
+  list:
     - name: EX-Fusion
       link: https://ex-fusion.com
       logo: /img/brands/EX_Fusion.svg
@@ -53,10 +52,6 @@ sponsors:
     - name: 伯東株式会社
       link: https://www.hakuto.co.jp/
       logo: /img/brands/hakuto.png
-
-    - name: 浜松ホトニクス
-      link: https://www.hamamatsu.com/jp/ja.html
-      logo: /img/brands/hamaphoto2.svg
 
     - name: Helical Fusion
       link: https://www.helicalfusion.com
@@ -78,20 +73,20 @@ sponsors:
       link: https://www.mhi.com/jp
       logo: /img/brands/mitsubishi2.svg
 
-    - name: NTT R&D # 7月以降に新ロゴに変更
+    - name: NTT R&D
       link: https://www.rd.ntt/
-      logo: /img/brands/NTT_new.png
-
-    - name: 助川電気工業
-      link: https://sukegawadenki.co.jp/
-      logo: /img/brands/sukegawa_denki.png
+      logo: /img/brands/NTT.png
 
     - name: Starlight Engine
       link: https://sle.energy/
       logo: /img/brands/starlightengine.svg
 
-    - name: 東芝エネルギーシステムズ株式会社
-      link: https://www.global.toshiba/jp/company/energy.html
+    - name: 助川電気工業
+      link: https://sukegawadenki.co.jp/
+      logo: /img/brands/sukegawa_denki.png
+
+    - name: 株式会社 東芝
+      link: https://www.global.toshiba/jp/business/01.html
       logo: /img/brands/toshiba.png
 
 ### スケジュールの表示 ###
@@ -136,10 +131,10 @@ venue_cards:
 
 ### 参加申込みフォームの設定 ###
 application:
-  fee: 25,000~30,000円 # 参加費
-  capacity: 50~60 # 募集人数 (募集時は数値のみ指定可能)
+  fee: 28,000円 # 参加費
+  capacity: 60 # 募集人数 (募集時は数値のみ指定可能)
   startline: 2026-07-01 # 参加申し込み募集開始日
-  deadline: 2026-07-22 # 参加申し込み締め切り日
+  deadline: 2026-07-15 # 参加申し込み締め切り日
   note: # 留意事項
     - title: <i class="bx bx-fw bx-md bxs-user-x"></i>キャンセルポリシー # 注意タイトル (html形式)
       content: | # 内容 (Markdown形式)
