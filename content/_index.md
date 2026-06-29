@@ -10,32 +10,27 @@ year: 2026
 times: ４ # 第〇回 - 全角数字で記入するとフォントが綺麗になります
 duration: # 開催期間
   start: 2026-08-28
-  end: 2025-08-31
+  end: 2026-08-31
 place: 静岡県浜松
 venue: 静岡県立森林公園 森の家
 
 ### カルーセル画像 ###
 # 画像サイズは1350x900px以上
 carousels:
-  - link: https://lh3.googleusercontent.com/pw/AP1GczNCsjf4bF1pWg0zJhHl4Ttqr1N8A0pUG8WXwNp9ap4xiT56_5_slJyfmtPNg0iM3dgSZzofG8xzmaGzn_3w0E-_-B-aeidHUZl2cfnhXeUHLSA8uvE=w2400
-    alt: 伊達政宗像
+  - link: https://lh3.googleusercontent.com/pw/AP1GczPoLPlbdSCIEb_7U0JYvzSSYF1VHil8cf9eS2-oIweYUocySUd4zkuFg3FXQGHEiOhmh5gx-Y9Rpt6wZ5gn0QLeFEROrsRJkpcpnohnx8Gd-8lEtMU=w2400
+    alt: 弁天島の大鳥居とクローバー
     anchor: Bottom
     credit:
 
-  - link: https://lh3.googleusercontent.com/pw/AP1GczM1xkxl0Xs01zv6yOGoBxBncwum7AXtLdYqCzbCUyhymoEhBmWHIMFu3t9Us8S3cHkpPzJHc-CaNPbVc97Ff7V_3xOHdlBoJkGvm9cpj521lDd_4T0=w2400
-    alt: H3ロケット打ち上げ
-    anchor: Bottom
-    credit: ©JAXA
-
-  - link: https://lh3.googleusercontent.com/pw/AP1GczP_H6k0KaH1WiDdRff46pbQqdTuYIZJYTjI8oDSFN6e45ShORTG-g_ML0MziOg-FPG8hqvrrhXycvBSek6KJKZQe9y1p-yaPY8-ynZ4zeTf6K9byrM=w2400
-    alt: 仙台の風景
+  - link: https://lh3.googleusercontent.com/pw/AP1GczNh8ZSomDagBzLuJTiv8-jzPiaGhzxiFVJQ4sObBgV80m3WYeikUys3VzQH3owbtUFHIlg5onj0ILBWAzV4a-8QAdJh2vvSeXdU520FdoMMd5G5b4o=w2400
+    alt: 浜名湖と観覧車
     anchor: Bottom
     credit:
 
-  - link: https://lh3.googleusercontent.com/pw/AP1GczNiGUr1GqgAEfx1emvOdXhi6pie2hC6g_oHS5LkjvDrE3hjhG4f4pOQbiefif_IN6UAJVGhDCMO3hjJgfuOD-FcGTfSe49ECVeO2NyTgmchh4xDhq0=w2400
-    alt: ロケットエンジン燃焼試験
+  - link: https://lh3.googleusercontent.com/pw/AP1GczPla1l7KN3vvfwvk6I1QDWbXw1T-yXaUuSMrJw7uDcmALp9w_fN3T0JhfxnBsg2TrJI5fWVmHrcSIe3yvwddFyyFBlOKraEgcaawWDybO2T1Cb_sN8=w2400
+    alt: 浜松城
     anchor: Bottom
-    credit: ©JAXA
+    credit:
 
 ### 協賛リスト ###
 sponsors:
