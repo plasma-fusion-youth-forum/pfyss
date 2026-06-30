@@ -1,0 +1,301 @@
+# 講師画像は最低500x500pxの解像度であること
+- name: 赤塚 洋
+  englishName: Hiroshi Akatsuka
+  position: 准教授
+  affiliation: 東京科学大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczMvlVwj33y3bfVXERozFZbL9BDsEc_4o7r69okJKkHVzMV2nCfMWABn1BNyivQuisxcX0noDXca13hdrfDiItwPV_tKXiCwy3I3yz-TQd4KUIvtlyg=w2400
+  description: |
+    京都大学大学院工学研究科修士課程修了。日本電気 (株) 勤務を経て東京工業大学 原子炉工学研究所 勤務。1995年 論文提出により東京工業大学から博士(工学)。2024年の組織改編を経て、現在に至る。<br>
+    現在、主に低温プラズマの発光分光計測、非平衡プラズマの原子分子過程の研究を行い、半導体プロセスや大気圧プラズマの発光分光計測手法開発に努力している。並びに、情報工学・統計力学に基づき、非平衡状態の「温度」の定義につき検討している。<br>
+
+  links:
+    - type: general
+      url: https://www.webofscience.com/wos/author/record/G-3776-2014
+    - type: personal
+      url: https://akatsuka.zc.iir.titech.ac.jp/
+  timeslot: 3
+
+- name: 浦野 創
+  englishName: Hajime Urano
+  position: 次長
+  affiliation: QST
+  image: https://lh3.googleusercontent.com/pw/AP1GczMm8g-7RHceMNO29x13Gy1dJKqj6e5rJPR5m5-ahjBr4rDDxwRqm3XpCTgDJyT_lEG4sxKCNkbAmwrwJLEGH_-kRsmSs5q82khJwjsEL41UPla4Ep0=w2400
+  description: |
+    量子科学技術研究開発機構 先進プラズマ研究部 次長。<br>
+    北海道大学大学院工学研究科博士課程修了。独国 Max Planck研究所、日本原子力研究開発機構を経て現職。専門は周辺プラズマ物理。2017年から2020年までITPA国際トカマク物理活動周辺ペデスタル物理トピカルグループ議長。現在は、JT-60SA実験を円滑かつ安全に運転するための環境整備、JT-60SAの運転に携わる全設備・グループと連携のための調整業務を担う。JT-60SA実験チームリーダーを務め、実験運転・研究計画全体の立案・策定を担う。<br>
+    工学博士。<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/UranoHajime
+  timeslot: 4
+
+- name: 西浦 正樹
+  englishName: Masaki Nishiura
+  position: 准教授
+  affiliation: NIFS
+  image: https://lh3.googleusercontent.com/pw/AP1GczODxssD59ONuZT58nSmmuRiL15_0Q36_tI8yTlUT21fCIsbyOHC29uS64BFchdt_iQcUkGQr2YCYgG35Xoj37oDbuN8H5XK62cQvqhT6p6IdNWWnE8=w2400
+  description: |
+    核融合科学研究所　研究部　位相空間乱流ユニット　准教授，及び東京大学大学院新領域創成科学研究科　客員准教授．<br>
+    核融合プラズマ中の高エネルギーイオン計測器開発と熱・粒子輸送物理についての研究や，磁気圏プラズマを実験室で再現し，自己組織化や渦構造に着目した研究を進めてきました．最近は，プラズマ中の速度空間中において熱化・非熱化の粒子分布が相互作用する現象について，メカニズムの解明に取り組んでいます．<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/nishiura.masaki
+    - type: personal
+      url: https://www.ppl.k.u-tokyo.ac.jp/nishiura/
+  timeslot: 9
+
+- name: 大宅 諒
+  englishName: Makoto Oya
+  position: 助教
+  affiliation: 九州大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczPYKwwruR4-xkDZ337NT1TgseYJHws4UYE_hmIUZjzo4lnDjlztCijo-O1FeiQVxUh-fuJuUiLt3y4gZbE9Iv0nLLt86JAxsPc0sE3uJVEXpCx2gj0=w2400
+  description: |
+    九州大学大学院 総合理工学研究院 助教。<br>
+    大阪大学大学院 工学研究科 電気電子情報工学専攻にて博士(工学)を取得。核融合炉工学、プラズマ-壁相互作用の研究に従事しています。<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/makoto_oya
+  timeslot: 10
+
+- name: 池添 竜也
+  englishName: Ryuya Ikezoe
+  position: 准教授
+  affiliation: 九州大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczNhk3lL8pcwuYM1Wf2LwGtBy_A82ic-pWcMkNRUshpDdl2ipd-Mha7FEAmlrrKme1-n0NEj3RnqZJP57Pv9FT05-vz_XS0ubTXcm9jliHIz-XJYEQM=w2400
+  description: |
+    <br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/7000008174
+    - type: personal
+      url: https://www.triam.kyushu-u.ac.jp/ideiken/index.html
+  timeslot: 11
+
+- name: 今田 晋亮
+  englishName: Shinsuke Imada
+  position: 教授
+  affiliation: 東京大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczPbGUpSZ4AJh58ufl4eOqGFtVR0fFDbeWZx7mgldi0e6vNjvM4fAAf1zo6infybdsHFBcA0DD7luMAM2PniR14mXMaatgx0emA5Yxi9E4pciry25XU=w2400
+  description: |
+    <br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/read0138421
+    - type: personal
+      url: https://www-space.eps.s.u-tokyo.ac.jp/~imada/
+  timeslot: 19
+
+- name: 高橋 宏幸
+  englishName: Hiroyuki Takahashi
+  position: 講師
+  affiliation: 東北大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczMJ4u1PKjUxlVjo1aUN77CCtvmTnJU3tFtLr5WFdxAuPq7fzWgD9jjrZe6CXn0RxDhl0UuF2im7zVFY9YiWqxQ5pfz1uZPy4YEGy2Tw4cDC7iFlbHI=w2400
+  description: |
+    東北大学大学院工学研究科 量子エネルギー工学専攻 講師．2015年に同専攻を修了(博士(工学))．学振特別研究員PD・同専攻助教を経て2023年より現職．ダイバータプラズマの粒子バランスやエネルギーバランスの制御や理解に興味を持っており，主に実験からアプローチをしています．放電や計測手法への興味が直流放電⇄高周波放電，プローブ⇄分光のようにいったりきたりしています．<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/7000014703?lang=ja
+  timeslot: 27
+
+- name: 金 吏良
+  englishName: Humiyoshi Kin
+  position: 助教
+  affiliation: 京都大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczPfiQFMQAyjQOf8BRrLMHYusRyMmW3yh_FGd3KlIxUchMvs6wGa_bOLmlS1wsWrnlvolR5j3twh6Abz38rc0TxaZcS79xKc3xEGYNUuHlkvtL1oNhM=w2400
+  description: |
+    京都大学エネルギー理工学研究所 助教。<br>
+    九州大学大学院総合理工学府先端エネルギー理工学専攻にて博士（理学）を取得。修了後、量子科学技術研究開発機構にて博士研究員を務め、2022年より現職。現在はヘリオトロンJにて、マイクロ波を用いた乱流輸送の研究に従事している。 <br>
+
+  links:
+    - type: general
+      url: https://kdb.iimc.kyoto-u.ac.jp/profile/ja.6a0fd38e73f0cf41.html#display-items_basic-information
+  timeslot: 28
+
+- name: 笠田 竜太
+  englishName: Ryuta Kasada
+  position: 教授
+  affiliation: 東北大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczMbrYQhnV-NwQjXNtVTBWDvfz6cs2E8hXmcA4STQSe_EseHOZeQZbUkhbvEMbEdrmG8uDEMUgT6LPigHEVoXW7G2pyMRRlfcr1J_-T1984xlqum-Ac=w2400
+  description: |
+    東北大学において学士（工学）、修士（工学）、京都大学において博士（エネルギー工学）。京都大学エネルギー理工学研究所助教、准教授を経て2017年より現職。 核融合炉・原子力材料の照射効果、酸化物分散強化超合金等の耐照射性材料開発に学生時代より携わる。文科省において核融合原型炉のロードマップやアクションプランの策定に従事。北海道大学科学技術コミュニケーター養成講座（CoSTEP）を修了し、フュージョンエネルギーや材料科学に関するサイエンスコミュニケーションの活動や研究も進めている。サイエンスライターとしては「核融合エネルギーのきほん」「機動戦士ガンダム 宇宙世紀vs.現代科学」を共同執筆。東北大学総長特別補佐（広報）としても活動。<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/gundariumalloy-rk
+    - type: personal
+      url: https://web.tohoku.ac.jp/imr-numat/
+  timeslot: 29
+
+#協賛企業の講演者
+#- name:
+#  englishName:
+#  position:
+#  affiliation:
+#  image:
+#  description: |
+#    <br><br>
+#    <span class="badge bg-primary text-light">Special lecture</span>
+#    <h5></h5>
+#  timeslot:
+
+# 8/27 前半
+- name: 西村 美紀
+  englishName: Miki Nishimura
+  position:
+  affiliation: 京都フュージョニアリング
+  image: https://lh3.googleusercontent.com/pw/AP1GczORqw6tCSpoutPm7weKsKNpuzipLzsFHNc585XHHLaJe1iVTeEy3dN1nXY9UM1LcjtAaBGkGJ484m4m53azoAvN8_YxdXduxzarclhAIcfgAUo-OX4=w2400
+  description: |
+    京都フュージョニアリング Business Development and Operations Division / FAST Preparation Office<br><br>
+    講義タイトル<br>
+    【アカデミアで働く。スタートアップで働く。　京都フュージョニアリングの紹介も交えて】
+  timeslot: 13
+
+- name: 浜田 竜巳
+  englishName: Tatsumi Hamada
+  position:
+  affiliation: 株式会社アライドマテリアル
+  image: https://lh3.googleusercontent.com/pw/AP1GczNvhwlb94oqZFV_C5uIu7tQhNNWpUywII_9yoHBARHmtCa86NW6HtYUl6aU8Wn7e7p5eGCQ73f_cc-djFj0L-uWd-1ApC4idawgO2bYArVYObKBuA4=w2400
+  description: |
+    講義タイトル<br>
+    【アライドマテリアルと核融合への取り組み】
+  timeslot: 13
+
+- name: 梶山 修
+  englishName: Shu Kajiyama
+  position:
+  affiliation: 伯東株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczMXyYl1BcBxn6PyhxUuI991GeO57zl_SnF8rsFsZIu5RoE0GJchsCZ-FW_RIKLIk3GfbG-8sat_nnDVlCDAAs3RRevoSVLd0rEEOaj9cacKkRfXjuo=w2400
+  description: |
+    システムイノベーションカンパニー バキューム・ファブソリューション営業部 R&D営業グループ グループ長<br><br>
+    講義タイトル<br>
+    【ファイファーバキューム社真空機器の紹介/伯東会社紹介】
+  timeslot: 13
+
+- name: 大木 美佑佳
+  englishName: Miyuka Oki
+  position:
+  affiliation: 伯東株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczPxiVgWWrGzSMB-7A5NnT0uV74_PfUDGC0VHTtRfezsZX4tqSEPyl2GkoYvP9_XObQzEf6ZurRvpqXzeeDAiNreH-z5KNJrekk-jUVmoXaLQSnOueE=w2400
+  description: |
+    ESG経営推進ユニットHRソリューション部HR開発グループ<br><br>
+    講義タイトル<br>
+    【ファイファーバキューム社真空機器の紹介/伯東会社紹介】
+  timeslot: 13
+
+- name: 安田 幸平
+  englishName: Kohei Yasuda
+  position:
+  affiliation: 東芝エネルギーシステムズ
+  image: https://lh3.googleusercontent.com/pw/AP1GczPBPxjBEqj9sZ65svaa41B2lA_oefIGgDBlGX7TwFWAckS-NRAmNiqYWdzURKizT9vmpWSvUoXsxnHK38KYH6jaL0r-0_2xOhr8Zx3O_4a_1qi3S7U=w2400
+  description: |
+    東芝エネルギーシステムズ 原子力システム設計部<br><br>
+    講義タイトル<br>
+    【東芝の核融合開発における実績と貢献】
+  timeslot: 13
+
+# 8/27 後半
+- name: 野尻 悠太
+  englishName: Yuta Nojiri
+  position:
+  affiliation: 株式会社LINEAイノベーション
+  image: https://lh3.googleusercontent.com/pw/AP1GczNu2eUZuFPxEjWASTAZCsc9HKecOvXDUwdaxKZP3kJZ-9CB70AuYQGotIneLWkPVxgyr42ULkIjyCqRhm4y320E-vkfMzO3lZY9_Z610hP-oEE7Q1k=w2400
+  description: |
+    株式会社LINEAイノベーション 代表取締役CEO<br><br>
+    講義タイトル<br>
+    【LINEAイノベーションによる革新的核融合炉への挑戦】
+  timeslot: 14
+
+- name: 吉村 勇紀
+  englishName: Yuki Yoshimura
+  position:
+  affiliation: 株式会社EX-Fusion
+  image: https://lh3.googleusercontent.com/pw/AP1GczM-6iE5vX0tH7bB8H306NJIzBeEa3YtKG4MNvYkmK48Jr98XNxDnvgBaFJBdKhffZP_LTwCXc0OLgcz3XJcY-l_Q8phmX1f-ldJ68pu7KSEyWasFRE=w2400
+  description: |
+    株式会社EX-Fusion 技術開発部<br><br>
+    講義タイトル<br>
+    【レーザー核融合商用炉実現に向けたEX-Fusionの取り組み】
+  timeslot: 14
+
+- name: 馬場 貴志
+  englishName: Takashi Baba
+  position:
+  affiliation: 三菱重工業株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczPz4224jTCnf2FhPCrWlHoXNr3uPJnSCOdbErjl2JFgPrE_0fDx29PX0aimJyV4uedV7mXC0k7Cj3tA8J7HTM-BxUjDiB_n6m3GeKV5Pt34ZqzQKVU=w2400
+  description: |
+    三菱重工業 原子力セグメント 核融合推進室<br><br>
+    講義タイトル<br>
+    【三菱重工　核融合開発への取組】
+  timeslot: 14
+
+- name: 田辺 良太
+  englishName: Ryota Tanabe
+  position:
+  affiliation: 株式会社日立製作所
+  image: https://lh3.googleusercontent.com/pw/AP1GczNmQwMK5Jt6nUqRkK916LPZi2jM8hX75Q6KUx5uuL295bzn2CYlT_xp1JkvAyB5L9cPRUnOr1HbVtXyIh7YX1BSa3pLOq03E6k1BWvvdXXwpxM2IuY=w2400
+  description: |
+    (株)日立製作所 原子力ビジネスユニット 原子力事業統括本部 次世代炉推進本部 核融合・加速器推進センタ プロジェクト管理グループ<br><br>
+    講義タイトル<br>
+    【(株)日立製作所における核融合開発への貢献～核融合実現を支えるモノづくり～】
+  timeslot: 14
+
+- name: 足立 迅
+  englishName: Shun Adachi
+  position:
+  affiliation: 株式会社日立製作所
+  image: https://lh3.googleusercontent.com/pw/AP1GczPQYWmN5UH1FGbgWsyQJcWZdhonJGKUPB5v0IxFJHzjJc0fhaAsNOm2_ADAYQT0INYCQVkmwu3Okfuv8AhUcOlxRYWVUzcfYGY6VFxYnlbCkjClAHQ=w2400
+  description: |
+    (株)日立製作所 原子力ビジネスユニット 原子力事業統括本部 次世代炉推進本部 核融合・加速器推進センタ NBI設計グループ<br><br>
+    講義タイトル<br>
+    【(株)日立製作所における核融合開発への貢献～核融合実現を支えるモノづくり～】
+  timeslot: 14
+
+# 8/28
+- name: 田口 昂哉
+  englishName: Takaya Taguchi
+  position:
+  affiliation: 株式会社Helical Fusion
+  image: https://lh3.googleusercontent.com/pw/AP1GczP09NGEJ-5WtpfBAhTFWFu_HqMQnnER8LGdOoPpDTIniTN5ZDRhtXfcP58zbPemPvI6FyN8PgVs0oPPEQD0b_JUQPeHMOc_RtPHKbGFaru4L9eWpls=w2400
+  description: |
+    株式会社Helical Fusion 代表取締役CEO<br><br>
+    講義タイトル<br>
+    【オールジャパンで実現する世界初の定常核融合炉】
+  timeslot: 20
+
+- name: Amrita Kaur Ghag
+  englishName:
+  position:
+  affiliation: 孫正義育英財団
+  image: https://lh3.googleusercontent.com/pw/AP1GczNIzjIHRis9AoDLO8DRg9COGIhlJ7KdHYIwbxIUKWKGtwy9K5sO_f1sQPJuYWYV_0jwD6mQNoPFvoirWdWGmwHikJbTQTu03naMWkPFnaM0qg2tkHM=w2400
+  description: |
+    孫正義育英財団8期生<br><br>
+    講義タイトル<br>
+    【オールジャパンで実現する世界初の定常核融合炉】
+  timeslot: 20
+
+- name: 岩下 秀徳
+  englishName: Hidenori Iwashita
+  position:
+  affiliation: NTT株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczPlWQLFG5Ca0RoEDLmdGFz0VNiItNvYf0_JXGweaxHwWrQgvbPZZPuaLthc3Iyi-cTTMmSftdQwE8ErXEuvm4ZOgtefG82DVA2_GWblRzphJ7ybeFQ=w2400
+  description: |
+    NTT株式会社 宇宙環境エネルギー研究所<br><br>
+    講義タイトル<br>
+    【NTT R&Dの研究紹介】
+  timeslot: 20
+
+- name: 児島 富彦
+  englishName: Tomihiko Kojima
+  position:
+  affiliation: NTT株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczOLp9mbnBlCDYW2Iqocp5jX5_VS6ab2O7Tt0gea4bbyu5kIlF0e_Il_1KLWgsfIWwZWOetbqMGgkikhQDjUGArFnjkpGzSayw2M_H6zAkq8bPwA5_o=w2400
+  description: |
+    NTT株式会社 宇宙環境エネルギー研究所<br><br>
+    講義タイトル<br>
+    【NTT R&Dの研究紹介】
+  timeslot: 20
