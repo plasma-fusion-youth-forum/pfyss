@@ -42,10 +42,6 @@ sponsors:
     これまでの夏学の活動については<a href="/forepast">こちら</a>からご覧ください。
     </p>
   list:
-    - name: アライドマテリアル
-      link: https://www.allied-material.co.jp/
-      logo: /img/brands/allied_material.png
-
     - name: EX-Fusion
       link: https://ex-fusion.com
       logo: /img/brands/EX_Fusion.svg
@@ -53,10 +49,6 @@ sponsors:
     - name: 伯東株式会社
       link: https://www.hakuto.co.jp/
       logo: /img/brands/hakuto.png
-
-    - name: 浜松ホトニクス
-      link: https://www.hamamatsu.com/jp/ja.html
-      logo: /img/brands/hamaphoto2.svg
 
     - name: Helical Fusion
       link: https://www.helicalfusion.com
@@ -78,20 +70,20 @@ sponsors:
       link: https://www.mhi.com/jp
       logo: /img/brands/mitsubishi2.svg
 
-    - name: NTT R&D # 7月以降に新ロゴに変更
+    - name: NTT R&D
       link: https://www.rd.ntt/
-      logo: /img/brands/NTT_new.png
-
-    - name: 助川電気工業
-      link: https://sukegawadenki.co.jp/
-      logo: /img/brands/sukegawa_denki.png
+      logo: /img/brands/NTT.png
 
     - name: Starlight Engine
       link: https://sle.energy/
       logo: /img/brands/starlightengine.svg
 
-    - name: 東芝エネルギーシステムズ株式会社
-      link: https://www.global.toshiba/jp/company/energy.html
+    - name: 助川電気工業
+      link: https://sukegawadenki.co.jp/
+      logo: /img/brands/sukegawa_denki.png
+
+    - name: 株式会社 東芝
+      link: https://www.global.toshiba/jp/business/01.html
       logo: /img/brands/toshiba.png
 
 ### スケジュールの表示 ###
