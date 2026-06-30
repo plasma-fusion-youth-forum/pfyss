@@ -104,24 +104,25 @@ schedule:
 venue_cards:
   enable: true
   list:
-    - name: エスポールみやぎ
+    - name: 静岡県立森林公園 森の家
       badges: # badgeの種類はここから選ぶ - https://silicon.createx.studio/components/badges.html
         Venue: warning
         Accommodation: primary
-      description: エスポールみやぎにて宿泊し、講義、ポスターセッション、ナイトセッション、懇親会を行います。
-      website: https://seinenkaikan.or.jp/
-      image: https://lh3.googleusercontent.com/pw/AP1GczM6Z1XoKPpIi2JhaV_5K0BJe2zNeHrpX5aQqAhrm5VsVAZ20hHYGvv0pRx9TJmWpIMUrwaVWNfyjxCt1g3Yb3z-KRFBTn6qKUNPz05KIbW6UL1vIIM=w2400
-      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.127780628486!2d140.9009443264681!3d38.27557533709355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8987bc5bab1f05%3A0xda92e5f4a8ad555d!2z44Ko44K544Od44O844Or44G_44KE44GOKOWuruWfjuecjOmdkuW5tOS8mumkqCk!5e0!3m2!1sja!2sjp!4v1748602174342!5m2!1sja!2sjp
+      description: 静岡県立森林公園 森の家に宿泊し、講義、ポスターセッション、ナイトセッション、懇親会を行います。
+      website: https://morinoie.biz/
+      image: https://lh3.googleusercontent.com/pw/AP1GczOJ8MV4QTAkumRX5n0nsa5yadyTWOwg2iPZ7jQYVU2hBTLAhXZWAm8wFx8SBOwpzI7z--3x8AjK4gsFj6WM0aOfrzVfLVWFUeRKEqns9bf19Sk-YDU=w2400
+      alt: 森の家 外観
+      credit: (c)森の家
+      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.2558378266613!2d137.7920165!3d34.8497984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601b1f170b6cf9f9%3A0x303de4800a8995fc!2z6Z2Z5bKh55yM56uL5qOu5p6X5YWs5ZySIOajruOBruWutg!5e0!3m2!1sja!2sjp!4v1780137059132!5m2!1sja!2sjp
 
-    - name: JAXA角田宇宙センターの見学
+    - name: 浜松ホトニクスの見学
       badges:
         Visit: success
-      website: https://www.jaxa.jp/about/centers/kspc/index_j.html
-      description: |
-        JAXA角田宇宙センターは、ロケットエンジン開発の重要拠点です。現地講義、見学ツアーを行い、普段の見学ではわからない詳しいところまで解説していただきます。
-      image: https://lh3.googleusercontent.com/pw/AP1GczOFWhO9q3j4KynIQsnONLIDGqBdjWDcShFq2oBuEUEWTWhxp0HIkPIlvVncaagghM53Mg5fV25CQfylKcrqqrjMd0CRn79NLt-a83AZfXRjnrhHYiA=w2400
-      credit: ©JAXA
-      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76648.96816819947!2d140.683070291041!3d38.03805079237342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a1570726f5fbb%3A0x1f3a6f1223998219!2z6KeS55Sw5a6H5a6Z44K744Oz44K_44O8!5e0!3m2!1sja!2sjp!4v1748602343239!5m2!1sja!2sjp
+      website: https://www.hamamatsu.com/jp/ja.html
+      description: 浜松ホトニクスでは、レーザフュージョンの実現に向けた研究が行われています。現地講義、バーチャルツアーを行い、普段の見学ではわからない詳しいところまで解説していただきます。
+      image: https://lh3.googleusercontent.com/pw/AP1GczM704w8oZos97-y_P1aT66MfVj4yb625nkc4A53kprKdvdrkgkhlJuyT-VBxUNVXLGJfnFImlrFMupKYpH9E6jaG0XKElD9QN9bgqJNYiBMAcJm2LA=w2400
+      credit: 写真提供：浜松ホトニクス株式会社
+      google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.1267751220425!2d137.62585917574785!3d34.77758367289257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601b2646d641f265%3A0x5c1895557b64fa96!2z5rWc5p2-44Ob44OI44OL44Kv44K5IOeUo-alremWi-eZuueglOeptuOCu-ODs-OCv-ODvA!5e0!3m2!1sja!2sjp!4v1780138902538!5m2!1sja!2sjp
 
     #- name: 懇親会
     #  badges:
