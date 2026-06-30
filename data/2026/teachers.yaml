@@ -1,0 +1,249 @@
+# 講師画像は最低500x500pxの解像度であること
+- name: 武村 勇輝
+  englishName: Yuki Takemura
+  position: 助教
+  affiliation: 核融合科学研究所
+  image: https://lh3.googleusercontent.com/pw/AP1GczPApeYN3PYC7hcnSFIC349Kt7p0AbsmYUNdCWO3HoEGbuuHYQhkVYc0UDZ9lq15ljYHdd4Lf--bDLiSPQCdAMHI48nLgaF245XnQ5pDwUFJoCzzguI=w2400
+  description: 自然科学研究機構 核融合科学研究所 可知化センシングユニット。総合研究大学院大学 物理科学研究科 核融合科学専攻にて博士（工学）を取得。博士課程では、世界最大級の超伝導ヘリカル装置である大型ヘリカル装置を対象として、MHD不安定性および磁気島ダイナミクスに関する研究に従事した。現在は、大型ヘリカル装置に加えてトカマク装置も対象とし、装置横断的な視点からMHD不安定性のモデリングに関する研究を進めている。<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/ytakemura
+  timeslot: 7
+
+- name: 中野 治久
+  englishName: Haruhisa Nakano
+  position: 准教授
+  affiliation: 核融合科学研究所
+  image:
+  description: <br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/read0132712
+  timeslot: 8
+
+- name: 仲田 資季
+  englishName: Motoki Nakata
+  position: 教授
+  affiliation: 駒沢大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczP1XZjEHhgWtNVredVBxpvfLIywXpHT8iUs3J8dz2rwSyFkLCerK34-_OuDM6UEN0XOyQTYlv38ksD9RT8nYaL1lnw7i3V61QV9ci-IQEhnzvBXAHc=w2400
+  description: |
+    駒澤大学 総合教育研究部 自然科学部門 教授。<br>
+    理化学研究所 数理創造研究センター(iTHEMS) 客員研究員。<br>
+    2011年3月に総合研究大学院大学物理科学研究科にて博士(理学)の学位を取得。<br>
+    日本原子力研究開発機構、自然科学研究機構核融合科学研究所を経て2024年度より現職。<br>
+    乱流プラズマをはじめとする非平衡ダイナミクス全般に関する数理・情報・物理の沼にずーーーーっとハマっています。”Interesting first”の自由悦楽研究主義。<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/moto0607
+  timeslot: 9
+
+- name: 有川 安信
+  englishName: Yasunobu Arikawa
+  position: 准教授
+  affiliation: 大阪大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczO3npaZUoiF4_UM6QOOTwcJaWglmegLS85f50Td8SzIxGMCTSETs6Aa9KH-YCrRR9iUjGjziltGI177cV0g6g4ZFqBNy-iMtkLbauVjfqeGKVzd45U=w2400
+  description: 2010年大阪大学レーザー科学研究所において博士（工学）を取得後、特任研究員、助教、講師を経て現在に至る<br>
+    主な研究内容：レーザー核融合全般、核融合中性子計測器の開発、ハイパワーレーザーによる中性子科学、<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/yasunobuarikawa
+    - type: personal
+      url: https://www.eng.osaka-u.ac.jp/department/905/
+  timeslot: 11
+
+- name: 藤田 隆明
+  englishName: Takaaki Fujita
+  position: 教授
+  affiliation: 名古屋大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczMMeQYl2ixpLWmqXeFTeWtOaK3Pec8r2Wb2fVERV7zRqoeGz-wk3OoKmZMS2Kt_EjzAgJbrhTsJOCDdsoQCtAbMqizs6HuGMnZiPFKGUUDV821mS3Q=w2400
+  description: 東京大学工学系研究科原子力工学専攻博士課程修了（工学博士）。原研核融合特別研究生（JFT-2M）、九州大学応用力学研究所助手（TRIAM-1M）を経て、20年間那珂研に勤めJT-60U実験（電流分布計測、負磁気シアプラズマ開発など）やJT-60SAの設計検討に携わっていました。2013年からは名古屋大学で、小型トーラス装置（TOKASTAR-2、SOLEIL（写真））や統合コードTOTALを用いた研究を行っています。2024年3月よりBAサテライト・トカマク（JT-60SA）計画事業委員会議長。<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/7000007665
+    - type: personal
+      url: https://fuspla.energy.nagoya-u.ac.jp/index.html
+  timeslot: 16
+
+- name: 田口 善弘
+  englishName: Yoshihiro Taguchi
+  position: 教授
+  affiliation: 中央大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczNHXwrUK1ujontGAVwz4ipam8P4-GWrZq8I_4Zzm0XNfXle8CJNAONp96Hapb7bvPIw5Rh90UYihTKRB4aF99iS1_r_gDskQTcIt8BE7cAZvkOGDJw=w2400
+  description: 中央大学理工学術院教授。専門はバイオインフォマティクスですが所属は基幹理工学部物理学科です。経歴などはWikipediaみて下さい（https://w.wiki/KrwG）<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/Yh_Taguchi
+  timeslot: 17
+
+- name: 沖野 晃俊
+  englishName: Akitoshi Okino
+  position: 教授
+  affiliation: 東京科学大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczOLWVQjRxmnZAry6wjeOUVbAaCKITN_QIi2236KnvRTDvHEtiMdO1dsMqOcgAkmCGao3SWHQ79JFpUEjczXRR1d6wk5625nr6Tq84DnkY-n6wTgh-4=w2400
+  description: 東京科学大学 国際医工共創研究院 教授<br>
+    京都市出身，阪大工学部応用物理学科卒業，東工大原子核工学専攻博士課程修了。<br>
+    様々な新しい大気圧プラズマ装置を開発し，医歯薬農藝工の多方面連携研究を実施中。<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/read0183732
+    - type: personal
+      url: https://ap.first.iir.titech.ac.jp/index.html
+  timeslot: 20
+
+- name: 染谷 洋二
+  englishName: Yoji Someya
+  position:
+  affiliation: 量子科学技術研究開発機構
+  image: https://lh3.googleusercontent.com/pw/AP1GczMxLChoDvXHO8unoDXkj4kt8At4tWLZcV81ICel1HmeD2MoeZ0oMOpdXY47tdwkHjQCYc7wZvG488qRFPJFfDynVJ-FdWr6qL-j_FE21M6cmYN6uIM=w2400
+  description: QST六ヶ所フュージョンエネルギー研究所 原型炉統合設計グループ 主幹研究員。専門は中性子輸送工学で、核融合原型炉の増殖ブランケット設計および安全設計（廃止措置の検討を含む）などに取り組んでいる。2017年からは、産学連携による原型炉設計合同特別チームの安全設計グループリーダーとして、核融合原型炉の安全確保に向けた方針策定と設計の取りまとめを担っている。<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/yojisomeya
+  timeslot: 27
+
+- name: 長澤 幸祐
+  englishName: Kosuke Nagasawa
+  position: 研究開発局 研究開発戦略官（フュージョン・原子力国際協力担当）付専門官
+  affiliation: 文部科学省
+  image: https://lh3.googleusercontent.com/pw/AP1GczMapdS-oledMe9Grcufllme9kS4kW2U8MAZB_9gAPpr6YQNQzTAotU7d0LAOea9xldAibB8zLQkN-k5CCy0v2_RuehirzyUVshorcai6e02s6cjyaM=w2400
+  description: 2018年文部科学省入省。核燃料サイクル、計算科学等の分野を経験。<br>
+
+  timeslot: 28
+
+- name: 笠田 竜太
+  englishName: Ryuta Kasada
+  position: 教授
+  affiliation: 東北大学
+  image: https://lh3.googleusercontent.com/pw/AP1GczOkGk_iIzJfNKw3FgTija8WG-ZwcUZ4_7uC6XTKgEboZnecoYgRtCoh6dV7robYbb7eQezkHxiueOyw0mbOrONdEMa5hddIcUgJJzkXqimrLceYa-A=w2400
+  description: 京都大学エネルギー理工学研究所助教、准教授を経て、現在は東北大学金属材料研究所教授。専門は原子力・核融合材料、エネルギーシステム工学、科学コミュニケーション。文科省にて核融合研究関連委員、原子力規制委員会にて原子炉安全関連委員を務める。千葉県木更津市出身。<br>
+
+  links:
+    - type: general
+      url: https://researchmap.jp/gundariumalloy-rk
+    - type: personal
+      url: https://web.tohoku.ac.jp/imr-numat/
+  timeslot: 29
+
+#協賛企業の講演者
+#- name:
+#  englishName:
+#  position:
+#  affiliation:
+#  image:
+#  description:
+#    <br><br>
+#    <span class="badge bg-primary text-light">Special lecture</span>
+#    <h5></h5>
+#  timeslot:
+
+# 8/29
+#- name:
+#  englishName:
+#  position:
+#  affiliation: 株式会社EX-Fusion
+#  image:
+#  description: <br><br>
+#    講義タイトル<br>
+#    【】
+#  timeslot:
+
+#- name:
+#  englishName:
+#  position:
+#  affiliation: 伯東株式会社
+#  image:
+#  description: 講義タイトル<br>
+#    【】
+#  timeslot:
+
+- name: 石井 健介
+  englishName: Kensuke Ishii
+  position: コーポレート戦略部門 マネージャー
+  affiliation: 株式会社Helical Fusion
+  image: https://lh3.googleusercontent.com/pw/AP1GczMjefnouro3A-J1icBY3t3E0PNgxCcyd0tvsC1AqVN8cASFJFpEwBVtq5Q8SHSRhEk540XBsZ5rfoxlZndCqnXl7plLrE9vJtfy-5LZ59YIMxVtmks=w2400
+  description:
+    メーカーの法人営業、エンジニア採用に関するコンサルティング営業を経てHelical Fusionへ参画。主に採用全般、事業開発に従事。<br><br>
+    講義タイトル<br>
+    【Helical Fusionの核融合事業の強み、および現状とこれから】
+  timeslot:
+
+- name: 今村 寿郎
+  englishName: Toshiro Imamura
+  position:
+  affiliation: 株式会社日立製作所
+  image: https://lh3.googleusercontent.com/pw/AP1GczOOhI1I3VxIvALQKM6ktXuUcuvflnlawtmd3tI1TBIZDg2ZDWRDT_P_74BW0ZauyfWRQ7xqfun_JTOTg64zFA5TTT-JT-SCMgWt77w0AFVLbcQf250=w2400
+  description: <br><br>
+    講義タイトル<br>
+    【】
+  timeslot:
+
+- name: 武田 健太郎
+  englishName: Kentaro Takeda
+  position:
+  affiliation: 株式会社日立製作所
+  image: https://lh3.googleusercontent.com/pw/AP1GczNdQxGTl4E0YP2dmSKd-JfSp7GEzSdRkifSWOyUcgup3vv0hmF2d5oSM7OtjFroCyLX7FV0Swn92CHR2QtdVqq6PEmhCTd6b-gGxDIBjno6HwdPm28=w2400
+  description: <br><br>
+    講義タイトル<br>
+    【】
+  timeslot:
+
+#- name:
+#  englishName:
+#  position:
+#  affiliation: 株式会社LINEAイノベーション
+#  image:
+#  description: <br><br>
+#    講義タイトル<br>
+#    【】
+#  timeslot:
+
+- name: 馬場 貴志
+  englishName: Takashi Baba
+  position: 原子力セグメント 核融合推進室
+  affiliation: 三菱重工業株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczNeOt3FyoAwsOBn-BbD2MJsxQZ0Wv2r5M8RxuKuOKKof0WyU5v9tw8I2gu5SX8cQfQy6w9y0K5z5fNJog5RNwXEoDm8DyGqitTqMgODND0gmK_mS1U=w2400
+  description: 1980年生まれ、46歳。<br>
+    先日、会社仲間と琵琶湖横断水泳大会に参加し、無事完泳！<br><br>
+    講義タイトル<br>
+    【三菱重工の核融合取組】
+  timeslot:
+
+#- name:
+#  englishName:
+#  position:
+#  affiliation: NTT株式会社
+#  image:
+#  description: <br><br>
+#    講義タイトル<br>
+#    【】
+#  timeslot:
+
+- name: 伊庭野 健造
+  englishName: Kenzo Ibano
+  position: 執行役員CTO
+  affiliation: Starlight Engine株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczNx_tUlOWUhDnoKhQ2OzviX9OYTgR_X7TCUuWXF1GqISGaUGaDM9bEZ58VXppEz9r6Z-VyW3TiQp-qi7dSugPZc3ZDn_rWE_dozzx24zc1NsqrmpqQ=w2400
+  description:
+    米国大学・研究機関と連携し、フュージョン炉設計とプラズマ材料の相互作用研究に15年以上従事し、商業炉の実現を科学的に検証。自身の経験をもとにOISTにてVSM Mentorとしてスタートアップ支援を実施。慶応義塾大学。イリノイ大学M.S.。京都大学Ph.D.。<br><br>
+    講義タイトル<br>
+    【Starlight Engineが取り組むフュージョンエネルギー発電実証プラント「FAST」について】
+  timeslot:
+
+- name: 安田 幸平
+  englishName: Kohei Yasuda
+  position: 原子力先端システム設計部
+  affiliation: 株式会社東芝
+  image: https://lh3.googleusercontent.com/pw/AP1GczNn-Y_sVNFjcod9vMKqhsGCCpve6QCISeCvRPJRCiwXdVdB1uGBwQMHsAfxP12KiQ6lNNTyU8LhT99LESxKRXbK4BY3RLL-rNL89H5JFa8hp1r1phw=w2400
+  description:
+    名古屋大学大学院にて核融合プラズマの実験研究で博士(工学)を取得。現在は主にITER・原型炉向けのブランケット開発等に従事しています。<br><br>
+    講義タイトル<br>
+    【東芝の核融合開発における実績と貢献】
+  timeslot:
