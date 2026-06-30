@@ -103,7 +103,7 @@ sponsors:
 schedule:
   enable: true
   # GoogleカレンダーのPFYSSカレンダー共有リンクURL
-  url: https://calendar.google.com/calendar/u/0?cid=ODFlZmE4ZWRiMGMwNjEyOGI1NGRhMzY2Mjg4YmM3Njk1NmMwMmQ1MzA4N2I3NjhkYmYxYjJlZTEwNjgwMjQzZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
+  url: https://calendar.google.com/calendar/u/0?cid=MmIyOTUwMjdiY2U2Mjg3OTBkMWFhYTE4MWZkMjBhMTUxMDJmNzVjY2NjOTQ5Njk4NWVlZTFiOGM2YTcyNTg2YkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
 
 ### Venue Cards ###
 venue_cards:
