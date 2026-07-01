@@ -24,6 +24,24 @@
               />
             </a>
           {{ end }}
+          {{ range $index, $sponsors := .Params.sponsors.list }}
+            <a
+              href="{{ $sponsors.link | safeURL }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="col growOnHover py-3 d-flex align-items-center"
+            >
+              <img
+                {{ if eq $index 0 }}id="sponsor1"{{ end }}
+                src="{{ $sponsors.logo | safeURL }}"
+                alt="{{ $sponsors.name }}"
+                class="mx-auto"
+                data-aos="fade-up"
+                data-aos-delay="{{ mul $index 100 }}"
+                {{- if not (eq $index 0) }}data-aos-anchor="#sponsor1"{{ end -}}
+              />
+            </a>
+          {{ end }}
         </div>
       </div>
       "
