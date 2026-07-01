@@ -34,7 +34,7 @@ carousels:
 
 ### 協賛リスト ###
 sponsors:
-  enable: false
+  enable: true
   default:
     <h2 class="text-center text-white">協賛企業様を募集しております！<i class="bx bxs-megaphone bx-tada"></i></h2>
     <p class="text-center text-white">ご興味のある企業様は<a href="/contact">お問い合わせフォーム</a>からご連絡ください。</br>
@@ -72,7 +72,7 @@ sponsors:
 
     - name: NTT R&D
       link: https://www.rd.ntt/
-      logo: /img/brands/NTT.png
+      logo: /img/brands/NTT_new.png
 
     - name: Starlight Engine
       link: https://sle.energy/
