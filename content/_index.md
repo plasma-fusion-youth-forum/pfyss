@@ -136,10 +136,10 @@ venue_cards:
 
 ### 参加申込みフォームの設定 ###
 application:
-  fee: ￥23,000 # 参加費
-  capacity: 50 # 募集人数 (募集時は数値のみ指定可能)
-  startline: 2025-06-16 # 参加申し込み募集開始日
-  deadline: 2025-07-11 # 参加申し込み締め切り日
+  fee: 28,000円 # 参加費
+  capacity: 60 # 募集人数 (募集時は数値のみ指定可能)
+  startline: 2026-07-01 # 参加申し込み募集開始日
+  deadline: 2026-07-15 # 参加申し込み締め切り日
   note: # 留意事項
     - title: <i class="bx bx-fw bx-md bxs-user-x"></i>キャンセルポリシー # 注意タイトル (html形式)
       content: | # 内容 (Markdown形式)
@@ -166,6 +166,7 @@ application:
         <ul>
         <li>第１回 全体の８割支援</li>
         <li>第２回 全額支援</li>
+        <li>第３回 希望者にほぼ全額支援（補助額に上限あり）</li>
         </ul>
         {{< /alert >}}
 
