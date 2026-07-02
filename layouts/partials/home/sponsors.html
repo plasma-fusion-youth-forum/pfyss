@@ -1,8 +1,8 @@
-<section id="sponsors" class="position-relative bg-dark py-5">
+<section id="sponsors" class="position-relative py-5" style="background-color:#f8f9fa">
   <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255, 255, 255, 0.05)"></div>
   <div class="container position-relative zindex-5 pt-1 pt-md-2">
     {{ if .Params.sponsors.enable }}
-      <h2 class="h3 text-light text-center text-lg-start mb-4 mb-lg-5">Sponsored by:</h2>
+      <h2 class="h3 text-center text-lg-start mb-4 mb-lg-5" style="color:black">Sponsored by:</h2>
       {{/* <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 justify-content-center"> */}}
       <div class="sponsors-scroll">
         <div class="sponsor-track">
@@ -44,7 +44,6 @@
           {{ end }}
         </div>
       </div>
-      "
       {{/* </div> */}}
     {{ else }}
       {{- with .Params.sponsors.default }}
