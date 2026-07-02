@@ -134,6 +134,54 @@
   }
 }
 
+/* Sponsor logo scroll */
+.sponsors-scroll {
+  overflow: hidden;
+  width: 100%;
+}
+
+.sponsor-track {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: max-content;
+  animation: sponsor-scroll 44s linear infinite;
+}
+
+/* Stop when cursor is on logos */
+.sponsor-track:hover {
+  animation-play-state: paused;
+}
+
+.sponsor-track a {
+  flex-shrink: 0;
+}
+
+.sponsor-track img {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+/*Color set for sponsors*/
+#sponsors {
+  background-color: $gray-500;
+}
+
+#sponsors h2 {
+  color: $dark;
+}
+
+@keyframes sponsor-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50.25%);
+  }
+}
+
 // Google Slide Embed
 .g-slide {
   position: relative;
