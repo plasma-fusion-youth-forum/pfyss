@@ -33,7 +33,7 @@ pre-commit:
       glob: "*.{css,scss,html,js,json,jsonc,md,yaml,yml}"
       stage_fixed: true
       skip:
-        - run: test ${CI} -eq 1
+        - run: test "${CI:-0}" -eq 1
       run: pixi {run} prettier-format {staged_files}
 
     - name: eslint
