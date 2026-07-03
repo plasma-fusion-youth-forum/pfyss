@@ -1,27 +1,48 @@
-<section id="sponsors" class="position-relative bg-dark py-5">
-  <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255, 255, 255, 0.05)"></div>
-  <div class="container position-relative zindex-5 pt-1 pt-md-2">
+<section id="sponsors" class="position-relative py-5">
+  <div class="position-absolute top-0 start-0 w-100 h-100"></div>
+  <div class="container-fluid position-relative zindex-5 pt-1 pt-md-2 px-0">
     {{ if .Params.sponsors.enable }}
-      <h2 class="h3 text-light text-center text-lg-start mb-4 mb-lg-5">Sponsored by:</h2>
-      <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 justify-content-center">
-        {{ range $index, $sponsors := .Params.sponsors.list }}
-          <a
-            href="{{ $sponsors.link | safeURL }}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="col growOnHover py-3 d-flex align-items-center"
-          >
-            <img
-              {{ if eq $index 0 }}id="sponsor1"{{ end }}
-              src="{{ $sponsors.logo | safeURL }}"
-              alt="{{ $sponsors.name }}"
-              class="mx-auto"
-              data-aos="fade-up"
-              data-aos-delay="{{ mul $index 100 }}"
-              {{- if not (eq $index 0) }}data-aos-anchor="#sponsor1"{{ end -}}
-            />
-          </a>
-        {{ end }}
+      <h2 class="h3 text-center text-lg-start mb-4 mb-lg-5">Sponsored by:</h2>
+      <div class="sponsors-scroll">
+        <div class="sponsor-track" data-scroll-speed="90">
+          <div class="sponsor-group">
+            {{ range $index, $sponsors := .Params.sponsors.list }}
+              <a
+                href="{{ $sponsors.link | safeURL }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="growOnHover py-3 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="{{ $sponsors.logo | safeURL }}"
+                  alt="{{ $sponsors.name }}"
+                  class="mx-auto"
+                  data-aos="fade-up"
+                  data-aos-delay="{{ mul $index 100 }}"
+                />
+              </a>
+            {{ end }}
+          </div>
+          <div class="sponsor-group" aria-hidden="true">
+            {{ range $index, $sponsors := .Params.sponsors.list }}
+              <a
+                href="{{ $sponsors.link | safeURL }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="growOnHover py-3 d-flex align-items-center justify-content-center"
+                tabindex="-1"
+              >
+                <img
+                  src="{{ $sponsors.logo | safeURL }}"
+                  alt=""
+                  class="mx-auto"
+                  data-aos="fade-up"
+                  data-aos-delay="{{ mul $index 100 }}"
+                />
+              </a>
+            {{ end }}
+          </div>
+        </div>
       </div>
     {{ else }}
       {{- with .Params.sponsors.default }}
