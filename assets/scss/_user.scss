@@ -138,6 +138,8 @@
 .sponsors-scroll {
   overflow: hidden;
   width: 100%;
+  mask-image: linear-gradient(to right, transparent, #000 64px, #000 calc(100% - 64px), transparent);
+  mask-repeat: no-repeat;
 }
 
 .sponsor-track {

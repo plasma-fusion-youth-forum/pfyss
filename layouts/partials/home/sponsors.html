@@ -3,7 +3,7 @@
   <div class="position-relative zindex-5 pt-1 pt-md-2 px-0">
     {{ if .Params.sponsors.enable }}
       <h2 class="h3 container text-center text-lg-start mb-4 mb-lg-5">Sponsored by:</h2>
-      <div class="sponsors-scroll container-fluid">
+      <div class="sponsors-scroll">
         <div class="sponsor-track" data-scroll-speed="90">
           <div class="sponsor-group">
             {{ range $index, $sponsors := .Params.sponsors.list }}
