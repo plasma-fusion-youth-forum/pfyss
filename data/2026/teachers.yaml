@@ -195,15 +195,16 @@
     【（株）日立製作所における核融合開発への貢献～核融合実現を支えるモノづくり～】
   timeslot:
 
-#- name:
-#  englishName:
-#  position:
-#  affiliation: 株式会社LINEAイノベーション
-#  image:
-#  description: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
+- name: 関 太一
+  englishName: Taichi Seki
+  position: Senior Scientist
+  affiliation: 株式会社LINEAイノベーション
+  image: https://lh3.googleusercontent.com/pw/AP1GczNJXuKsG1xX2ovn8BwMw1kQVP4a8uPTnmqSWCRJvWj1A2TkkVlT5yUOOYdhtkBOxpMgNGUS0m7tH8mSf0Cd8uDAkoX0R7q4Ie9XAtDLcWpzMfMmCnE=w2400
+  description:
+    日本大学在学中は、磁場反転配位（FRC）の研究に取り組む傍ら、若手フォーラムの実行委員も務めていました。学位取得後はこれまでの経験を活かし、株式会社LINEAイノベーションにて、FRC周辺の物理設計や炉構成の検討などを進めています。<br><br>
+    講義タイトル<br>
+    【LINEAイノベーションによる革新的核融合炉への挑戦】
+  timeslot:
 
 - name: 馬場 貴志
   englishName: Takashi Baba
