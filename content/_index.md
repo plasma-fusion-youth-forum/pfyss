@@ -131,7 +131,7 @@ application:
   fee: 28,000円 # 参加費
   capacity: 60 # 募集人数 (募集時は数値のみ指定可能)
   startline: 2026-07-06 # 参加申し込み募集開始日
-  deadline: 2026-07-20 # 参加申し込み締め切り日
+  deadline: 2026-07-31 # 参加申し込み締め切り日
   note: # 留意事項
     - title: <i class="bx bx-fw bx-md bxs-user-x"></i>キャンセルポリシー # 注意タイトル (html形式)
       content: | # 内容 (Markdown形式)
