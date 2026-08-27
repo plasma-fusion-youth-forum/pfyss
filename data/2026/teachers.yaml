@@ -217,15 +217,25 @@
     【三菱重工の核融合取組】
   timeslot:
 
-#- name:
-#  englishName:
-#  position:
-#  affiliation: NTT株式会社
-#  image:
-#  description: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
+- name: 鳥海 陽平
+  englishName: Yohei Toriumi
+  position: NTT株式会社宇宙環境エネルギー研究所 主任研究員
+  affiliation: NTT株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczMN7b3tUcqqR5-g1g1LIG2MdPgs3ZXozg3shxKffH09C3A0M7JWp_Ry3-h5VILegupBN4pzAr-6AOCfApqAJP1BRFNUA2Xs93owVoc6_hRUbYmNN9U=w2400
+  description: <br><br>
+    講義タイトル<br>
+    【】
+  timeslot:
+
+- name: 白澤 唯汰
+  englishName: Yuita Shirasawa
+  position: NTT株式会社宇宙環境エネルギー研究所 研究員
+  affiliation: NTT株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczNnReeCHjKwZNuIow7ogX7Fa0WRUXqCFnj8aeHIwhlMwLNx5q4uTqFvMP3RgJstaNIS7w_99pTuLYzpBNQVEb9OB9zrUBeX5qquQ70xw9Mh94T-EDM=w2400
+  description: <br><br>
+    講義タイトル<br>
+    【】
+  timeslot:
 
 - name: 伊庭野 健造
   englishName: Kenzo Ibano
