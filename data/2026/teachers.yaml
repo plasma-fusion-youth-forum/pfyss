@@ -145,43 +145,25 @@
 #  timeslot:
 
 # 8/29
-- name: 吉村 勇紀
-  englishName: Yuki Yoshimura
-  position: 技術第2事業部・開発4課（兼務）
-  affiliation: 株式会社EX-Fusion
-  image:
+- name: 今村 寿郎
+  englishName: Toshiro Imamura
+  position: 核融合加速器推進センタ 開発エンジニアリンググループ 技師
+  affiliation: 株式会社日立製作所
+  image: https://lh3.googleusercontent.com/pw/AP1GczOOhI1I3VxIvALQKM6ktXuUcuvflnlawtmd3tI1TBIZDg2ZDWRDT_P_74BW0ZauyfWRQ7xqfun_JTOTg64zFA5TTT-JT-SCMgWt77w0AFVLbcQf250=w2400
   description: <br><br>
     講義タイトル<br>
-    【】
-  timeslot:
+    【（株）日立製作所における核融合開発への貢献～核融合実現を支えるモノづくり～】
+  timeslot: 12
 
-- name: 木村 彩人
-  englishName: Ayato Kimura
-  position: 開発4課・技術第2事業部（兼務）
-  affiliation: 株式会社EX-Fusion
-  image:
+- name: 武田 健太郎
+  englishName: Kentaro Takeda
+  position: 核融合加速器推進センタ 開発エンジニアリンググループ 企画員
+  affiliation: 株式会社日立製作所
+  image: https://lh3.googleusercontent.com/pw/AP1GczNdQxGTl4E0YP2dmSKd-JfSp7GEzSdRkifSWOyUcgup3vv0hmF2d5oSM7OtjFroCyLX7FV0Swn92CHR2QtdVqq6PEmhCTd6b-gGxDIBjno6HwdPm28=w2400
   description: <br><br>
     講義タイトル<br>
-    【】
-  timeslot:
-
-- name: 梶山 修
-  englishName: Shu Kajiyama
-  position:
-  affiliation: 伯東株式会社
-  image:
-  description: 講義タイトル<br>
-    【】
-  timeslot:
-
-- name: 大橋 渉
-  englishName: Wataru Ohashi
-  position:
-  affiliation: 伯東株式会社
-  image:
-  description: 講義タイトル<br>
-    【】
-  timeslot:
+    【（株）日立製作所における核融合開発への貢献～核融合実現を支えるモノづくり～】
+  timeslot: 12
 
 - name: 石井 健介
   englishName: Kensuke Ishii
@@ -192,38 +174,7 @@
     メーカーの法人営業、エンジニア採用に関するコンサルティング営業を経てHelical Fusionへ参画。主に採用全般、事業開発に従事。<br><br>
     講義タイトル<br>
     【Helical Fusionの核融合事業の強み、および現状とこれから】
-  timeslot:
-
-- name: 今村 寿郎
-  englishName: Toshiro Imamura
-  position: 核融合加速器推進センタ 開発エンジニアリンググループ 技師
-  affiliation: 株式会社日立製作所
-  image: https://lh3.googleusercontent.com/pw/AP1GczOOhI1I3VxIvALQKM6ktXuUcuvflnlawtmd3tI1TBIZDg2ZDWRDT_P_74BW0ZauyfWRQ7xqfun_JTOTg64zFA5TTT-JT-SCMgWt77w0AFVLbcQf250=w2400
-  description: <br><br>
-    講義タイトル<br>
-    【（株）日立製作所における核融合開発への貢献～核融合実現を支えるモノづくり～】
-  timeslot:
-
-- name: 武田 健太郎
-  englishName: Kentaro Takeda
-  position: 核融合加速器推進センタ 開発エンジニアリンググループ 企画員
-  affiliation: 株式会社日立製作所
-  image: https://lh3.googleusercontent.com/pw/AP1GczNdQxGTl4E0YP2dmSKd-JfSp7GEzSdRkifSWOyUcgup3vv0hmF2d5oSM7OtjFroCyLX7FV0Swn92CHR2QtdVqq6PEmhCTd6b-gGxDIBjno6HwdPm28=w2400
-  description: <br><br>
-    講義タイトル<br>
-    【（株）日立製作所における核融合開発への貢献～核融合実現を支えるモノづくり～】
-  timeslot:
-
-- name: 関 太一
-  englishName: Taichi Seki
-  position: Senior Scientist
-  affiliation: 株式会社LINEAイノベーション
-  image: https://lh3.googleusercontent.com/pw/AP1GczNJXuKsG1xX2ovn8BwMw1kQVP4a8uPTnmqSWCRJvWj1A2TkkVlT5yUOOYdhtkBOxpMgNGUS0m7tH8mSf0Cd8uDAkoX0R7q4Ie9XAtDLcWpzMfMmCnE=w2400
-  description:
-    日本大学在学中は、磁場反転配位（FRC）の研究に取り組む傍ら、若手フォーラムの実行委員も務めていました。学位取得後はこれまでの経験を活かし、株式会社LINEAイノベーションにて、FRC周辺の物理設計や炉構成の検討などを進めています。<br><br>
-    講義タイトル<br>
-    【LINEAイノベーションによる革新的核融合炉への挑戦】
-  timeslot:
+  timeslot: 12
 
 - name: 馬場 貴志
   englishName: Takashi Baba
@@ -234,27 +185,7 @@
     先日、会社仲間と琵琶湖横断水泳大会に参加し、無事完泳！<br><br>
     講義タイトル<br>
     【三菱重工の核融合取組】
-  timeslot:
-
-- name: 鳥海 陽平
-  englishName: Yohei Toriumi
-  position: NTT株式会社宇宙環境エネルギー研究所 主任研究員
-  affiliation: NTT株式会社
-  image: https://lh3.googleusercontent.com/pw/AP1GczMN7b3tUcqqR5-g1g1LIG2MdPgs3ZXozg3shxKffH09C3A0M7JWp_Ry3-h5VILegupBN4pzAr-6AOCfApqAJP1BRFNUA2Xs93owVoc6_hRUbYmNN9U=w2400
-  description: <br><br>
-    講義タイトル<br>
-    【】
-  timeslot:
-
-- name: 白澤 唯汰
-  englishName: Yuita Shirasawa
-  position: NTT株式会社宇宙環境エネルギー研究所 研究員
-  affiliation: NTT株式会社
-  image: https://lh3.googleusercontent.com/pw/AP1GczNnReeCHjKwZNuIow7ogX7Fa0WRUXqCFnj8aeHIwhlMwLNx5q4uTqFvMP3RgJstaNIS7w_99pTuLYzpBNQVEb9OB9zrUBeX5qquQ70xw9Mh94T-EDM=w2400
-  description: <br><br>
-    講義タイトル<br>
-    【】
-  timeslot:
+  timeslot: 12
 
 - name: 伊庭野 健造
   englishName: Kenzo Ibano
@@ -265,7 +196,77 @@
     米国大学・研究機関と連携し、フュージョン炉設計とプラズマ材料の相互作用研究に15年以上従事し、商業炉の実現を科学的に検証。自身の経験をもとにOISTにてVSM Mentorとしてスタートアップ支援を実施。慶応義塾大学。イリノイ大学M.S.。京都大学Ph.D.。<br><br>
     講義タイトル<br>
     【Starlight Engineが取り組むフュージョンエネルギー発電実証プラント「FAST」について】
-  timeslot:
+  timeslot: 12
+
+- name: 吉村 勇紀
+  englishName: Yuki Yoshimura
+  position: 技術第2事業部・開発4課（兼務）
+  affiliation: 株式会社EX-Fusion
+  image:
+  description: <br><br>
+    講義タイトル<br>
+    【】
+  timeslot: 12
+
+- name: 木村 彩人
+  englishName: Ayato Kimura
+  position: 開発4課・技術第2事業部（兼務）
+  affiliation: 株式会社EX-Fusion
+  image:
+  description: <br><br>
+    講義タイトル<br>
+    【】
+  timeslot: 12
+
+- name: 関 太一
+  englishName: Taichi Seki
+  position: Senior Scientist
+  affiliation: 株式会社LINEAイノベーション
+  image: https://lh3.googleusercontent.com/pw/AP1GczNJXuKsG1xX2ovn8BwMw1kQVP4a8uPTnmqSWCRJvWj1A2TkkVlT5yUOOYdhtkBOxpMgNGUS0m7tH8mSf0Cd8uDAkoX0R7q4Ie9XAtDLcWpzMfMmCnE=w2400
+  description:
+    日本大学在学中は、磁場反転配位（FRC）の研究に取り組む傍ら、若手フォーラムの実行委員も務めていました。学位取得後はこれまでの経験を活かし、株式会社LINEAイノベーションにて、FRC周辺の物理設計や炉構成の検討などを進めています。<br><br>
+    講義タイトル<br>
+    【LINEAイノベーションによる革新的核融合炉への挑戦】
+  timeslot: 12
+
+# 8/30
+- name: 鳥海 陽平
+  englishName: Yohei Toriumi
+  position: NTT株式会社宇宙環境エネルギー研究所 主任研究員
+  affiliation: NTT株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczMN7b3tUcqqR5-g1g1LIG2MdPgs3ZXozg3shxKffH09C3A0M7JWp_Ry3-h5VILegupBN4pzAr-6AOCfApqAJP1BRFNUA2Xs93owVoc6_hRUbYmNN9U=w2400
+  description: <br><br>
+    講義タイトル<br>
+    【】
+  timeslot: 21
+
+- name: 白澤 唯汰
+  englishName: Yuita Shirasawa
+  position: NTT株式会社宇宙環境エネルギー研究所 研究員
+  affiliation: NTT株式会社
+  image: https://lh3.googleusercontent.com/pw/AP1GczNnReeCHjKwZNuIow7ogX7Fa0WRUXqCFnj8aeHIwhlMwLNx5q4uTqFvMP3RgJstaNIS7w_99pTuLYzpBNQVEb9OB9zrUBeX5qquQ70xw9Mh94T-EDM=w2400
+  description: <br><br>
+    講義タイトル<br>
+    【】
+  timeslot: 21
+
+- name: 梶山 修
+  englishName: Shu Kajiyama
+  position:
+  affiliation: 伯東株式会社
+  image:
+  description: 講義タイトル<br>
+    【】
+  timeslot: 21
+
+- name: 大橋 渉
+  englishName: Wataru Ohashi
+  position:
+  affiliation: 伯東株式会社
+  image:
+  description: 講義タイトル<br>
+    【】
+  timeslot: 21
 
 - name: 安田 幸平
   englishName: Kohei Yasuda
@@ -276,4 +277,4 @@
     名古屋大学大学院にて核融合プラズマの実験研究で博士(工学)を取得。現在は主にITER・原型炉向けのブランケット開発等に従事しています。<br><br>
     講義タイトル<br>
     【東芝の核融合開発における実績と貢献】
-  timeslot:
+  timeslot: 21
