@@ -145,24 +145,43 @@
 #  timeslot:
 
 # 8/29
-#- name:
-#  englishName:
-#  position:
-#  affiliation: 株式会社EX-Fusion
-#  image:
-#  description: <br><br>
-#    講義タイトル<br>
-#    【】
-#  timeslot:
+- name: 吉村 勇紀
+  englishName: Yuki Yoshimura
+  position: 技術第2事業部・開発4課（兼務）
+  affiliation: 株式会社EX-Fusion
+  image:
+  description: <br><br>
+    講義タイトル<br>
+    【】
+  timeslot:
 
-#- name:
-#  englishName:
-#  position:
-#  affiliation: 伯東株式会社
-#  image:
-#  description: 講義タイトル<br>
-#    【】
-#  timeslot:
+- name: 木村 彩人
+  englishName: Ayato Kimura
+  position: 開発4課・技術第2事業部（兼務）
+  affiliation: 株式会社EX-Fusion
+  image:
+  description: <br><br>
+    講義タイトル<br>
+    【】
+  timeslot:
+
+- name: 梶山 修
+  englishName: Shu Kajiyama
+  position:
+  affiliation: 伯東株式会社
+  image:
+  description: 講義タイトル<br>
+    【】
+  timeslot:
+
+- name: 大橋 渉
+  englishName: Wataru Ohashi
+  position:
+  affiliation: 伯東株式会社
+  image:
+  description: 講義タイトル<br>
+    【】
+  timeslot:
 
 - name: 石井 健介
   englishName: Kensuke Ishii
@@ -177,7 +196,7 @@
 
 - name: 今村 寿郎
   englishName: Toshiro Imamura
-  position:
+  position: 核融合加速器推進センタ 開発エンジニアリンググループ 技師
   affiliation: 株式会社日立製作所
   image: https://lh3.googleusercontent.com/pw/AP1GczOOhI1I3VxIvALQKM6ktXuUcuvflnlawtmd3tI1TBIZDg2ZDWRDT_P_74BW0ZauyfWRQ7xqfun_JTOTg64zFA5TTT-JT-SCMgWt77w0AFVLbcQf250=w2400
   description: <br><br>
@@ -187,7 +206,7 @@
 
 - name: 武田 健太郎
   englishName: Kentaro Takeda
-  position:
+  position: 核融合加速器推進センタ 開発エンジニアリンググループ 企画員
   affiliation: 株式会社日立製作所
   image: https://lh3.googleusercontent.com/pw/AP1GczNdQxGTl4E0YP2dmSKd-JfSp7GEzSdRkifSWOyUcgup3vv0hmF2d5oSM7OtjFroCyLX7FV0Swn92CHR2QtdVqq6PEmhCTd6b-gGxDIBjno6HwdPm28=w2400
   description: <br><br>
